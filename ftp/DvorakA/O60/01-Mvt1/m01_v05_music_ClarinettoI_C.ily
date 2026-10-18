@@ -10,7 +10,7 @@ musicClarinettoIMvtI = \relative c'' {
 	\transposition a
 % Bars 1 to 5
 	R2.
-	r4 r c
+	r4 r c\p
 	\repeat volta 2 {
 		c2 r4
 		r r c(
@@ -23,31 +23,23 @@ musicClarinettoIMvtI = \relative c'' {
 		d,2 \partCombineAutomatic r4
 % Bars 11 to 15
 		R2.*10
-
-
-
-
+	
+	
+	
+	
 % Bars 16 to 20
-
-
-
-
-
+	
 % Bars 21 to 25
 		\partCombineApart r4 f(_\p_\> e
 		d e d
 		cis8_\pp) r r4 r \partCombineAutomatic
 		R2.*9
-
+	
 % Bars 26 to 30
-
-
-
-
-
+	
 % Bars 31 to 35
-
-
+	
+	
 		aes8-. bes-. ces-. ces-. bes-. aes-. 
 		c!4-. aes!-. d\fz-.
 		aes-. ees'-.\fz aes,-.
@@ -88,9 +80,9 @@ musicClarinettoIMvtI = \relative c'' {
 		\once \stemDown f4-.) \partCombineAutomatic r r
 		R2.*4
 % Bars 66 to 70
-
-
-
+	
+	
+	
 		d,4-.\f r d-.
 		r d-. r
 % Bars 71 to 75
@@ -100,28 +92,28 @@ musicClarinettoIMvtI = \relative c'' {
 		c r r
 		R2.*4
 % Bars 76 to 80
-
-
-
+	
+	
+	
 		e'8-.\p f-. g-. r r4
 		f8-. g-. a-. r r4
 % Bars 81 to 85
 		R2.*6
-
-
-
-
+	
+	
+	
+	
 % Bars 86 to 90
-
+	
 		e,4-\tweak X-offset #0.3 \pp r r
 		e r r
 		R2.*6
-
+	
 % Bars 91 to 95
-
-
-
-
+	
+	
+	
+	
 		g'2(-^ f8 ees)
 % Bars 96 to 100
 		d4 r r
@@ -133,35 +125,31 @@ musicClarinettoIMvtI = \relative c'' {
 		\partCombineAutomatic f2(-\tweak X-offset #0.5 \fz e8 d)
 		cis8-. r r4 r
 		R2.*4
-
-
+	
+	
 % Bars 106 to 110
-
+	
 		cis4\pp r cis \mark \default 
 		R2.*6
-
-
+	
+	
 % Bars 111 to 115
-
-
-
+	
+	
+	
 		bes'4(\pp a g
 		f4. e!8 d4)
 % Bars 116 to 120
 		cis( d e 
 		d) r r
 		R2.*10
-
-
+	
+	
 % Bars 121 to 125
-
-
-
-
-
+	
 % Bars 126 to 130
-
-
+	
+	
 		d8(-- e-- fis4--) fis8--( g--
 		fis4--) fis-- e--
 		dis2( e4
@@ -174,7 +162,7 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 136 to 140
 		fis8 r r4 r
 		R2.*2
-
+	
 		b,8( cis d dis e d) \mark \default
 		cis\f r r4 d(->
 % Bars 141 to 145
@@ -192,8 +180,8 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 151 to 155
 		c r r 
 		R2.*3
-
-
+	
+	
 		\partCombineApart a4_\f c8( a) bes-. c-. \partCombineAutomatic
 % Bars 156 to 160
 		bes2. \tweak X-offset #-2 \fz
@@ -215,12 +203,12 @@ musicClarinettoIMvtI = \relative c'' {
 		f r r
 % Bars 171 to 175
 		R2.*6
-
-
-
-
+	
+	
+	
+	
 % Bars 176 to 180
-
+	
 	}
 	\alternative {
 		{
@@ -246,32 +234,32 @@ musicClarinettoIMvtI = \relative c'' {
 			\partCombineApart r4 r a(\mp
 			d8) r d r r4
 			\partCombineAutomatic R2.*2
-
+	
 			\partCombineApart r4 r a(
 % Bars 196 to 200
 		}
 	}
 	e'8) r e r r4 \partCombineAutomatic
 	R2.*2
-
+	
 	\partCombineApart r4 r d(-\tweak X-offset #-1.5 _\pp
 	a'8) r a r r4
 % Bars 201 to 205
 	\partCombineAutomatic R2.*3
-
-
+	
+	
 	\partCombineApart r4 r c,-._\p
 	f2.->
 % Bars 206 to 210
 	r4 r c(_\<
 	f8) r f\! r r4 \partCombineAutomatic
 	R2.*6
-
-
+	
+	
 % Bars 211 to 215
-
-
-
+	
+	
+	
 	c'2(-\tweak X-offset #-1.5 _\mfp bes8 aes!)
 	aes2(\> g8 f)
 % Bars 216 to 220
@@ -287,37 +275,33 @@ musicClarinettoIMvtI = \relative c'' {
 	d2 c8 bes)
 	bes2.->(
 % Bars 226 to 230
-	aes8 g) g2~
-	g4\pp( aes g
+	aes8 g) g2(~
+	g4\pp aes g
 	aes g aes \mark \default
 	g) r r
 	R2.*10
 % Bars 231 to 235
-
-
-
-
-
+	
 % Bars 236 to 240
-
-
-
-
+	
+	
+	
+	
 	r4 b'(\p a!8 gis)
 % Bars 241 to 245
 	R2.*2
-
+	
 	r4 b(\p a8 gis)
 	R2.*3
-
+	
 % Bars 246 to 250
-
+	
 	r4 c( bes!8 a)
 	R2.*4
-
-
+	
+	
 % Bars 251 to 255
-
+	
 	r4 d!(\< c8 b)
 	\dynEO #'(0 . 1.5) c4\f r r
 	R2.
@@ -326,11 +310,11 @@ musicClarinettoIMvtI = \relative c'' {
 	b-> r d->
 	c-> r r
 	R2.*5
-
-
+	
+	
 % Bars 261 to 265
-
-
+	
+	
 	r4 r8 \partCombineApart d-. ees-. f-.
 	\shape #'((0 . -1) (0 . -1) (0 . -1) (0 . -1)) Slur f4.(_\< g8_\> f4\!)
 	f r r \partCombineAutomatic
@@ -385,21 +369,13 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 306 to 310
 	ces4 r r
 	R2.*14
-
-
-
+	
+	
+	
 % Bars 311 to 315
-
-
-
-
-
+	
 % Bars 316 to 320
-
-
-
-
-
+	
 % Bars 321 to 325
 	gis2.\ff~
 	gis~
@@ -422,11 +398,11 @@ musicClarinettoIMvtI = \relative c'' {
 	\shape #'((0 . 0)(0 . -0.3)(0 . -0.3)(0 . 0)) Slur fis2( \beamOffset #'(-0.3 . -0.3) g8 a)
 	d,2 \partCombineAutomatic r4 \hairpinYoffset #0 #0
 	R2.*5
-
-
+	
+	
 % Bars 341 to 345
-
-
+	
+	
 	r4 r \partCombineApart c\(
 	\stemDown ees2 d4
 	ees f ees\) \partCombineAutomatic
@@ -438,15 +414,15 @@ musicClarinettoIMvtI = \relative c'' {
 	\omitFlag e8\) \partCombineAutomatic r r4 r
 % Bars 351 to 355
 	R2.*9
-
-
-
-
+	
+	
+	
+	
 % Bars 356 to 360
-
-
-
-
+	
+	
+	
+	
 	\stemUp aes,8-\offset X-offset #-2 _\fsempre->[ bes-. ces-. ces-. bes-. aes-.]
 % Bars 361 to 365
 	c!4\fz-. aes!-. d-.\fz
@@ -467,19 +443,15 @@ musicClarinettoIMvtI = \relative c'' {
 	c4-. r r
 	R2.*6
 % Bars 376 to 380
-
-
-
-
-
+	
 % Bars 381 to 385
 	r4 des,-.\p d-.
 	e r r
 	\partCombineApart des8-\tweak X-offset #-1 \p-. ees-. f4 r \partCombineAutomatic
 	R2.*3
-
+	
 % Bars 386 to 390
-
+	
 	\partCombineApart f8-.-\tweak X-offset #-1 \p g-. aes4 r \partCombineAutomatic
 	R2.
 	r4 aes,4-.\p r
@@ -511,15 +483,11 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 411 to 415
 	g8-.\p r r4 r
 	R2.*2
-
+	
 	e'4\pp r r \mark \default
 	R2.*6
 % Bars 416 to 420
-
-
-
-
-
+	
 % Bars 421 to 425
 	des'4(\pp c bes
 	aes4. g!8 f4
@@ -527,16 +495,12 @@ musicClarinettoIMvtI = \relative c'' {
 	f r r
 	R2.*10
 % Bars 426 to 430
-
-
-
-
-
+	
 % Bars 431 to 435
-
-
-
-
+	
+	
+	
+	
 	\stemUp c8\pp\< c \stemNeutral f4 f8 f
 % Bars 436 to 440
 	a4\! a(\> g)\!
@@ -567,9 +531,9 @@ musicClarinettoIMvtI = \relative c'' {
 	des r r 
 	ees r r \mark \default
 	R2.*3
-
+	
 % Bars 461 to 465
-
+	
 	\partCombineApart c'4-^ ees8( c) des-. ees -. \partCombineAutomatic
 	des2.
 	ees2_\crescmarkup ges8( ees)
@@ -594,9 +558,9 @@ musicClarinettoIMvtI = \relative c'' {
 	\once \partCombineApart c,4 r r
 % Bars 481 to 485
 	R2.*4
-
-
-
+	
+	
+	
 	\partCombineApart f4\f r8 bes,-. c-. d-.
 % Bars 486 to 490
 	e4. a,8-. bes-. c-.
@@ -605,8 +569,8 @@ musicClarinettoIMvtI = \relative c'' {
 	c,4 \partCombineAutomatic r r
 	R2.*3
 % Bars 491 to 495
-
-
+	
+	
 	ees8\f a, bes c d g,
 	a bes c f, g a
 	des2.->~
@@ -627,22 +591,14 @@ musicClarinettoIMvtI = \relative c'' {
 	aes'4. r8 r4
 	aes4. r8 r4 \mark #11
 	R2.*14
-
+	
 % Bars 511 to 515
-
-
-
-
-
+	
 % Bars 516 to 520
-
-
-
-
-
+	
 % Bars 521 to 525
-
-
+	
+	
 	r4 r g-.\f
 	a-._\marc \once \partCombineApart f-. g-.
 	a-. f-. g-.
@@ -668,18 +624,14 @@ musicClarinettoIMvtI = \relative c'' {
 	a2( g8_\dimmarkup f)
 	f2 r4
 	R2.*11
-
-
+	
+	
 % Bars 546 to 550
-
-
-
-
-
+	
 % Bars 551 to 555
-
-
-
+	
+	
+	
 	f2.\pp--
 	f--
 % Bars 556 to 560

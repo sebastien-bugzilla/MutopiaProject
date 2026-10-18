@@ -276,15 +276,7 @@ musicCornoIIMvtI = \relative c' {
 	R2.*14
 % Bars 216 to 220
 	
-	
-	
-	
-	
 % Bars 221 to 225
-	
-	
-	
-	
 	
 % Bars 226 to 230
 	
@@ -294,27 +286,11 @@ musicCornoIIMvtI = \relative c' {
 	
 % Bars 231 to 235
 	
-	
-	
-	
-	
 % Bars 236 to 240
-	
-	
-	
-	
 	
 % Bars 241 to 245
 	
-	
-	
-	
-	
 % Bars 246 to 250
-	
-	
-	
-	
 	
 % Bars 251 to 255
 	
@@ -341,22 +317,22 @@ musicCornoIIMvtI = \relative c' {
 	
 	R2.*2
 % Bars 271 to 275
-
+	
 	R2.*7
-
-
-
+	
+	
+	
 % Bars 276 to 280
-
-
+	
+	
 	\mark \default
 	R2.*6
-
+	
 % Bars 281 to 285
-
-
-
-
+	
+	
+	
+	
 	d'2.\f->~
 % Bars 286 to 290
 	d~
@@ -385,21 +361,13 @@ musicCornoIIMvtI = \relative c' {
 % Bars 306 to 310
 	ees4 r r
 	R2.*14
-
-
-
+	
+	
+	
 % Bars 311 to 315
-
-
-
-
-
+	
 % Bars 316 to 320
-
-
-
-
-
+	
 % Bars 321 to 325
 	dis2.\ff~
 	dis~
@@ -433,21 +401,17 @@ musicCornoIIMvtI = \relative c' {
 % Bars 346 to 350
 	\stemDown c2 r4
 	R2.*4
-
-
-
+	
+	
+	
 % Bars 351 to 355
 	R2.*10
-
-
-
-
+	
+	
+	
+	
 % Bars 356 to 360
-
-
-
-
-
+	
 % Bars 361 to 365
 	c'8-.\f r c2->~
 	c2.~
@@ -467,27 +431,23 @@ musicCornoIIMvtI = \relative c' {
 	cis4-. r r
 	R2.*4
 % Bars 376 to 380
-
-
-
+	
+	
+	
 	\partCombineApart g4\p-. g,-. r
 	g'-. g,-. r \partCombineAutomatic
 % Bars 381 to 385
 	R2.*13
-
-
-
-
+	
+	
+	
+	
 % Bars 386 to 390
-
-
-
-
-
+	
 % Bars 391 to 395
-
-
-
+	
+	
+	
 	b'4\f r r
 	b r r
 % Bars 396 to 400
@@ -497,7 +457,7 @@ musicCornoIIMvtI = \relative c' {
 	c4 r r
 	R2.*2
 % Bars 401 to 405
-
+	
 	des'2\fz aes4
 	c r r
 	aes2.-\tweak X-offset #0.5 \fz~
@@ -522,58 +482,54 @@ musicCornoIIMvtI = \relative c' {
 	c4.( bes8 aes4)
 % Bars 421 to 425
 	R2.*9
-
-
-
-
+	
+	
+	
+	
 % Bars 426 to 430
-
-
-
-
+	
+	
+	
+	
 	R2.*5
 % Bars 431 to 435
-
-
-
-
+	
+	
+	
+	
 	c,8\pp\< c c4 c8 c
 % Bars 436 to 440
 	c4\! c\> e\!
 	a, r r
 	R2.*7
-
-
+	
+	
 % Bars 441 to 445
-
-
-
-
+	
+	
+	
+	
 	r4 d2-\tweak X-offset #0.4 \f->~
 % Bars 446 to 450
 	d2.~
 	d8 r r4 r
 	R2.*7
-
-
+	
+	
 % Bars 451 to 455
-
-
-
-
+	
+	
+	
+	
 	c2.\p~
 % Bars 456 to 460
 	c_\cresc
 	c
 	c\! \mark \default
 	R2.*7
-
+	
 % Bars 461 to 465
-
-
-
-
-
+	
 % Bars 466 to 470
 	c'8(\f aes) bes-. c-. d([ b)]
 	c-.\<[ d-.] c8( b c g)\!
@@ -612,8 +568,8 @@ musicCornoIIMvtI = \relative c' {
 	c4 r r
 % Bars 496 to 500
 	R2.*3
-
-
+	
+	
 	\clef treble c''2->\f c4~->
 	c c2->
 % Bars 501 to 505
@@ -627,22 +583,14 @@ musicCornoIIMvtI = \relative c' {
 	c'4. r8 r4
 	c4. r8 r4 \mark #11
 	R2.*14
-
+	
 % Bars 511 to 515
-
-
-
-
-
+	
 % Bars 516 to 520
-
-
-
-
-
+	
 % Bars 521 to 525
-
-
+	
+	
 	r4 r b-.\f
 	c-. c-. d-.
 	e-. c-. d-.
@@ -679,12 +627,12 @@ musicCornoIIMvtI = \relative c' {
 % Bars 551 to 555
 	g4 r r
 	R2.*2
-
+	
 	R2.*4
-
+	
 % Bars 556 to 560
-
-
+	
+	
 	R2.
 	c8\f-. e-. g4 d'->
 	c-> r r \fine

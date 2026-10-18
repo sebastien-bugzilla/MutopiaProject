@@ -49,8 +49,8 @@ musicViolaMvtI = \relative c {
 			d-. d4 d d8-.
 % Bars 6 to 10
 			d-. d4 d d8-.
-			d-. d4 d d8-.
-			d-.\< d4 d d'8-.\!
+			d-. d4 d\< d8-.
+			d-. d4 d d'8-.\!
 			dis dis4\f dis8(\> e fis)\!
 			<b, e>8-.\pp q4 q q8-.
 % Bars 11 to 15
@@ -89,7 +89,7 @@ musicViolaMvtI = \relative c {
 		<d f>8-. r b16( d b d  b d b d)
 		<d f>8 r q2:16->
 		q2.:
-		q2: <e g>4:\fz
+		q2: <e g>4:
 % Bars 41 to 45
 		<e g>: <g, e'>:\fz <e' g> 
 		<g, e'>:\fz <e' g> <g, e'>:\fz 
@@ -285,10 +285,6 @@ musicViolaMvtI = \relative c {
 	
 % Bars 186 to 190
 	
-	
-	
-	
-	
 % Bars 191 to 195
 		}
 		{
@@ -319,21 +315,9 @@ musicViolaMvtI = \relative c {
 	
 % Bars 211 to 215
 	
-	
-	
-	
-	
 % Bars 216 to 220
 	
-	
-	
-	
-	
 % Bars 221 to 225
-	
-	
-	
-	
 	
 % Bars 226 to 230
 	

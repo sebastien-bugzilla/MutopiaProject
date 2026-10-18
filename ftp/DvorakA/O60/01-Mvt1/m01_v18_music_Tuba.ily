@@ -17,21 +17,9 @@ musicTubaMvtI = \relative c {
 	
 % Bars 6 to 10
 	
-	
-	
-	
-	
 % Bars 11 to 15
 	
-	
-	
-	
-	
 % Bars 16 to 20
-	
-	
-	
-	
 	
 % Bars 21 to 25
 	
@@ -41,34 +29,18 @@ musicTubaMvtI = \relative c {
 	
 % Bars 26 to 30
 	
-	
-	
-	
-	
 % Bars 31 to 35
-	
-	
-	
-	
 	
 % Bars 36 to 40
 	
-	
-	
-	
-	
 % Bars 41 to 45
-	
-	
-	
-	
 	
 % Bars 46 to 50
 		\ni \clef treble \voiceTwo R2.
 		\mmrPos #-6 R \no
 		r4 r \oneVoice \clef bass a-.\ff \mark \default
 		d-.-\offset X-offset 0.5 _\grandioso r r
-		r r a-.
+		r r a-.\f
 % Bars 51 to 55
 		fis2-^ r4
 		r r a-.
@@ -89,51 +61,19 @@ musicTubaMvtI = \relative c {
 	
 % Bars 66 to 70
 	
-	
-	
-	
-	
 % Bars 71 to 75
-	
-	
-	
-	
 	
 % Bars 76 to 80
 	
-	
-	
-	
-	
 % Bars 81 to 85
-	
-	
-	
-	
 	
 % Bars 86 to 90
 	
-	
-	
-	
-	
 % Bars 91 to 95
-	
-	
-	
-	
 	
 % Bars 96 to 100
 	
-	
-	
-	
-	
 % Bars 101 to 105
-	
-	
-	
-	
 	
 % Bars 106 to 110
 	
@@ -143,10 +83,6 @@ musicTubaMvtI = \relative c {
 	
 % Bars 111 to 115
 	
-	
-	
-	
-	
 % Bars 116 to 120
 	
 	
@@ -155,21 +91,9 @@ musicTubaMvtI = \relative c {
 		\mmrLength #16 R2.*20
 % Bars 121 to 125
 	
-	
-	
-	
-	
 % Bars 126 to 130
 	
-	
-	
-	
-	
 % Bars 131 to 135
-	
-	
-	
-	
 	
 % Bars 136 to 140
 	
@@ -179,21 +103,9 @@ musicTubaMvtI = \relative c {
 		R2.*19
 % Bars 141 to 145
 	
-	
-	
-	
-	
 % Bars 146 to 150
 	
-	
-	
-	
-	
 % Bars 151 to 155
-	
-	
-	
-	
 	
 % Bars 156 to 160
 	
@@ -230,15 +142,7 @@ musicTubaMvtI = \relative c {
 	
 % Bars 181 to 185
 	
-	
-	
-	
-	
 % Bars 186 to 190
-	
-	
-	
-	
 	
 % Bars 191 to 195
 		}
@@ -270,21 +174,9 @@ musicTubaMvtI = \relative c {
 	
 % Bars 211 to 215
 	
-	
-	
-	
-	
 % Bars 216 to 220
 	
-	
-	
-	
-	
 % Bars 221 to 225
-	
-	
-	
-	
 	
 % Bars 226 to 230
 	
@@ -306,15 +198,7 @@ musicTubaMvtI = \relative c {
 	
 % Bars 241 to 245
 	
-	
-	
-	
-	
 % Bars 246 to 250
-	
-	
-	
-	
 	
 % Bars 251 to 255
 	
@@ -324,27 +208,11 @@ musicTubaMvtI = \relative c {
 	
 % Bars 256 to 260
 	
-	
-	
-	
-	
 % Bars 261 to 265
-	
-	
-	
-	
 	
 % Bars 266 to 270
 	
-	
-	
-	
-	
 % Bars 271 to 275
-	
-	
-	
-	
 	
 % Bars 276 to 280
 	
@@ -359,10 +227,6 @@ musicTubaMvtI = \relative c {
 	R2.*9
 	
 % Bars 286 to 290
-	
-	
-	
-	
 	
 % Bars 291 to 295
 	
@@ -390,15 +254,7 @@ musicTubaMvtI = \relative c {
 	
 % Bars 311 to 315
 	
-	
-	
-	
-	
 % Bars 316 to 320
-	
-	
-	
-	
 	
 % Bars 321 to 325
 	cis2\ff gis4
@@ -414,21 +270,9 @@ musicTubaMvtI = \relative c {
 	R2.*20
 % Bars 331 to 335
 	
-	
-	
-	
-	
 % Bars 336 to 340
 	
-	
-	
-	
-	
 % Bars 341 to 345
-	
-	
-	
-	
 	
 % Bars 346 to 350
 	
@@ -438,21 +282,9 @@ musicTubaMvtI = \relative c {
 	R2.*18
 % Bars 351 to 355
 	
-	
-	
-	
-	
 % Bars 356 to 360
 	
-	
-	
-	
-	
 % Bars 361 to 365
-	
-	
-	
-	
 	
 % Bars 366 to 370
 	
@@ -468,45 +300,17 @@ musicTubaMvtI = \relative c {
 	R2.*40
 % Bars 376 to 380
 	
-	
-	
-	
-	
 % Bars 381 to 385
-	
-	
-	
-	
 	
 % Bars 386 to 390
 	
-	
-	
-	
-	
 % Bars 391 to 395
-	
-	
-	
-	
 	
 % Bars 396 to 400
 	
-	
-	
-	
-	
 % Bars 401 to 405
 	
-	
-	
-	
-	
 % Bars 406 to 410
-	
-	
-	
-	
 	
 % Bars 411 to 415
 	
@@ -516,33 +320,13 @@ musicTubaMvtI = \relative c {
 	R2.*28
 % Bars 416 to 420
 	
-	
-	
-	
-	
 % Bars 421 to 425
-	
-	
-	
-	
 	
 % Bars 426 to 430
 	
-	
-	
-	
-	
 % Bars 431 to 435
 	
-	
-	
-	
-	
 % Bars 436 to 440
-	
-	
-	
-	
 	
 % Bars 441 to 445
 	
@@ -569,10 +353,6 @@ musicTubaMvtI = \relative c {
 	R2.*9
 	
 % Bars 461 to 465
-	
-	
-	
-	
 	
 % Bars 466 to 470
 	
@@ -630,15 +410,7 @@ musicTubaMvtI = \relative c {
 	
 % Bars 511 to 515
 	
-	
-	
-	
-	
 % Bars 516 to 520
-	
-	
-	
-	
 	
 % Bars 521 to 525
 	\ni \clef treble \voiceTwo R2.
@@ -678,14 +450,10 @@ musicTubaMvtI = \relative c {
 	
 % Bars 551 to 555
 	
-	
-	
-	
-	
 % Bars 556 to 560
 	
 	R2.*2
 	
 	\clef treble \voiceTwo r4 r \oneVoice \clef bass a'->\f
-	d,-> r r \bar "|."
+	d,-> r r \fine
 }

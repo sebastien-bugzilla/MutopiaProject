@@ -17,9 +17,9 @@ musicViolinoIIMvtI = \relative c' {
 	
 % Bars 6 to 10
 		r4 r fis\pp
-		<fis a>4. q8 q4\<
+		<fis a>4. q8\< q4
 		q( a d)\!
-		fis2\f\>( e8 dis)
+		fis2\f\>( e8 dis)\!
 		b2\p r4
 % Bars 11 to 15
 		R2.*5
@@ -236,10 +236,6 @@ musicViolinoIIMvtI = \relative c' {
 			R2.*6
 % Bars 186 to 190
 	
-	
-	
-	
-	
 % Bars 191 to 195
 		}
 		{
@@ -276,15 +272,7 @@ musicViolinoIIMvtI = \relative c' {
 	R2.*14
 % Bars 216 to 220
 	
-	
-	
-	
-	
 % Bars 221 to 225
-	
-	
-	
-	
 	
 % Bars 226 to 230
 	
@@ -467,10 +455,6 @@ musicViolinoIIMvtI = \relative c' {
 	dis,4-. r r
 	R2.*6
 % Bars 376 to 380
-	
-	
-	
-	
 	
 % Bars 381 to 385
 	r4 e-.\pp d!-.
@@ -672,15 +656,7 @@ musicViolinoIIMvtI = \relative c' {
 	
 % Bars 546 to 550
 	
-	
-	
-	
-	
 % Bars 551 to 555
-	
-	
-	
-	
 	
 % Bars 556 to 560
 	

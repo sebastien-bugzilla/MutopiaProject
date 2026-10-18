@@ -23,33 +23,25 @@ musicClarinettoIMvtI = \relative c'' {
 		d,2\p r4
 % Bars 11 to 15
 		R2.*10
-
-
-
-
+	
+	
+	
+	
 % Bars 16 to 20
-
-
-
-
-
+	
 % Bars 21 to 25
 		r4 f(\p\> e
 		d e d\!
 		cis8\pp) r r4 r
 		R2.*9
-
+	
 % Bars 26 to 30
-
-
-
-
-
+	
 % Bars 31 to 35
-
-
+	
+	
 		aes8\f\<-. bes-. ces-. ces-. bes-. aes-.\!
-		c!4-.\fz aes-. d\fz-.
+		c!4-.\f aes-. d\fz-.
 		aes-. ees'-.\fz aes,-.
 % Bars 36 to 40
 		f'\fz-. f-. g-.\fz
@@ -88,9 +80,9 @@ musicClarinettoIMvtI = \relative c'' {
 		f4-.) r r
 		R2.*4
 % Bars 66 to 70
-
-
-
+	
+	
+	
 		d,4-.\f r d-.
 		r d-. r
 % Bars 71 to 75
@@ -100,28 +92,28 @@ musicClarinettoIMvtI = \relative c'' {
 		c r r
 		R2.*4
 % Bars 76 to 80
-
-
-
+	
+	
+	
 		e'8-.\p f-. g-. r r4
 		f8-. g-. a-. r r4
 % Bars 81 to 85
 		R2.*6
-
-
-
-
+	
+	
+	
+	
 % Bars 86 to 90
-
+	
 		e,4\pp r r
 		e r r
 		R2.*6
-
+	
 % Bars 91 to 95
-
-
-
-
+	
+	
+	
+	
 		g'2(-^\f f8 ees)
 % Bars 96 to 100
 		d4 r r
@@ -133,35 +125,31 @@ musicClarinettoIMvtI = \relative c'' {
 		f2(\fz e8 d)
 		cis8-. r r4 r
 		R2.*4
-
-
+	
+	
 % Bars 106 to 110
-
+	
 		cis4\pp r cis \mark \default
 		R2.*6
-
-
+	
+	
 % Bars 111 to 115
-
-
-
+	
+	
+	
 		bes'4(\pp a g
 		f4. e!8 d4)
 % Bars 116 to 120
 		cis( d e 
 		d) r r
 		R2.*10
-
-
+	
+	
 % Bars 121 to 125
-
-
-
-
-
+	
 % Bars 126 to 130
-
-
+	
+	
 		d8(--\p\< e-- fis4--) fis8--( g--
 		fis4--)\! fis--\> e--\!
 		dis2(\pp e4
@@ -174,7 +162,7 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 136 to 140
 		fis8 r r4 r
 		R2.*2
-
+	
 		b,8(_\fcresc cis d dis e d) \mark \default
 		cis\f r r4 d(->
 % Bars 141 to 145
@@ -192,8 +180,8 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 151 to 155
 		c r r 
 		R2.*3
-
-
+	
+	
 		a4\f c8( a) bes-. c-.
 % Bars 156 to 160
 		bes2.\fz
@@ -215,12 +203,12 @@ musicClarinettoIMvtI = \relative c'' {
 		f r r
 % Bars 171 to 175
 		R2.*6
-
-
-
-
+	
+	
+	
+	
 % Bars 176 to 180
-
+	
 	}
 	\alternative {
 		{
@@ -237,8 +225,8 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 186 to 190
 			g4 r r
 			R2.*3
-
-
+	
+	
 			r4 r c,\p
 % Bars 191 to 195
 		}
@@ -246,32 +234,32 @@ musicClarinettoIMvtI = \relative c'' {
 			r4 r a(\mp^\solo
 			d8) r d r r4
 			R2.*2
-
+	
 			r4 r a(
 % Bars 196 to 200
 		}
 	}
 	e'8) r e r r4
 	R2.*2
-
+	
 	r4 r d(\pp
 	a'8) r a r r4
 % Bars 201 to 205
 	R2.*3
-
-
+	
+	
 	r4 r c,-.\p
 	f2.->
 % Bars 206 to 210
 	r4 r c(\<
 	f8) r f\! r r4
 	R2.*6
-
-
+	
+	
 % Bars 211 to 215
-
-
-
+	
+	
+	
 	c'2(_\mfp^\solo bes8 aes)
 	aes2(\> g8 f)\!
 % Bars 216 to 220
@@ -287,37 +275,33 @@ musicClarinettoIMvtI = \relative c'' {
 	d2 c8 bes)
 	bes2.->(
 % Bars 226 to 230
-	aes8 g) g2~
-	g4\pp( aes g
+	aes8 g) g2(~
+	g4\pp aes g
 	aes g aes \mark \default
 	g) r r
 	R2.*9
 % Bars 231 to 235
-
-
-
-
-
+	
 % Bars 236 to 240
-
-
-
+	
+	
+	
 	\ni \mmrPos #-4 R2. \no
 	r4 b'(\p a!8 gis)
 % Bars 241 to 245
 	R2.*2
-
+	
 	r4 b(\p a8 gis)
 	R2.*3
-
+	
 % Bars 246 to 250
-
+	
 	r4 c(\p bes!8 a)
 	R2.*4
-
-
+	
+	
 % Bars 251 to 255
-
+	
 	r4 d!(\< c8 b)\!
 	c4\f r r
 	R2.
@@ -326,11 +310,11 @@ musicClarinettoIMvtI = \relative c'' {
 	b-> r d->
 	c-> r r
 	R2.*5
-
-
+	
+	
 % Bars 261 to 265
-
-
+	
+	
 	r4 r8 d-.\p ees-. f-.
 	\hairpinShorten #'(0 . 0.8) f4.(\< \hairpinShorten #'(-0.8 . 0) g8\> f4\!)
 	f r r
@@ -385,21 +369,13 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 306 to 310
 	ces4 r r
 	R2.*14
-
-
-
+	
+	
+	
 % Bars 311 to 315
-
-
-
-
-
+	
 % Bars 316 to 320
-
-
-
-
-
+	
 % Bars 321 to 325
 	gis2.\ff~
 	gis~
@@ -422,11 +398,11 @@ musicClarinettoIMvtI = \relative c'' {
 	fis2(\fz\> g8 a)\!
 	d,2 r4
 	R2.*5
-
-
+	
+	
 % Bars 341 to 345
-
-
+	
+	
 	r4 r c(-\offset X-offset 0.5 \p\<
 	ees2 d4
 	ees f ees)\!
@@ -438,15 +414,15 @@ musicClarinettoIMvtI = \relative c'' {
 	e8)\pp r r4 r
 % Bars 351 to 355
 	R2.*9
-
-
-
-
+	
+	
+	
+	
 % Bars 356 to 360
-
-
-
-
+	
+	
+	
+	
 	aes,8_\fsempre-> bes-. ces-. ces-. bes-. aes-. 
 % Bars 361 to 365
 	c!4\fz-. aes-. d-.\fz
@@ -467,19 +443,15 @@ musicClarinettoIMvtI = \relative c'' {
 	c4-. r r
 	R2.*6
 % Bars 376 to 380
-
-
-
-
-
+	
 % Bars 381 to 385
 	r4 des,-.\p d-.
 	e r r
 	des8\p-. ees-. f4 r
 	R2.*3
-
+	
 % Bars 386 to 390
-
+	
 	f8-.\p g-. aes4 r
 	R2.
 	r4 aes,4-.\p r
@@ -511,15 +483,11 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 411 to 415
 	g8-.\p r r4 r
 	R2.*2
-
+	
 	e'4\pp r r \mark \default
 	R2.*6
 % Bars 416 to 420
-
-
-
-
-
+	
 % Bars 421 to 425
 	des'4(\pp c bes
 	aes4. g8 f4
@@ -527,16 +495,12 @@ musicClarinettoIMvtI = \relative c'' {
 	f r r
 	R2.*10
 % Bars 426 to 430
-
-
-
-
-
+	
 % Bars 431 to 435
-
-
-
-
+	
+	
+	
+	
 	c8\pp\< c f4 f8 f
 % Bars 436 to 440
 	a4\! a(\> g)\!
@@ -567,9 +531,9 @@ musicClarinettoIMvtI = \relative c'' {
 	des r r 
 	ees r r \mark \default
 	R2.*3
-
+	
 % Bars 461 to 465
-
+	
 	c'4-^\f ees8( c) des-. ees -.
 	des2.
 	ees2_\crescmarkup ges8( ees)
@@ -594,9 +558,9 @@ musicClarinettoIMvtI = \relative c'' {
 	c,4 r r
 % Bars 481 to 485
 	R2.*4
-
-
-
+	
+	
+	
 	f4\f r8 bes,-. c-. d-.
 % Bars 486 to 490
 	e4. a,8-. bes-. c-.
@@ -605,8 +569,8 @@ musicClarinettoIMvtI = \relative c'' {
 	c,4 r r
 	R2.*3
 % Bars 491 to 495
-
-
+	
+	
 	ees8\f a, bes c d g,
 	a bes c f, g a
 	des2.->~
@@ -627,22 +591,14 @@ musicClarinettoIMvtI = \relative c'' {
 	aes'4. r8 r4
 	aes4. r8 r4 \mark #11
 	R2.*14
-
+	
 % Bars 511 to 515
-
-
-
-
-
+	
 % Bars 516 to 520
-
-
-
-
-
+	
 % Bars 521 to 525
-
-
+	
+	
 	r4 r g-.\f
 	a-._\marc f-. g-.
 	a-. f-. g-.
@@ -668,16 +624,16 @@ musicClarinettoIMvtI = \relative c'' {
 	a2( g8_\dimmarkup f)
 	f2 r4
 	R2.*3
-
-
+	
+	
 % Bars 546 to 550
 	\mmrLength #12 R2.*6
-
-
-
-
+	
+	
+	
+	
 % Bars 551 to 555
-
+	
 	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R \no
 	f2.\pp--

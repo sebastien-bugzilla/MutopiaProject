@@ -10,7 +10,7 @@ musicFagottoIIMvtI = \relative c {
 %	\transposition a
 % Bars 1 to 5
 	R2.*2
-
+	
 	\repeat volta 2 {
 		r4 r a(\p
 		d2) r4
@@ -23,7 +23,7 @@ musicFagottoIIMvtI = \relative c {
 		e2)^\p b'4(
 % Bars 11 to 15
 		e2) r4 
-		r r bes(\pp
+		r r bes(
 		e2) r4
 		r r a,(
 		e2\< dis4
@@ -38,9 +38,9 @@ musicFagottoIIMvtI = \relative c {
 		eis
 		fis8)\pp r r4 r
 		R2.*3
-
+	
 % Bars 26 to 30
-
+	
 		fis,8\f r g4.(\fz fis8)
 		e-. fis-. g-. g-. fis-. e-. 
 		dis4-. b-. r
@@ -49,7 +49,7 @@ musicFagottoIIMvtI = \relative c {
 		a4-. fis-. r
 		g8-. a-. b-. b-. a-. g-. 
 		d'4-. g,-. r
-		d'2\fz g,4-.->
+		d'2\f g,4-.->
 		d'->-. d-.->\fz g,-.
 % Bars 36 to 40
 		f'-.\fz g,-.g'-.\fz
@@ -88,9 +88,9 @@ musicFagottoIIMvtI = \relative c {
 		b8( a g4) r
 		R2.*4
 % Bars 66 to 70
-
-
-
+	
+	
+	
 		g4-.\f r g-.
 		r g-. r
 % Bars 71 to 75
@@ -103,16 +103,16 @@ musicFagottoIIMvtI = \relative c {
 		e 
 		cis!)
 		R2.*5
-
-
+	
+	
 % Bars 81 to 85
-
-
+	
+	
 		fis,4\pp-. fis'-. r
 		fis,-. fis'-. r
 		R2.*2
 % Bars 86 to 90
-
+	
 		fis,4\pp r r
 		fis r8 dis'\<-. e-. fis-. 
 		g-. fis-. e-. d!-. cis-. fis-.\!
@@ -136,7 +136,7 @@ musicFagottoIIMvtI = \relative c {
 		fis8-.\p r r4 r
 		R2.*3
 % Bars 106 to 110
-
+	
 		\mark \default
 		ais4-.\p fis-. r
 		r b-. b-.
@@ -155,13 +155,13 @@ musicFagottoIIMvtI = \relative c {
 		b,\p r r
 % Bars 121 to 125
 		R2.*7
-
-
-
-
+	
+	
+	
+	
 % Bars 126 to 130
-
-
+	
+	
 		b4--\p\< b-- b--
 		b--\! b--\> ees--\!
 		aes,\pp r bes
@@ -215,12 +215,12 @@ musicFagottoIIMvtI = \relative c {
 		b r r
 % Bars 171 to 175
 		R2.*6
-
-
-
-
+	
+	
+	
+	
 % Bars 176 to 180
-
+	
 	}
 	\alternative {
 		{
@@ -244,34 +244,26 @@ musicFagottoIIMvtI = \relative c {
 		}
 		{
 			R2.*5
-
-
-
-
+	
+	
+	
+	
 % Bars 196 to 200
 		}
 	}
 	R2.*18
-
-
-
-
+	
+	
+	
+	
 % Bars 201 to 205
-
-
-
-
-
+	
 % Bars 206 to 210
-
-
-
-
-
+	
 % Bars 211 to 215
-
-
-
+	
+	
+	
 	\ni \clef treble \voiceTwo R2.
 	R \no \oneVoice 
 % Bars 216 to 220
@@ -293,19 +285,15 @@ musicFagottoIIMvtI = \relative c {
 	c) r r
 	R2.*7
 % Bars 231 to 235
-
-
-
-
-
+	
 % Bars 236 to 240
-
+	
 	e4(\p f g)
 	r g( f8 e)
 	e4 r r
 	R2.*2
 % Bars 241 to 245
-
+	
 	r4 gis!(\p fis8 eis)
 	eis4 r r
 	R2.
@@ -331,24 +319,24 @@ musicFagottoIIMvtI = \relative c {
 % Bars 261 to 265
 	g4) r r
 	R2.*2
-
+	
 	<<d2.( {\hairpinShorten #'(-0.5 . -1) s8-\offset X-offset -1 \p\< s s s \hairpinShorten #'(1 . 0) s\> s} >>
 	g4)\! r r
 % Bars 266 to 270
 	R2.*2
-
+	
 	d2.\p
 	g2(\< f4)\!
 	\after 8*5 \! e2.\>
 % Bars 271 to 275
 	a4 r r
 	R2.*2
-
+	
 	<<e2.( {\hairpinShorten #'(-0.5 . -1) s8-\offset X-offset -1 \pp\< s s s \hairpinShorten #'(1 . 0) s\> s}>>
 	a4)\! r r
 % Bars 276 to 280
 	R2.*2
-
+	
 	e2.(\< \mark \default
 	dis4\f) r8 dis,-. e-. fis-.
 	b,2-> b'4-.
@@ -362,10 +350,10 @@ musicFagottoIIMvtI = \relative c {
 	e2-> d'!4-.
 	cis r r
 	R2.*4
-
-
+	
+	
 % Bars 291 to 295
-
+	
 	g'8-.\f d16( e d8) g,-. g-. g'-.
 	e,2.\ff~
 	e~
@@ -385,21 +373,13 @@ musicFagottoIIMvtI = \relative c {
 % Bars 306 to 310
 	b4 r r
 	R2.*14
-
-
-
+	
+	
+	
 % Bars 311 to 315
-
-
-
-
-
+	
 % Bars 316 to 320
-
-
-
-
-
+	
 % Bars 321 to 325
 	eis2.\ff~
 	eis~
@@ -413,10 +393,10 @@ musicFagottoIIMvtI = \relative c {
 	d-. r r
 	R2.*5
 % Bars 331 to 335
-
-
-
-
+	
+	
+	
+	
 	r4 r \hairpinShorten #'(-0.5 . -0.5) d,-\offset X-offset -1.5 \p\<
 % Bars 336 to 340
 	b2.\fz\>(
@@ -438,8 +418,8 @@ musicFagottoIIMvtI = \relative c {
 	fis8)\pp r r4 r
 % Bars 351 to 355
 	\mmrnDown R2.*3
-
-
+	
+	
 	fis,8-.\f r g4.\fz( fis8)
 	e!-! fis-! g-! g-! fis-! e-! 
 % Bars 356 to 360
@@ -467,25 +447,21 @@ musicFagottoIIMvtI = \relative c {
 	f4-. r r
 	R2.*3
 % Bars 376 to 380
-
-
+	
+	
 	e''2.\pp~
 	e
 	d(
 % Bars 381 to 385
 	e4-.) r r
 	R2.*10
-
-
-
+	
+	
+	
 % Bars 386 to 390
-
-
-
-
-
+	
 % Bars 391 to 395
-
+	
 	r4 g,\mf r
 	r g_\crescmarkup r
 	g\f r r
@@ -511,7 +487,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 411 to 415
 	a8-.\p r r4 r
 	R2.*3
-
+	
 	\mark \default
 	cis4-.\p a-. r
 % Bars 416 to 420
@@ -530,13 +506,13 @@ musicFagottoIIMvtI = \relative c {
 	g!4(\! e\> a)\!
 	d\p r r
 	R2.*7
-
-
+	
+	
 % Bars 431 to 435
-
-
-
-
+	
+	
+	
+	
 	d8\pp\< d d4 d8 d
 % Bars 436 to 440
 	d4\! d'(\> cis)\!
@@ -561,10 +537,10 @@ musicFagottoIIMvtI = \relative c {
 	d8-.) r r4 ees->(
 	d8-.) r r4 r
 	R2.*5
-
+	
 % Bars 456 to 460
-
-
+	
+	
 	\mark \default
 	r4 r c-^\f
 	c-^ a8-. bes-. c4-^
@@ -627,22 +603,14 @@ musicFagottoIIMvtI = \relative c {
 	f4. r8 r4
 	f4. r8 r4 \mark #11
 	R2.*14
-
+	
 % Bars 511 to 515
-
-
-
-
-
+	
 % Bars 516 to 520
-
-
-
-
-
+	
 % Bars 521 to 525
-
-
+	
+	
 	r4 r e,\f-.
 	d_\marc-. fis-. a-.
 	d,-. fis-. a-. 
@@ -651,7 +619,7 @@ musicFagottoIIMvtI = \relative c {
 	d,-. fis-. a-. 
 	d, r r
 	R2.*2
-
+	
 % Bars 531 to 535
 	d4 r r
 	R2.
@@ -672,20 +640,16 @@ musicFagottoIIMvtI = \relative c {
 	R2.*1
 % Bars 546 to 550
 	\mmrLength #14 \mmrnDown R2.*11
-
-
-
-
+	
+	
+	
+	
 % Bars 551 to 555
-
-
-
-
-
+	
 % Bars 556 to 560
-
+	
 	d''2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 a,->
-	d,-> r r \bar "|."
+	d,-> r r \fine
 }

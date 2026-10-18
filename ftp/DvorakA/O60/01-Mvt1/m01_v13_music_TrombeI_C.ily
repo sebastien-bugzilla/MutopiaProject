@@ -17,33 +17,13 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 6 to 10
 	
-	
-	
-	
-	
 % Bars 11 to 15
-	
-	
-	
-	
 	
 % Bars 16 to 20
 	
-	
-	
-	
-	
 % Bars 21 to 25
 	
-	
-	
-	
-	
 % Bars 26 to 30
-	
-	
-	
-	
 	
 % Bars 31 to 35
 	
@@ -89,51 +69,19 @@ musicTrombeIMvtI = \relative c'' {
 		R2.*43
 % Bars 66 to 70
 	
-	
-	
-	
-	
 % Bars 71 to 75
-	
-	
-	
-	
 	
 % Bars 76 to 80
 	
-	
-	
-	
-	
 % Bars 81 to 85
-	
-	
-	
-	
 	
 % Bars 86 to 90
 	
-	
-	
-	
-	
 % Bars 91 to 95
-	
-	
-	
-	
 	
 % Bars 96 to 100
 	
-	
-	
-	
-	
 % Bars 101 to 105
-	
-	
-	
-	
 	
 % Bars 106 to 110
 	
@@ -143,33 +91,13 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 111 to 115
 	
-	
-	
-	
-	
 % Bars 116 to 120
-	
-	
-	
-	
 	
 % Bars 121 to 125
 	
-	
-	
-	
-	
 % Bars 126 to 130
 	
-	
-	
-	
-	
 % Bars 131 to 135
-	
-	
-	
-	
 	
 % Bars 136 to 140
 	
@@ -179,21 +107,9 @@ musicTrombeIMvtI = \relative c'' {
 		R2.*19
 % Bars 141 to 145
 	
-	
-	
-	
-	
 % Bars 146 to 150
 	
-	
-	
-	
-	
 % Bars 151 to 155
-	
-	
-	
-	
 	
 % Bars 156 to 160
 	
@@ -230,15 +146,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 181 to 185
 	
-	
-	
-	
-	
 % Bars 186 to 190
-	
-	
-	
-	
 	
 % Bars 191 to 195
 		}
@@ -258,33 +166,13 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 201 to 205
 	
-	
-	
-	
-	
 % Bars 206 to 210
-	
-	
-	
-	
 	
 % Bars 211 to 215
 	
-	
-	
-	
-	
 % Bars 216 to 220
 	
-	
-	
-	
-	
 % Bars 221 to 225
-	
-	
-	
-	
 	
 % Bars 226 to 230
 	
@@ -294,27 +182,11 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 231 to 235
 	
-	
-	
-	
-	
 % Bars 236 to 240
-	
-	
-	
-	
 	
 % Bars 241 to 245
 	
-	
-	
-	
-	
 % Bars 246 to 250
-	
-	
-	
-	
 	
 % Bars 251 to 255
 	
@@ -324,27 +196,11 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 256 to 260
 	
-	
-	
-	
-	
 % Bars 261 to 265
-	
-	
-	
-	
 	
 % Bars 266 to 270
 	
-	
-	
-	
-	
 % Bars 271 to 275
-	
-	
-	
-	
 	
 % Bars 276 to 280
 	
@@ -390,15 +246,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 311 to 315
 	
-	
-	
-	
-	
 % Bars 316 to 320
-	
-	
-	
-	
 	
 % Bars 321 to 325
 	b2\ff fis4
@@ -414,39 +262,15 @@ musicTrombeIMvtI = \relative c'' {
 	R2.*31
 % Bars 331 to 335
 	
-	
-	
-	
-	
 % Bars 336 to 340
-	
-	
-	
-	
 	
 % Bars 341 to 345
 	
-	
-	
-	
-	
 % Bars 346 to 350
-	
-	
-	
-	
 	
 % Bars 351 to 355
 	
-	
-	
-	
-	
 % Bars 356 to 360
-	
-	
-	
-	
 	
 % Bars 361 to 365
 	c8-.\f r c2->~
@@ -468,27 +292,11 @@ musicTrombeIMvtI = \relative c'' {
 	R2.*21
 % Bars 376 to 380
 	
-	
-	
-	
-	
 % Bars 381 to 385
-	
-	
-	
-	
 	
 % Bars 386 to 390
 	
-	
-	
-	
-	
 % Bars 391 to 395
-	
-	
-	
-	
 	
 % Bars 396 to 400
 	r4 r r8 \partCombineApart g
@@ -498,15 +306,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 401 to 405
 	
-	
-	
-	
-	
 % Bars 406 to 410
-	
-	
-	
-	
 	
 % Bars 411 to 415
 	
@@ -516,39 +316,15 @@ musicTrombeIMvtI = \relative c'' {
 	R2.*31
 % Bars 416 to 420
 	
-	
-	
-	
-	
 % Bars 421 to 425
-	
-	
-	
-	
 	
 % Bars 426 to 430
 	
-	
-	
-	
-	
 % Bars 431 to 435
-	
-	
-	
-	
 	
 % Bars 436 to 440
 	
-	
-	
-	
-	
 % Bars 441 to 445
-	
-	
-	
-	
 	
 % Bars 446 to 450
 	r4 r d-.-\tweak X-offset #-0.5 \f
@@ -569,10 +345,6 @@ musicTrombeIMvtI = \relative c'' {
 	R2.*7
 	
 % Bars 461 to 465
-	
-	
-	
-	
 	
 % Bars 466 to 470
 	r4 r \partCombineApart g~
@@ -630,15 +402,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 511 to 515
 	
-	
-	
-	
-	
 % Bars 516 to 520
-	
-	
-	
-	
 	
 % Bars 521 to 525
 	
@@ -672,15 +436,7 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 546 to 550
 	
-	
-	
-	
-	
 % Bars 551 to 555
-	
-	
-	
-	
 	
 % Bars 556 to 560
 	

@@ -143,7 +143,7 @@ musicContrabassoMvtI = \relative c {
 		cis\! r a
 % Bars 111 to 115
 		r d\> d
-		e\! r e
+		e\p r e
 		g g,_\dimmarkup r
 		c\pp r c
 		fis, r r
@@ -176,7 +176,7 @@ musicContrabassoMvtI = \relative c {
 		ces8-. bes-. aes4-. aes8-. ges-.
 		f-.-\tweak X-offset #-1.5 _\mfcrescD aes-. ces4-. ces8-. bes-.
 		aes-. ges-. f-. ees-. des4 \mark \default
-		fis!4-. r g!-.
+		fis!4-.\f r g!-.
 % Bars 141 to 145
 		fis-. r g-.
 		fis-. r e-.\<
@@ -336,15 +336,7 @@ musicContrabassoMvtI = \relative c {
 	
 % Bars 266 to 270
 	
-	
-	
-	
-	
 % Bars 271 to 275
-	
-	
-	
-	
 	
 % Bars 276 to 280
 	
@@ -431,8 +423,8 @@ musicContrabassoMvtI = \relative c {
 	g)\> fis(\! d~\fp
 	d2.)\<
 % Bars 346 to 350
-	g,(\f
-	b2.)_\dimmarkup
+	g,(
+	b2.)-\fdim
 	e(\p\>
 	eis)
 	fis8\pp r r4 r
@@ -456,7 +448,7 @@ musicContrabassoMvtI = \relative c {
 	d'2-> g,4->
 % Bars 366 to 370
 	d'-> d-> g,->
-	f'->\fz g,-> g'->\fz
+	f'-> g,-> g'->
 	b,-. g'-.\fz g,-.
 	g'-.\fz e,-. g'-.\fz
 	ais,2\ff ais4\fz~
@@ -671,7 +663,7 @@ musicContrabassoMvtI = \relative c {
 	d2\pp r4
 	d2 r4
 % Bars 546 to 550
-	d r r
+	d\pp r r
 	d r r
 	d_\dimmarkup r r
 	d r r

@@ -31,7 +31,7 @@ fmarc = \markup {\dynamic f \italic marc.}
 fsemprecresc = \markup {\dynamic f \italic {sempre cresc.}}
 fsempre = \markup {\dynamic f \italic sempre}
 fdimD = #(make-dynamic-script (markup #:dynamic "f" #:normal-text #:italic "dim." ))
-
+fdim = \markup {\dynamic f \italic dim.}
 %--------------------
 % dynamics fp
 %--------------------

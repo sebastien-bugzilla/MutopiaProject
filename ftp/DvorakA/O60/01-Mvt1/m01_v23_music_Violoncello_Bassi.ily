@@ -685,5 +685,5 @@ musicVioloncelloMvtI = \relative c {
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 a,->
 % Bar 546
-	d,-> r r \bar "|."
+	d,-> r r \fine
 }

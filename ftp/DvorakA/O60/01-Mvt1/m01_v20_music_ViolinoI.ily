@@ -17,7 +17,7 @@ musicViolinoIMvtI = \relative c'' {
 		R \no \oneVoice 
 % Bars 6 to 10
 		r4 r \clef treble a(\pp
-		d4.) d8 d4\<
+		d4.) d8\< d4
 		d( e fis)\!
 		a2\f\>( g8 fis)\!
 		e2\p r4
@@ -236,10 +236,6 @@ musicViolinoIMvtI = \relative c'' {
 	
 % Bars 186 to 190
 	
-	
-	
-	
-	
 % Bars 191 to 195
 		}
 		{
@@ -335,10 +331,6 @@ musicViolinoIMvtI = \relative c'' {
 	
 	
 % Bars 266 to 270
-	
-	
-	
-	
 	
 % Bars 271 to 275
 	
