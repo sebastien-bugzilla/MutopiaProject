@@ -118,10 +118,10 @@ musicCornoIIIMvtIII = \relative c'' {
 	
 		g4-.\f g-._\semprecresc g-.
 		b-. b-. b-.
-		b b b
+		b-. b-. b-.
 % Bars 121 to 125
-		b b b
-		b b b
+		b-. b-. b-.
+		b-. b-. b-.
 		ais-. ais-. ais-.
 		fis'2->\ff fis4->~
 		fis fis2->

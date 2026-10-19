@@ -177,7 +177,7 @@ musicViolinoIMvtIII = \relative c''' {
 		fis(\fz g!) fis(\fz
 		g) fis(\fz g)
 		a-. e8( dis e4)
-		f! d!8( cis d4)
+		f!-. d!8( cis d4)
 		fis(\fz g) fis(\fz
 % Bars 141 to 145
 		g) fis(\fz g)

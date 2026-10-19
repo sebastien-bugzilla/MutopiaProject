@@ -73,7 +73,7 @@ musicCornoIVMvtIII = \relative c' {
 		R2.*2
 % Bars 61 to 65
 	
-		bes2->\ff aes4~
+		bes2->\ff aes4->~
 		aes g2->
 		g2\p\< c4~
 		c d-. ees-.\!
@@ -118,10 +118,10 @@ musicCornoIVMvtIII = \relative c' {
 	
 		g'4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
-		g g g 
+		g-. g-. g-. 
 % Bars 121 to 125
-		g g g
-		g g g
+		g-. g-. g-.
+		g-. g-. g-.
 		fis-. fis-. fis-.
 		fis2->\ff fis4->~
 		fis fis2->

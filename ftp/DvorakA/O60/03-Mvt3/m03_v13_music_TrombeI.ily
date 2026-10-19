@@ -90,10 +90,10 @@ musicTrombeIMvtIII = \relative c'' {
 		R \no \oneVoice 
 		\startMeasureCount g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
-		g g g
+		g-. g-. g-.
 % Bars 121 to 125
-		g g g
-		g g g \stopMeasureCount 
+		g-. g-. g-.
+		g-. g-. g-. \stopMeasureCount 
 		bes-. bes-. bes-.
 		b!2->\ff b4->~
 		b b2->

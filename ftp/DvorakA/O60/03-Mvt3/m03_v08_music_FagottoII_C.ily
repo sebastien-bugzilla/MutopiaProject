@@ -468,7 +468,7 @@ musicFagottoIIMvtIII = \relative c, {
 	a'-. a->( b8 cis)
 	d4 d d
 	d d d
-	a g'->( f8 e)
+	a-. g'->( f8 e)
 	d4-. d,-. d-.
 % Bars 436 to 440
 	d-. d-. d-.

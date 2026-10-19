@@ -117,7 +117,7 @@ nameStaffXIIMvtI = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffXIIIMvtI = {
-	\set Staff.instrumentName = "Viola"
+	\set Staff.instrumentName = "Viole"
 	\set Staff.shortInstrumentName = "Vle."
 	\set Staff.midiInstrument = #""
 }
@@ -237,7 +237,7 @@ nameStaffXMvtII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffXIMvtII = {
-	\set Staff.instrumentName = "Viola"
+	\set Staff.instrumentName = "Viole"
 	\set Staff.shortInstrumentName = "Vle."
 	\set Staff.midiInstrument = #""
 }
@@ -364,7 +364,7 @@ nameStaffXMvtIII = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffXIMvtIII = {
-	\set Staff.instrumentName = "Viola"
+	\set Staff.instrumentName = "Viole"
 	\set Staff.shortInstrumentName = "Vle."
 	\set Staff.midiInstrument = #""
 }
@@ -494,7 +494,7 @@ nameStaffXIIMvtIV = {
 	\set Staff.midiInstrument = #""
 }
 nameStaffXIIIMvtIV = {
-	\set Staff.instrumentName = "Viola"
+	\set Staff.instrumentName = "Viole"
 	\set Staff.shortInstrumentName = "Vle."
 	\set Staff.midiInstrument = #""
 }

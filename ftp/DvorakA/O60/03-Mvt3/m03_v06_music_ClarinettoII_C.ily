@@ -85,7 +85,7 @@ musicClarinettoIIMvtIII = \relative c'' {
 		f-. r r
 % Bars 61 to 65
 		r g-\tweak X-offset #-0.5 \f-. aes!-.
-		ees'2\ff des4->~
+		ees'2->\ff des4->~
 		des c2->
 		R2.*8
 	
@@ -496,8 +496,8 @@ musicClarinettoIIMvtIII = \relative c'' {
 	c c2->
 	c4-. c-. c-.
 	c-. c-. c-.
-	c c->( d8 e)
-	f4 c-. aes-.
+	c-. c->( d8 e)
+	f4-. c-. aes-.
 % Bars 436 to 440
 	aes-. c-. aes-.
 	aes r r

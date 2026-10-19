@@ -86,10 +86,10 @@ musicTrombeIMvtIII = \relative c'' {
 	
 		g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
-		g g g
+		g-. g-. g-.
 % Bars 121 to 125
-		g g g
-		g g g
+		g-. g-. g-.
+		g-. g-. g-.
 		bes-. bes-. bes-.
 		b!2->\ff b4->~
 		b b2->
