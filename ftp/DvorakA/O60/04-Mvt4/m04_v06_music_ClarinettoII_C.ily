@@ -55,7 +55,7 @@ musicClarinettoIIMvtIV = \relative c'' {
 	ees8( f ees4 a d,)
 % Bars 46 to 50
 	ees( d8 c d4 ees)
-	f8 r r4 r2
+	f8-. r r4 r2
 	R1*6
 % Bars 51 to 55
 	

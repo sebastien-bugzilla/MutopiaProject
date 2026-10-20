@@ -415,7 +415,7 @@ musicCornoIVMvtIV = \relative c' {
 	R1*2
 	
 % Bars 421 to 425
-	g4-.\f g-. g2->~
+	g4-.\f g-. g2~
 	g1~
 	g2 c4-. c-.
 	g1~

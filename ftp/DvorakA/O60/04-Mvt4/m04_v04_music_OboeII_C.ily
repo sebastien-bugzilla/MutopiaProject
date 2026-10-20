@@ -97,7 +97,7 @@ musicOboeIIMvtIV = \relative c'' {
 	
 % Bars 76 to 80
 	r4 e8^(\p\< fis gis a b cis)\!
-	d4\fp \tuplet 3/2 4 {d8 cis b} b2~
+	d4\fp \tuplet 3/2 4 {d8( cis b)} b2~
 	b4 r r2
 	R1*3
 	

@@ -506,7 +506,7 @@ musicCornoIMvtIV = \relative c'' {
 	d4 r r2
 	R1*2
 	
-	r2 f2(~
+	r2 f2(->~
 	f4 ees8 f ees4 d)
 % Bars 506 to 510
 	d( f ees2

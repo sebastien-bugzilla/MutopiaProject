@@ -488,7 +488,7 @@ musicCornoIIMvtIV = \relative c' {
 	bes4 r r2
 	R1*2
 	
-	r2 d2(~
+	r2 d2->(~
 	d4 c8 d c4 bes)
 % Bars 506 to 510
 	bes( d c2

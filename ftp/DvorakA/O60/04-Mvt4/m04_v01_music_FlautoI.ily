@@ -134,7 +134,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 136 to 140
 	r g-. fis-. d-.
 	e-. r gis,-. r
-	e'-. r d( b)
+	e' r d( b)
 	a-. e-. a2->
 	b4-. e,-. b'2->
 % Bars 141 to 145
@@ -197,7 +197,7 @@ musicFlautoIMvtIV = \relative c''' {
 	r4 b-.\brack\mf r e-.
 	R1
 % Bars 206 to 210
-	r4 b-. r e-.
+	r4 b-. r e-. %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	g4(\ff f8 e) f4( e8 d)
 	c4 r d r
 	e r r2

@@ -249,7 +249,7 @@ musicFagottoIMvtIV = \relative c' {
 	r2 r4 \partCombineApart \tuplet 3/2 4 {g,8( a b)}
 	c4-. g-. c2->
 	\partCombineAutomatic g'4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
-	\once \partCombineChords e4-. \once \partCombineApart g,-. e'2->
+	\once \partCombineChords e4 \once \partCombineApart g,-. e'2->
 	f4-. \once \partCombineApart g,-. f'2->
 % Bars 211 to 215
 	g4-. r r2
@@ -572,7 +572,7 @@ musicFagottoIMvtIV = \relative c' {
 % Bars 491 to 495
 	d-. e-. fis-. a,->
 	d-. e-. fis-. \partCombineAutomatic r
-	r2 r4 a->
+	r2 r4 a->-.
 	fis2-> e->
 	d-> cis->
 % Bars 496 to 500

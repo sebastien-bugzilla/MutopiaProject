@@ -130,7 +130,7 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 136 to 140
 	r e-. d-. a-.
 	cis-. r gis-. r
-	cis-. r b( gis)
+	cis r b( gis)
 	a-. e-. a2->
 	b4-. e,-. b'2->
 % Bars 141 to 145

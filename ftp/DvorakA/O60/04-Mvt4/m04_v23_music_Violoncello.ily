@@ -42,7 +42,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 26 to 30
 	e) c-! ais-! e'(
 	d) b-! gis-! d'(
-	c8) b-. a-. b-. c-. a fis-. c'-.
+	c8) b-. a-. b-. c-. a-. fis-. c'-.
 	b-. a-. g-. a-. bes-. g-. e-. bes'-. 
 	bes4-. bes,( g) \once \stemUp d'->(
 % Bars 31 to 35
@@ -114,7 +114,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 86 to 90
 	e'4\fp \tuplet 3/2 4 {e8(_\crescmarkup d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
-	e'4->\fz \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
+	e'4\fz \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
 	g4\f r r2
 	R1
 % Bars 91 to 95
@@ -134,7 +134,7 @@ musicVioloncelloMvtIV = \relative c' {
 	e'4\fp \tuplet 3/2 4 {e8(-\crescmarkup d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 	e'4\fz \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
-	g4\f r r2
+	g4-.\f r r2
 % Bars 106 to 110
 	R1
 	fis8->_\ffmarcato e d e fis-> e d e
@@ -161,8 +161,8 @@ musicVioloncelloMvtIV = \relative c' {
 	cis-. g'-. fis( f)
 % Bars 126 to 130
 	e-. e-. dis( d)
-	cis-. a8-.\< b bis4( cis)\!
-	d-. a8-.\< b! bis4( cis)\!
+	cis-. a8-.\< b-. bis4( cis)\!
+	d-. a8-.\< b!-. bis4( cis)\!
 	d-> a'8 a ais4-> fis8 fis
 	b4 gis8 gis eis4 cis8 cis
 % Bars 131 to 135
@@ -606,7 +606,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 491 to 495
 	d-. e-. fis-. a,->
 	d-. e-. fis-. r
-	r2 r4 a->
+	r2 r4 a->-.
 	fis2-> e->
 	d-> cis->
 % Bars 496 to 500

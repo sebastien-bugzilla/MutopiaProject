@@ -613,7 +613,7 @@ musicViolaMvtIV = \relative c' {
 	r2 r4 a-.\ff
 	e-> d-. cis-> b-.
 % Bars 486 to 490
-	a-> e a-. r
+	a-> e-. a-. r
 	R1
 	r2 r4 a'-.\ff
 	e-> d-. cis-> b-.

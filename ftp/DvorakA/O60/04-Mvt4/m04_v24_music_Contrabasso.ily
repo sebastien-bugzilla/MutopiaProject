@@ -161,8 +161,8 @@ musicContrabassoMvtIV = \relative c' {
 	cis-. g'-. fis( f)
 % Bars 126 to 130
 	e-. e-. dis( d)
-	cis-. a8-.\< b bis4( cis)\!
-	d-. a8-.\< b! bis4( cis)\!
+	cis-. a8-.\< b-. bis4( cis)\!
+	d-. a8-.\< b!-. bis4( cis)\!
 	d-> a'8 a ais4-> fis8 fis
 	b4 gis8 gis eis4 cis8 cis
 % Bars 131 to 135
@@ -587,7 +587,7 @@ musicContrabassoMvtIV = \relative c' {
 % Bars 491 to 495
 	d-. e-. fis-. a,->
 	d-. e-. fis-. r
-	r2 r4 a->
+	r2 r4 a->-.
 	fis2-> e->
 	d-> cis->
 % Bars 496 to 500

@@ -245,7 +245,7 @@ musicFagottoIMvtIV = \relative c' {
 	r2 r4 \tuplet 3/2 4 {g,8(\f\< a b\!)}
 	c4-.\ff g-. c2->
 	g'4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
-	e4-. g,-. e'2->
+	e4 g,-. e'2->
 	f4-. g,-. f'2->
 % Bars 211 to 215
 	g4-. r r2
@@ -568,7 +568,7 @@ musicFagottoIMvtIV = \relative c' {
 % Bars 491 to 495
 	d-. e-. fis-. a,->
 	d-. e-. fis-. r
-	r2 r4 a->
+	r2 r4 a->-.
 	fis2-> e->
 	d-> cis->
 % Bars 496 to 500

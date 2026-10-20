@@ -548,7 +548,7 @@ musicOboeIMvtIV = \relative c'' {
 	b-> b-. b-> g-.
 % Bars 481 to 485
 	e-> r r g->
-	e-> r r \once \partCombineApart g-._\marc
+	e-> r r \once \partCombineApart g_\marc
 	g2-> g->
 	g-> g4-. a-.
 	a1~->

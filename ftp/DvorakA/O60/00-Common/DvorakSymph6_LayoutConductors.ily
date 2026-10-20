@@ -27,12 +27,12 @@
 		\override TrillSpanner.bound-details.right.end-on-accidental = ##f
 		\override DynamicTextSpanner.font-size = #0
 		
-		% !!! for script check only !!!
-		\override Script.color = #red
-		\override Script.font-size = #4
-		\override MultiMeasureRestScript.color = #red
-		\override MultiMeasureRestScript.font-size = #4
-		% end script check
+%		% !!! for script check only !!!
+%		\override Script.color = #red
+%		\override Script.font-size = #4
+%		\override MultiMeasureRestScript.color = #red
+%		\override MultiMeasureRestScript.font-size = #4
+%		% end script check
 
 %		% !!! for dynamic check only !!!
 %		\override DynamicText.color = #red

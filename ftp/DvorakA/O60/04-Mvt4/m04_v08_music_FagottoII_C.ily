@@ -65,7 +65,7 @@ musicFagottoIIMvtIV = \relative c {
 	a8( b c!4 fis b,)
 % Bars 46 to 50
 	c( b8 a b4 c)
-	b8 r r4 r2
+	b8-. r r4 r2
 	r4 d(-\tweak X-offset #-2.5 \fz e fis
 	g8) r r4 r2
 	r4 c,(-\tweak X-offset #-2.5 \fz d e
@@ -249,7 +249,7 @@ musicFagottoIIMvtIV = \relative c {
 	r2 r4 \tuplet 3/2 4 {g'8(-\offset X-offset -0.5 \f\< a b)\!}
 	c4-.\ff g-. c2->
 	g4-> \tuplet 3/2 4 {g8( f e)} f4-> \tuplet 3/2 4 {f8( e d)}
-	c4-. g'-. c2->
+	c4 g'-. c2->
 	d4-. g,-. d'2->
 % Bars 211 to 215
 	e4-. r r2
@@ -572,7 +572,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 491 to 495
 	d-. e-. fis-. a,->
 	d-. e-. fis-. r
-	r2 r4 a,->
+	r2 r4 a,->-.
 	fis2-> e->
 	d-> cis->
 % Bars 496 to 500
