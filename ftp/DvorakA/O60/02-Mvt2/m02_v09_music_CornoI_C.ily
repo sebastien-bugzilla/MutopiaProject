@@ -82,9 +82,9 @@ musicCornoIMvtII = \relative c'' {
 % Bars 81 to 85
 	\partCombineAutomatic R2*2
 	
-	r8 b4\mf\< b8
-	c2\f\>~
-	c8\! r r4
+	r8 b4\mf\< b8\!
+	<< c2\f\>~ {s8 s s s\!}>>
+	c8 r r4
 % Bars 86 to 90
 	R2*3
 	

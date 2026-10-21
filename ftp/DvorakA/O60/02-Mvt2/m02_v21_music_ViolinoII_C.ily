@@ -77,8 +77,8 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 56 to 60
 	
 	
-	<g bes>2\mf\<~
-	q8\! r r4
+	<< <g bes>2\mf\<~ {s4 s8 s\!}>>
+	q8 r r4
 	R2
 % Bars 61 to 65
 	r4 r8 g(\pp
@@ -118,7 +118,7 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 96 to 100
 	<bes d> q q_\crescmarkup q <c ees> q q q
 	<bes d> q q q <c ees> q q q
-	<bes d>8\f r16 f'-. bes-. f\<-. bes-. c-.\!
+	<bes d>8\f r16 f'-. bes-.\< f-. bes-. c-.\!
 	d8\ff-> c-> bes-> a->
 	bes r <g bes>\arpeggio r
 % Bars 101 to 105

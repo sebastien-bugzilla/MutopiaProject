@@ -12,7 +12,7 @@ musicClarinettoIMvtII = \relative c'' {
 	R2
 	\partCombineApart r8 c(\p b e~
 	e4._\< fis8\!
-	g2_\fp~_\>
+	<< g2_\fp~_\> {s4 s8 s\!}>>
 	g8)_\pp r e4(~
 % Bars 6 to 10
 	e16 d b16. a32 gis4

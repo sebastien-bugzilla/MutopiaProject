@@ -96,7 +96,7 @@ musicFagottoIIMvtII = \relative c {
 % Bars 81 to 85
 	R2*2
 	
-	r8 c,4.\mf\<
+	r8 << c,4.\mf\< {s8 s s\!}>>
 	f8\f[ f'] f,[ f']
 	f,[ f'] f,[ fis']
 % Bars 86 to 90
@@ -137,8 +137,8 @@ musicFagottoIIMvtII = \relative c {
 	
 	c'!2\p~
 	c
-	b~\<
-	b\!
+	<< b~ {s4 s\<}>>
+	b2\!
 % Bars 121 to 125
 	ees!\pp~
 	ees

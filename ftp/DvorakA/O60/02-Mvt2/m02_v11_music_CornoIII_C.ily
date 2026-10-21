@@ -52,7 +52,7 @@ musicCornoIIIMvtII = \relative c'' {
 	\partCombineApart r8 e'_\pp( c f~
 % Bars 56 to 60
 	f4) e(
-	a2)~_\<
+	<< a2)~_\< {s4 s8 s\!}>>
 	a4_\fz r \partCombineAutomatic
 	R2*4
 	

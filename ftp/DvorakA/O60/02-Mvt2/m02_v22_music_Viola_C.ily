@@ -58,8 +58,8 @@ musicViolaMvtII = \relative c {
 	r8 f'!( a a,~
 % Bars 41 to 45
 	a) r g4\<~
-	g2\>~
-	\after 8 <>_\dimmarkup g4\! a
+	<< g2\>~ {s4 s8 s\!}>>
+	\after 8 <>_\dimmarkup g4 a
 	f2~
 	f4.\pp( ees16 c')
 % Bars 46 to 50
@@ -135,7 +135,7 @@ musicViolaMvtII = \relative c {
 % Bars 96 to 100
 	f f f_\crescmarkup f   f f f f
 	f f f f   f f f f 
-	f8\f r16 f'-. bes( f)\< f-. ees-.\!
+	f8\f r16 f'-. bes(\< f) f-. ees-.\!
 	d8\ff-> d-> d-> d->
 	<g, d'> r <c, bes' g'>\arpeggio r
 % Bars 101 to 105

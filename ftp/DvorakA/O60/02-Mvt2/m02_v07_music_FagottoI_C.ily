@@ -91,7 +91,7 @@ musicFagottoIMvtII = \relative c' {
 % Bars 81 to 85
 	\partCombineAutomatic R2*2
 	
-	r8 c4.\mf\<
+	r8 << c4.\mf\< {s8 s s\!}>>
 	f,8[\f f'] f,[ f']
 	f,[ f']_\dimmarkup f,[ fis']
 % Bars 86 to 90
@@ -132,8 +132,8 @@ musicFagottoIMvtII = \relative c' {
 	
 	e2\p~
 	e
-	fis~\<
-	fis\!
+	<< fis~ {s4 s\<}>>
+	fis2\!
 % Bars 121 to 125
 	g\pp~
 	g

@@ -87,9 +87,9 @@ musicCornoIIMvtII = \relative c'' {
 % Bars 81 to 85
 	R2*2
 	
-	r8 b,4\mf\< b8
-	c2\f\>~
-	c8\! r r4
+	r8 b,4\mf\< b8\!
+	<< c2\f\>~ {s8 s s s\!}>>
+	c8 r r4
 % Bars 86 to 90
 	R2*3
 	
@@ -208,8 +208,8 @@ musicCornoIIMvtII = \relative c'' {
 	
 % Bars 186 to 190
 	c2\pp\<(
-	bes'\>
-	a8)\! r r4
+	<< bes'\> {s8 s s s\!}>>
+	a8) r r4
 	R2*4
 	
 % Bars 191 to 195

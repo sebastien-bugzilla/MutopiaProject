@@ -70,7 +70,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 % Bars 56 to 60
 	r8 \shape #'((0 . 0)(0 . 0.5)(0 . 0.6)(0 . 2)) Slur a(\p gis4
-	\stemUp a2)\<~
+	\stemUp << a2)\<~ {s4 s8 s\!}>>
 	a4\fz r
 	a\p r
 	a r

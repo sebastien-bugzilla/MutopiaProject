@@ -16,12 +16,12 @@ musicContrabassoMvtII = \relative c {
 	bes2(\p
 % Bars 6 to 10
 	c4 \once \stemUp d)
-	<< g,2(~ {s4 s\<}>>
+	<< g,2(~ {s4 s8\< s\!}>>
 	g4.\> c8)\!
 	d8(\p\< f d bes)
-	ees2(\!
+	<< ees2( {s4 s\!}>>
 % Bars 11 to 15
-	d4\> c\!)
+	d4 c\>)
 	bes\pp r
 	R2*2
 	
@@ -34,7 +34,7 @@ musicContrabassoMvtII = \relative c {
 	
 % Bars 21 to 25
 	bes2\pp 
-	bes4\< bes
+	bes4\< bes\!
 	b2(\p 
 	g)_\dimmarkup
 	c2~\pp
@@ -84,8 +84,8 @@ musicContrabassoMvtII = \relative c {
 	r g--\pp
 	r g8( ges
 	f8)\p f,4.~
-	f2\<~
-	f\f~
+	<< f2\<~ {s4 s8 s\!}>>
+	f2\f~
 % Bars 66 to 70
 	f8 r r4
 	R2*6
@@ -122,7 +122,7 @@ musicContrabassoMvtII = \relative c {
 % Bars 96 to 100
 	f'8-. f,-._\crescmarkup r4
 	f'8-. f,-. r4
-	f'8\f r16 f16-. bes( f\<) d-. c-.\!
+	f'8\f r16 f16-. bes(\< f) d-. c-.\!
 	bes8->\ff a-> g-> fis->
 	g r c r
 % Bars 101 to 105

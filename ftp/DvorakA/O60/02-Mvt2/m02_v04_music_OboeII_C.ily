@@ -12,7 +12,7 @@ musicOboeIIMvtII = \relative c' {
 	r8 f(-\tweak X-offset #-1.4 \p d g~
 	g4. fis8
 	\hairpinShorten #'(1 . 1) g2)-\tweak extra-offset #'(0 . 1) \<
-	\shape #'((0 . 0.4)(0 . 0.8)(0 . 0.8)(0 . 0.4)) Slur bes4-\tweak extra-offset #'(0 . 0.3) \fp( g8\> a
+	\shape #'((0 . 0.4)(0 . 0.8)(0 . 0.8)(0 . 0.4)) Slur bes4-\tweak extra-offset #'(0 . 0.3) \fp( g8\> a\!
 	bes)-\tweak extra-offset #'(0 . 0.3) \pp r r4
 % Bars 6 to 10
 	R2
@@ -141,10 +141,10 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	R2
-	dis\p~\<
-	dis\!
+	<< dis\p~ {s4 s8 s\<}>>
+	<< dis2 {s4 s\!}>>
 % Bars 121 to 125
-	ees!\pp~
+	ees!2\pp~
 	ees
 	R2
 	R2*6
