@@ -199,8 +199,8 @@ musicClarinettoIIMvtIV = \relative c'' {
 	c-. r r2
 	b4-. r r2
 	c1\fp\>~
-	c~
-	c4\! r r2
+	<< c~ {s4 s s s\!}>>
+	c4 r r2
 % Bars 186 to 190
 	R1*5
 	

@@ -229,7 +229,7 @@ musicViolinoIMvtIV = \relative c''' {
 	fis4-. cis-. fis2->
 	gis4-. cis,-. gis'2->
 	a4-.\fp\> fis-. a2~
-	a1~\!
+	<< a1~ {s4 s s s\!}>>
 	a4 fis-.\pp a2~
 % Bars 186 to 190
 	a1~

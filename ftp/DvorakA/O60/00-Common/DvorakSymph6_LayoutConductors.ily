@@ -34,11 +34,11 @@
 %		\override MultiMeasureRestScript.font-size = #4
 %		% end script check
 
-		% !!! for dynamic check only !!!
-		\override DynamicText.color = #red
-		\override Hairpin.color = #red
-		\override TextScript.color = #red
-		% end dynamic check
+%		% !!! for dynamic check only !!!
+%		\override DynamicText.color = #red
+%		\override Hairpin.color = #red
+%		\override TextScript.color = #red
+%		% end dynamic check
 	}
 	\context {
 		\Staff

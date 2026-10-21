@@ -211,8 +211,8 @@ musicOboeIIMvtIV = \relative c'' {
 	cis-. r r2
 	cis4-. r r2
 	a1\fp\>~
-	a~
-	\dynEO #'(0 . 0.5) a\pp~
+	<< a~ {s4 s s s\!}>>
+	\dynEO #'(0 . 0.5) a1\pp~
 % Bars 186 to 190
 	a~
 	a~

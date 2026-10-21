@@ -170,8 +170,8 @@ musicFlautoIIMvtIV = \relative c'' {
 	fis-. r r2
 	gis4-. r r2
 	a1\fp\>~
-	a~
-	a4\! r r2
+	<< a~ {s4 s s s\!}>>
+	a4 r r2
 % Bars 186 to 190
 	R1
 	R1*4
