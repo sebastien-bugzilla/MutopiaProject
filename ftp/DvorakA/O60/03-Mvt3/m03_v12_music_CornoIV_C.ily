@@ -160,8 +160,8 @@ musicCornoIVMvtIII = \relative c' {
 		}
 	}
 	c
-	c
-	c\p
+	<< c {s4 s s\!}>>
+	c2.\p
 % Bars 151 to 155
 	c
 	c

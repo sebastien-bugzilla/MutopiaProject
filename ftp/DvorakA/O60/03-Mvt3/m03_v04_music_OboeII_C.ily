@@ -180,8 +180,8 @@ musicOboeIIMvtIII = \relative c'' {
 		}
 	}
 	d
-	d
-	d\p
+	<< d {s4 s s\!}>>
+	d2.\p
 % Bars 151 to 155
 	d
 	d

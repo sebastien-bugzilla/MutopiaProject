@@ -176,8 +176,8 @@ musicCornoIIMvtIII = \relative c'' {
 		}
 	}
 	e
-	e
-	e\p
+	<< e {s4 s s\!}>>
+	e2.\p
 % Bars 151 to 155
 	e
 	e

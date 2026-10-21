@@ -196,8 +196,8 @@ musicContrabassoMvtIII = \relative c {
 		}
 	}
 	<d a'>
-	q
-	q\p
+	<< q {s4 s s\!}>>
+	q2.\p
 % Bars 151 to 155
 	q_\dimmarkup
 	q

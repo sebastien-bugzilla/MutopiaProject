@@ -192,8 +192,8 @@ musicClarinettoIMvtIII = \relative c'' {
 		}
 	}
 	f
-	f
-	f\p
+	<< f {s4 s s\!}>>
+	f2.\p
 % Bars 151 to 155
 	f_\dimmarkup
 	f
@@ -217,8 +217,8 @@ musicClarinettoIMvtIII = \relative c'' {
 		d\p(
 		ees\<
 		f
-		g)\!
-		f\fp~
+		<< g) {s4 s s\!}>>
+		f2.\fp~
 % Bars 171 to 175
 		f~\>
 		f~

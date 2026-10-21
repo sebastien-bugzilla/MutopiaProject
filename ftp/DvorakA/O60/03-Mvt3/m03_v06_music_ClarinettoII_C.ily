@@ -192,8 +192,8 @@ musicClarinettoIIMvtIII = \relative c'' {
 		}
 	}
 	c
-	c
-	c\p
+	<< c {s4 s s\!}>>
+	c2.\p
 % Bars 151 to 155
 	c
 	c
@@ -217,8 +217,8 @@ musicClarinettoIIMvtIII = \relative c'' {
 		bes\p(
 		c\<
 		d
-		e!)\!
-		c\fp~
+		<< e!) {s4 s s\!}>>
+		c2.\fp~
 % Bars 171 to 175
 		c~\>
 		c~
@@ -351,7 +351,7 @@ musicClarinettoIIMvtIII = \relative c'' {
 	f r r \section
 	aes(\p c) aes(
 	c) aes( c)
-	ees-.\< \once \override Beam.positions = #'(-2.5 . -2.5) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur bes8( a bes c\!
+	ees-. \once \override Beam.positions = #'(-2.5 . -2.5) \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur bes8(\< a bes c\!
 % Bars 311 to 315
 	\once \override Beam.positions = #'(-2.5 . -2.5) des c\> ees des c bes)\!
 	aes!4(\! c) aes(

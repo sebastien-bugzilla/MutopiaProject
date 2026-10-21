@@ -160,8 +160,8 @@ musicCornoIIIMvtIII = \relative c'' {
 		}
 	}
 	c
-	c
-	c\p
+	<< c {s4 s s\!}>>
+	c2.\p
 % Bars 151 to 155
 	c_\dimmarkup
 	c
@@ -185,8 +185,8 @@ musicCornoIIIMvtIII = \relative c'' {
 		\partCombineApart c2.~\p
 		c~_\<
 		c~
-		c\!
-		c~_\fp
+		<< c {s4 s s\!}>>
+		c2.~_\fp
 % Bars 171 to 175
 		c~_\>
 		c~

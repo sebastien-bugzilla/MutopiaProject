@@ -216,8 +216,8 @@ musicViolaMvtIII = \relative c {
 		}
 	}
 	<d, a'>
-	q
-	q\p
+	<< q {s4 s s\!}>>
+	q2.\p
 % Bars 151 to 155
 	q_\dimmarkup
 	q
@@ -353,7 +353,7 @@ musicViolaMvtIII = \relative c {
 % Bars 286 to 290
 	d\< a2
 	d2 a4~
-	a \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \section \key d \minor
+	a\! \tuplet 3/2 4 {d,8\f\<( f a d f a\!)} \section \key d \minor
 	d,4(->\f a'8) r d,4(->
 	a'8) r d,4(-> a'8) r
 % Bars 291 to 295
