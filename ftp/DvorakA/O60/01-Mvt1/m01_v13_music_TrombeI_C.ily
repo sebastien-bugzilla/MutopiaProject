@@ -46,7 +46,7 @@ musicTrombeIMvtI = \relative c'' {
 % Bars 46 to 50
 		d \partCombineAutomatic g2->~ \tweak extra-offset #'(0 . 1) \<
 		g2.~
-		g \mark \default
+		<< g {s4 s s8 s\!}>> \mark \default
 		e4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		r r g,-.\f
 % Bars 51 to 55
@@ -426,7 +426,7 @@ musicTrombeIMvtI = \relative c'' {
 	g2\ff f8( e)
 	g2 f8( e)
 	g2.\>(~
-	g~
+	<< g~ {s4 s s8 s\!}>>
 	g2\p f8 e)
 % Bars 541 to 545
 	e2( d8_\dimmarkup c)

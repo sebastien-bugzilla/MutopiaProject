@@ -116,9 +116,9 @@ musicFagottoIMvtI = \relative c {
 		e\pp r r
 		e r8 \partCombineApart dis-. e-. fis-. 
 		g-. fis-. e-. d!-. cis-. fis-. \partCombineAutomatic
-		b,2.\f\>~
+		<< b,2.\f\>~ {s4 s s8 s\!}>>
 % Bars 91 to 95
-		b~\!
+		b2.~
 		b4 r8 b'-. cis-. dis-.
 		e2( dis8 cis)
 		b4 r r
@@ -337,7 +337,7 @@ musicFagottoIMvtI = \relative c {
 % Bars 276 to 280
 	R2.*2
 	
-	cis2.(\< \mark \default
+	<< cis2.(\< {s4 s s\!}>> \mark \default
 	dis4\f) r8 dis,-! e-! fis-!
 	b,2-> b'4-.
 % Bars 281 to 285
@@ -445,7 +445,7 @@ musicFagottoIMvtI = \relative c {
 	gis\fz g4~\fz
 	g fis2\fz \mark \default
 	f4-. r r
-	\partCombineApart r4 \stemUp b(_\p_\< c
+	\partCombineApart r4 \stemUp b(_\p_\< c\!
 % Bars 376 to 380
 	d_\> b)\! r
 	r e(-\tweak X-offset #-2.5 \pp f) \partCombineAutomatic
@@ -634,8 +634,8 @@ musicFagottoIMvtI = \relative c {
 	d2.\ff~
 	d~
 	d~\>
-	d~
-	d~\p
+	<< d~ {s4 s s8 s\!}>>
+	d2.~\p
 % Bars 541 to 545
 	d~_\dimmarkup
 	d~

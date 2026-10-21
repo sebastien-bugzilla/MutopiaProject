@@ -410,7 +410,7 @@ musicTubaMvtI = \relative c {
 	d2.-^
 	d-^
 	d\>~
-	d~
+	<< d~ {s4 s s8 s\!}>>
 	d4\p r r
 % Bars 541 to 545
 	R2.*18

@@ -35,7 +35,7 @@ musicCornoIMvtI = \relative c'' {
 		\partCombineApart cis4.\!->(_\dimmarkup d8 b cis)
 % Bars 21 to 25
 		d4_\p_\>( a2~
-		a2.
+		<< a2. {s4 s s\!}>>
 		e'8_\pp) r r4 r \partCombineAutomatic
 		R2.*10
 	
@@ -62,7 +62,7 @@ musicCornoIMvtI = \relative c'' {
 % Bars 46 to 50
 		fis g2->~\<
 		g2.~
-		g \mark \default
+		<< g {s4 s s8 s\!}>> \mark \default
 		g4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
@@ -354,7 +354,7 @@ musicCornoIMvtI = \relative c'' {
 	c
 	cis(_\dimmarkup
 	d4)_\p f2_\>~
-	f2.
+	<< f2. {s4 s s\!}>>
 	e8_\pp r r4 r \partCombineAutomatic
 % Bars 351 to 355
 	R2.*10
@@ -562,8 +562,8 @@ musicCornoIMvtI = \relative c'' {
 	g2\ff f8( e)
 	g2 f8( e)
 	g2.\>~
-	g~
-	g~\p
+	<< g~ {s4 s s8 s\!}>>
+	g2.~\p
 % Bars 541 to 545
 	g
 	g2(_\dimmarkup f8 e)

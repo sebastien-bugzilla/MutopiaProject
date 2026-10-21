@@ -62,12 +62,12 @@ musicViolaMvtI = \relative c {
 % Bars 16 to 20
 			q8-. q4 q\! q8-.
 			a-. a4 a8 fis4\<~
-			fis2.
+			<< fis2. {s8 s s s s s\!}>>
 			a2(-\tweak extra-offset #'(0.5 . 1) \f g4)
 			a2. \tweak X-offset #0.5 _\dimmarkup
 % Bars 21 to 25
 			g2.-\tweak extra-offset #'(0.5 . 1) \p -\tweak extra-offset #'(0 . 1) \>~
-			g
+			<< g {s4 s s8 s\!}>>
 			fis8\pp
 		}>> r r4 r
 		b2.\fz
@@ -122,7 +122,7 @@ musicViolaMvtI = \relative c {
 			q:
 			q:
 			q:
-			q:\< \revert Stem.length
+			<< q:\< {s4 s s\!}>> \revert Stem.length
 % Bars 56 to 60
 			s2\fz s4
 			<g b>2.:16
@@ -222,8 +222,8 @@ musicViolaMvtI = \relative c {
 		g ees g ees g ees)
 % Bars 136 to 140
 		aes16\pp\< ees' ees  ees ees2:16
-		ees2.:
-		des:-\tweak X-offset #-1.5 _\mfcrescD
+		<< ees2.: {s4 s s8 s\!}>>
+		des2.:-\tweak X-offset #-1.5 _\mfcrescD
 		cis!: \mark \default
 		cis8-.\f ais( b cis) b4->
 % Bars 141 to 145
@@ -463,9 +463,9 @@ musicViolaMvtI = \relative c {
 	\repeat tremolo 6 {fis a)}
 	\repeat tremolo 6 {fis( a}
 	\repeat tremolo 6 {fis a)}
-	\repeat tremolo 6 {fis(\< a)}
+	<< \repeat tremolo 6 {fis(\< a)} {s4 s s\!}>>
 % Bars 336 to 340
-	\repeat tremolo 6 {a(\fz\> b)}
+	\repeat tremolo 6 {a16(\fz\> b)}
 	\repeat tremolo 6 {g( b\!}
 	\repeat tremolo 6 {g b)}
 	\repeat tremolo 6 {g( d'}
@@ -477,10 +477,10 @@ musicViolaMvtI = \relative c {
 	\repeat tremolo 4 {a(\> c\!} fis,8 d')
 	c(\< d c d c d
 % Bars 346 to 350
-	c d c d c d)
+	c d c d c d)\!
 	a(_\fdimD b a b a b)
 	g(\p\> b d g, cis! g
-	b g cis g b g)
+	b g cis g b g)\!
 	ais\pp r r4 r
 % Bars 351 to 355
 	d2.\fz
@@ -594,10 +594,10 @@ musicViolaMvtI = \relative c {
 	b( fis dis\> fis b gis
 	ais fis ais fis ais fis)\!
 	b16\p fis' fis fis fis2:16\<
-	fis2.:16
-	e:\mf\<
+	<< fis2.:16 {s4 s s8 s\!}>>
+	e2.:\mf\<
 % Bars 446 to 450
-	e:
+	<< e: {s4 s s8 s\!}>>
 	<cis e a>8-.\f\arpeggio\noBeam cis( d e) d4->
 	a'8-. cis,( d e) d4->
 	a'8-^ cis,(\< e a) bes-^[ cis,(
@@ -708,8 +708,8 @@ musicViolaMvtI = \relative c {
 	<fis a>2: <e g>8: <d fis>:
 	<fis a>2: <e g>8: <d fis>:
 	q16\> a a a <d, a'>2:16
-	q2.:
-	q:\p
+	<< q2.: {s4 s s8 s\!}>>
+	q2.:\p
 % Bars 541 to 545
 	q:_\dimmarkup
 	q:

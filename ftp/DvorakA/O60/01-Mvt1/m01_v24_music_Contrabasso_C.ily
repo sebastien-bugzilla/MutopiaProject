@@ -19,7 +19,7 @@ musicContrabassoMvtI = \relative c {
 		d) d-. r
 		R2.
 		r4 r d(\<
-		b2.)\f\>
+		<< b2.)\f\> {s4 s s\!}>>
 		e2\p b4(\pp
 % Bars 11 to 15
 		e2) r4
@@ -29,13 +29,13 @@ musicContrabassoMvtI = \relative c {
 		e'2\< dis4)
 % Bars 16 to 20
 		e2( g4~\!
-		g) fis(\> d~
+		g) << {fis(\> d~ } {s8 s s s\!}>>
 		d2.\<)
 		g,2.\f
 		b_\dimmarkup
 % Bars 21 to 25
 		e\p\>( 
-		eis
+		<< eis {s4 s s8 s\!}>>
 		fis8)\pp r r4 r
 		R2.*3
 	
@@ -116,7 +116,7 @@ musicContrabassoMvtI = \relative c {
 		fis\pp r r
 		fis r8 dis'8-.\< e-. fis-.
 		g-. fis-. e-. d!-. cis-. fis-.\!
-		<< b,2.\f\>~ {s4 s s\!}>>
+		<< b,2.\f\>~ {s4 s s8 s\!}>>
 % Bars 91 to 95
 		b2.~
 		b4  b4.(\fz\< b'8)\!
@@ -173,7 +173,7 @@ musicContrabassoMvtI = \relative c {
 		aes r aes
 % Bars 136 to 140
 		aes'8-.\pp\<-\tweak extra-offset #'(-0.9 . -1.8) ^\arco ces-. ees4-. des-. 
-		ces8-. bes-. aes4-. aes8-. ges-.
+		ces8-. bes-. aes4-. aes8-. ges-.\!
 		f-.-\tweak X-offset #-1.5 _\mfcrescD aes-. ces4-. ces8-. bes-.
 		aes-. ges-. f-. ees-. des4 \mark \default
 		fis!4-.\f r g!-.
@@ -421,12 +421,12 @@ musicContrabassoMvtI = \relative c {
 	e'2\< dis4)
 	e2( g4~\!
 	g)\> fis(\! d~\fp
-	d2.)\<
+	<< d2.)\< {s4 s s8 s\!}>>
 % Bars 346 to 350
-	g,(
+	g,2.(
 	b2.)-\fdim
 	e(\p\>
-	eis)
+	<< eis) {s4 s s8 s\!}>>
 	fis8\pp r r4 r
 % Bars 351 to 355
 	R2.*3
@@ -457,7 +457,7 @@ musicContrabassoMvtI = \relative c {
 	gis\fz g4~\fz
 	g fis2\fz \mark \default
 	f,2.\fp\>(~
-	f
+	<< f {s4 s s\!}>>
 % Bars 376 to 380
 	e4.\!) r8 r4
 	R2.*4
@@ -540,10 +540,10 @@ musicContrabassoMvtI = \relative c {
 	b r\> b
 	b r b\!
 	b'8-.\p-\tweak extra-offset #'(-1.3 . -1.5) ^\arco d!-. fis4-.\< e-.
-	d8-. cis-. b4-> b8-. a-.
+	d8-. cis-. b4-> b8-. a-.\!
 	gis8-.\mf\< b-. d4-> d8-. c-.
 % Bars 446 to 450
-	b8-. a-. gis-. fis!-. e4
+	b8-. a-. gis-. fis!-. e4\!
 	a8\f r r4 bes(->
 	a8) r r4 bes(->
 	a8) r r4\< g!-.
@@ -654,8 +654,8 @@ musicContrabassoMvtI = \relative c {
 	d2.:16
 	d:
 	d:\>
-	d:
-	d:\p
+	<< d: {s4 s s8 s\!}>>
+	d2.:\p
 % Bars 541 to 545
 	d:_\dimmarkup
 	d:

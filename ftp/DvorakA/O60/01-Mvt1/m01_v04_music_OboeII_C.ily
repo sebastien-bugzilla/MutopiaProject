@@ -28,14 +28,14 @@ musicOboeIIMvtI = \relative c' {
 		bes2 r4
 		R2.
 % Bars 16 to 20
-		r4 r a-\offset X-offset 1.5 \mf
+		r4 r a(-\offset X-offset 1.5 \mf
 		c2\< b4
-		c d c\!
+		c d c)\!
 		c2(\f b4
 		a b a)
 % Bars 21 to 25
 		g2.\p\>~
-		g(
+		<< g( {s4 s s\!}>>
 		fis8)\pp r r4 r
 		R2.*3
 	
@@ -66,7 +66,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 46 to 50
 		e e2->\<~
 		e2.~
-		e \mark \default
+		<< e {s4 s s8 s\!}>> \mark \default
 		fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
 		fis'2-^ r4
 % Bars 51 to 55
@@ -74,7 +74,7 @@ musicOboeIIMvtI = \relative c' {
 		fis'-. fis-. r
 		r r a,
 		a2.~
-		a2\< fis'4
+		a2\< fis'4\!
 % Bars 56 to 60
 		fis2(\fz e8 dis)
 		e2 e8( d!)
@@ -333,7 +333,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 276 to 280
 	R2.*2
 	
-	\hairpinShorten #'(1.5 . 0) ais2.( \tweak extra-offset #'(0 . 0.5) \< \mark \default
+	<< ais2.( \tweak extra-offset #'(0 . 0.5) \< {s4 s s8 s\!}>> \mark \default
 	b4)\f r r
 	R2.*4
 % Bars 281 to 285
@@ -393,7 +393,7 @@ musicOboeIIMvtI = \relative c' {
 	r r fis(
 	fis) fis-. r
 	fis4. fis8 fis4
-	\hairpinYoffset #0 #1.5 fis(\< a d)
+	\hairpinYoffset #0 #1.5 fis(\< a d)\!
 % Bars 336 to 340
 	fis2-\tweak extra-offset #'(0 . 1) \fz(\> e8 dis)\! \hairpinYoffset #0 #0
 	e2 r4
@@ -410,7 +410,7 @@ musicOboeIIMvtI = \relative c' {
 	c2(\f b4
 	a b a)
 	g2.-\tweak extra-offset #'(0.5 . 1) \p -\tweak extra-offset #'(0 . 1) \>~
-	g\! \hairpinYoffset #0 #0
+	<< g {s4 s s\!}>>
 	fis8\pp r r4 r
 % Bars 351 to 355
 	R2.*5

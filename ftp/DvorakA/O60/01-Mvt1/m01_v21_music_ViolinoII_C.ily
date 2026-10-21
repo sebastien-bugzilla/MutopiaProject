@@ -74,7 +74,7 @@ musicViolinoIIMvtI = \relative c' {
 		\acciaccatura d,8 <d' a'>4 \acciaccatura d,8 <d' a'>4 r
 		r r a
 		fis'4. fis8 fis4\<
-		fis( a d)
+		fis( a d)\!
 % Bars 56 to 60
 		fis2\fz( e8 dis)
 		e2( g,4)
@@ -101,7 +101,7 @@ musicViolinoIIMvtI = \relative c' {
 		R2.
 % Bars 76 to 80
 		d,4(\p b e\<)
-		eis2.\>(
+		<< eis2.\>( {s4 s s\!}>>
 		fis4)\! r r
 		R2.
 		r4 fis'\pp( fis,~
@@ -120,7 +120,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 91 to 95
 		b2 fis4~
 		fis8 r b4.(\< b'8)\!
-		b2.\>~
+		<< b2.\>~ {s4 s s8 s\!}>>
 		b4\! r r
 		<g,, e' c'>-\tweak extra-offset #'(0 . 0.6) \f\arpeggio r r
 % Bars 96 to 100
@@ -173,8 +173,8 @@ musicViolinoIIMvtI = \relative c' {
 		ees g ees g des ees)
 % Bars 136 to 140
 		ces16\pp\< ees ees ees ees4:16 ees':
-		ees2.:
-		des:-\tweak X-offset #-1.5 _\mfcrescD
+		<< ees2.: {s4 s s8 s\!}>>
+		des2.:-\tweak X-offset #-1.5 _\mfcrescD
 		cis!: \mark \default
 		ais8-.\f r r4 e->(
 % Bars 141 to 145
@@ -337,7 +337,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 276 to 280
 	e:
 	e:
-	fis:\< \mark \default
+	<< fis:\< {s4 s s\!}>> \mark \default
 	fis4\f r r
 	R2.
 % Bars 281 to 285
@@ -405,7 +405,7 @@ musicViolinoIIMvtI = \relative c' {
 	\repeat tremolo 6 {d a)}
 	\repeat tremolo 4 {d( a} fis'16 d fis d
 	\repeat tremolo 6 {fis a)}
-	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur fis( a fis\< a cis a cis a d a d a
+	\shape #'((0 . 0)(0 . -1)(0 . -1)(0 . 0)) Slur fis( a fis\< a cis a cis a d a d a\!
 % Bars 336 to 340
 	\repeat tremolo 4 {fis'\fz \tweak extra-offset #'(0 . 0.5) \> dis} b a b a)\!
 	g( b, e b \repeat tremolo 4 {e b}
@@ -419,10 +419,10 @@ musicViolinoIIMvtI = \relative c' {
 	\repeat tremolo 4 {c(\> d\!} b d b' d)
 	c8(\< d c d c d
 % Bars 346 to 350
-	c d c d b d)
+	c d c d b d)\!
 	a_\fdimD( b a b a b)
 	g\p\>( b d g,  cis! g
-	b g cis g b g)
+	b g cis g b g)\!
 	ais\pp r g4.\fz fis8
 % Bars 351 to 355
 	eis-! fis-! gis-! gis-! fis-! eis-! 
@@ -532,10 +532,10 @@ musicViolinoIIMvtI = \relative c' {
 	dis( fis b\> fis gis b
 	fis ais fis ais e fis)\!
 	d!16\p fis fis fis fis4:16\< fis':
-	fis2.:
-	e:\mf\<
+	<< fis2.: {s4 s s8 s\!}>>
+	e2.:\mf\<
 % Bars 446 to 450
-	e:
+	<< e: {s4 s s8 s\!}>>
 	<e, cis'! a'>8-.\f\arpeggio r r4 g!(->
 	a8) r r4 g(->
 	a2)\< bes4~
@@ -646,7 +646,7 @@ musicViolinoIIMvtI = \relative c' {
 	fis'2: e8: d:
 	fis2: e8: d:
 	fis2(\> e8 d)
-	d2( a8 fis)
+	d2( a8 fis)\!
 	fis2\p a,4~
 % Bars 541 to 545
 	a2._\dimmarkup~

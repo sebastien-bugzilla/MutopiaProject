@@ -22,7 +22,7 @@ musicTimpaniMvtI = \relative c {
 % Bars 16 to 20
 	
 		d2.\pp\<\startTrillSpan
-		d\startTrillSpan
+		<< d\startTrillSpan {s4 s s\!}>>
 		d2\>\startTrillSpan d8\stopTrillSpan\! r
 		R2.*26
 % Bars 21 to 25
@@ -414,8 +414,8 @@ musicTimpaniMvtI = \relative c {
 	d2.\startTrillSpan
 	d
 	d\>
-	d
-	d\p
+	<< d {s4 s s8 s\!}>>
+	d2.\p
 % Bars 541 to 545
 	d_\dimmarkup
 	d\pp

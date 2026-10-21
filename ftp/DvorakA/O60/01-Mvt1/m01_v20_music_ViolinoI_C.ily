@@ -35,7 +35,7 @@ musicViolinoIMvtI = \relative c'' {
 		fis_\dimmarkup g fis)
 % Bars 21 to 25
 		e(\p\> fis e
-		d e d
+		d e d\!
 		cis8)\pp r r4 r
 		d2.\fz
 		fis8-. r g!4.\fz\< fis8
@@ -121,7 +121,7 @@ musicViolinoIMvtI = \relative c'' {
 		e2( dis8 cis)
 		b4 r8 b'( ais a)
 		a( gis) gis( g) fis( e)
-		dis4 r8 b-.\< cis-. dis-.
+		dis4 r8 b-.\< cis-. dis-.\!
 		<g, c e>4\f\arpeggio r r
 % Bars 96 to 100
 		<b, g' d'>\arpeggio r8 d'-. e-. fis-.
@@ -173,7 +173,7 @@ musicViolinoIMvtI = \relative c'' {
 		c2( bes4)
 % Bars 136 to 140
 		aes8-.\pp\< ces-. ees4-. f8-. g-.
-		aes-. bes-. ces4-. ces8-. c-.
+		aes-. bes-. ces4-. ces8-. c-.\!
 		des2.:16-\tweak X-offset #-1.5 _\mfcrescD
 		cis!: \mark \default
 		fis!8-.\f\noBeam ais,,( b cis) b4->
@@ -405,7 +405,7 @@ musicViolinoIMvtI = \relative c'' {
 	
 	r4 r a'(\pp
 	d4.) d8-- d4--
-	\hairpinYoffset #0 #0.6 d(\< e fis)
+	\hairpinYoffset #0 #0.6 d(\< e fis)\!
 % Bars 336 to 340
 	a2( \tweak extra-offset #'(0 . 0.6) \fz\> g8 fis)
 	e2\! r4 \hairpinYoffset #0 #0
@@ -419,10 +419,10 @@ musicViolinoIMvtI = \relative c'' {
 	r4 r d(\pp 
 	d'2.~\<
 % Bars 346 to 350
-	d)
-	dis\fdimD
+	<< d) {s4 s s8 s\!}>>
+	dis2.\fdimD
 	e4( g2~\p\>
-	g2.
+	<< g2. {s4 s s8 s\!}>>
 	fis8)\pp r r4 r
 % Bars 351 to 355
 	d,2.\fz(
@@ -536,10 +536,10 @@ musicViolinoIMvtI = \relative c'' {
 	b8( dis fis4\> e--
 	dis2 cis4)\!
 	b8-.\p d!-. fis4-.\< gis8-. ais-.
-	b-. cis-. d!4-> d8-. dis-.
+	b-. cis-. d!4-> d8-. dis-.\!
 	e2.:16\mf\<
 % Bars 446 to 450
-	e:
+	<< e: {s4 s s8 s\!}>>
 	a8-.\noBeam-\tweak X-offset #-0.5 \f cis,,( d e) d4->
 	a'8-. cis,( d e) d4->
 	a'8-^ cis,(\< e a) bes-^[ cis,(
@@ -650,7 +650,7 @@ musicViolinoIMvtI = \relative c'' {
 	a2: g8: fis:
 	a2: g8: fis:
 	a2(\> g8 fis)
-	fis2( e8 d)
+	fis2( e8 d)\!
 	d2\p a4~
 % Bars 541 to 545
 	a2.~_\dimmarkup

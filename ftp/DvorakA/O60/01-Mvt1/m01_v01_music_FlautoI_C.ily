@@ -66,7 +66,7 @@ musicFlautoIMvtI = \relative c'' {
 		d-. d-. \partCombineAutomatic r
 		r r \once \partCombineApart a
 		d4. d8 d4\<
-		d( e fis)
+		d( e fis)\!
 % Bars 56 to 60
 		a2(\fz g8 fis)
 		e2( g4)
@@ -110,8 +110,8 @@ musicFlautoIMvtI = \relative c'' {
 		\partCombineApart d,4(\p\< fis b
 		a2.\!~
 % Bars 111 to 115
-		a)\>
-		g\p~
+		<< a)\> {s4 s s8 s\!}>>
+		g2.\p~
 		g~_\dimmarkup
 		g\pp
 		fis~
@@ -357,7 +357,7 @@ musicFlautoIMvtI = \relative c'' {
 	r r \partCombineApart a(
 	d) d-. \partCombineAutomatic r
 	d4. d8 d4
-	\hairpinYoffset #0 #1 d(\< e fis)
+	d(\< e fis)\!
 % Bars 336 to 340
 	a2(-\tweak extra-offset #'(0 . 1) \fz\> g8 fis)\! \hairpinYoffset #0 #0
 	\once \partCombineApart e2 r4
@@ -374,7 +374,7 @@ musicFlautoIMvtI = \relative c'' {
 	a2(\f g!4
 	fis-\tweak extra-offset #'(0.3 . 0.8) _\dimmarkup g fis)
 	e( \tweak X-offset #1 \p fis\> e
-	d e d\! \hairpinYoffset #0 #0
+	d e d\! \hairpinYoffset #0 #0 %%%%%%%%%%%%%%%%%%%%%%%
 	cis8)\pp r r4 r
 % Bars 351 to 355
 	R2.*9
@@ -452,9 +452,9 @@ musicFlautoIMvtI = \relative c'' {
 	R2.
 % Bars 416 to 420
 	\partCombineApart f4(_\p_\< a d)
-	c2.~\!
-	c_\>
-	bes_\p~
+	<< c2.~ {s4 s s8 s\!}>>
+	<< c2._\> {s4 s s8 s\!}>>
+	bes2._\p~
 	bes~_\dimmarkup
 % Bars 421 to 425
 	bes_\pp
@@ -586,7 +586,7 @@ musicFlautoIMvtI = \relative c'' {
 	a'2\ff g8( fis)
 	a2 g8( fis)
 	a2(\> g8 fis)
-	fis2( e8 d)
+	fis2( e8 d)\!
 	d2\p r4
 % Bars 541 to 545
 	R2.*5

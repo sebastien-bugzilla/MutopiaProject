@@ -58,7 +58,7 @@ musicClarinettoIIMvtI = \relative c'' {
 % Bars 46 to 50
 		e e2->\<~
 		e2.~
-		e \mark \default
+		<< e {s4 s s8 s\!}>> \mark \default
 		f4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		f2-^ r4
 % Bars 51 to 55
@@ -66,7 +66,7 @@ musicClarinettoIIMvtI = \relative c'' {
 		f-. f-. r
 		r r c
 		a4. a8 a4\<
-		a( c f)
+		a( c f)\!
 % Bars 56 to 60
 		fis2(\fz g8 a)
 		g2.
@@ -261,7 +261,7 @@ musicClarinettoIIMvtI = \relative c'' {
 	
 	
 	aes'2( g8 f)
-	f2(\> ees8 d)
+	f2(\> ees8 d)\!
 % Bars 216 to 220
 	d2\p( ees8 f)
 	f2\<( g8 aes!)
@@ -393,7 +393,7 @@ musicClarinettoIIMvtI = \relative c'' {
 	r r c4~
 	c c-. r
 	c4. c8 c4
-	\hairpinYoffset #0 #0.8 c2\< c4
+	\hairpinYoffset #0 #0.8 c2\< c4\!
 % Bars 336 to 340
 	d2.(-\tweak extra-offset #'(0 . 0.5) \fz\> 
 	bes2)\! r4 \hairpinYoffset #0 #0

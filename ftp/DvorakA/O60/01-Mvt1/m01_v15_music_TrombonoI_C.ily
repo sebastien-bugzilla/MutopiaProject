@@ -418,7 +418,7 @@ musicTrombonoIMvtI = \relative c' {
 	fis2.-^
 	fis-^
 	fis~\>
-	fis~
+	<< fis~ {s4 s s8 s\!}>>
 	fis4\p r r
 % Bars 541 to 545
 	R2.*18

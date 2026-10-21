@@ -66,7 +66,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 46 to 50
 		gis a2->\<~
 		a2.~
-		a \mark \default
+		<< a {s4 s s8 s\!}>> \mark \default
 		a4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
 		a2-^ r4
 % Bars 51 to 55
@@ -74,7 +74,7 @@ musicOboeIMvtI = \relative c'' {
 		a-. a-. r
 		r r a
 		a2.~
-		a2\< a4
+		a2\< a4\!
 % Bars 56 to 60
 		a2(\fz g8 fis)
 		g2 \partCombineApart g4
@@ -134,8 +134,8 @@ musicOboeIMvtI = \relative c'' {
 		\partCombineApart d,4(\p\< fis b
 		a2.~\!
 % Bars 111 to 115
-		a)\>
-		g\p~
+		<< a)\> {s4 s s8 s\!}>>
+		g2.\p~
 		g~_\dimmarkup
 		g\pp
 		fis~
@@ -143,7 +143,7 @@ musicOboeIMvtI = \relative c'' {
 		fis
 		gis4( a\< b
 		c d dis
-		e\! eis\> fis)
+		e\! eis\> fis)\!
 		b2(-\tweak X-offset #0 _\pespressD ais4)
 % Bars 121 to 125
 		fis8( dis) e-. fis-. cis4
@@ -217,7 +217,7 @@ musicOboeIMvtI = \relative c'' {
 	\alternative {
 		{
 			b8( cis d4) d8(\< e
-			fis4) fis gis
+			fis4) fis gis\!
 			a2._\fpdimD~
 			a~
 % Bars 181 to 185
@@ -323,7 +323,7 @@ musicOboeIMvtI = \relative c'' {
 	a8( g) r4 r \partCombineAutomatic
 	ais2.(
 	b2 \tweak extra-offset #'(0 . 1) _\< a!4\!
-	gis2._\>
+	<< gis2._\> {s4 s s8 s\!}>>
 % Bars 271 to 275
 	a4)--\! r r
 	R2.*2
@@ -393,7 +393,7 @@ musicOboeIMvtI = \relative c'' {
 	r r \partCombineApart a(
 	d) d-. \partCombineAutomatic r
 	d4. d8 d4
-	\hairpinYoffset #0 #1.5 d(\< e fis)
+	\hairpinYoffset #0 #1.5 d(\< e fis)\!
 % Bars 336 to 340
 	a2-\tweak extra-offset #'(0 . 1) \fz(\> g8 fis)\! \hairpinYoffset #0 #0
 	\once \partCombineApart e2 r4
@@ -492,9 +492,9 @@ musicOboeIMvtI = \relative c'' {
 	R2.
 % Bars 416 to 420
 	\partCombineApart f4(_\p_\< a d)
-	c2.~\!
-	c_\>
-	bes_\p~
+	<< c2.~ {s4 s s8 s\!}>>
+	<< c2._\> {s4 s s8 s\!}>>
+	bes2._\p~
 	bes_\dimmarkup~
 % Bars 421 to 425
 	bes-\tweak extra-offset #'(0.5 . 0.4) _\pp

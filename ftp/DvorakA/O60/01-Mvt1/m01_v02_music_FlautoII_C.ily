@@ -35,7 +35,7 @@ musicFlautoIIMvtI = \relative c' {
 		
 % Bars 21 to 25
 		\partCombineApart r4 \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d(-\tweak extra-offset #'(0 . 0.5) \p\> cis
-		b cis b 
+		b cis b\!
 		ais8)\pp r r4 r \partCombineAutomatic
 		R2.*10
 		
@@ -66,7 +66,7 @@ musicFlautoIIMvtI = \relative c' {
 % Bars 46 to 50
 		cis cis2~\<
 		cis2.~
-		cis \mark \default
+		<< cis {s4 s s8 s\!}>> \mark \default
 		d4-\tweak X-offset #-1 _\ffgrandiosoD r a
 		d2-^ r4
 % Bars 51 to 55
@@ -74,7 +74,7 @@ musicFlautoIIMvtI = \relative c' {
 		d d r
 		r r a
 		fis4. fis8 fis4\<
-		fis( a d)
+		fis( a d)\!
 % Bars 56 to 60
 		fis2(\fz e8 dis)
 		b2(\fz e8 d!)
@@ -353,7 +353,7 @@ musicFlautoIIMvtI = \relative c' {
 	r r fis(
 	fis) fis-. r
 	fis4. fis8 fis4
-	\hairpinYoffset #0 #1 fis(\< a d)
+	fis(\< a d)\!
 % Bars 336 to 340
 	fis2(-\tweak extra-offset #'(0 . 1) \fz\> e8 dis)\! \hairpinYoffset #0 #0
 	e2 r4
@@ -578,7 +578,7 @@ musicFlautoIIMvtI = \relative c' {
 	fis2\ff e8( d)
 	fis2 e8( d)
 	fis2(\> e8 d)
-	d2( a8 fis)
+	d2( a8 fis)\!
 	fis2\p r4
 % Bars 541 to 545
 	R2.*11

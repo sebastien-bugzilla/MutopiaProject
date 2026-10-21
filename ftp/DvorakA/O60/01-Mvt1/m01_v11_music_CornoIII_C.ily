@@ -58,7 +58,7 @@ musicCornoIIIMvtI = \relative c' {
 % Bars 46 to 50
 		a c2-> \tweak extra-offset #'(0 . 1.2) \<~
 		c2.~
-		c \mark \default
+		<< c {s4 s s8 s\!}>> \mark \default
 		d4-\tweak X-offset #-1 _\ffgrandiosoD r r
 		R2.
 % Bars 51 to 55
@@ -96,9 +96,9 @@ musicCornoIIIMvtI = \relative c' {
 		R2.*3
 	
 	
-		g,2.\f\>~
+		<< g,2.\f\>~ {s4 s s8 s\!}>>
 % Bars 91 to 95
-		g~\!
+		g2.~\!
 		g4 r r
 		R2.*2
 	
@@ -341,9 +341,9 @@ musicCornoIIIMvtI = \relative c' {
 	bes~
 	bes~
 	bes~
-	bes\<
+	<< bes\< {s4 s s\!}>>
 % Bars 336 to 340
-	b!\fz\>
+	b!2.\fz\>
 	c\pp~
 	c
 	c~
@@ -351,7 +351,7 @@ musicCornoIIIMvtI = \relative c' {
 % Bars 341 to 345
 	c
 	a\<~
-	a
+	<< a {s4 s s\!}>>
 	bes8-\tweak X-offset #-1 \f r r4 r
 	R2.*16
 % Bars 346 to 350
@@ -514,8 +514,8 @@ musicCornoIIIMvtI = \relative c' {
 	\partCombineApart f2.->
 	f-> \partCombineAutomatic
 	f\>~
-	f\!
-	f\p~
+	<< f {s4 s s8 s\!}>>
+	f2.\p~
 % Bars 541 to 545
 	f~-\tweak X-offset #6 _\dimmarkup
 	f~

@@ -19,7 +19,7 @@ musicVioloncelloMvtI = \relative c {
 		d) d-. r
 		R2.
 		r4 r d(\<
-		b2.)\f\>
+		<< b2.)\f\> {s4 s s\!}>>
 		e2\p b4(\pp
 % Bars 11 to 15
 		e2) r4
@@ -29,13 +29,13 @@ musicVioloncelloMvtI = \relative c {
 		e'2\< dis4)
 % Bars 16 to 20
 		e2( g4~\!
-		g fis2~\>
+		g << fis2~\> {s8 s s s\!}>>
 		fis8\!) a,(\< d fis a d)
 		d2.\f
 		dis4.->_\dimmarkup( e8 cis dis)
 % Bars 21 to 25
 		e4\p\>( b2~
-		b2.
+		<< b2. {s4 s s8 s\!}>>
 		fis8)\pp r r4 r
 		b2.\fz
 		ais8-. r b4(\fz\< bis)
@@ -181,7 +181,7 @@ musicVioloncelloMvtI = \relative c {
 		b b'8(^\arco fis b,4~
 		b) b'8( fis b,4)
 		b8( fis' b4)\< b8( cis
-		dis4) dis\> cis
+		dis4) dis\> cis\!
 		bis\pp gis8( bis dis cis
 % Bars 131 to 135
 		c aes bes c f, g!)
@@ -191,7 +191,7 @@ musicVioloncelloMvtI = \relative c {
 		aes
 % Bars 136 to 140
 		aes'8-.\pp\< ces-. ees4-. des-.
-		ces8-. bes-. aes4-. aes8-. ges-.
+		ces8-. bes-. aes4-. aes8-. ges-.\!
 		f-.-\tweak X-offset #-1.5 _\mfcrescD aes-. ces4-. ces8-. bes-.
 		aes-. ges-. f-. ees-. des4 \mark \default
 		fis!8\f-. ais( b cis!) b4->
@@ -367,7 +367,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 276 to 280
 	R2.*2
 	
-	e2.:32^\arco\pp\< \mark \default
+	<< e2.:32^\arco\pp\< {s4 s s\!}>> \mark \default
 	dis4\f r8 dis8-! e-! fis-! 
 	b,2-> b'4-.
 % Bars 281 to 285
@@ -452,7 +452,7 @@ musicVioloncelloMvtI = \relative c {
 	fis4 d g)
 	b,2._\dimmarkup(
 	e,\p\>
-	eis)
+	<< eis) {s4 s s8 s\!}>>
 	fis8\pp r r4 r
 % Bars 351 to 355
 	b2.\fz
@@ -483,7 +483,7 @@ musicVioloncelloMvtI = \relative c {
 	gis\fz g4~\fz
 	g fis2\fz \mark \default
 	f,2.\fp\>(~
-	f
+	<< f {s4 s s\!}>>
 % Bars 376 to 380
 	e4.\!) r8 r4
 	R2.*2
@@ -574,10 +574,10 @@ musicVioloncelloMvtI = \relative c {
 	\hairpinShorten #'(5.5 . 0) b\!\>~
 	<<b {s4 s s\!} >>
 	b'8-.-\tweak extra-offset #'(0 . 0.5) \p d!-. fis4-.\< e-.
-	d8-. cis-. b4-> b8-. a-.
+	d8-. cis-. b4-> b8-. a-.\!
 	gis8-.\mf\< b-. d4-> d8-. c-.
 % Bars 446 to 450
-	b8-. a-. gis-. fis-. e4
+	b8-. a-. gis-. fis-. e4\!
 	a8-.\f cis( d e) d4->
 	e8-. cis( d e) d4->
 	a8 r r4\< g-.
@@ -688,8 +688,8 @@ musicVioloncelloMvtI = \relative c {
 	d2.:16
 	d:
 	<d, a'>:\>
-	q:
-	q:\p
+	<< q: {s4 s s8 s\!}>>
+	q2.:\p
 % Bars 541 to 545
 	q:_\dimmarkup
 	q:
