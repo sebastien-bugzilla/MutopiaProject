@@ -41,7 +41,7 @@ musicCornoIIIMvtI = \relative c' {
 	
 	
 	
-		aes8-.\f r aes2\fz~
+		\aIIXoffset #-2 aes8-.\f r aes2\fz~
 		aes2.~
 % Bars 36 to 40
 		aes2 aes4-.
@@ -56,21 +56,21 @@ musicCornoIIIMvtI = \relative c' {
 		a a2
 		a a4~
 % Bars 46 to 50
-		a c2-> \tweak extra-offset #'(0 . 1.2) \<~
+		a c2->\<~
 		c2.~
 		<< c {s4 s s8 s\!}>> \mark \default
-		d4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		d4\ff r r
 		R2.
 % Bars 51 to 55
-		\partCombineApart f2\f r4 \partCombineAutomatic
+		\partCombineApart \dynEO #'(-0.5 . -0.5) f2-\offset X-offset -1 \f r4 \partCombineAutomatic
 		R2.
 		\partCombineApart f4-. f-. r \partCombineAutomatic
 		R2.*2
 	
 % Bars 56 to 60
-		d2(\fz ees8 f)
+		d2(-\tweak X-offset 0.5 \fz ees8 f)
 		ees2.
-		\partCombineApart ees2(\fz d8 c)
+		\partCombineApart \dynEO #'(-0.5 . -1) ees2(\fz d8 c)
 		bes4 r r \partCombineAutomatic 
 		r r ees8-.\f f-.
 % Bars 61 to 65
@@ -170,7 +170,7 @@ musicCornoIIIMvtI = \relative c' {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-		b2(\ff c4)
+		\dynEO #'(-0.5 . 0) b2(\ff c4)
 		\partCombineApart d2 d4 \partCombineAutomatic
 		d2( c4)
 		b2( c4)
@@ -299,7 +299,7 @@ musicCornoIIIMvtI = \relative c' {
 % Bars 291 to 295
 	
 	
-	c2.\ff~
+	\dynEO #'(-0.5 . 0) c2.\ff~
 	c~
 	c
 % Bars 296 to 300
@@ -361,7 +361,7 @@ musicCornoIIIMvtI = \relative c' {
 % Bars 356 to 360
 	
 % Bars 361 to 365
-	aes8-.\f r aes2->~
+	\aIIXoffset #-3.5 aes8-.\f r aes2->~
 	aes2.~
 	aes 
 	R2.
@@ -375,7 +375,7 @@ musicCornoIIIMvtI = \relative c' {
 % Bars 371 to 375
 	c c2\fz
 	c2\fz c4~\fz
-	c f,2-\tweak extra-offset #'(1.5 . 1.5) \fz \mark \default
+	c \dynEO #'(-1 . 0.5) f,2\fz \mark \default
 	f4-. r r
 	R2.*27
 % Bars 376 to 380
@@ -402,7 +402,7 @@ musicCornoIIIMvtI = \relative c' {
 	
 % Bars 411 to 415
 	
-	\partCombineApart r4 r a_-_\p
+	\partCombineApart r4 r a-- -\offset X-offset -1.5 \p
 	r a-- r \partCombineAutomatic
 	R2. \mark \default
 	R2.*28
@@ -441,7 +441,7 @@ musicCornoIIIMvtI = \relative c' {
 % Bars 466 to 470
 	
 	
-	d2(\ff ees4)
+	d2(-\tweak X-offset 0.3 \ff ees4)
 	f2( c4)
 	d2( ees4)
 % Bars 471 to 475
@@ -461,7 +461,7 @@ musicCornoIIIMvtI = \relative c' {
 	
 	
 	
-	d'2-^\f c4
+	\aIIXoffset #-3 d'2-^\f c4
 % Bars 486 to 490
 	f8-. d-. ees-. f-. b,!4
 	ees-> \partCombineApart a,-> d->

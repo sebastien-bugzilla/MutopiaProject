@@ -35,7 +35,7 @@ musicTrombonoIIIMvtI = \relative c' {
 	
 	
 		r4 r a-.\ff \mark \default
-		a-._\grandioso r r
+		a-. r r
 		r r a-.\f
 % Bars 51 to 55
 		fis2-^ r4
@@ -45,9 +45,9 @@ musicTrombonoIIIMvtI = \relative c' {
 	
 % Bars 56 to 60
 		b,2.\fz
-		d2(-^ cis8 b)
+		\marcatoUpperSlur d2(-^ cis8 b)
 		a2.\fz
-		c2-^( b8 a)
+		\marcatoUpperSlur c2-^( b8 a)
 		g2 \partCombineApart c4 \tweak X-offset #0.7 _\fz
 % Bars 61 to 65
 		b8-. a-. g4 c_\fz

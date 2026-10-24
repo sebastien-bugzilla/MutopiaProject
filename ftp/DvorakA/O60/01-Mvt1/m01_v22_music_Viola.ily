@@ -175,8 +175,8 @@ musicViolaMvtI = \relative c {
 % Bars 96 to 100
 		b8) r \tuplet 3/2 4 {g8\<( a g} g'4\!
 		e8) r \tuplet 3/2 4 {c,\<( d c} c'4\!
-		g8) r \tuplet 3/2 4 {g(\< a g} g'4\!)~
-		g8 r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
+		g8) r \tuplet 3/2 4 {g(\< a g} g'4\!~
+		g8) r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
 		<d fis>-. <e g>-. <fis a>4 r
 % Bars 101 to 105
 		r \tuplet 3/2 4 {d8-\offset X-offset -0.5 \fz( e d)} g,-.\< gis-.\!

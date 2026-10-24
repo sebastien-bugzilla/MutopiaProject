@@ -67,7 +67,7 @@ musicFagottoIIMvtI = \relative c {
 		gis g8\<-. a-. cis-. e-. 
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-.\! \mark \default
-		d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		d,4\ff r r
 		r r a-.
 % Bars 51 to 55
 		fis2 r4
@@ -78,7 +78,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 56 to 60
 		b2.\fz
 		d4(\< d' cis8\! b)
-		a2.\fz
+		a2.-\tweak X-offset 0.5 \fz
 		c2(-^ b8 a)
 		g2 c4\fz
 % Bars 61 to 65
@@ -167,7 +167,7 @@ musicFagottoIIMvtI = \relative c {
 		aes,\pp r bes
 % Bars 131 to 135
 		c r des
-		c r aes^\brackM\crescmarkup
+		c r aes_\brackM\crescmarkup
 		aes r aes
 		aes r aes
 		aes r aes
@@ -273,7 +273,7 @@ musicFagottoIIMvtI = \relative c {
 	r f'(\mf e8 d)
 	d2.->(~
 % Bars 221 to 225
-	d2 c8 b)
+	<< d2 {s4 s-\dimmarkup}>> c8 b)
 	b2.->(~
 	b2 a8 g)
 	\clef bass g2.(~->
@@ -302,7 +302,7 @@ musicFagottoIIMvtI = \relative c {
 	r a( g!8 fis)
 	fis4 r r
 	R2.
-	g4 aes bes
+	g4( aes bes)
 	r4 bes( aes8 g)
 % Bars 251 to 255
 	g4 r r
@@ -413,7 +413,7 @@ musicFagottoIIMvtI = \relative c {
 % Bars 346 to 350
 	\stemDown g2.\f
 	b2.(
-	e4\p\> d' cis 
+	\hairpinShorten #'(3 . 0) e4\p\> d' cis 
 	b cis b\!
 	fis8)\pp r r4 r
 % Bars 351 to 355
@@ -637,8 +637,8 @@ musicFagottoIIMvtI = \relative c {
 	<< d~ {s4 s s8 s\!}>>
 	d2.~\p
 % Bars 541 to 545
-	d~
-	d~
+	<< d~ {s2 s4-\dimmarkup}>>
+	d2.~
 	d~
 	d4 r r
 	R2.*12

@@ -27,6 +27,7 @@ ffz = #(make-dynamic-script "ffz")
 %--------------------
 fcresc = \markup {\hspace #0.03 \dynamic f \italic cresc.}
 fmarc = \markup {\hspace #0.03 \dynamic f \italic marc.}
+fmarcato = \markup {\hspace #0.03 \dynamic f \italic marcato}
 fsemprecresc = \markup {\hspace #0.03 \dynamic f \italic {sempre cresc.}}
 fsempre = \markup {\hspace #0.03 \dynamic f \italic sempre}
 fdim = \markup {\hspace #0.03 \dynamic f \italic dim.}
@@ -337,7 +338,7 @@ hairpinYoffset = #(define-music-function
 	(x y)
 	(number? number?)
 	#{
-		\override Staff.Hairpin.extra-offset = #(cons x y)
+		\once \override Staff.Hairpin.extra-offset = #(cons x y)
 	#}
 )
 

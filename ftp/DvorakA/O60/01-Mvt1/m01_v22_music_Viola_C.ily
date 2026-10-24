@@ -13,7 +13,7 @@ musicViolaMvtI = \relative c {
 		<fis a>8-. q4 q q8-.
 		q-. q4 q q8-.
 	} \\ {
-		d8-.\pp d4 d d8-.
+		\dynEO #'(-2.5 . 1.5) d8-.\pp d4 d d8-.
 		d-. d4 d d8-.
 	}>>
 	\repeat volta 2 {
@@ -63,7 +63,7 @@ musicViolaMvtI = \relative c {
 			q8-. q4 q\! q8-.
 			a-. a4 a8 fis4\<~
 			<< fis2. {s8 s s s s s\!}>>
-			a2(-\tweak extra-offset #'(0.5 . 1) \f g4)
+			a2(-\tweak extra-offset #'(0.5 . 0) \f g4)
 			a2. \tweak X-offset #0.5 _\dimmarkup
 % Bars 21 to 25
 			g2.-\tweak extra-offset #'(0.5 . 1) \p -\tweak extra-offset #'(0 . 1) \>~
@@ -104,18 +104,18 @@ musicViolaMvtI = \relative c {
 			d2.:16
 			d:
 % Bars 51 to 55
-			<d, d'>:
-			q:
-			q:
-			q:
-			q:
+			\noteShift #0.5 <d, d'>:
+			\noteShift #0.5 q:
+			\noteShift #0.5 q:
+			\noteShift #0.5 q:
+			\noteShift #0.5 q:
 % Bars 56 to 60
 			<fis dis'>2: <g e'>8: <b fis'>:
 			e2.:
 			cis2: cis4:
 			d: fis2:
 		} \\ {
-			<fis, a>2.:16_\ffgrandioso
+			<fis, a>2.:16\ff
 			q:
 % Bars 51 to 55
 			\override Stem.length = #9.5 q:
@@ -175,8 +175,8 @@ musicViolaMvtI = \relative c {
 % Bars 96 to 100
 		b8) r \tuplet 3/2 4 {g8\<( a g} g'4\!
 		e8) r \tuplet 3/2 4 {c,\<( d c} c'4\!
-		g8) r \tuplet 3/2 4 {g(\< a g} g'4\!)~
-		g8 r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
+		g8) r \tuplet 3/2 4 {g(\< a g} g'4\!~
+		g8) r \tuplet 3/2 4 {g(\fz a g)} d-. e-.
 		<d fis>-. <e g>-. <fis a>4 r
 % Bars 101 to 105
 		r \tuplet 3/2 4 {d8 \tweak X-offset #-2 \fz( e d)} g,-.\< gis-.\!
@@ -223,7 +223,7 @@ musicViolaMvtI = \relative c {
 % Bars 136 to 140
 		aes16\pp\< ees' ees  ees ees2:16
 		<< ees2.: {s4 s s8 s\!}>>
-		des2.:-\tweak X-offset #-1.5 _\mfcrescD
+		des2.:_\mfcrescD
 		cis!: \mark \default
 		cis8-.\f ais( b cis) b4->
 % Bars 141 to 145
@@ -236,8 +236,8 @@ musicViolaMvtI = \relative c {
 		dis8) r r4 r
 		R2.
 		b2.:16\p
-		b:_\crescmarkup
-		b:
+		<< b: {s4 s2_\crescmarkup}>>
+		b2.:
 % Bars 151 to 155
 		b:
 		<dis fis>:\ff
@@ -300,7 +300,7 @@ musicViolaMvtI = \relative c {
 	fis2.~
 	fis~
 	fis
-	b,8( fis' b2~
+	\shape #'((0 . 0)(-1 . 0.5)(-1 . 0.5)(0.5 . 0)) Slur b,8( fis' b2~
 % Bars 201 to 205
 	b2.~
 	b)
@@ -358,14 +358,14 @@ musicViolaMvtI = \relative c {
 % Bars 256 to 260
 	f-. d16( e d8) r r <gis b>-.
 	a-. a-. a2~
-	a8 a-. a2-\tweak X-offset #5.5 _\dimmarkup~
+	a8 a-. << a2~ {s8 s4._\dimmarkup}>>
 	a8 a-. a2~
 	a8-\tweak X-offset #-1 \p a-. a2
 % Bars 261 to 265
 	<g b>2.:32_\ppsulponticello
 	q:
 	q:
-	<< <d c'>: {s8\< s s s\> s s\!} >>
+	<< <d c'>: {\hairpinShorten #'(0 . 1) s8\< s s \hairpinShorten #'(-1 . 0) s\> s s\!} >>
 	<g b>2.:32
 % Bars 266 to 270
 	q:
@@ -377,7 +377,7 @@ musicViolaMvtI = \relative c {
 	<a cis!>2.:\pp
 	q:
 	q:
-	<< <e d'>: {s8\< s s s\> s s\!}>>
+	<< <e d'>: {\hairpinShorten #'(0 . 1) s8\< s s \hairpinShorten #'(-1 . 0) s\> s s\!}>>
 	<a cis>2.:
 % Bars 276 to 280
 	q:
@@ -412,9 +412,9 @@ musicViolaMvtI = \relative c {
 		q:
 % Bars 301 to 305
 		q:
-		<d c'>:
-		q:
-		q:
+		\noteShift #0.5 <d c'>:
+		\noteShift #0.5 q:
+		\noteShift #0.5 q:
 		d':
 % Bars 306 to 310
 		d4 \oneVoice r r
@@ -493,7 +493,7 @@ musicViolaMvtI = \relative c {
 	<g b>8 r \repeat tremolo 4 {e16(-> g)}
 	<a c>8 r \repeat tremolo 4 {fis16->( a)}
 	<b d>8 r \repeat tremolo 4 {g16(-> b)}
-	<d f>8-\tweak extra-offset #'(-1 . 0.5) _\fsempre r \repeat tremolo 4 {b16(-> d)}
+	<d f>8_\fsempre r \repeat tremolo 4 {b16(-> d)}
 % Bars 361 to 365
 	<d f>8-. r q2:16->
 	q2.:
@@ -540,16 +540,16 @@ musicViolaMvtI = \relative c {
 	bes\<-. a-. g-. f-. e-. a-.\!
 	d,4 r8 d'( cis! c)
 	c( b) b( bes) a( g)
-	fis4 r8 d'-.\< e-. fis-.
-	g2(-\tweak X-offset #-2 \fz fis8 e)
+	fis4 r8 d'-.\< e-. fis-.\!
+	\dynEO #'(0.7 . 2) g2(\fz fis8 e)
 % Bars 401 to 405
 	d4 r r
-	r \tuplet 3/2 4 {g,8(\f\< a g} bes4\!^>~
+	r \tuplet 3/2 4 {g,8(-\offset X-offset -1 \f\< a g} bes4\!^>~
 	bes8) r \tuplet 3/2 4 {bes8(\< c bes} bes'4\!
 	g8) r \tuplet 3/2 4 {ees,8(\< f ees} ees'4\!
 	bes8) r \tuplet 3/2 4 {bes(\< c bes} bes'4\!~
 % Bars 406 to 410
-	bes8) r \tuplet 3/2 4 {bes8(\fz c bes} f-.) g-.
+	bes8) r \tuplet 3/2 4 {\dynEO #'(0 . 2) bes8(\fz c bes} f-.) g-.
 	<f a>-. <g bes>-. <a c>4-. r
 	r \tuplet 3/2 4 {f8(-\tweak extra-offset #'(-0.5 . 0.5) \fz g f)} g8-. f-.
 	e8-. r r4 r
@@ -603,13 +603,13 @@ musicViolaMvtI = \relative c {
 	a'8-^ cis,(\< e a) bes-^[ cis,(
 	e bes')] b-^ e,( g cis)\!
 % Bars 451 to 455
-	d-. r r4 g,4(\fz
-	fis8) r r4 g4(\fz
+	d-. r r4 \dynEO #'(0.3 . 1) g,4(\fz
+	fis8) r r4 \dynEO #'(0.3 . 1) g4(\fz
 	fis8) r r4 r
 	R2.
 	d2.:16\p
 % Bars 456 to 460
-	<<d: {s4 s2\cresc}>>
+	<<d: {s4 s2-\crescmarkup}>>
 	d2.:16
 	d: \mark \default
 	<fis a>:\f

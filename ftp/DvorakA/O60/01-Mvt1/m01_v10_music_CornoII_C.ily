@@ -67,7 +67,7 @@ musicCornoIIMvtI = \relative c' {
 		d g,2->~\<
 		g2.~
 		<< g {s4 s s8 s\!}>> \mark \default
-		g4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		g4\ff r r
 		R2.
 % Bars 51 to 55
 		c,2.-^~\f
@@ -78,7 +78,7 @@ musicCornoIIMvtI = \relative c' {
 % Bars 56 to 60
 		e2(\fz d8 cis)
 		d2.
-		b2.\fz
+		\dynEO #'(0.3 . 1) b2.-\offset X-offset 0.5 \fz
 		c2.
 		c4 r c, \tweak X-offset #-2 \fz~
 % Bars 61 to 65
@@ -378,17 +378,17 @@ musicCornoIIMvtI = \relative c' {
 	g2.~
 	g~
 	g2 g4-. \mark \default
-	\partCombineApart g2.\fp\>~
+	\partCombineApart g2.-\offset X-offset -1.5 \fp\>~
 	g~-\tweak X-offset #-2 \pp
 % Bars 331 to 335
 	g~
 	g~
 	g~
 	g~
-	\hairpinYoffset #0 #1 << g\< {s4 s s\!}>>
+	<< g\< {s4 s s\!}>>
 % Bars 336 to 340
 	g2. \tweak extra-offset #'(0.5 . 1) \fz\>
-	a \tweak extra-offset #'(0.5 . 1) \pp~ \hairpinYoffset #0 #0
+	a \tweak extra-offset #'(0.5 . 1) \pp~
 	a
 	c~
 	c~
@@ -523,9 +523,9 @@ musicCornoIIMvtI = \relative c' {
 	
 	c2.\p~
 % Bars 456 to 460
-	c_\cresc
-	c
-	c\! \mark \default
+	<< c {s4 s2_\crescmarkup}>>
+	c2.
+	c \mark \default
 	R2.*7
 	
 % Bars 461 to 465

@@ -56,10 +56,10 @@ musicCornoIVMvtI = \relative c' {
 		fis fis2
 		f! e4~
 % Bars 46 to 50
-		e a2-> \tweak extra-offset #'(0 . 1.2) \<~
+		e a2->\<~
 		a2.~
 		<< a {s4 s s8 s\!}>> \mark \default
-		bes4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		bes4\ff r r
 		R2.
 % Bars 51 to 55
 		R2.
@@ -68,7 +68,7 @@ musicCornoIVMvtI = \relative c' {
 		R2.*2
 	
 % Bars 56 to 60
-		b2(\fz c8 d)
+		b2(-\tweak X-offset 0.5 \fz c8 d)
 		c2.
 		R2.*2
 	
@@ -375,7 +375,7 @@ musicCornoIVMvtI = \relative c' {
 % Bars 371 to 375
 	c c2\fz
 	c2\fz c4~\fz
-	c f,2-\tweak extra-offset #'(1.5 . 1.5) \fz \mark \default
+	c f,2\fz \mark \default
 	f4-. r r
 	R2.*27
 % Bars 376 to 380
@@ -441,7 +441,7 @@ musicCornoIVMvtI = \relative c' {
 % Bars 466 to 470
 	
 	
-	bes2(\ff c4)
+	bes2(-\tweak X-offset 0.3 \ff c4)
 	d2( f,4)
 	bes2( a4)
 % Bars 471 to 475
@@ -511,7 +511,7 @@ musicCornoIVMvtI = \relative c' {
 % Bars 531 to 535
 	
 % Bars 536 to 540
-	f2.->\ff
+	\dynEO #'(-2.5 . 2) f2.->\ff
 	f->
 	bes,\>~
 	<<bes {s4 s s8 s\!}>>

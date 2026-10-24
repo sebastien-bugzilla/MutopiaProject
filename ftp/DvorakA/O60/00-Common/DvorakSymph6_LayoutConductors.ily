@@ -10,8 +10,8 @@
 %	\set Score.alternativeNumberingStyle = #'numbers % numbers
 	\set Score.doubleRepeatBarType = #":|.|:"
 	\set Score.rehearsalMarkFormatter = #format-mark-box-alphabet
-	\set Staff.soloText = #"1."
-	\set Staff.soloIIText = #"2."
+	\set Staff.soloText = #"1"
+	\set Staff.soloIIText = #"2"
 	\set Staff.aDueText = #"a2"
 	\compressEmptyMeasures
 	\context {

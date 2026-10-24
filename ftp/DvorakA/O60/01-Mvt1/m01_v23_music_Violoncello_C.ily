@@ -19,7 +19,7 @@ musicVioloncelloMvtI = \relative c {
 		d) d-. r
 		R2.
 		r4 r d(\<
-		<< b2.)\f\> {s4 s s\!}>>
+		<< b2.)\f\> {s4 s s8 s\!}>>
 		e2\p b4(\pp
 % Bars 11 to 15
 		e2) r4
@@ -30,7 +30,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 16 to 20
 		e2( g4~\!
 		g << fis2~\> {s8 s s s\!}>>
-		fis8\!) a,(\< d fis a d)
+		fis8\!) a,(\< d fis a d)\!
 		d2.\f
 		dis4.->_\dimmarkup( e8 cis dis)
 % Bars 21 to 25
@@ -67,7 +67,7 @@ musicVioloncelloMvtI = \relative c {
 		gis \clef bass g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-.\! \mark \default
-		d,4-\tweak X-offset #-1 _\ffgrandiosoD  r r
+		d,4\ff  r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -77,9 +77,9 @@ musicVioloncelloMvtI = \relative c {
 		r r\< d-.
 % Bars 56 to 60
 		b2.\fz
-		d2(-^ cis8 b)
+		\marcatoUpperSlur d2(-^ cis8 b)
 		a2.\fz
-		c2-^( b8 a)
+		\marcatoUpperSlur c2-^( b8 a)
 		g2 c4\fz
 % Bars 61 to 65
 		b8-. a-. g4 c\fz
@@ -161,7 +161,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 111 to 115
 			d2(\! a8 fis)
 			g4(\p c! e)
-			b4.( a8_\dimmarkup g4)
+			b4.( a8-\offset X-offset -3 _\dimmarkup g4)
 			e(\pp fis g)
 			fis4.( e8 d4)
 % Bars 116 to 120
@@ -192,7 +192,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 136 to 140
 		aes'8-.\pp\< ces-. ees4-. des-.
 		ces8-. bes-. aes4-. aes8-. ges-.\!
-		f-.-\tweak X-offset #-1.5 _\mfcrescD aes-. ces4-. ces8-. bes-.
+		f-._\mfcrescD aes-. ces4-. ces8-. bes-.
 		aes-. ges-. f-. ees-. des4 \mark \default
 		fis!8\f-. ais( b cis!) b4->
 % Bars 141 to 145
@@ -263,7 +263,7 @@ musicVioloncelloMvtI = \relative c {
 		{
 			R2.*2
 	
-			b8(_\ppsempremoltotranquillo d fis2)~
+			b8(\pp d fis2)~
 			fis2.~
 			fis~
 % Bars 196 to 200
@@ -313,7 +313,7 @@ musicVioloncelloMvtI = \relative c {
 % Bars 231 to 235
 	c-.) c-. r
 	R2.
-	\tuplet 3/2 4 {c,8-\ppsempre c c  c c c  c c c
+	\tuplet 3/2 4 {c,8-\offset X-offset 0.5 -\ppsempre c c  c c c  c c c
 	c c c  d d d  e e e}
 	\tuplet 3/2 4 {e4.:8 f: g:
 % Bars 236 to 240
@@ -446,7 +446,7 @@ musicVioloncelloMvtI = \relative c {
 	r r a,(
 	e'2\< dis4)
 	e2( g4~\!
-	g)\> fis4.(\< d'8)
+	g)\> fis4.(\< d'8)\!
 	\shape #'((0 . 0)(0 . -0.8)(0 . -0.8)(0 . 0)) Slur fis2.\fz(~
 % Bars 346 to 350
 	fis4 d g)
@@ -506,13 +506,13 @@ musicVioloncelloMvtI = \relative c {
 	d8-. e-. f2
 	e8-. f-. g2
 	e8-. f-. g2
-	g4->\f r r
+	\dynEO #'(0 . 1) g4->\f r r
 	g-> r8 g-. a-. bes-. 
 % Bars 396 to 400
 	bes-.\< a-. g-. f-. e-. a-.\!
 	d,4 r8 d'( cis c)
 	c( b) b( bes) a( g)
-	fis4 r8 d'\<-. e-. fis-. 
+	fis4 r8 d'\<-. e-. fis-.\!
 	\dynEO #'(0 . 1) g2\fz( fis8 e)
 % Bars 401 to 405
 	d4 r r
@@ -531,7 +531,7 @@ musicVioloncelloMvtI = \relative c {
 	d-._\dimmarkup cis-. cis-. b16( cis b8) a-.
 	a-.\pp b16( cis b8) a-. a-.\noBeam r
 	R2. \mark \default
-	\clef tenor <<{a'4( e' g)} \\ {a,-\tweak X-offset #0.8 _\pespress e' e}>>
+	\clef tenor <<{a'4( e' g)} \\ {a,(-\tweak X-offset #0.8 _\pespress e' e)}>>
 % Bars 416 to 420
 	<d f>4.( <a e'>8\< <f d'>4)
 	c'( <g' bes>8)\! r <g bes> r
@@ -566,14 +566,14 @@ musicVioloncelloMvtI = \relative c {
 	d) r r
 % Bars 436 to 440
 	r d'^\pizz fis
-	dis8-\tweak X-offset #-2.3 ^\arco(\pp fis b dis fis e
+	\markEO #'(-1 . -0.5) dis8^\arco(\pp fis b dis fis e
 	dis b cis dis gis, ais)
-	\hairpinShorten #'(0 . 4.5) b(\< fis dis fis) b,4~
-	b2.~
+	b(\< fis dis fis) b,4~
+	<< b2.~ {s4 s s8 s\!}>>
 % Bars 441 to 445
-	\hairpinShorten #'(5.5 . 0) b\!\>~
-	<<b {s4 s s\!} >>
-	b'8-.-\tweak extra-offset #'(0 . 0.5) \p d!-. fis4-.\< e-.
+	b2.\>~
+	<<b {s4 s s8 s\!} >>
+	b'8-.\p d!-. fis4-.\< e-.
 	d8-. cis-. b4-> b8-. a-.\!
 	gis8-.\mf\< b-. d4-> d8-. c-.
 % Bars 446 to 450
@@ -589,7 +589,7 @@ musicVioloncelloMvtI = \relative c {
 	R2.
 	d,4-.\p a'8( fis) g-. a-.
 % Bars 456 to 460
-	d,4 a'8(\cresc fis) g-. a-.
+	d,4 a'8(-\crescmarkup fis) g-. a-.
 	d,4 bes'8( g) a-. bes-.
 	d,4 c'8( a) bes-. c-. \mark \default
 	c,4\f r c'-^
@@ -635,7 +635,7 @@ musicVioloncelloMvtI = \relative c {
 	<d, b'>-> <g e'>-> <fis a>8 <e g>
 	<d fis>4 r r
 	R2.
-	d4.->\ff bes8-. cis!-. d-.
+	d4.->-\offset X-offset 0.5 \ff bes8-. cis!-. d-.
 % Bars 496 to 500
 	d4.-> bes8-. cis!-. d-.
 	d bes cis d g, a 

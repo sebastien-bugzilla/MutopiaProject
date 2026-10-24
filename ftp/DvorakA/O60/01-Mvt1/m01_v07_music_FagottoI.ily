@@ -191,7 +191,7 @@ musicFagottoIMvtI = \relative c {
 		g_\crescmarkup r r
 % Bars 151 to 155
 		a r r
-		r r a-\offset X-offset -3 _\fmarc-^
+		r r a-\offset X-offset -3 _\fmarcato-^
 		a-^ fis8-^ g-^ a4-^
 		r r a-^
 		a8( fis) g-. a-. dis,4-^

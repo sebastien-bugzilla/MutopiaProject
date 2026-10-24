@@ -102,7 +102,7 @@ musicTubaMvtI = \relative c {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-		b'2\ff( cis4)
+		b'2-\tweak X-offset 0.3 \ff( cis4)
 		dis2( e4)
 		dis-. b-. fis4~
 		fis fis2~

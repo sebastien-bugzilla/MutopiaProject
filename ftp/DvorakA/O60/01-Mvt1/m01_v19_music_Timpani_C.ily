@@ -36,10 +36,10 @@ musicTimpaniMvtI = \relative c {
 % Bars 41 to 45
 	
 % Bars 46 to 50
-		r4 \trillXoffset #1.5 \dynEO #'(-2 . 0.5) a2\ff\startTrillSpan
+		r4 a2\ff\startTrillSpan
 		a2.
-		<< a2. {s4 s s\stopTrillSpan}>> \mark \default
-		d4-. r r
+		a2. \mark \default
+		d4-.\stopTrillSpan r r
 		R2.*8
 % Bars 51 to 55
 	
@@ -125,8 +125,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 186 to 190
 			a
 			d\startTrillSpan
-			<<d {s4 s s\stopTrillSpan}>>
-			d8 r r4 r
+			d 
+			d8\stopTrillSpan r r4 r
 			R2.
 % Bars 191 to 195
 		}
@@ -245,9 +245,9 @@ musicTimpaniMvtI = \relative c {
 	
 	
 	d2.\p\<\startTrillSpan
-	d\>
+	<< d\> {s4 s s8 s\!}>>
 % Bars 346 to 350
-	d4\!\stopTrillSpan r r
+	d4\stopTrillSpan r r
 	R2.*27
 	
 	
@@ -279,9 +279,9 @@ musicTimpaniMvtI = \relative c {
 	d2.\startTrillSpan
 	d
 	d
-	<<d {s4 s s8 s16 s\stopTrillSpan}>>
+	d
 % Bars 401 to 405
-	d4 r r
+	d4\stopTrillSpan r r
 	R2.*13
 	
 	
@@ -299,8 +299,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 421 to 425
 	
 	a2.\pp\startTrillSpan
-	<<a {s4 s s\stopTrillSpan}>>
-	d4 r r
+	a
+	d4\stopTrillSpan r r
 	R2.*22
 % Bars 426 to 430
 	
@@ -343,8 +343,8 @@ musicTimpaniMvtI = \relative c {
 % Bars 471 to 475
 	d
 	d
-	<< d {s4 s s\stopTrillSpan}>>
-	d4 r r
+	d 
+	d4\stopTrillSpan r r
 	R2.*5
 % Bars 476 to 480
 	
@@ -368,8 +368,8 @@ musicTimpaniMvtI = \relative c {
 	d
 	d
 	d
-	<<d {s4 s s\stopTrillSpan}>>
-	d4 r r
+	d
+	d4\stopTrillSpan r r
 % Bars 496 to 500
 	R2.*5
 	
@@ -421,9 +421,9 @@ musicTimpaniMvtI = \relative c {
 	d\pp
 	d
 	d
-	<< d {s4 s s\stopTrillSpan}>>
+	d
 % Bars 546 to 550
-	d4 r r
+	d4\stopTrillSpan r r
 	R2.*12
 	
 	

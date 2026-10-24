@@ -35,7 +35,7 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 		r4 r cis-.\ff \mark \default
-		d-._\grandioso r r
+		d-. r r
 		r r a-.\f
 % Bars 51 to 55
 		d2-^ r4
@@ -102,7 +102,7 @@ musicTrombonoIMvtI = \relative c' {
 % Bars 156 to 160
 	
 % Bars 161 to 165
-		dis2(\ff e4)
+		dis2(-\tweak X-offset 0.3 \ff e4)
 		\partCombineApart fis( b ais)
 		fis8([ dis) e-. fis-.] cis4
 		b8-. dis-. fis4-> e->
@@ -283,11 +283,11 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 	
-	g!2-\tweak X-offset #0.5 \ff fis4-\tweak X-offset #0.5 \fz~
+	g!2-\tweak X-offset #0.3 \ff fis4-\tweak X-offset #0.3 \fz~
 % Bars 371 to 375
-	fis e2-\tweak X-offset #0.5 \fz
-	e-\tweak X-offset #0.5 \fz e4~-\tweak X-offset #0.5 \fz
-	e d2-\tweak X-offset #0.5 \fz \mark \default
+	fis e2-\tweak X-offset #0.3 \fz
+	e-\tweak X-offset #0.3 \fz e4~-\tweak X-offset #0.3 \fz
+	e d2\fz \mark \default
 	dis4-. r r
 	R2.*40
 % Bars 376 to 380
@@ -383,7 +383,7 @@ musicTrombonoIMvtI = \relative c' {
 % Bars 501 to 505
 	g'2\ff g4~
 	g g g
-	fis4.\ff-^ e-^
+	fis4.-\tweak X-offset 0.3 \ff-^ e-^
 	d2.~
 	d4 cis-. fis-.
 % Bars 506 to 510

@@ -67,7 +67,7 @@ musicOboeIIMvtI = \relative c' {
 		e e2->\<~
 		e2.~
 		<< e {s4 s s8 s\!}>> \mark \default
-		fis4-\tweak X-offset #-1 _\ffgrandiosoD r a,-.
+		fis4\ff r a,-.
 		fis'2-^ r4
 % Bars 51 to 55
 		r r a,-.
@@ -78,7 +78,7 @@ musicOboeIIMvtI = \relative c' {
 % Bars 56 to 60
 		fis2(\fz e8 dis)
 		e2 e8( d!)
-		cis2.\fz
+		\dynEO #'(-1 . 0) cis2.\fz
 		d4 d2
 		g2 e8(\< fis
 % Bars 61 to 65
@@ -159,9 +159,9 @@ musicOboeIIMvtI = \relative c' {
 		aes\pp r r
 % Bars 131 to 135
 		R2.
-		r4 r f(
+		r4 r \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f(
 		ees2 des4
-		c2) f4(
+		c2) \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f4(
 		ees2 des4
 % Bars 136 to 140
 		ces4) r r
@@ -231,7 +231,7 @@ musicOboeIIMvtI = \relative c' {
 			a~
 			a~
 			a4 r r
-			r r fis\p
+			r r fis-\offset X-offset 0.5 \p
 % Bars 191 to 195
 		}
 		{
@@ -284,7 +284,7 @@ musicOboeIIMvtI = \relative c' {
 	
 % Bars 236 to 240
 	
-	r4 bes\pp( a8 g)
+	r4 bes-\tweak X-offset -2.5 \pp( a8 g)
 	g2 r4
 	R2.*2
 	
@@ -387,15 +387,15 @@ musicOboeIIMvtI = \relative c' {
 	cis~
 	cis2 cis4-. \mark \default
 	d-. r r
-	r r fis,--\pp
+	r r fis,---\offset X-offset -2 \pp
 % Bars 331 to 335
 	fis2 r4
 	r r fis(
 	fis) fis-. r
 	fis4. fis8 fis4
-	\hairpinYoffset #0 #1.5 fis(\< a d)\!
+	fis(\< a d)\!
 % Bars 336 to 340
-	fis2-\tweak extra-offset #'(0 . 1) \fz(\> e8 dis)\! \hairpinYoffset #0 #0
+	fis2-\tweak extra-offset #'(0 . 1) \fz(\> e8 dis)\!
 	e2 r4
 	R2.*2
 	
@@ -404,12 +404,12 @@ musicOboeIIMvtI = \relative c' {
 	bes2 r4
 	R2.
 	r4 r a\p
-	\hairpinYoffset #0 #0.5 c2\< b4
+	c2\< b4
 	c d c\!
 % Bars 346 to 350
 	c2(\f b4
 	a b a)
-	g2.-\tweak extra-offset #'(0.5 . 1) \p -\tweak extra-offset #'(0 . 1) \>~
+	\hairpinShorten #'(3 . 0) g2.-\tweak extra-offset #'(0.5 . 0.5) \p -\tweak extra-offset #'(0 . 0.5) \>~
 	<< g {s4 s s\!}>>
 	fis8\pp r r4 r
 % Bars 351 to 355
@@ -479,7 +479,7 @@ musicOboeIIMvtI = \relative c' {
 	g'2\fz( f8 ees
 	d4) r r
 % Bars 406 to 410
-	f,2\fz~ f8 g-.
+	f,2-\tweak X-offset 0.3 \fz~ f8 g-.
 	a4 r r
 	a2-\tweak X-offset #0.3 \fz( bes8 b
 	cis!-.) r r4 r

@@ -36,7 +36,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 21 to 25
 		g(\p\> b d g, cis! g
 		b g cis g b g\!
-		ais)-\tweak extra-offset #'(0 . 0.5) \pp r g!4.(\fz fis8)
+		ais)\pp r g!4.(\fz fis8)
 		eis-! fis-! gis-! gis-! fis-! eis-! 
 		fis-. r g!4(\fz\< a)
 % Bars 26 to 30
@@ -67,7 +67,7 @@ musicViolinoIIMvtI = \relative c' {
 		q a8:16\< g!: e: cis:
 		a: e: cis: e: a: e:
 		cis': a: e': cis: a': a,:\! \mark \default
-		<a, fis' d'>4\arpeggio-\tweak X-offset #-1 _\ffgrandiosoD  r <a' a'>-.
+		\dynEO #'(-1 . 0) <a, fis' d'>4\arpeggio\ff  r <a' a'>-.
 		\acciaccatura d,8 <d' a'>2 r4
 % Bars 51 to 55
 		r r <a a'>-.
@@ -174,7 +174,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 136 to 140
 		ces16\pp\< ees ees ees ees4:16 ees':
 		<< ees2.: {s4 s s8 s\!}>>
-		des2.:-\tweak X-offset #-1.5 _\mfcrescD
+		des2.:_\mfcrescD
 		cis!: \mark \default
 		ais8-.\f r r4 e->(
 % Bars 141 to 145
@@ -191,7 +191,7 @@ musicViolinoIIMvtI = \relative c' {
 		e,8( g b4-.) r
 % Bars 151 to 155
 		fis8( a dis4-.) r
-		c_\ffmarc-^ c-^ a8-^ b-^
+		c_\ffmarcato-^ c-^ a8-^ b-^
 		c2.-^
 		c4-^ c-^ a8-^ b-^
 		c4-^ a'8( fis) g-. a-.
@@ -216,7 +216,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 171 to 175
 		R2.*2
 	
-		r4 r \tuplet 3/2 4 {b8(\pp cis b}
+		r4 r \tuplet 3/2 4 {b8(-\offset X-offset -1 \pp cis b}
 		b'4) r r
 		R2.*2
 % Bars 176 to 180
@@ -389,7 +389,7 @@ musicViolinoIIMvtI = \relative c' {
 	a-. d-.-> d-.
 	cis-. fis-.-> fis-.
 % Bars 321 to 325
-	eis16\ff eis, eis eis <cis eis>2:16
+	\dynEO #'(-0.5 . 2) eis16\ff eis, eis eis <cis eis>2:16
 	q2.:
 	q:
 	q:
@@ -472,12 +472,12 @@ musicViolinoIIMvtI = \relative c' {
 	a8: g: f2:
 	bes8: a: g2:
 	bes8: a: g2:
-	<e cis'!>4-\tweak X-offset #0.5 \f-> r r
+	\dynEO #'(0.5 . 0.5) <e cis'!>4\f-> r r
 	q-> r8 g-. a-. bes-.
 % Bars 396 to 400
 	bes\<-. a-. g-. f-. e-. a-.\!
 	d,4 d4.\<( d'8)\!
-	<< d2.->~\> {s4 s s\!}>>
+	<< d2.->~\> {s4 s s8 s\!}>>
 	d4 d4.(\< d'8)\!
 	d2.->~
 % Bars 401 to 405
@@ -487,7 +487,7 @@ musicViolinoIIMvtI = \relative c' {
 	<ees bes' g'>\arpeggio r r
 	<bes f' d'>\arpeggio r r
 % Bars 406 to 410
-	bes''2\f-^ a8( g)
+	\dynEO #'(0 . 2) bes''2\f-^ a8( g)
 	f4 r r
 	a2\fz bes8( b)
 	e,-. r r4 r
@@ -499,7 +499,7 @@ musicViolinoIIMvtI = \relative c' {
 	r4 r8 b'16(\pp cis b8) a-. \mark \default
 	a2.~
 % Bars 416 to 420
-	a4. d16(_\leggiero e) f8-.\< f16( g)
+	a4. d16(\<_\leggiero e) f8-. f16( g)
 	c,8-. c16( f) g8-. g16( fis!) g8-. g16( e)\!
 	f8-.\> f16( g) a8-. a16( bes) a8-. a-.\!
 	g8-.\p g16( a) g8-._\dimmarkup g16( a) g8-. g16( a)
@@ -524,8 +524,8 @@ musicViolinoIIMvtI = \relative c' {
 	fis4) r r
 % Bars 436 to 440
 	R2.
-	dis8(-\tweak extra-offset #'(0.7 . 0.8) \pp fis b dis fis e
-	dis b cis dis gis, ais)
+	dis8(\pp fis b dis fis e
+	\stemUp dis b cis dis gis, ais) \stemNeutral
 	fis(\< b fis b gis b
 	fis ais fis ais e fis)\!
 % Bars 441 to 445
@@ -538,7 +538,7 @@ musicViolinoIIMvtI = \relative c' {
 	<< e: {s4 s s8 s\!}>>
 	<e, cis'! a'>8-.\f\arpeggio r r4 g!(->
 	a8) r r4 g(->
-	a2)\< bes4~
+	\hairpinShorten #'(0 . -3) a2)\< bes4~
 	bes b-. cis!-.\!
 % Bars 451 to 455
 	d8-. r r4 c(\fz
@@ -547,7 +547,7 @@ musicViolinoIIMvtI = \relative c' {
 	R2.
 	fis,8(\p a d4) r
 % Bars 456 to 460
-	fis,8( a d4)\cresc r
+	fis,8( a d4)-\crescmarkup r
 	g,8( bes d4) r
 	a8( c fis4) r \mark \default
 	ees\f-^ ees-^ c8-. d-.
@@ -561,7 +561,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 466 to 470
 	d'16( gis,) gis-. gis-. gis4:16 a16( a') a-. a-.
 	a2:16 b8: cis:
-	d2\ff cis4
+	\dynEO #'(0 . 2) d2\ff cis4
 	a8( fis) g-. a-. e4
 	d8( fis a4 g)
 % Bars 471 to 475
@@ -586,7 +586,7 @@ musicViolinoIIMvtI = \relative c' {
 	a8-. fis-. g-. a-. dis,4
 	g-> <a, cis>-> <d! fis>->
 	<g, b>-> <cis e>-> <fis, a>->
-	fis''\f-> r8 b,-. c-. d-.
+	\dynEO #'(0 . 2) fis''\f-> r8 b,-. c-. d-.
 	e4.-> a,8-. b-. c-.
 % Bars 491 to 495
 	d g, a b c fis,
@@ -614,7 +614,7 @@ musicViolinoIIMvtI = \relative c' {
 	cis: d:] d,: b: cis: d:
 % Bars 511 to 515
 	b: cis: d: b: cis: d:
-	r4 b-\tweak X-offset #-1 _\ffpesante-.-> cis-.-> 
+	r4 b-\offset X-offset #-3 _\ffpesante-.-> cis-.-> 
 	d-.->  gis,-.->  ais-.-> 
 	b-.->  b-.->  cis-.-> 
 	d-.->  d-.->  cis-.-> 
@@ -633,7 +633,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 526 to 530
 	fis-. d-. e-.
 	fis-. d-. e-.
-	d'16 a\ff a a a2:16
+	d'16 \dynEO #'(0 . 2) a\ff a a a2:16
 	a2.:
 	a:
 % Bars 531 to 535

@@ -28,7 +28,7 @@ musicOboeIMvtI = \relative c'' {
 		g2 r4
 		R2.
 % Bars 16 to 20
-		r4 r \partCombineApart a,(
+		r4 r \partCombineApart \shape #'((0 . -1)(0 . 0)(0 . -1)(0 . -2)) Slur a,(
 		a'2 gis4
 		a b a) \partCombineAutomatic
 		a2(\f g!4
@@ -41,7 +41,7 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 26 to 30
 	
-		r4 f( e
+		r4 \shape #'((0 . 1)(0 . 0)(0 . 0)(0 . 1)) Slur f( e
 		d cis! b)
 		a8-.-\brackM\rinforz b-. c-. c-. b-. a-.
 		b4-. e,-. r
@@ -67,7 +67,7 @@ musicOboeIMvtI = \relative c'' {
 		gis a2->\<~
 		a2.~
 		<< a {s4 s s8 s\!}>> \mark \default
-		a4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
+		a4\ff r a-.
 		a2-^ r4
 % Bars 51 to 55
 		r r a-.
@@ -98,7 +98,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 76 to 80
 	
 % Bars 81 to 85
-		\partCombineApart g4-.\p g-. gis-.
+		\partCombineApart g4-.-\offset X-offset -1 \p g-. gis-.
 		ais \partCombineAutomatic r r
 		R2.*4
 	
@@ -114,12 +114,12 @@ musicOboeIMvtI = \relative c'' {
 		b8) \once \partCombineAutomatic r b2(~
 		b ais4
 		b) r8 b-.\< cis-. dis-.\!
-		e2-^( d!8 c)
+		\marcatoUpperSlur e2-^( d!8 c)
 % Bars 96 to 100
 		b4 r8 d-. e-. fis-.
 		\partCombineAutomatic \marcatoUpperSlur g2-^( fis8 e)
 		d4 \partCombineApart r8 fis-.\< g-. a-.\!
-		\partCombineAutomatic b2(\fz a8 g)
+		\partCombineAutomatic \dynEO #'(0 . 2) b2(\fz a8 g)
 		fis4 \partCombineApart r8 a-. b-. cis-.
 % Bars 101 to 105
 		\partCombineAutomatic d2\fz( cis8 b)
@@ -136,15 +136,15 @@ musicOboeIMvtI = \relative c'' {
 % Bars 111 to 115
 		<< a)\> {s4 s s8 s\!}>>
 		g2.\p~
-		g~_\dimmarkup
-		g\pp
+		<< g~ {s4 s2-\dimmarkup}>>
+		g2.\pp
 		fis~
 % Bars 116 to 120
 		fis
 		gis4( a\< b
 		c d dis
 		e\! eis\> fis)\!
-		b2(-\tweak X-offset #0 _\pespressD ais4)
+		b2(-\tweak X-offset #0 -\pespressD ais4)
 % Bars 121 to 125
 		fis8( dis) e-. fis-. cis4
 		b8( dis fis4 e
@@ -206,7 +206,7 @@ musicOboeIMvtI = \relative c'' {
 		fis'8\( d!\) e-. fis-. b,4
 		fis'8\( d\) e-. fis-. b,4
 % Bars 171 to 175
-		\partCombineApart fis'2(_\fp e4
+		\partCombineApart fis'2(-\offset X-offset -1 \fp e4
 		d2 cis4)
 		b8-. d-. fis4-- e--
 		d2( cis4)
@@ -218,7 +218,7 @@ musicOboeIMvtI = \relative c'' {
 		{
 			b8( cis d4) d8(\< e
 			fis4) fis gis\!
-			a2._\fpdimD~
+			a2.-\offset X-offset -1 -\fpdimD~
 			a~
 % Bars 181 to 185
 			a~
@@ -284,7 +284,7 @@ musicOboeIMvtI = \relative c'' {
 	
 % Bars 236 to 240
 	
-	r4 g\pp( f8 e)
+	r4 g-\tweak X-offset -2.5 \pp( f8 e)
 	e2 r4
 	R2.*2
 	
@@ -301,7 +301,7 @@ musicOboeIMvtI = \relative c'' {
 	R2.*2
 	
 % Bars 251 to 255
-	\partCombineApart r4 bes(^\crescmarkup aes8 g) \partCombineAutomatic
+	\partCombineApart r4 bes(-\offset X-offset -4 ^\crescmarkup aes8 g) \partCombineAutomatic
 	R2.*3
 	
 	
@@ -313,7 +313,7 @@ musicOboeIMvtI = \relative c'' {
 	
 	
 % Bars 261 to 265
-	\partCombineApart g4--_\p r r \partCombineAutomatic
+	\partCombineApart g4---\offset X-offset -1.5 \p r r \partCombineAutomatic
 	R2.*2
 	
 	<< ais,2.( {s8\p\< s s s\> s s\!}>>
@@ -322,8 +322,8 @@ musicOboeIMvtI = \relative c'' {
 	\partCombineApart c8( \tweak X-offset #-0.5 \p b) r4 r
 	a8( g) r4 r \partCombineAutomatic
 	ais2.(
-	b2 \tweak extra-offset #'(0 . 1) _\< a!4\!
-	<< gis2._\> {s4 s s8 s\!}>>
+	b2\< a!4\!
+	<< gis2.\> {s4 s s8 s\!}>>
 % Bars 271 to 275
 	a4)--\! r r
 	R2.*2
@@ -365,7 +365,7 @@ musicOboeIMvtI = \relative c'' {
 	aes\fz~
 	aes~
 	aes
-	d~\fz
+	\dynEO #'(0 . 1) d~\fz
 % Bars 306 to 310
 	d4 r r
 	R2.*14
@@ -393,9 +393,9 @@ musicOboeIMvtI = \relative c'' {
 	r r \partCombineApart a(
 	d) d-. \partCombineAutomatic r
 	d4. d8 d4
-	\hairpinYoffset #0 #1.5 d(\< e fis)\!
+	d(\< e fis)\!
 % Bars 336 to 340
-	a2-\tweak extra-offset #'(0 . 1) \fz(\> g8 fis)\! \hairpinYoffset #0 #0
+	a2-\tweak extra-offset #'(0 . 1) \fz(\> g8 fis)\!
 	\once \partCombineApart e2 r4
 	R2.*2
 	
@@ -409,8 +409,8 @@ musicOboeIMvtI = \relative c'' {
 % Bars 346 to 350
 	\partCombineAutomatic a2(\f g!4
 	fis_\dimmarkup g fis)
-	\stemUp e( g2~
-	g2.) \hairpinYoffset #0 #0
+	\stemUp \shape #'((0 . -0.5)(0 . -1)(0 . -1)(0 . 0)) Slur e( g2~
+	g2.)
 	\once \partCombineChords cis,8 r r4 r
 % Bars 351 to 355
 	R2.*5
@@ -423,7 +423,7 @@ musicOboeIMvtI = \relative c'' {
 	b4-.-> e,-.-> r
 	c'8-.[ d-. ees-. ees-. d-. c-.]
 	d4->-. g,->-. r
-	f'8->-._\fsempre[ g-. aes-. aes-. g-. f-.]
+	f'8->-.-\offset X-offset -2 _\fsempre[ g-. aes-. aes-. g-. f-.]
 % Bars 361 to 365
 	a!-.\fz r c,4-. f!-.\fz
 	c-. a'-.\fz c,-.
@@ -443,8 +443,8 @@ musicOboeIMvtI = \relative c'' {
 	a4-. r r
 	R2.
 % Bars 376 to 380
-	\partCombineApart r4 d,(_\p_\< g!\!
-	gis2_\> d4)\!
+	\partCombineApart r4 \hairpinShorten #'(0 . -1) d,(\p\< g!\!
+	gis2\> d4)\!
 	cis2.(~
 	cis
 	d)
@@ -479,11 +479,11 @@ musicOboeIMvtI = \relative c'' {
 	bes2\fz( a8 g
 	f4) r r
 % Bars 406 to 410
-	f2\fz~ f8 g-.
+	f2-\tweak X-offset 0.3 \fz~ f8 g-.
 	a4 r r
 	a2-\tweak X-offset #0.3 \fz( bes8 b
 	e,-.) r r4 r
-	\partCombineApart cis!8-._\dimmarkup r r4 r
+	\partCombineApart cis!8-.-\dimmarkup r r4 r
 % Bars 411 to 415
 	a8-._\p r r4  r \partCombineAutomatic
 	R2.*2
@@ -491,20 +491,20 @@ musicOboeIMvtI = \relative c'' {
 	\partCombineApart e'4_\pp r a, \partCombineAutomatic \mark \default
 	R2.
 % Bars 416 to 420
-	\partCombineApart f4(_\p_\< a d)
+	\partCombineApart f4(\p\< a d)
 	<< c2.~ {s4 s s8 s\!}>>
-	<< c2._\> {s4 s s8 s\!}>>
-	bes2._\p~
-	bes_\dimmarkup~
+	<< c2.\> {s4 s s8 s\!}>>
+	bes2.\p~
+	bes-\dimmarkup~
 % Bars 421 to 425
-	bes-\tweak extra-offset #'(0.5 . 0.4) _\pp
+	bes-\tweak extra-offset #'(0.5 . 0.4) \pp
 	a~
 	a
-	b4(_\< c d
+	b4(\< c d
 	ees f fis
 % Bars 426 to 430
-	g\! gis_\> a)\!
-	d2(_\p cis4)
+	g\! gis\> a)\!
+	d2(-\offset X-offset -0.5 \p cis4)
 	a8( fis) g-. a-. e4
 	d8( fis a4) g--
 	fis2( e4)
@@ -567,7 +567,7 @@ musicOboeIMvtI = \relative c'' {
 	g!->
 	g->
 	gis->
-	\partCombineApart a4-^ r8 fis\f-. g!-. a-.
+	\partCombineApart a4-^ r8 fis-\offset X-offset -1 \f-. g!-. a-.
 % Bars 481 to 485
 	b4.-> e,8-. fis-. g-.
 	a-. a4-> d,8-. e-. fis-.
@@ -578,7 +578,7 @@ musicOboeIMvtI = \relative c'' {
 	R2.*3 \partCombineApart
 	
 	
-	fis'4\f r8 b,-. c-. d-.
+	fis'4-\offset X-offset -1 \f r8 b,-. c-. d-.
 	e4. a,8-. b-. c-.
 % Bars 491 to 495
 	d g, a b c fis
@@ -595,7 +595,7 @@ musicOboeIMvtI = \relative c'' {
 % Bars 501 to 505
 	g2 g4~
 	g g g
-	a4.\ff-^ a-^
+	\dynEO #'(0 . 1) a4.\ff-^ a-^
 	a d,8-. e-. fis-.
 	g4-. cis,-. fis-.
 % Bars 506 to 510
@@ -619,7 +619,7 @@ musicOboeIMvtI = \relative c'' {
 	a-. a-. a-.
 	d,4.\ff d8 d4
 	d( e fis)
-	a2(\fz g8 fis)
+	\dynEO #'(0 . 1) a2(\fz g8 fis)
 % Bars 531 to 535
 	fis2.
 	\partCombineApart d4. d8 d4 \partCombineAutomatic

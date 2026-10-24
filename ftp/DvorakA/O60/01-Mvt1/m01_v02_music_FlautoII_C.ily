@@ -19,7 +19,7 @@ musicFlautoIIMvtI = \relative c' {
 		r r fis(
 		fis4.) fis8\< fis4
 		fis( a d)\!
-		fis2->\f\> e8 dis\!
+		fis2->-\offset X-offset 1 \f\> e8 dis\!
 		e2\p r4
 % Bars 11 to 15
 		r r8 g-.\p g( fis)
@@ -34,7 +34,7 @@ musicFlautoIIMvtI = \relative c' {
 		
 		
 % Bars 21 to 25
-		\partCombineApart r4 \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d(-\tweak extra-offset #'(0 . 0.5) \p\> cis
+		\partCombineApart r4 \shape #'(((0 . -1.5)(0 . 0.5)(0 . 0.5)(0 . 0)) ((0 . 0.3)(0 . 1)(0 . 1)(0 . 0))) Slur d(-\tweak extra-offset #'(0 . 0.5) \p\> cis
 		b cis b\!
 		ais8)\pp r r4 r \partCombineAutomatic
 		R2.*10
@@ -67,7 +67,7 @@ musicFlautoIIMvtI = \relative c' {
 		cis cis2~\<
 		cis2.~
 		<< cis {s4 s s8 s\!}>> \mark \default
-		d4-\tweak X-offset #-1 _\ffgrandiosoD r a
+		d4\ff r a
 		d2-^ r4
 % Bars 51 to 55
 		r r a
@@ -78,7 +78,7 @@ musicFlautoIIMvtI = \relative c' {
 % Bars 56 to 60
 		fis2(\fz e8 dis)
 		b2(\fz e8 d!)
-		cis2.\fz
+		\dynEO #'(0 . 2) cis2.\fz
 		d4 a( b8 c
 		b2) g8(\< a
 % Bars 61 to 65
@@ -176,9 +176,9 @@ musicFlautoIIMvtI = \relative c' {
 % Bars 171 to 175
 		R2.*2
 	
-		fis,2.\p(~
+		\dynEO #'(-1.5 . 1) fis,2.\p(~
 		fis2 g4)
-		fis2.(~
+		\shape #'((0 . 0.3)(0 . 0.5)(0 . 0.5)(0 . 0.3)) Slur fis2.(~
 % Bars 176 to 180
 		fis2 g4
 	}
@@ -195,7 +195,7 @@ musicFlautoIIMvtI = \relative c' {
 	
 	
 	
-			r4 r fis\p
+			r4 r fis-\offset X-offset 0.5 \p
 % Bars 191 to 195
 		}
 		{
@@ -347,7 +347,7 @@ musicFlautoIIMvtI = \relative c' {
 	cis~
 	cis2 cis4-. \mark \default
 	d-. r r
-	r r fis,,--\pp
+	r r fis,,---\offset X-offset -2 \pp
 % Bars 331 to 335
 	fis2 r4
 	r r fis(
@@ -364,13 +364,13 @@ musicFlautoIIMvtI = \relative c' {
 	
 	
 	r4 r a,\p
-	\hairpinYoffset #0 #0.5 c2\< b4
+	c2\< b4
 	c d c\!
 % Bars 346 to 350
 	c2(\f b4
 	a b a)
 	g( \tweak X-offset #1 \p d'\> cis!
-	b cis b\! \hairpinYoffset #0 #0
+	b cis b\!
 	ais8)\pp r r4 r
 % Bars 351 to 355
 	R2.*9
@@ -435,7 +435,7 @@ musicFlautoIIMvtI = \relative c' {
 	
 	r4 r8 a-.\f bes-. c-.
 % Bars 406 to 410
-	bes2(\fz a8 g
+	\dynEO #'(0 . 2) bes2(\fz a8 g
 	f4) r r
 	a2(\fz bes8 b
 	e,-.) r r4 r
@@ -512,8 +512,8 @@ musicFlautoIIMvtI = \relative c' {
 	d( cis2)
 	d2( cis4)
 	d4( cis2)
-	d4 dis2
-	e4 eis2
+	d4 dis2->
+	e4 eis2->
 % Bars 476 to 480
 	cis2.->
 	cis->
@@ -596,7 +596,7 @@ musicFlautoIIMvtI = \relative c' {
 	d--
 % Bars 556 to 560
 	d--
-	\partCombineApart d2-^\f cis4-.
+	\partCombineApart \dynEO #'(-0.5 . 1) d2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 a->
 	a-> r r \fine

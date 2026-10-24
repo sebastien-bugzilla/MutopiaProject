@@ -191,7 +191,7 @@ musicViolinoIIMvtI = \relative c' {
 		e,8( g b4-.) r
 % Bars 151 to 155
 		fis8( a dis4-.) r
-		c_\ffmarc-^ c-^ a8-^ b-^
+		c_\ffmarcato-^ c-^ a8-^ b-^
 		c2.-^
 		c4-^ c-^ a8-^ b-^
 		c4-^ a'8( fis) g-. a-.
@@ -499,7 +499,7 @@ musicViolinoIIMvtI = \relative c' {
 	r4 r8 \stemUp b'16(\pp cis \stemNeutral b8) a-. \mark \default
 	a2.~
 % Bars 416 to 420
-	a4. d16(_\leggiero e) f8-.\< f16( g)
+	a4. d16(\<_\leggiero e) f8-. f16( g)
 	c,8-. c16( f) g8-. g16( fis!) g8-. g16( e)\!
 	f8-.\> f16( g) a8-. a16( bes) a8-. a-.\!
 	g8-.\p g16( a) g8-._\dimmarkup g16( a) g8-. g16( a)

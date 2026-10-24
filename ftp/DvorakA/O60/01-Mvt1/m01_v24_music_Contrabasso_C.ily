@@ -19,7 +19,7 @@ musicContrabassoMvtI = \relative c {
 		d) d-. r
 		R2.
 		r4 r d(\<
-		<< b2.)\f\> {s4 s s\!}>>
+		<< b2.)\f\> {s4 s s8 s\!}>>
 		e2\p b4(\pp
 % Bars 11 to 15
 		e2) r4
@@ -30,7 +30,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 16 to 20
 		e2( g4~\!
 		g) << {fis(\> d~ } {s8 s s s\!}>>
-		d2.\<)
+		<< d2.\<) {s4 s s8 s\!}>>
 		g,2.\f
 		b_\dimmarkup
 % Bars 21 to 25
@@ -67,7 +67,7 @@ musicContrabassoMvtI = \relative c {
 		gis \clef bass g,!8\<-. a-. cis-. e-.
 		a-. cis-. e-. g-. e-. cis-. 
 		a-. g-. e-. cis-. a-. a'-.\! \mark \default
-		d,4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		d,4\ff r r
 		r r a-.
 % Bars 51 to 55
 		fis2-^ r4
@@ -77,9 +77,9 @@ musicContrabassoMvtI = \relative c {
 		r r\< d-.
 % Bars 56 to 60
 		b2.\fz
-		d2(-^ cis8 b)
+		\marcatoUpperSlur d2(-^ cis8 b)
 		a2.\fz
-		c2-^( b8 a)
+		\marcatoUpperSlur c2-^( b8 a)
 		g2 c4\fz
 % Bars 61 to 65
 		b8-. a-. g4 c\fz
@@ -174,7 +174,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 136 to 140
 		aes'8-.\pp\<-\tweak extra-offset #'(-0.9 . -1.8) ^\arco ces-. ees4-. des-. 
 		ces8-. bes-. aes4-. aes8-. ges-.\!
-		f-.-\tweak X-offset #-1.5 _\mfcrescD aes-. ces4-. ces8-. bes-.
+		f-._\mfcrescD aes-. ces4-. ces8-. bes-.
 		aes-. ges-. f-. ees-. des4 \mark \default
 		fis!4-.\f r g!-.
 % Bars 141 to 145
@@ -243,7 +243,7 @@ musicContrabassoMvtI = \relative c {
 % Bars 191 to 195
 		}
 		{ 
-			b2.~_\ppsempremoltotranquillo
+			b2.~\pp
 			b~
 			b2( fis4
 			b8 d fis4 d8 b)
@@ -314,7 +314,7 @@ musicContrabassoMvtI = \relative c {
 	ees4. ees8 ees4
 	ees( fis! a)
 	ees2.
-	e!_\crescmarkup
+	<< e! {s4 s s_\crescmarkup}>>
 	e4. e8 e4
 % Bars 251 to 255
 	e( g bes)
@@ -555,7 +555,7 @@ musicContrabassoMvtI = \relative c {
 	R2.
 	d4-.\p a'8( fis) g-. a-.
 % Bars 456 to 460
-	d,4 a'8(\cresc fis) g-. a-.
+	d,4 a'8(-\crescmarkup fis) g-. a-.
 	d,4 bes'8( g) a-. bes-.
 	d,4 c'8( a) bes-. c-. \mark \default
 	c,4\f r c'-^

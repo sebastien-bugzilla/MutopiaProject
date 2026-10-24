@@ -44,10 +44,10 @@ musicTrombeIMvtI = \relative c'' {
 		d d2
 		d d4~
 % Bars 46 to 50
-		d \partCombineAutomatic g2->~ \tweak extra-offset #'(0 . 1) \<
+		d \partCombineAutomatic g2->~\<
 		g2.~
 		<< g {s4 s s8 s\!}>> \mark \default
-		e4-\tweak X-offset #-1 _\ffgrandiosoD r r
+		e4\ff r r
 		r r g,-.\f
 % Bars 51 to 55
 		c2-^ r4
@@ -249,7 +249,7 @@ musicTrombeIMvtI = \relative c'' {
 % Bars 316 to 320
 	
 % Bars 321 to 325
-	b2\ff fis4
+	\aIIXoffset #-4 b2\ff fis4
 	b2 fis4
 	b b fis
 	b b fis
@@ -273,7 +273,7 @@ musicTrombeIMvtI = \relative c'' {
 % Bars 356 to 360
 	
 % Bars 361 to 365
-	c8-.\f r c2->~
+	\aIIXoffset #-3.5 c8-.\f r c2->~
 	c2.~
 	c4 c-. d-.
 	c-. r r
@@ -348,8 +348,8 @@ musicTrombeIMvtI = \relative c'' {
 	
 % Bars 466 to 470
 	r4 r \partCombineApart g~
-	g g-. g-.
-	\partCombineAutomatic e'2(\ff f4)
+	g g-. g-. \partCombineAutomatic
+	e'2(-\tweak X-offset 0.3 \ff f4)
 	e2( d4)
 	g2.~
 % Bars 471 to 475
@@ -359,7 +359,7 @@ musicTrombeIMvtI = \relative c'' {
 	g4 r r
 	R2.
 % Bars 476 to 480
-	b,2.->
+	\aIIXoffset #-3.5 b,2.->
 	b->
 	c->
 	d->
@@ -429,7 +429,7 @@ musicTrombeIMvtI = \relative c'' {
 	<< g~ {s4 s s8 s\!}>>
 	g2\p f8 e)
 % Bars 541 to 545
-	e2( d8_\dimmarkup c)
+	e2( \stemDown d8_\dimmarkup c) \stemNeutral
 	c2 r4
 	R2.*16
 	

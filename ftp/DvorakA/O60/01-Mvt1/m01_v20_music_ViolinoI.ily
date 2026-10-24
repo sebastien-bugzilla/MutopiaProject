@@ -507,7 +507,7 @@ musicViolinoIMvtI = \relative c'' {
 	\mark \default
 	a8-._\ppleggiero a16( b) cis8-. cis16( d) e8-. e16( f)
 % Bars 416 to 420
-	d8-. d16( e) f8-. f16( g) a8-.\< a16( bes)
+	d8-. d16( e) f8-. f16(\< g) a8-. a16( bes)
 	g8-. g16( a) bes8-. bes16( a) bes8-. bes16( c)\!
 	a8-.\> a16( bes) c8-. c16( d) c8-. c16( f)\!
 	bes,8-.\p bes16( c) bes8-._\dimmarkup bes16( c) bes8-. bes16( ees)
