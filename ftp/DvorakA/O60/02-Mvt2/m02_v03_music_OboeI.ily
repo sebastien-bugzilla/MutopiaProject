@@ -28,7 +28,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	
-	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8(_\pcresc^\brack\mf bes d f~
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8(_\crescmarkup^\brack\mf bes d f~
 	f_\dimmarkup ees d c
 % Bars 21 to 25
 	f4.)\pp r8
@@ -229,8 +229,8 @@ musicOboeIMvtII = \relative c'' {
 	R2*5
 % Bars 196 to 200
 	r8 f(\pp d g~
-	g4. f8)~
-	f\noBeam f\ff-! d-! g-!
+	g4. f8~
+	f)\noBeam f\ff-! d-! g-!
 	ees-! c-! a-! fis'-^
 	g-^ r f!4\fp~
 % Bars 201 to 205

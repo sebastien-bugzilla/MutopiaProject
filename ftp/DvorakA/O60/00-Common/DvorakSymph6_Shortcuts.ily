@@ -131,7 +131,7 @@ semprecresc = \markup {\italic {sempre cresc.}}
 %--------------------
 % text indications
 %--------------------
-arco = \markup {arco}
+arco = \markup {\italic arco}
 benmarcato = \markup {\italic {ben marcato}}
 div = \markup {div.}
 grandioso = \markup {\italic grandioso}
@@ -140,12 +140,29 @@ marcatosempre = \markup {\italic {marcato sempre}}
 marc = \markup {\italic marc.}
 nonlegato = \markup {\italic {non legato}}
 pesante = \markup {\italic pesante}
-pizz = \markup {pizz.}
+pizz = \markup {\italic pizz.}
 sempremarc = \markup {\italic {sempre marc.}}
 solo = \markup {Solo.}
 ten = \markup {\italic ten.}
 tranquillo = \markup {\italic tranquillo}
 leggiero = \markup {\italic leggiero}
+
+%--------------------
+% Instrument modification
+%--------------------
+piccolo = {
+	\once \override Score.TextScript.outside-staff-priority = #1500
+	<>^\markup {\bold Piccolo}
+}
+
+flote = {
+	\once \override Score.TextScript.outside-staff-priority = #1500
+	<>^\markup {\bold Flote}
+}
+
+I = \markup { I. }
+II = \markup { II.}
+fl = \markup {Fl.}
 
 trio = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(key-signature)
@@ -182,15 +199,6 @@ finale = {
 	}
 }
 
-piccolo = {
-	\once \override Score.TextScript.outside-staff-priority = #1500
-	<>^\markup {\bold Piccolo}
-}
-
-flote = {
-	\once \override Score.TextScript.outside-staff-priority = #1500
-	<>^\markup {\bold Flote}
-}
 
 
 
@@ -555,3 +563,20 @@ tremoloPosition = #(define-music-function
 
 marcatoUpperSlur = \once \override Script.avoid-slur = #'outside
 
+changeStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set Staff.shortInstrumentName = #staffName
+	#}
+)
+
+changeGrandStaffName = #(define-music-function
+	(staffName)
+	(markup?)
+	#{
+		\set GrandStaff.shortInstrumentName = #staffName
+	#}
+)
+
+unsetGrandStaffName = \unset GrandStaff.shortInstrumentName

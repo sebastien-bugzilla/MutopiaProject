@@ -70,7 +70,7 @@ musicVioloncelloMvtII = \relative c {
 	r16 ees''\pp d ces aes f ees aes,
 % Bars 51 to 55
 	ees8\noBeam <ees bes'>\p\<^\arco-- q-- q--\!
-	cis16(\f e a\> cis e a cis a)\!
+	cis16(\f e a!\> cis e a cis a)\!
 	bes8\p r g'( d~\>
 	d bes4 c8\!
 	d)\pp r r4
@@ -99,7 +99,7 @@ musicVioloncelloMvtII = \relative c {
 	g d'8 d16 g,\< d'\! c,\> c'\!
 	d\! f8 f16 d bes8 bes16
 	ees f8\< f16 ees f8 f16\!
-	d f8\> f16 c f8 f16\!
+	d\> f8 f16 c f8 f16\!
 	bes,8\p r r4
 % Bars 81 to 85
 	R2*2
@@ -195,7 +195,7 @@ musicVioloncelloMvtII = \relative c {
 	d~
 	d4( e\<
 % Bars 161 to 165
-	f4.\! c8~
+	\after 8*2 \! f4. c8~
 	c4)( d\>
 	ees4. bes8~
 	bes4\pp a~

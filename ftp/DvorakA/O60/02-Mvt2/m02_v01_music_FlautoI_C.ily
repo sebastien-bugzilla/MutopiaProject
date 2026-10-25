@@ -11,9 +11,9 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 1 to 5
 	R2
 	\partCombineApart r8 bes(\p a d~
-	d4._\< e8\!
-	f2_\fp\>~
-	\dynEO #'(0 . 1) f8)_\pp r r4 \partCombineAutomatic
+	d4.\< e8\!
+	f2\fp\>~
+	f8)\pp r r4 \partCombineAutomatic
 % Bars 6 to 10
 	R2*12
 % Bars 11 to 15
@@ -29,7 +29,7 @@ musicFlautoIMvtII = \relative c'' {
 	R2
 	d4(\p b!8\< f')\!
 	d(\> b!\! g f)
-	e(\p g c4~
+	\shape #'((0 . -1.5)(0 . 1)(0 . 0.3)(0 . -1)) Slur e(\p g c4~
 % Bars 26 to 30
 	c8 b a g)
 	\partCombineApart g8(~ g32 a g f-.) f4\<(
@@ -39,7 +39,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 	
 	
-	\section \mark \default
+	\section \markXoffset #-0.2 \mark \default
 	r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
@@ -49,7 +49,7 @@ musicFlautoIMvtII = \relative c'' {
 	f-- f--
 % Bars 41 to 45
 	R2
-	\partCombineApart r4 \tuplet 3/2 4 {c8-.\f g'-. c-.} \partCombineAutomatic
+	\partCombineApart r4 \tuplet 3/2 4 {c8-.-\offset X-offset -1 \f g'-. c-.} \partCombineAutomatic
 	R2
 	\partCombineApart r4 \tuplet 3/2 4 {bes,8\p-. f'-. bes-.} \partCombineAutomatic
 	R2*12
@@ -107,11 +107,11 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 106 to 110
 	f8 ees4.)
 	des2\fz
-	\dynEO #'(0 . 1) ces\fz
-	\dynEO #'(0 . 1) b\fz
-	\dynEO #'(0 . 1) b\fz
+	ces\fz
+	b\fz
+	b\fz
 % Bars 111 to 115
-	\dynEO #'(0 . 1) b\fz \mark \default
+	b\fz \markXoffset #-0.2 \mark \default
 	b8 r r4
 	R2*8
 % Bars 116 to 120
@@ -134,19 +134,19 @@ musicFlautoIMvtII = \relative c'' {
 	r d( b e)
 % Bars 136 to 140
 	c( a fis b)
-	b4.(\< cis8)\!
+	b4.(\< cis8)\! \changeStaffName \I \changeGrandStaffName \fl
 	d4 f!~\>
-	f8\! ees!16(_\dimmarkup d f ees d c) \mark \default
-	d4 r \partCombineAutomatic
+	f8\! ees!16(-\dimmarkup d f ees d c) \markXoffset #-0.2 \mark \default \partCombineAutomatic
+	\aIIOmit d4 r 
 % Bars 141 to 145
 	R2
-	\partCombineApart bes4(\pp g8\< c)
+	bes4(\pp g8\< c)
 	bes( g d e)\!
 	<< f2~\mf\< {s8 s s s\!}>>
-	f8\> f(-- g-- a--)\!
+	f8\> f(-- g-- a--)\! \unsetGrandStaffName \changeStaffName \fl
 % Bars 146 to 150
-	bes4(-\pdim~ bes16 c g a
-	bes4)-\tweak X-offset #-2 \pp r \partCombineAutomatic
+	bes4(-\pdim~ bes16 c g a \break  
+	<< {\once \stemUp \once \dynamicUp bes4)\pp \partCombineApart \once \voiceOne r \partCombineAutomatic } {\mmrPos #-4 R2} >>
 	R2*2
 	
 	r8 \partCombineApart bes4_\pcresc( a16 g
@@ -168,7 +168,7 @@ musicFlautoIMvtII = \relative c'' {
 	r4 a\trill(~
 	a16 bes32 a g16 a c a g f
 % Bars 166 to 170
-	d ees a->_\dimmarkup f ees c b c
+	d ees a->-\dimmarkup f ees c b c
 	f-> ees c a gis a d c
 	a f e f ees f c_\p f)~ \mark \default
 	f2~
@@ -183,7 +183,7 @@ musicFlautoIMvtII = \relative c'' {
 	d) r r4
 	r16 fis,-.\f\<-> g-.-> gis-.-> a-.-> bes-.-> c-.-> cis-.->\!
 	\once \partCombineApart d8->-. r g4-^~
-	g8_\> bes( a g~\!
+	g8\> bes( a g~\!
 	g)\p f4.~^\dimmarkup
 % Bars 181 to 185
 	f2~

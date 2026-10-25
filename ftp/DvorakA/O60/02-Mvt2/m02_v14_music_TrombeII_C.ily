@@ -128,7 +128,7 @@ musicTrombeIIMvtII = \relative c'' {
 % Bars 196 to 200
 	
 	
-	r8 g-\tweak X-offset #-2.5 \ff-! g-! g-! 
+	r8 g\ff-! g-! g-! 
 	g-! g-! g-! e-^
 	e-^ r r4
 % Bars 201 to 205

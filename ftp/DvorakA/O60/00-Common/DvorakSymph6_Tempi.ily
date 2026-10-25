@@ -83,7 +83,7 @@ tempiMvtII = {
 	% bar 95
 	\tempo \markup {
 		\concat {
-			"Poco più animato"
+			"Poco più animato "
 			\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
 			" = 56"
 		}

@@ -21,10 +21,10 @@ musicFagottoIIMvtII = \relative c {
 	
 	R2*2
 	
-	r4 << e,\brack\p {s16-\tweak extra-offset #'(1 . 1) \< s s s\!}>>
+	r4 e,-\offset X-offset -2.5 \brack\p\<
 % Bars 16 to 20
-	f2\f~
-	f4. fis8
+	\stemUp f2\f~
+	f4. fis8 
 	g\p r r4
 	R2*3
 	
@@ -50,7 +50,7 @@ musicFagottoIIMvtII = \relative c {
 	d-- d--
 	d-- d-- 
 % Bars 41 to 45
-	a-\tweak X-offset #0.7 _\ten b4
+	\stemDown a-\tweak X-offset #0.7 _\ten b4
 	c  c 
 	c f,4
 	bes bes
@@ -91,7 +91,7 @@ musicFagottoIIMvtII = \relative c {
 	g4.\< c8\>(
 	d f\! d bes)
 	ees4.\< ees8(\!
-	d4\> c\!
+	d4\> \after 8 \! c
 	bes8\p) r r4
 % Bars 81 to 85
 	R2*2
@@ -103,7 +103,7 @@ musicFagottoIIMvtII = \relative c {
 	g r r4
 	R2*2
 	\mark \default
-	bes,2~
+	bes,2\pp~
 	bes
 % Bars 91 to 95
 	b2(
@@ -169,7 +169,7 @@ musicFagottoIIMvtII = \relative c {
 	
 	R2*2
 	
-	r4 e\mf
+	r4 e-\offset X-offset -3 \mf
 % Bars 151 to 155
 	f2
 	f4~ f8 fis(

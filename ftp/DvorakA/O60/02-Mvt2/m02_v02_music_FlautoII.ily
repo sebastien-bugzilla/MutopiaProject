@@ -86,8 +86,8 @@ musicFlautoIIMvtII = \relative c''' {
 	aes4.\pp r8
 	R2
 % Bars 91 to 95
-	r8 d(\p b f')~
-	f16 e( d) c( b) a( g) f(
+	r8 d(\p b f'~
+	f16) e( d) c( b) a( g) f(
 	e8) r r4
 	R2
 	R2*7

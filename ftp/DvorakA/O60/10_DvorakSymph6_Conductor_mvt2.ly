@@ -22,7 +22,8 @@
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
+%\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
+\include "./00-Common/DvorakSymph6_Format_temp.ily"
 \include "./02-Mvt2/m02_v01_music_FlautoI_C.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI_C.ily"
@@ -67,8 +68,11 @@
 				\new GrandStaff <<
 					\new Staff <<
 %						\new Voice {
-%							\formatConductorMvtII
+%							\displayFilterVoice
 %						}
+						\new Voice {
+							\formatConductorMvtII
+						}
 						\new Voice {
 							\tempiMvtII
 						}
@@ -95,7 +99,8 @@
 				}
 			>>
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIMvtII 
+					\consists Keep_alive_together_engraver} <<
 					\new Staff {
 						\timeMvtII \nameStaffVMvtII
 						\partCombine \musicCornoIMvtII \musicCornoIIMvtII
@@ -114,7 +119,8 @@
 				\timeMvtII \nameStaffVIIIMvtII \musicTimpaniMvtII
 			}
 			\new StaffGroup <<
-				\new GrandStaff \with { \nameGrandStaffIIMvtII } <<
+				\new GrandStaff \with { \nameGrandStaffIIMvtII 
+					\consists Keep_alive_together_engraver } <<
 					\new Staff {
 						\timeMvtII \nameStaffIXMvtII \musicViolinoIMvtII
 					}
@@ -137,6 +143,7 @@
 			breakbefore = ##t
 		}
 		\layout {
+%			system-count = 31
 %			\context {
 %				\Score 
 %				scriptDefinitions = #my-script-alist

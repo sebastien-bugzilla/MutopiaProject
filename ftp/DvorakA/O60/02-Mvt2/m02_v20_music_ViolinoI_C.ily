@@ -52,9 +52,9 @@ musicViolinoIMvtII = \relative c'' {
 	<d' a' fis'>->\arpeggio r
 % Bars 36 to 40
 	R2
-	r8 <a' fis'>4(\p-\tweak extra-offset #'(0 . 0.25) \> <g e'>16\! <fis d'>
-	a8) r r4
-	r8 <a f'!>4(\pp <g e'>16 <f! d'>
+	r8 <a' fis'>4(-\offset X-offset -1.5 \p\> \stemUp <g e'>16\! <fis d'>
+	a8) \stemNeutral r r4
+	r8 <a f'!>4(-\offset X-offset -1 \pp \stemUp <g e'>16 <f! d'> \stemNeutral
 	a8) r r4
 % Bars 41 to 45
 	r8 \after 8 <>_\crescmarkup f'4( e16 d)
@@ -76,7 +76,7 @@ musicViolinoIMvtII = \relative c'' {
 % Bars 56 to 60
 	
 	
-	<< <bes, e>2\mf\<~ {s4 s8 s\!}>>
+	<< <bes, e>2-\offset X-offset 1 \mf\<~ {s4 s8 s\!}>>
 	q8 r r4
 	R2
 % Bars 61 to 65
@@ -93,15 +93,15 @@ musicViolinoIMvtII = \relative c'' {
 	
 	r16 d,(\pp g\prall fis g a bes c)
 % Bars 76 to 80
-	d( g d c bes\< a\! g\> bes)\!
-	bes4( f~
+	d( g d c bes\< a g\> bes)
+	bes4\!( f~
 	f8) f16\(\<( g) g( a) a( c)\)\!
 	<< {bes4(\> c) } {s8 s s s\!}>>
 	d8\p r r f,(\pp
 % Bars 81 to 85
 	f'2)~
 	f8( bes, c4
-	bes8) bes16(\< a) a( g) g( e)\!
+	bes8) bes16( a) a(\< g) g( e)\!
 	g(\f f) bes4\fz d,8(
 	f bes,_\dimmarkup d a
 % Bars 86 to 90
@@ -144,7 +144,7 @@ musicViolinoIMvtII = \relative c'' {
 	b)( g f b~ b g f b)
 	c8 r r4
 	R2
-	fis,16\(-\tweak X-offset #0.1 \pp dis b a'~ a\< fis dis dis'~
+	\shape #'((0 . 0)(0 . -1.5)(0 . -1.5)(0 . 0)) PhrasingSlur fis,16\(\pp dis b a'~ a\< fis dis dis'~
 	dis b a fis'~ fis dis b b'(\!
 % Bars 121 to 125
 	bes!8)\)\pp r r4
@@ -208,7 +208,7 @@ musicViolinoIMvtII = \relative c'' {
 % Bars 176 to 180
 	d)\noBeam d,16\f d( ees) ees( e) e(
 	f) fis->\< g-> gis-> a-> bes-> c-> cis->\!
-	<d,, d' d'>8\ff-. r g''-^-. r
+	<d,, d' d'>8-\offset X-offset 1 \ff-. r g''-^-. r
 	e-^-. r r4
 	R2*10
 % Bars 181 to 185

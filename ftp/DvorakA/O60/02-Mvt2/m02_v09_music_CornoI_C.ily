@@ -45,9 +45,9 @@ musicCornoIMvtII = \relative c'' {
 	e-- e-- 
 	e-- e--
 % Bars 41 to 45
-	\partCombineApart c'8(\p \after 8 <>_\crescmarkup e4 d16 c~
+	\partCombineApart c'8(\p \after 8 <>-\crescmarkup e4 d16 c~
 	c8 b16 a b4)
-	bes8( d4_\dimmarkup c16 bes~
+	bes8( d4-\dimmarkup c16 bes~
 	bes8 a16 g a4) \partCombineAutomatic
 	R2*2
 % Bars 46 to 50
@@ -89,13 +89,13 @@ musicCornoIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	\partCombineApart r4 r8 c(_\p
-	a_\< ees'\! c_\> a\!)
+	\partCombineApart r4 r8 c(\p
+	a\< ees'\! c\> a\!)
 % Bars 91 to 95
 	c2(~
 	c
-	b!8) r r d(\brack\p
-	b_\crescmarkup f' d b) \partCombineAutomatic
+	b!8) \once \partCombineAutomatic r r \shape #'((0 . -1)(0 . -0.5)(0 . 0)(0 . 0)) Slur d(\brack\p
+	b-\crescmarkup f' d b) \partCombineAutomatic
 	c16\mf c c c  c c c c 
 % Bars 96 to 100
 	c c c_\crescmarkup c   c c c c 
@@ -106,7 +106,7 @@ musicCornoIMvtII = \relative c'' {
 % Bars 101 to 105
 	r8 c\f a des->(~
 	des4_\dimmarkup c
-	bes\p\> g\!)
+	\hairpinShorten #'(0 . -1.5) bes\p\> g\!)
 	\once \partCombineApart c8 r r4
 	r8 c-.-> g-.-> c->(~
 % Bars 106 to 110
@@ -123,7 +123,7 @@ musicCornoIMvtII = \relative c'' {
 	
 % Bars 116 to 120
 	
-	\partCombineApart d2(->_\p
+	\partCombineApart d2(->-\offset X-offset -2 \p
 	b4 e)
 	cis r \partCombineAutomatic
 	R2*3
@@ -147,7 +147,7 @@ musicCornoIMvtII = \relative c'' {
 	
 % Bars 136 to 140
 	
-	\partCombineApart r4 b8\pp\< b
+	\partCombineApart r4 b8-\offset X-offset -1.5 \pp\< b\!
 	c2\>~
 	c\pp \mark \default
 	c4. d8~
@@ -162,13 +162,13 @@ musicCornoIMvtII = \relative c'' {
 	c4(\pp f~
 	f8 e d c)
 	c(~ c32 d c bes-.) bes4(
-	a) d8->-\mf\< e16-> f->
+	a) d8->-\mf\< e16-> f->\!
 % Bars 151 to 155
-	f8_\f c a4_\dimmarkup
+	f8\f c a4-\dimmarkup
 	g2\p
-	r8 e(_\pp_\< f g16 gis)\!
-	a4 c_\fz~
-	c8(_\> bes16 a \acciaccatura c8 bes8. a16)\!
+	r8 e(\pp\< f g16 gis)\!
+	a4 c\fz~
+	c8(\> bes16 a \acciaccatura c8 bes8. a16)\!
 % Bars 156 to 160
 	\partCombineAutomatic a4-\tweak X-offset #-1.5 \pp-- a--
 	a-- a--
@@ -211,8 +211,8 @@ musicCornoIMvtII = \relative c'' {
 	
 	
 	\partCombineApart g4.(\pp\< gis8\!
-	a\!)\noBeam c(_\< a d~\!
-	d4.)_\> c8_\pp~
+	a\!)\noBeam c(\< a d~\!
+	d4.)\> c8\pp~
 % Bars 196 to 200
 	c8 r r4 \partCombineAutomatic
 	R2*2

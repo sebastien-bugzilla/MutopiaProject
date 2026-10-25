@@ -28,7 +28,7 @@ musicViolinoIIMvtII = \relative c' {
 	
 % Bars 16 to 20
 	r4 bes(-\tweak X-offset #-1 \f
-	a4._\dimmarkup c8)
+	<< a4. {s8 s_\dimmarkup s}>> c8)
 	bes8\p r r4
 	R2*2
 	
@@ -36,7 +36,7 @@ musicViolinoIIMvtII = \relative c' {
 	r16 <aes d>8\pp q16 r q8 q16
 	r q8\< q16\! r q8 q16
 	r <g d'>8\p q16_\dimmarkup r q8 q16
-	r b8\pp b16 r b8 b16
+	r b8-\offset X-offset 0.8 \pp b16 r b8 b16
 	r c8 c16 r c8 c16
 % Bars 26 to 30
 	r4  r16 c(\pp e g
@@ -126,7 +126,7 @@ musicViolinoIIMvtII = \relative c' {
 	<c ees a>8\arpeggio r r4
 	R2*2
 	
-	r8 f-.->\ff c-.-> f->(~
+	r8 f-.->-\offset X-offset -2.5 \ff c-.-> f->(~
 % Bars 106 to 110
 	f ees) r4
 	r8 f'->-. bes,->-. bes'->~
@@ -141,7 +141,7 @@ musicViolinoIIMvtII = \relative c' {
 	f f4 f8~
 % Bars 116 to 120
 	f f4 f8
-	e16( c g g'~ g e c c'~
+	\shape #'((0 . 0)(0 . 0)(0 . 1)(0 . -2)) Slur e16( c g g'~ g e c c'~
 	c g e e'~ e c a a'
 	fis8) r r4
 	R2

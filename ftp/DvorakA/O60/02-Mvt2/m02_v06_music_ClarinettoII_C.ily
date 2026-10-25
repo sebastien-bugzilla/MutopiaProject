@@ -24,7 +24,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	
 	r8 b\p\<-- c-- c--\!
-	c2_\fzdim
+	<< c2-\tweak X-offset 0.2 \fz {s4 s-\dimmarkup}>>
 	a4 g~
 % Bars 21 to 25
 	g4.\brack\pp r8
@@ -69,7 +69,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	
 % Bars 56 to 60
-	r8 \shape #'((0 . 0)(0 . 0.5)(0 . 0.6)(0 . 2)) Slur a(\p gis4
+	r8 \shape #'( ((0 . -2)(0 . 1)(0 . 1)(0 . 2)) ()) Slur a(\p gis4
 	\stemUp << a2)\<~ {s4 s8 s\!}>>
 	a4\fz r
 	a\p r
@@ -98,8 +98,8 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	c,4(-\tweak X-offset #0.5 \pp e)
 % Bars 81 to 85
-	<<f2 {s8\< s s s\!}>>
-	e4\> d(\!
+	<<f2 {s8\< s s s16 s\!}>>
+	e4\> \after 8 \! d(
 	a8) r r4
 	R2*3
 	
@@ -176,7 +176,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	g(~ g32 a g f-.) f4(
 	e8) c16(\< e a c b a)\!
 % Bars 151 to 155
-	g8( d'4\mf-\tweak rotation #'(3 -1 0) \> c8)
+	g8( d'4\mf-\tweak rotation #'(3 -1 0) \> c8)\!
 	b4.(\! d8\p
 	c) r r4
 	R2*3
@@ -202,7 +202,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	r8 c'(\mf\< d dis\!
 % Bars 176 to 180
 	e)\noBeam c(\f\< d! dis\!
-	e16)\noBeam b\f\<->-. cis!->-. cis->-. d->-. e->-. d->-. dis->-.\!
+	e16)\noBeam b-\tweak X-offset -2 \f\<->-. cis!->-. cis->-. d->-. e->-. d->-. dis->-.\!
 	b8-.->\ff r cis-^-. r
 	c!-^-. r r4
 	R2*4
@@ -210,7 +210,7 @@ musicClarinettoIIMvtII = \relative c'' {
 	
 	
 	
-	cis2_\fpdim
+	cis2-\offset X-offset 0.5 -\fpdim
 	c!~
 % Bars 186 to 190
 	\hairpinShorten #'(1.5 . 1) c2-\tweak extra-offset #'(2.3 . 0.8) \pp\<
@@ -222,7 +222,7 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 196 to 200
 	
 	b2-\tweak X-offset #0.8 \pp(
-	c8)\noBeam g'\ff-! e-! a-! 
+	c8)\noBeam g'-\offset X-offset -1.5 \ff-! e-! a-! 
 	f-! d-! b-! b-^
 	a r c4\fp(~
 % Bars 201 to 205

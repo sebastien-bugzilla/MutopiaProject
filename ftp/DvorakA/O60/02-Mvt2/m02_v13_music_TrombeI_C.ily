@@ -61,7 +61,7 @@ musicTrombeIMvtII = \relative c'' {
 	
 	
 	
-	c2->\f
+	\aIIXoffset -4 c2->\f
 	d->
 % Bars 106 to 110
 	c->
@@ -128,7 +128,7 @@ musicTrombeIMvtII = \relative c'' {
 % Bars 196 to 200
 	
 	
-	r8 \beamOffset #'(0.5 . 0.5) g'-\tweak X-offset #-2.5 \ff-! g-! g-! 
+	r8 \beamOffset #'(0.5 . 0.5) g'\ff-! g-! g-! 
 	g-! g-! g-! e-^
 	e-^ r r4
 % Bars 201 to 205

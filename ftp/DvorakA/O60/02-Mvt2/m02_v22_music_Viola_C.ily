@@ -53,7 +53,7 @@ musicViolaMvtII = \relative c {
 % Bars 36 to 40
 	R2*2
 	
-	r8 fis'(\pp a a,~
+	r8 fis'(-\offset X-offset -2.5 \pp a a,~
 	a) r r4
 	r8 f'!( a a,~
 % Bars 41 to 45
@@ -80,7 +80,7 @@ musicViolaMvtII = \relative c {
 	r4 <e bes'>--\p
 	r q--_\dimmarkup 
 % Bars 61 to 65
-	r q--\pp
+	r q---\offset X-offset 1 \pp
 	r q--
 	<f a>8 r r4
 	R2*9
@@ -93,7 +93,7 @@ musicViolaMvtII = \relative c {
 		f'4( d8 g)
 		ees8 c32( d c) bes-. a8( d)
 		d4( ees
-		\after 4 \< d4.) g8\>
+		\after 4 ^\< d4.) g8^\>
 		f4(->\! bes~
 		bes8)_\< a(-- g-- f--)\!
 		f8(~ f32 g f ees) ees4(
@@ -142,7 +142,7 @@ musicViolaMvtII = \relative c {
 	<d' bes'>\arpeggio r r4
 	<c ees>8\arpeggio r r4
 	R2
-	\repeat tremolo 8 {bes32(\ff des)}
+	\repeat tremolo 8 {bes32(-\offset X-offset -1.5 \ff des)}
 	\repeat tremolo 8 {aes32( c)}
 % Bars 106 to 110
 	\repeat tremolo 8 {ges( bes)}
@@ -229,7 +229,7 @@ musicViolaMvtII = \relative c {
 	f f'-. f-. f~    f f-. f-. f~
 	f\< f-. f-. f~   f f-. f-. f~\!
 % Bars 176 to 180
-	f f-. f-.\f f~   f f-. f-. f~
+	f f-. f-.-\offset X-offset -0.5 \f f~   f f-. f-. f~
 	f a->\< f-> f->   f-> f-> f-> bes->\!
 	a8-.\ff r <g, f'! b>-.-^\arpeggio r
 	<c, g' g' bes!>-.-^\arpeggio r r4

@@ -12,11 +12,11 @@ musicOboeIIMvtII = \relative c' {
 	r8 f(-\tweak X-offset #-1.4 \p d g~
 	g4. fis8
 	\hairpinShorten #'(1 . 1) g2)-\tweak extra-offset #'(0 . 1) \<
-	\shape #'((0 . 0.4)(0 . 0.8)(0 . 0.8)(0 . 0.4)) Slur bes4-\tweak extra-offset #'(0 . 0.3) \fp( g8\> a\!
+	\shape #'((0 . 0.4)(0 . 0.8)(0 . 0.8)(0 . 0.4)) Slur bes4-\tweak extra-offset #'(0 . 0.3) \fp\>( g8 a\!
 	bes)-\tweak extra-offset #'(0 . 0.3) \pp r r4
 % Bars 6 to 10
 	R2
-	\mmrPos #-6 R2
+	\mmrPos #-4 R2
 	\mmrPos #-8 R2
 	R2*4
 % Bars 11 to 15
@@ -26,7 +26,7 @@ musicOboeIIMvtII = \relative c' {
 % Bars 16 to 20
 	
 	
-	r8 fis(-\offset X-offset -1 \p g e)
+	r8 fis(-\offset X-offset -1.5 \p g e)
 	f!8 r r4
 	R2*2
 % Bars 21 to 25
@@ -39,7 +39,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	g8(\p\< a bes!4)\!
-	bes8-\tweak extra-offset #'(0.8 . 0.8) \fp g4 g16--( a--)
+	bes8-\tweak extra-offset #'(-2.3 . 1.5) \fp g4 g16--( a--)
 	bes8 g4 g16--( a--)
 % Bars 31 to 35
 	bes8 g4 g16(-- a--)
@@ -123,7 +123,7 @@ musicOboeIIMvtII = \relative c' {
 	d8 r r4
 	ees8 r r4
 	R2
-	des2->\ff
+	des2->-\offset X-offset -1 \ff
 	c->
 % Bars 106 to 110
 	bes->
@@ -154,7 +154,7 @@ musicOboeIIMvtII = \relative c' {
 	
 	
 	
-	r16\< c-. c-. c-.  c c c c\!
+	a,16\rest\< c-. c-. c-.  c c c c\!
 % Bars 131 to 135
 	c\ff r r8 r4
 	R2*8
@@ -178,10 +178,10 @@ musicOboeIIMvtII = \relative c' {
 	bes4)\pp r
 	R2*2
 	
-	r8 bes4^( \beamOffset #'(0.3 . 0.3) a16 g
+	r8 \after 16 <>-\tweak extra-offset #'(-1 . 3) -\crescmarkup bes4(-\offset X-offset -2.5 \brack\p \beamOffset #'(0.3 . 0.3) a16 g
 % Bars 151 to 155
-	f8) c'4(\mf\> bes8
-	a2\p	
+	f8) c'4(\mf\> bes8\!
+	a2\p
 	bes8) r r4
 	R2*2
 	
@@ -193,9 +193,9 @@ musicOboeIIMvtII = \relative c' {
 	r8 d4(-\tweak extra-offset #'(0 . 0.5) \p\< c16 bes!~
 % Bars 161 to 165
 	bes8) a16(\! g a4)\>
-	aes8(\p c4 bes16-\alterBroken shorten-pair #'(() (0 . 2)) \> aes~
+	\shape #'((-0.5 . -1.5)(0 . 0)(0 . 0)(0 . -2)) Slur aes8(\p c4 bes16\> aes~
 	aes8) g16(\! f g4~
-	g8) ges4(\pp f16 ees~
+	g8) \shape #'((0.3 . 0.5)(0 . 0.8)(0 . 0.5)(0 . 0)) Slur ges4(\pp f16 ees~
 	ees8) r r4
 % Bars 166 to 170
 	R2*3
@@ -216,7 +216,7 @@ musicOboeIIMvtII = \relative c' {
 	bes!-^-. r r4
 	R2
 % Bars 181 to 185
-	r4 a(\pp 
+	r4 a(-\offset X-offset 1.5 \pp 
 	bes8) r r4
 	R2*4
 % Bars 186 to 190
@@ -230,9 +230,9 @@ musicOboeIIMvtII = \relative c' {
 % Bars 196 to 200
 	R2*2
 	
-	r8 f'-!\ff d-! g-!
+	r8 f'-!-\offset X-offset -1.5 \ff d-! g-!
 	ees-! c-! a-! d-^
-	d-^ r f,4\fp(
+	d-^ r \shape #'((0 . 0.5)(0 . 1)(0 . 1)(0 . 0)) Slur f,4\fp(
 % Bars 201 to 205
 	g\> f8 ees)\!
 	d2\pp~

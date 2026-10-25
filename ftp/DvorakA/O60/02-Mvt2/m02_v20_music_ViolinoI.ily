@@ -101,7 +101,7 @@ musicViolinoIMvtII = \relative c'' {
 % Bars 81 to 85
 	f'2)~
 	f8( bes, c4
-	bes8) bes16(\< a) a( g) g( e)\!
+	bes8) bes16( a) a(\< g) g( e)\!
 	g(\f f) bes4\fz d,8(
 	f bes,_\dimmarkup d a
 % Bars 86 to 90

@@ -28,7 +28,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	
 	\partCombineApart R2
-	f8(_\pcresc^\brack\mf bes d f~
+	\dynEO #'(-2.1 . -3.3) f8(^\brack\mf -\tweak extra-offset #'(0 . -2.7) -\crescmarkup bes d f~
 	f_\dimmarkup ees d c
 % Bars 21 to 25
 	f4.)_\pp r8 \partCombineAutomatic
@@ -38,10 +38,10 @@ musicOboeIMvtII = \relative c'' {
 	c2)~
 % Bars 26 to 30
 	c~
-	c4(~ c16_\crescmarkup b d b)
+	\shape #'((0 . 0)(0 . -0.5)(0 . -0.5)(0 . 0)) Slur c4(~ c16_\crescmarkup b d b)
 	c4.( cis8)
 	d-> bes-> g16(-- a-- bes-- c--)
-	d8-> bes-> g16(-\tweak X-offset #-1 _\crescmarkup-- a-- bes-- c!--)
+	d8-> bes-> g16(-\tweak X-offset #-2 _\crescmarkup-- a-- bes-- c!--)
 % Bars 31 to 35
 	d8-> bes-> g16(-- a-- bes-- c--)
 	d8 \partCombineAutomatic r r4
@@ -55,9 +55,9 @@ musicOboeIMvtII = \relative c'' {
 	f!-- f--
 	f-- f--
 % Bars 41 to 45
-	\partCombineApart r4 \tuplet 3/2 4 {g,8-._\crescmarkup d'-. g-. } \partCombineAutomatic
+	\partCombineApart r4 \tuplet 3/2 4 {g,8-.-\offset X-offset -2.5 -\crescmarkup d'-. g-. } \partCombineAutomatic
 	R2
-	\partCombineApart r4 \tuplet 3/2 4 {f,8-.-\tweak X-offset #-1 ^\dimmarkup c'-. f-. } \partCombineAutomatic
+	\partCombineApart r4 \tuplet 3/2 4 {f,8-.-\tweak X-offset -2 ^\dimmarkup c'-. f-. } \partCombineAutomatic
 	R2*3
 	
 % Bars 46 to 50
@@ -74,7 +74,7 @@ musicOboeIMvtII = \relative c'' {
 	R2*2
 % Bars 56 to 60
 	
-	\partCombineApart r8 d(\p\< bes e~\!
+	\partCombineApart r8 \shape #'((0 . 0)(0 . -1)(0 . -1)(-0.5 . -1.5)) Slur d(\p\< bes e~\!
 	e4)\fz r \partCombineAutomatic
 	e\p r
 	e_\dimmarkup r
@@ -103,7 +103,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	\partCombineApart r8 c'8 c c
+	r8 \partCombineApart c'8 c c
 	d2
 	ees4( c8 a \mark \default
 	bes4.) \partCombineAutomatic r8
@@ -137,7 +137,7 @@ musicOboeIMvtII = \relative c'' {
 	gis8 r r4
 	R2*2
 	
-	\partCombineApart f2_\p->(
+	\partCombineApart f2-\offset X-offset -1.5 \p->(
 % Bars 116 to 120
 	d4 g)
 	e r \partCombineAutomatic
@@ -148,13 +148,13 @@ musicOboeIMvtII = \relative c'' {
 	\partCombineAutomatic bes!2\pp~
 	bes
 	R2
-	\partCombineApart ges4(_\ppocoapococrescendo ees!8 aes
+	\partCombineApart ges4(-\ppocoapococrescendo ees8 aes
 	ges2~
 % Bars 126 to 130
 	ges4) ees!8( a!~
 	a) fis-. d-. a'~
 	a fis-. d-. a'~
-	a16\f fis-. d-. c'~ c a-. fis-. d'~
+	a16-\offset X-offset -1 \f fis-. d-. c'~ c a-. fis-. d'~
 	d a-. a-. a-. \stemDown \omitBeam a-. a-. a-. a-.
 % Bars 131 to 135
 	\partCombineAutomatic a r \partCombineApart \stemUp fis4_\pp fis8~
@@ -179,7 +179,7 @@ musicOboeIMvtII = \relative c'' {
 	R2
 	R2*2
 	
-	r8 \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes4(-\tweak X-offset #0.9 _\brackpcresc a16 g
+	r8 \shape #'((0 . -0.5)(0 . -0.5)(0 . -0.5)(0 . -0.5)) Slur bes4( a16 g
 % Bars 151 to 155
 	f2)~
 	f8 r r4
@@ -191,12 +191,12 @@ musicOboeIMvtII = \relative c'' {
 	d8) \partCombineAutomatic r r4
 	R2*2
 	
-	r8 \shape #'((0 . -0.5)(0 . -1)(0 . 0)(0 . 0)) Slur bes'!4( a16 g
+	r8 \shape #'((0 . -0.2)(0 . -0.5)(0 . 0)(0 . -1)) Slur bes'!4( a16 g
 % Bars 161 to 165
 	c,4.) c8
-	c( aes'4 g16 f
+	\shape #'((0 . 0.5)(0 . 0)(0 . 0)(0 . 0.5)) Slur c( aes'4 g16 f
 	bes,4.) bes8
-	\shape #'((-0.5 . 2)(0 . -1)(0 . -1)(0 . 2)) Slur bes( ees4 d16 c~
+	bes( ees4 d16 c~
 	c8) r r4
 % Bars 166 to 170
 	R2*3
@@ -213,8 +213,8 @@ musicOboeIMvtII = \relative c'' {
 	f)\noBeam d(\f\< ees e\!
 	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes!->-.\!
 	a8-.->\ff r \partCombineApart g4-^~
-	g8_\> bes( a g~\!
-	g_\p f4) r8
+	g8\> bes( a g~\!
+	g\p f4) r8
 % Bars 181 to 185
 	R2*2
 	
@@ -222,15 +222,15 @@ musicOboeIMvtII = \relative c'' {
 % Bars 186 to 190
 	
 	\partCombineApart r8 f(\p g a)
-	<< bes2(~ {s8_\< s s s\!}>> 
-	bes8_\> aes ges f)\!
+	<< bes2(~ {s8\< s s s\!}>> 
+	bes8\> aes ges f)\!
 	f4 r \partCombineAutomatic
 % Bars 191 to 195
 	R2*5
 % Bars 196 to 200
 	\partCombineApart r8 f(-\tweak X-offset #-2 \pp d g~
-	g4. f8)~
-	f\noBeam \partCombineApart f-! d-! g-!
+	g4. f8~
+	f)\noBeam \partCombineApart f-! d-! g-!
 	ees-! c-! a-! fis'-^
 	g-^ \once \partCombineAutomatic r f!4~
 % Bars 201 to 205

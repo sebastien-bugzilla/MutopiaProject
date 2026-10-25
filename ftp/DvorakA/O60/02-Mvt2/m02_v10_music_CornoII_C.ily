@@ -69,7 +69,7 @@ musicCornoIIMvtII = \relative c'' {
 % Bars 66 to 70
 	r4 r8. g16\f
 	r8. g16 r8. g16
-	r4 c,8-\tweak X-offset #0.7 \pp r
+	r4 c,8-\offset X-offset #-2.5 \pp r
 	R2*4
 	
 % Bars 71 to 75
@@ -105,7 +105,7 @@ musicCornoIIMvtII = \relative c'' {
 % Bars 96 to 100
 	c c c c   c c c c 
 	c c c c   c c c c
-	c8\noBeam a'16-.\f c-. f,-. c-. f-.\< g-.\!
+	c8\noBeam a'16-.\f c-. \beamOffset #'(0.5 . 0.5) f,-. c-. f-.\< g-.\!
 	a8\ff-> a-> a-> a->
 	f4-> f-> 
 % Bars 101 to 105

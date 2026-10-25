@@ -49,11 +49,11 @@ musicCornoIIIMvtII = \relative c'' {
 	R2*3
 	
 	
-	\partCombineApart r8 e'_\pp( c f~
+	\partCombineApart r8 e'-\offset X-offset -1.5 \pp( c f~
 % Bars 56 to 60
 	f4) e(
-	<< a2)~_\< {s4 s8 s\!}>>
-	a4_\fz r \partCombineAutomatic
+	<< a2)~\< {s4 s8 s\!}>>
+	a4\fz r \partCombineAutomatic
 	R2*4
 	
 % Bars 61 to 65

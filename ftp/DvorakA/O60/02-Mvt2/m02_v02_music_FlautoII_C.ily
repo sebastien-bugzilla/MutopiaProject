@@ -18,7 +18,7 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 16 to 20
 	
 	
-	r4 r8 g\mf
+	r4 r8 \dynEO #'(0 . 1) g\mf
 	f4 \dynEO #'(0 . 2) bes\fz(~
 	bes4 a
 % Bars 21 to 25
@@ -29,7 +29,7 @@ musicFlautoIIMvtII = \relative c''' {
 	c(\p e! e4~
 % Bars 26 to 30
 	e8 g f e)
-	e8( c~ c16 b d b)
+	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e8( c~ c16 b d b)
 	c8 r r4
 	R2*6
 % Bars 31 to 35
@@ -89,8 +89,8 @@ musicFlautoIIMvtII = \relative c''' {
 	aes4.\pp r8
 	R2
 % Bars 91 to 95
-	r8 d(\p b f')~
-	f16 e( d) c( b) a( g) f(
+	r8 d(\p b f'~
+	f16) e( d) c( b) a( g) f(
 	e8) r r4
 	R2*10
 	
@@ -100,7 +100,7 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 	
-	des'2\ff->
+	des'2-\offset X-offset -1 \ff->
 	c->
 % Bars 106 to 110
 	bes->
@@ -129,7 +129,7 @@ musicFlautoIIMvtII = \relative c''' {
 	a4. r8
 	r a4 a8~
 	a4. r8
-	R2*5
+	R2*5 
 % Bars 136 to 140
 	
 	
@@ -149,7 +149,7 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	r8 bes4( a16 g
 % Bars 151 to 155
-	f8) c'4(\mf\> bes8
+	f8) c'4(\mf\> bes8\!
 	a2\p
 	bes8) r r4
 	R2*4
@@ -190,7 +190,7 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 196 to 200
 	
 	
-	r8 \dynEO #'(0 . 1.5) f''-!\ff d-! g-! 
+	r8 f''-!-\offset X-offset -1 \ff d-! g-! 
 	ees-! c-! a-! a-^\noBeam
 	bes-^ r f4~\fp
 % Bars 201 to 205
@@ -206,10 +206,13 @@ musicFlautoIIDivisiMvtII = \relative c {
 	\clef treble
 	\key bes \major
 % Bars 1 to 145
-	s2*142
+	\changeStaffName \II s2*139
+	R2
+	R
+	R
 	<< bes'''2~ {s8\p\< s s s\!} >> 
 	bes8(\mf\< d f d)\!
 	<< c2( {s8\> s s s\!}>>
 % Bars 146 to 150
-	bes8\p) r r4 
+	bes8\p) r r4
 }

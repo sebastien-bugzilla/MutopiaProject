@@ -28,7 +28,7 @@ musicContrabassoMvtII = \relative c {
 	r4 e,\brack\p\<
 % Bars 16 to 20
 	f2\f(~
-	f4._\dimmarkup fis8
+	<< f4. {s8 s_\dimmarkup s}>> fis8
 	g\p) r r4
 	R2*2
 	
@@ -84,7 +84,7 @@ musicContrabassoMvtII = \relative c {
 	r g--\pp
 	r g8( ges
 	f8)\p f,4.~
-	<< f2\<~ {s4 s8 s\!}>>
+	<< \hairpinShorten #'(-3.5 . 0) f2\<~ {s4 s8 s\!}>>
 	f2\f~
 % Bars 66 to 70
 	f8 r r4
@@ -104,7 +104,7 @@ musicContrabassoMvtII = \relative c {
 % Bars 81 to 85
 	R2*2
 	
-	r8 c4\mf\<-\tweak X-offset #-4.5 ^\arco c8\!
+	r8 c4\mf\<-\offset X-offset -4.5 ^\arco c8\!
 	f,2\f(~
 	\after 8 <>-\tweak extra-offset #'(0 . 2.8) _\dimmarkup f4. fis8
 % Bars 86 to 90
@@ -187,7 +187,7 @@ musicContrabassoMvtII = \relative c {
 	
 	g,8\brack\pp\<^\pizz r c r
 % Bars 161 to 165
-	f r\! f, r
+	f r f,\! r
 	f r bes\> r
 	ees r ees\! r
 	ees\pp r f r

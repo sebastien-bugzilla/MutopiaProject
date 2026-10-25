@@ -187,7 +187,7 @@ musicContrabassoMvtII = \relative c {
 	
 	g,8\brack\pp\<^\pizz r c r
 % Bars 161 to 165
-	f r\! f, r
+	f r f,\! r
 	f r bes\> r
 	ees r ees\! r
 	ees\pp r f r
