@@ -107,7 +107,7 @@ tempiMvtIII = {
 		\concat {
 			"Presto "
 			\fontsize #-4 \general-align #Y #DOWN \note {2.} #0.75
-			" = 96"
+			" = 96 (Furiant)"
 		}
 	}
 	s2.*127

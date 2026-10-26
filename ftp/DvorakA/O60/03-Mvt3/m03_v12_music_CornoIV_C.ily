@@ -123,7 +123,7 @@ musicCornoIVMvtIII = \relative c' {
 		g-. g-. g-.
 		g-. g-. g-.
 		fis-. fis-. fis-.
-		fis2->\ff fis4->~
+		fis2->-\tweak X-offset 0.5 \ff fis4->~
 		fis fis2->
 % Bars 126 to 130
 		b!2-> b4->~
@@ -198,17 +198,17 @@ musicCornoIVMvtIII = \relative c' {
 	
 	
 % Bars 186 to 190
-		g2.\p~
+		g2.-\offset X-offset 0.5 \p~
 		g~
 		g~
 		g~
-		g~_\dimmarkup
+		g~-\offset X-offset 0.5 _\dimmarkup
 % Bars 191 to 195
 		g~
 		g~
 		g~
-		g~\pp
-		g~_\dimmarkup
+		g~-\offset X-offset 1 \pp
+		g~-\offset X-offset 0.5 _\dimmarkup
 % Bars 196 to 200
 		g~
 		g~
@@ -402,7 +402,7 @@ musicCornoIVMvtIII = \relative c' {
 	b!2-> b4~->
 % Bars 411 to 415
 	b b2->
-	g2 g4~
+	g2\ff g4~
 	g g2
 	g2 g4~
 	g g2

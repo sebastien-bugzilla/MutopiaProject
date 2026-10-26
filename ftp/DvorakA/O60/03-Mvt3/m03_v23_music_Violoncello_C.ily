@@ -102,7 +102,7 @@ musicVioloncelloMvtIII = \relative c {
 	
 	
 % Bars 76 to 80
-		g'4\p\<-. f-. ees-.
+		g'4-\offset X-offset -1 \p\<-. f-. ees-.
 		d-. c-. bes-.\!
 		a-.\f f-. a-.
 		bes-. f-. bes,-.
@@ -111,8 +111,8 @@ musicVioloncelloMvtIII = \relative c {
 	
 	
 	
-		\hairpinShorten #'(0 . -1.5) f''4-.\p\< f,-. a-.
-		bes-.\! bes,8(\f a bes4)
+		f''4-.\p\< f,-. a-.
+		bes-. bes,8(\f a bes4)
 % Bars 86 to 90
 		R2.*2
 	
@@ -164,7 +164,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 126 to 130
 		a!2-> a4~->
 		a a2->
-		d4(_\ffgrandioso a') d,(
+		d4(\ff a') d,(
 		a') d,( a')
 		d,( a') d,( 
 % Bars 131 to 135
@@ -321,7 +321,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 256 to 260
 	
 	\clef tenor a''2(\p fis4
-	d2-\tweak extra-offset #'(0 . 0.4) \< a4)
+	d2\< a4)
 	g2( b4
 	e2 g4~\!
 % Bars 261 to 265
@@ -345,9 +345,9 @@ musicVioloncelloMvtIII = \relative c {
 	
 	
 	
-	\acciaccatura a8( a'2)\p d,4~\<_\crescmarkup
+	\acciaccatura a8( a'2)\p d,4~_\crescmarkup
 % Bars 286 to 290
-	d a2
+	d\< a2
 	d, a4~
 	a\! d,2\f \section \key d \minor
 	d'4(->\f a'8) r d,4(->
@@ -373,7 +373,7 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 306 to 310
 	d'-. d,-. d-.
 	d r r \section
-	f,-\tweak extra-offset #'(0.8 . 0.5) \p-\tweak X-offset #-1 ^\pizz c' f
+	f,\p^\pizz c' f
 	f, c' f
 	e, c' e
 % Bars 311 to 315
@@ -435,7 +435,7 @@ musicVioloncelloMvtIII = \relative c {
 	
 	
 	
-	g'4-.\p\< f-. ees-.
+	g'4-.-\tweak extra-offset #'(-0.5 . 0) \p\< f-. ees-.
 % Bars 361 to 365
 	d-. c-. bes-.\!
 	a-.\f f-. a-.
@@ -464,7 +464,7 @@ musicVioloncelloMvtIII = \relative c {
 	
 	
 	
-	<ces ges'>2\ff q4~
+	<ces ges'>2-\offset X-offset 0.5 \ff q4~
 	q q2
 % Bars 386 to 390
 	bes4-.\pp bes8( a bes4)
@@ -498,7 +498,7 @@ musicVioloncelloMvtIII = \relative c {
 	a!2-> a4~->
 % Bars 411 to 415
 	a a2->
-	d4(_\ffgrandioso a') d,(
+	d4(\ff a') d,(
 	a') d,( a')
 	d,( a') d,(
 	a') d,( a')

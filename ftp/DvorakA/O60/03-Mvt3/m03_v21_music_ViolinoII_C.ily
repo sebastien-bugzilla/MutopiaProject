@@ -94,7 +94,7 @@ musicViolinoIIMvtIII = \relative c' {
 	
 		c4->\f e-. d-.
 		c-. b-. a-.
-		<g, g'>2->-\tweak X-offset #-0.5 \f q4~->
+		<g, g'>2->-\offset X-offset #-1.5 \f q4~->
 % Bars 71 to 75
 		q q2->
 		R2.*4
@@ -152,7 +152,7 @@ musicViolinoIIMvtIII = \relative c' {
 % Bars 116 to 120
 		des-. c-. c-.
 		des-. c-. c-.\!
-		<a, cis'>-._\semprecresc q-. q-.
+		<a, cis'>-. q-._\semprecresc q-.
 		q-. q-. q-.
 		q-. q-. q-.
 % Bars 121 to 125
@@ -214,7 +214,7 @@ musicViolinoIIMvtIII = \relative c' {
 	
 	
 	
-		<a, fis' d'>4^\pizz-\tweak X-offset #0.5 \fz\arpeggio r r
+		<a, fis' d'>4^\pizz\fz\arpeggio r r
 % Bars 171 to 175
 		q\arpeggio\> r r
 		q\!\arpeggio r r
@@ -474,7 +474,7 @@ musicViolinoIIMvtIII = \relative c' {
 	des-. c-. c-.
 % Bars 401 to 405
 	des-. c-. c-.\!
-	<a, cis'>-._\semprecresc q-. q-.
+	<a, cis'>-. q-._\semprecresc q-.
 	q-. q-. q-.
 	q-. q-. q-.
 	q-. q-. q-.
@@ -486,7 +486,7 @@ musicViolinoIIMvtIII = \relative c' {
 	cis-. cis8( bis cis4) 
 % Bars 411 to 415
 	cis-. cis8( bis cis4) 
-	<f,! a!>2_\ffgrandioso q4~
+	<f,! a!>2\ff q4~
 	q q2
 	q2 q4~
 	q q2

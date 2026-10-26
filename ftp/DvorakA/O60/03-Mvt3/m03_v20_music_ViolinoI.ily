@@ -152,7 +152,7 @@ musicViolinoIMvtIII = \relative c''' {
 % Bars 116 to 120
 		f-. ees8( d ees4)
 		f-. ees8( d ees4)\!
-		f-._\semprecresc e!8( dis e4)
+		f-. e!8(_\semprecresc dis e4)
 		fis-. e8( dis e4)
 		fis-. e8( dis e4)
 % Bars 121 to 125
@@ -248,7 +248,7 @@ musicViolinoIMvtIII = \relative c''' {
 		cis( b cis a d a
 		e' dis e a, fis' a,)
 		d(\pp cis d a e' a,
-		cis b_\dimmarkup cis a d a)
+		cis_\dimmarkup b cis a d a)
 % Bars 196 to 200
 		b( a b a cis a
 		a d, a' d, b' d,)
@@ -494,7 +494,7 @@ musicViolinoIMvtIII = \relative c''' {
 	f-. ees8( d ees4) 
 % Bars 401 to 405
 	f-. ees8( d ees4)\!
-	f-._\semprecresc  e!8( dis e4)
+	f-. e!8(_\semprecresc dis e4)
 	fis-. e8( dis e4)
 	fis-. e8( dis e4)
 	g-. e8( dis e4)

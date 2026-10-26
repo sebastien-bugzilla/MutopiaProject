@@ -111,8 +111,8 @@ musicContrabassoMvtIII = \relative c {
 	
 	
 	
-		\hairpinShorten #'(0 . -1.5) f''4-.\p\< f,-. a-.
-		bes-.\! bes,8(\f a bes4)
+		f''4-.\p\< f,-. a-.
+		bes-. bes,8(\f a bes4)
 % Bars 86 to 90
 		R2.*2
 	
@@ -152,7 +152,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		a!-._\semprecresc a-. a-.
+		a!-. a-._\semprecresc a-.
 		a-. a-. a-.
 		a-. a-. a-. 
 % Bars 121 to 125
@@ -454,7 +454,7 @@ musicContrabassoMvtIII = \relative c {
 	aes-. aes-. aes-.
 % Bars 401 to 405
 	aes-. aes-. aes-.\!
-	a!-._\semprecresc a-. a-.
+	a!-. a-._\semprecresc a-.
 	a-. a-. a-.
 	a-. a-. a-.
 	a-. a-. a-.
@@ -466,7 +466,7 @@ musicContrabassoMvtIII = \relative c {
 	a!2-> a4~->
 % Bars 411 to 415
 	a a2->
-	d2_\ffgrandioso d4~
+	d2\ff d4~
 	d d2
 	d2 d4~
 	d d2

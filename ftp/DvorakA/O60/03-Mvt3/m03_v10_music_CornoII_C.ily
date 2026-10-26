@@ -80,7 +80,7 @@ musicCornoIIMvtIII = \relative c'' {
 		e2->\ff d4~->
 		d c2->
 		c,2\p\< c4~
-		c f2\!
+		c \after 4 \! f2
 % Bars 66 to 70
 		g2->\f f4->\>~
 		f e2\!->
@@ -92,7 +92,7 @@ musicCornoIIMvtIII = \relative c'' {
 % Bars 76 to 80
 		d4-.\p\< d-. d-.
 		d-. d-. d-.\!
-		c2.\f~
+		c2.-\tweak X-offset -2 \f~
 		c
 		R2.*6
 % Bars 81 to 85
@@ -139,12 +139,12 @@ musicCornoIIMvtIII = \relative c'' {
 		b\fz
 		bes\fz
 		bes4-. bes-. bes-.
-		aes2->\ff aes4~->
+		aes2->-\tweak X-offset 0.5 \ff aes4~->
 		aes aes2->
 % Bars 126 to 130
 		b2-> b4->~
 		b b2->
-		a2-\tweak X-offset #0.5 \ff a4~
+		a2-\tweak X-offset #0.3 \ff a4~
 		a a2
 		a2 a4~
 % Bars 131 to 135
@@ -244,8 +244,8 @@ musicCornoIIMvtIII = \relative c'' {
 	
 % Bars 256 to 260
 	
-	a,4-\tweak extra-offset #'(-1.5 . 0.5) \pp r a'
-	a,-\tweak extra-offset #'(0 . 0.4) \< r a'
+	a,4\pp r a'
+	a,\< r a'
 	a, r a'
 	a, r a'\!
 % Bars 261 to 265
@@ -258,7 +258,7 @@ musicCornoIIMvtIII = \relative c'' {
 	a, r_\dimmarkup a'
 	a, r a'
 	a, r a'
-	a,-\tweak extra-offset #'(-1. . 0.5) \pp r r 
+	a,\pp r r 
 	R2.*19
 % Bars 271 to 275
 	
@@ -371,7 +371,7 @@ musicCornoIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 aes-.\pp r
+	r4 aes-.-\tweak X-offset 0.8 \pp r
 % Bars 381 to 385
 	aes-. r aes-.
 	aes-. aes-. aes-.
@@ -381,12 +381,12 @@ musicCornoIIMvtIII = \relative c'' {
 % Bars 386 to 390
 	
 	
-	r4 a!2\pp
+	r4 a!2-\tweak X-offset 1 \pp
 	r4 a2
 	R2.*2
 % Bars 391 to 395
 	
-	r4 b2\p
+	r4 b2-\tweak X-offset 1 \p
 	r4 b2
 	r4 g2
 	r4 a2
@@ -410,7 +410,7 @@ musicCornoIIMvtIII = \relative c'' {
 	b!2-> b4->~
 % Bars 411 to 415
 	b b2->
-	a2 a4~
+	a2\ff a4~
 	a a2
 	a2 a4~
 	a a2

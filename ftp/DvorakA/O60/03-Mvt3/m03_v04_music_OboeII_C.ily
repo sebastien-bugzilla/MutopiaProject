@@ -14,7 +14,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-		f2->\f f4->~
+		f2->-\tweak X-offset -1 \f f4->~
 % Bars 6 to 10
 		f f2->
 		e4-.\fz d-. d-. 
@@ -53,7 +53,7 @@ musicOboeIIMvtIII = \relative c'' {
 		f'2\p\< f4~
 % Bars 41 to 45
 		f e-. d-.\!
-		c2->-\tweak X-offset 0.5 \ff bes4->~
+		c2->-\tweak X-offset 0.2 \ff bes4->~
 		bes a2->
 		r4 c-.\p r
 		c-. r c-.
@@ -90,7 +90,7 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-		bes,4\p-. d-. c-.
+		bes,4-\offset X-offset -2 \p-. d-. c-.
 % Bars 81 to 85
 		bes-. a-. g-.
 		f2 f4~ 
@@ -148,7 +148,7 @@ musicOboeIIMvtIII = \relative c'' {
 % Bars 126 to 130
 		e!2-> e4~->
 		e e2->
-		\markEO #'(0 . 1) f!2_\ffgrandioso f4~
+		\dynEO #'(0 . 1) f!2\ff f4~
 		f f2
 		f2 f4~
 % Bars 131 to 135
@@ -221,8 +221,8 @@ musicOboeIIMvtIII = \relative c'' {
 	
 % Bars 181 to 185
 	
-		d'2.\f\>~
-		d~
+		d'2.\f~
+		d~\>
 		d~
 		d2\! r4
 % Bars 186 to 190
@@ -246,11 +246,11 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	\mmrPos #-6 R2.
-	\mmrPos #-6 R
-	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 211 to 215
-	\mmrPos #-6 R
-	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
@@ -271,12 +271,12 @@ musicOboeIIMvtIII = \relative c'' {
 	
 	
 	
-	r4 \shape #'((0 . 0)(0 . 0.8)(0 . 0.8)(0 . 0)) Slur b,^(-\tweak X-offset #-1.6 \p d
+	r4 b,(-\tweak X-offset #-1.6 \p d
 % Bars 231 to 235
 	fis b d~
 	d2 cis4
 	b a g)
-	\shape #'(() ((0.5 . 1.5)(0 . 1.5)(0 . 0)(0 . 0))) Slur fis^( d b
+	\shape #'((0 . 1)(0 . 1.5)(0 . 1.5)(0 . 1)) Slur fis( d b
 	d fis b~
 % Bars 236 to 240
 	b2 a4
@@ -427,7 +427,7 @@ musicOboeIIMvtIII = \relative c'' {
 	R2.*2
 	
 % Bars 386 to 390
-	r4 bes'-.\pp r
+	r4 bes'-.-\tweak X-offset 1 \pp r
 	bes-. r bes-.
 	r d2
 	r4 d2
@@ -458,7 +458,7 @@ musicOboeIIMvtIII = \relative c'' {
 	e!2-> e4->~
 % Bars 411 to 415
 	e e2->
-	f!2 f4~
+	f!2\ff f4~
 	f f2
 	f f4~
 	f f2

@@ -14,7 +14,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	
-		\aIIXoffset -5 cis4(\f-> d8) r cis4(->
+		\aIIXoffset -5 cis4(-\tweak X-offset -1 \f-> d8) r cis4(->
 % Bars 6 to 10
 		d8) r cis4(-> d8) r
 		e4-.\fz d8( cis d4)
@@ -22,8 +22,8 @@ musicFlautoIMvtIII = \relative c''' {
 		gis,(-> a8) r gis4(->
 		a8) r gis4(-> a8) r
 % Bars 11 to 15
-		\dynEO #'(0 . 1) bes4-.\fz a8( gis a4)
-		\dynEO #'(0 . 1) bes-.\fz a8( gis a4)
+		bes4-.\fz a8( gis a4)
+		bes-.\fz a8( gis a4)
 		R2.*11
 	
 	
@@ -98,9 +98,9 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	
-		\partCombineApart r4 a,8(_\mf gis a4)
+		\partCombineApart r4 a,8(\mf gis a4)
 % Bars 111 to 115
-		r b8(_\crescmarkup ais b4)
+		r b8(-\crescmarkup ais b4)
 		r cis8( bis cis4)
 		\once \partCombineAutomatic r ees8( d ees4)
 		f4-. ees8( d ees4)
@@ -108,7 +108,7 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 116 to 120
 		f-. ees8( d ees4) 
 		f-. ees8( d ees4)
-		f-._\semprecresc e!8( dis e4)
+		f-. e!8(_\semprecresc dis e4)
 		fis-. e8( dis e4)
 		fis-. e8( dis e4)
 % Bars 121 to 125
@@ -120,13 +120,13 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		\markEO #'(0 . 1) cis(_\ffgrandioso d) cis(
+		\dynEO #'(0 . 1) cis(\ff d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
 		e-. d8( cis d4)
-		R2.*14
-	
+		R2.
+		R2.*13^\iimutainflautopiccolo \changeStaffName \I \changeGrandStaffName \fl
 	
 	
 % Bars 136 to 140
@@ -163,7 +163,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 166 to 170
 	
-		fis4(\p\< g8 eis fis4)\!
+		\aIIOmit fis4(\p\< g8 eis fis4)\!
 		R2.*6
 	
 	
@@ -171,8 +171,8 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	
-		d'2.\p->
-		R2.
+		\aIIOmit d'2.\p->
+		R2. \changeStaffName \fli \unsetGrandStaffName
 % Bars 176 to 180
 		d
 		d4-.\< e-. fis-.\!
@@ -180,23 +180,23 @@ musicFlautoIMvtIII = \relative c''' {
 		d4( cis d)
 		g2.
 % Bars 181 to 185
-		d4(\< e8 cis d4)\!
-		g2.\fz\>~
-		g~
+		d4(\< e8 cis d4)\! 
+		g2.\fz~ 
+		g~\>
 		g~
 		g2(\! fis4)
 % Bars 186 to 190
-		e2(\p d4
+		\dynEO #'(0 . 2) e2(\p d4
 		cis2 b4
 		a2 b4
 		cis2 d4)
-		e2(_\dimmarkup d4
+		\markEO #'(0 . 1) e2(_\dimmarkup d4
 % Bars 191 to 195
 		cis2 b4
 		a2 b4
 		cis2 d4)
-		b2(\pp cis4
-		a2_\dimmarkup b4
+		\dynEO #'(0 . 2) b2(\pp cis4
+		\markEO #'(0 . 1) a2_\dimmarkup b4
 % Bars 196 to 200
 		g2 a4
 		fis2 g4)
@@ -215,7 +215,7 @@ musicFlautoIMvtIII = \relative c''' {
 	r a( fis)
 	R2.*2
 	
-	d''2(\p a4
+	\dynEO #'(0 . 1) d''2(\p a4
 % Bars 211 to 215
 	e2 fis4
 	g a b
@@ -281,9 +281,9 @@ musicFlautoIMvtIII = \relative c''' {
 	fis a d~
 	d cis b~
 	b a g)
-	\shape #'((0 . -1.5)(0 . 0.5)(0 . 0.5)(0 . -1.5)) Slur fis( a d
+	\shape #'((0 . -1.5)(0 . 1)(0 . 1)(0 . -1.5)) Slur fis( a d
 % Bars 266 to 270
-	c2._\dimmarkup
+	c2.-\dimmarkup
 	b4 a g
 	fis g e)
 	d2.-\tweak X-offset #-2 \pp~
@@ -307,10 +307,10 @@ musicFlautoIMvtIII = \relative c''' {
 	d( e8 cis d4)\!
 	d(\f e8 cis d4)
 % Bars 286 to 290
-	d( e8 cis d4)
+	d( e8 cis d4) \changeStaffName \fl
 	d( e8 cis d4)
 	d( e8 cis d4) \section \key d \minor
-	\aIIXoffset #-5 cis'4(\f-> d8) r cis4(->
+	\aIIXoffset #-5 \dynEO #'(0 . 1) cis'4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 % Bars 291 to 295
 	e4-.\fz d8( cis d4)
@@ -393,7 +393,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\partCombineApart r4 a,8(-\tweak X-offset #-1.9 \mf gis a4)
-	r b8(_\crescmarkup ais b4)
+	r b8(-\crescmarkup ais b4)
 % Bars 396 to 400
 	r cis8( bis cis4)
 	\once \partCombineAutomatic r ees8( d ees4)
@@ -402,7 +402,7 @@ musicFlautoIMvtIII = \relative c''' {
 	f-. ees8( d ees4) 
 % Bars 401 to 405
 	f-. ees8( d ees4)
-	f-._\semprecresc e!8( dis e4)
+	f-. e!8(_\semprecresc dis e4)
 	fis-. e8( dis e4)
 	fis-. e8( dis e4)
 	g-. e8( dis e4)
@@ -414,7 +414,7 @@ musicFlautoIMvtIII = \relative c''' {
 	c( des) c(
 % Bars 411 to 415
 	des) c( cis)
-	cis(_\ffgrandioso d) cis(
+	cis(\ff d) cis(
 	d) cis( d)
 	e-. d8( cis d4)
 	e-. d8( cis d4)

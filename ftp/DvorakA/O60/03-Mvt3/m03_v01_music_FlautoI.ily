@@ -414,7 +414,7 @@ musicFlautoIMvtIII = \relative c''' {
 	f-. ees8( d ees4) 
 % Bars 401 to 405
 	f-. ees8( d ees4)\!
-	f-._\semprecresc e!8( dis e4)
+	f-. e!8(_\semprecresc dis e4)
 	fis-. e8( dis e4)
 	fis-. e8( dis e4)
 	g-. e8( dis e4)

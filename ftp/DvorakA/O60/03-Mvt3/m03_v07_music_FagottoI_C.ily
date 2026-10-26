@@ -63,7 +63,7 @@ musicFagottoIMvtIII = \relative c {
 		b!4) cis-. d-.\!
 		a\ff-. a,-. bes!-.
 		c-. f-. f,-.
-		\partCombineApart f-._\p c'-. f-.
+		\partCombineApart f-.\p c'-. f-.
 		f,-. c'-. f-.
 % Bars 46 to 50
 		e,-. c'-. e-.
@@ -97,7 +97,7 @@ musicFagottoIMvtIII = \relative c {
 	
 % Bars 71 to 75
 	
-		a'4-.\p g-. f-.
+		\aIIXoffset -4 a'4-.\p g-. f-.
 		e-. d-. c-.
 		b-. g-. b-.
 		c-. g-. \once \partCombineApart c-.
@@ -152,7 +152,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		a!-._\semprecresc a-. a-.
+		a!-. a-._\semprecresc a-.
 		a-. a-. a-.
 		a-. a-. a-.
 % Bars 121 to 125
@@ -164,7 +164,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		d2_\ffgrandioso d,4~
+		d2\ff d,4~
 		d d2
 		d2 d4~
 % Bars 131 to 135
@@ -203,7 +203,7 @@ musicFagottoIMvtIII = \relative c {
 	d
 	d \section \key d \major
 	\repeat volta 2 {
-		\trio \partCombineApart d'_\fp \partCombineAutomatic
+		\trio \partCombineApart d'-\offset X-offset -1.5 -\tweak extra-offset #'(-1 . -1.7) \fp \partCombineAutomatic
 		R2.*39
 % Bars 156 to 160
 	
@@ -223,12 +223,12 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-		\partCombineApart d2(_\pp e4
-		cis2_\dimmarkup d4
+		\partCombineApart \shape #'((0.3 . -1)(0 . -0.5)(0 . -0.5)(-0.5 . -1)) Slur d2(-\offset X-offset -1.5 \pp e4
+		\markEO #'(2 . -4) cis2-\dimmarkup d4
 % Bars 196 to 200
 		b2 cis4
 		a2 b4)
-		g2._\ppp(~
+		g2.\ppp(~
 		g
 		fis
 % Bars 201 to 205
@@ -244,17 +244,17 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-	\partCombineApart d'2(\p a4
+	\partCombineApart d'2(-\offset X-offset -1 \p a4
 	e2 fis4
 % Bars 216 to 220
 	g a b
 	a e g)
-	fis2.(_\dimmarkup
+	fis2.(-\dimmarkup
 	b4 a g)
 	fis2.(
 % Bars 221 to 225
 	b4 a g)
-	fis_\pp r r \partCombineAutomatic
+	fis\pp r r \partCombineAutomatic
 	R2.*7
 	
 	
@@ -294,10 +294,10 @@ musicFagottoIMvtIII = \relative c {
 	g'2(_\pdim a4
 	b cis! d)
 	\partCombineApart a2.
-	\shape #'( () ((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -0.5))) Slur fis4(_\p a d
+	\shape #'( ((0 . -1)(0 . -0.5)(0 . -0.5)(0 . -0.8)) ()) Slur fis4(-\offset X-offset -0.5 \p a d
 	c2.
 % Bars 271 to 275
-	b4_\dimsempre a g
+	b4-\dimsempre a g
 	fis g e)
 	a2( g4
 	fis g e)
@@ -466,7 +466,7 @@ musicFagottoIMvtIII = \relative c {
 	c( des) c(
 % Bars 411 to 415
 	des) c( cis)
-	d2_\ffgrandioso d,4~
+	d2\ff d,4~
 	d d2
 	d d4~
 	d d2

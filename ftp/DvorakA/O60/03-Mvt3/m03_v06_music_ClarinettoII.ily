@@ -144,7 +144,7 @@ musicClarinettoIIMvtIII = \relative c'' {
 % Bars 116 to 120
 		e-. dis-. dis-.
 		e-. dis-. dis-.\!
-		\startMeasureCount e-._\semprecresc e-. e-.
+		\startMeasureCount e-. e-._\semprecresc e-.
 		e-. e-. e-.
 		e-.\fz e-. e-.
 % Bars 121 to 125

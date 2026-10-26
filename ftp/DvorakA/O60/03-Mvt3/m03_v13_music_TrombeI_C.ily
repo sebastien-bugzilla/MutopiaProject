@@ -96,7 +96,7 @@ musicTrombeIMvtIII = \relative c'' {
 % Bars 126 to 130
 		g2-> g4->~
 		g g2->
-		c2_\ffgrandioso c4~
+		c2\ff c4~
 		c c2
 		c2 c4~
 % Bars 131 to 135
@@ -245,7 +245,7 @@ musicTrombeIMvtIII = \relative c'' {
 	
 	
 	
-	r4 g'-.\f\< g-.\!
+	r4 g'-.-\tweak X-offset -2 \f\< g-.\!
 % Bars 326 to 330
 	g2->\ff c4-.
 	bes4-. g2-> 
@@ -294,7 +294,7 @@ musicTrombeIMvtIII = \relative c'' {
 	g2-> g4~->
 % Bars 411 to 415
 	g g2->
-	c2_\ffgrandioso c4~
+	c2\ff c4~
 	c c2
 	c2 c4~
 	c c2

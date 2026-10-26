@@ -290,7 +290,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	des-. c-. c-.
 % Bars 401 to 405
 	des-. c-. c-.\! \stopMeasureCount
-	\startMeasureCount cis-._\semprecresc cis-. cis-.
+	\startMeasureCount cis-. cis-._\semprecresc cis-.
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 

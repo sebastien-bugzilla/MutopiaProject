@@ -14,7 +14,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-		cis4(\f-> d8) r cis4(->
+		cis4(-\tweak X-offset -1 \f-> d8) r cis4(->
 % Bars 6 to 10
 		d8) r cis4(-> d8) r
 		e4-.\fz d8( cis d4)
@@ -120,7 +120,7 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		cis(_\ffgrandioso d) cis(
+		cis(\ff d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
@@ -175,7 +175,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-		R2.*8
+		R2.*8 
 	
 % Bars 176 to 180
 	
@@ -346,7 +346,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	c( des) c(
 % Bars 411 to 415
 	des) c( cis)
-	cis(_\ffgrandioso d) cis(
+	cis(\ff d) cis(
 	d) cis( d)
 	e-. d8( cis d4)
 	e-. d8( cis d4)

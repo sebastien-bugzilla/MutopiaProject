@@ -81,7 +81,7 @@ musicViolaMvtIII = \relative c {
 		d(\< e f! g a bes!
 % Bars 41 to 45
 		b4)\! cis-. d-.
-		<c! e>2->\ff <bes!_>~ d>4-.
+		<c! e>2->\ff <bes!_>_~ d>4-.
 		<bes e>-. <a f'>2-> 
 		c4-.^\benmarcato->\mf f,8( e f4)
 		c'-.-> f,8( e f4)
@@ -114,7 +114,7 @@ musicViolaMvtIII = \relative c {
 	
 		e,2->\f a4~
 		a b-. <a c>-.
-		<g e'>2->\f <f d'>4~->
+		<g e'>2->-\offset X-offset #-2 \f <f d'>4~->
 % Bars 71 to 75
 		q <e c'>2->
 		R2.*4
@@ -122,7 +122,7 @@ musicViolaMvtIII = \relative c {
 	
 	
 % Bars 76 to 80
-		g'4-.-\tweak extra-offset #'(-0.3 . 0.5) \p\< f-. ees-.
+		g'4-.-\offset X-offset -1 -\tweak extra-offset #'(0 . 0.5) \p\< f-. ees-.
 		d-. c'-. bes-.\!
 		a->\f f-. a-.
 		bes-. f2->
@@ -173,7 +173,7 @@ musicViolaMvtIII = \relative c {
 		<des f>4-. <c ees>-. q-. 
 		<des f>4-. <c ees>-. q-.\!
 		<a g'>-. q-. q-.
-		g'2.\fz
+		\dynEO #'(0.3 . 2) g'2.\fz
 		fis\fz
 % Bars 121 to 125
 		e\fz
@@ -184,7 +184,7 @@ musicViolaMvtIII = \relative c {
 % Bars 126 to 130
 		<g! e'!>-> q4->~
 		q q2->
-		d'4(_\ffgrandioso a') d,(
+		d'4(\ff a') d,(
 		a') d,(  a')
 		d,( a') d,(
 % Bars 131 to 135
@@ -349,7 +349,7 @@ musicViolaMvtIII = \relative c {
 	R2.*3
 	
 	
-	\acciaccatura a'8( a'2\p) d,4_\crescmarkup~
+	\acciaccatura a'8( a'2\p) d,4-\crescmarkup~
 % Bars 286 to 290
 	d\< a2
 	d2 a4~
@@ -523,7 +523,7 @@ musicViolaMvtIII = \relative c {
 	<g! e'!>-> q4->~
 % Bars 411 to 415
 	q q2->
-	d'4(_\ffgrandioso a') d,(
+	d'4(\ff a') d,(
 	a') d,(  a')
 	d,( a') d,(
 	a') d,( a')

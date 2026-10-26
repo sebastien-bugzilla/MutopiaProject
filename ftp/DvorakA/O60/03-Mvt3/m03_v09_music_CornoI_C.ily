@@ -80,7 +80,7 @@ musicCornoIMvtIII = \relative c'' {
 		e2->\ff d4~->
 		d c2->
 		e,2\p\< e4~
-		e a2\!
+		e \after 4 \! a2
 % Bars 66 to 70
 		b2->\f \partCombineApart a4^(->
 		b) g2-> \partCombineAutomatic
@@ -92,7 +92,7 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 76 to 80
 		d'4-.\p\< d-. d-.
 		d-. d-. d-.\!
-		c2.\f~
+		c2.-\tweak X-offset -2 \f~
 		c
 		R2.*6
 % Bars 81 to 85
@@ -139,12 +139,12 @@ musicCornoIMvtIII = \relative c'' {
 		b\fz
 		bes\fz
 		des4-. des-. des-.
-		c2->\ff c4~->
+		c2->-\tweak X-offset 0.5 \ff c4~->
 		c c2->
 % Bars 126 to 130
 		d!2-> d4->~
 		d d2->
-		c2-\tweak X-offset #0.5 \ff c4~
+		c2-\tweak X-offset #0.3 \ff c4~
 		c c2
 		c2 c4~
 % Bars 131 to 135
@@ -206,12 +206,12 @@ musicCornoIMvtIII = \relative c'' {
 		b2 a4)
 		gis2( a4
 		b2 cis4)
-		d2(_\dimmarkup cis4
+		\markEO #'(2 . -2.7) \shape #'((0 . 0.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur d2(-\dimmarkup cis4
 % Bars 191 to 195
 		b2 a4)
 		gis2( a4
 		b2 cis4)
-		a4_\pp r r \partCombineAutomatic
+		a4\pp r r \partCombineAutomatic
 		R2.*7
 % Bars 196 to 200
 	
@@ -244,8 +244,8 @@ musicCornoIMvtIII = \relative c'' {
 	
 % Bars 256 to 260
 	
-	a,4-\tweak extra-offset #'(-1.5 . 0.5) \pp r a'
-	a,-\tweak extra-offset #'(0 . 0.4) \< r a'
+	a,4\pp r a'
+	a,\< r a'
 	a, r a'
 	a, r a'\!
 % Bars 261 to 265
@@ -258,7 +258,7 @@ musicCornoIMvtIII = \relative c'' {
 	a, r_\dimmarkup a'
 	a, r a'
 	a, r a'
-	a,-\tweak extra-offset #'(-1. . 0.5) \pp r r 
+	a,\pp r r 
 	R2.*19
 % Bars 271 to 275
 	
@@ -371,7 +371,7 @@ musicCornoIMvtIII = \relative c'' {
 	
 	
 	
-	r4 c-.\pp r
+	r4 c-.-\tweak X-offset 0.8 \pp r
 % Bars 381 to 385
 	c-. r c-.
 	des-. c-. c-.
@@ -381,12 +381,12 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 386 to 390
 	
 	
-	r4 c2\pp
-	r4 c2-\pocoapococresc
+	r4 c2-\tweak X-offset 1 \pp
+	r4 c2-\tweak X-offset 1 -\pocoapococresc
 	R2.*2
 % Bars 391 to 395
 	
-	r4 d2\p
+	r4 d2-\tweak X-offset 1 \p
 	r4 d2_\crescmarkup
 	r4 cis2
 	r4 dis2
@@ -410,7 +410,7 @@ musicCornoIMvtIII = \relative c'' {
 	d!2-> d4~
 % Bars 411 to 415
 	d d2->
-	c2_\ffgrandioso c4~
+	c2\ff c4~
 	c c2
 	c2 c4~
 	c c2

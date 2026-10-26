@@ -140,7 +140,7 @@ musicClarinettoIMvtIII = \relative c'' {
 % Bars 116 to 120
 		gis-. fis-. fis-.
 		gis-. fis-. fis-.\!
-		aes!-.-\offset X-offset #-3 _\semprecresc g!-. g-.
+		aes!-. g!-._\semprecresc g-.
 		a-.\fz g-. g-.
 		a-.\fz g-. g-.
 % Bars 121 to 125

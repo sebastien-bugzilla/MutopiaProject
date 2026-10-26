@@ -125,8 +125,8 @@ musicPiccoloMvtIII = \relative c''' {
 	
 % Bars 181 to 185
 	
-		d,2.\f\>~
-		d~
+		d,2.\f~
+		d~\>
 		d~
 		d2\! r4 
 % Bars 186 to 190

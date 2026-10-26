@@ -152,7 +152,7 @@ musicViolinoIIMvtIII = \relative c' {
 % Bars 116 to 120
 		des-. c-. c-.
 		des-. c-. c-.\!
-		<a, cis'>-._\semprecresc q-. q-.
+		<a, cis'>-. q-._\semprecresc q-.
 		q-. q-. q-.
 		q-. q-. q-.
 % Bars 121 to 125
@@ -482,7 +482,7 @@ musicViolinoIIMvtIII = \relative c' {
 	des-. c-. c-.
 % Bars 401 to 405
 	des-. c-. c-.\!
-	<a, cis'>-._\semprecresc q-. q-.
+	<a, cis'>-. q-._\semprecresc q-.
 	q-. q-. q-.
 	q-. q-. q-.
 	q-. q-. q-.

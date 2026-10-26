@@ -152,7 +152,7 @@ musicFagottoIMvtIII = \relative c {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		\startMeasureCount a!-._\semprecresc a-. a-.
+		\startMeasureCount a!-. a-._\semprecresc a-.
 		a-. a-. a-.
 		a-. a-. a-.
 % Bars 121 to 125

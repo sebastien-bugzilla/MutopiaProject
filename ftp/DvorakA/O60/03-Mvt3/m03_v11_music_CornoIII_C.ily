@@ -123,12 +123,12 @@ musicCornoIIIMvtIII = \relative c'' {
 		b-. b-. b-.
 		b-. b-. b-.
 		ais-. ais-. ais-.
-		fis'2->\ff fis4->~
+		fis'2->-\tweak X-offset 0.5 \ff fis4->~
 		fis fis2->
 % Bars 126 to 130
 		g2-> g4->~
 		g g2->
-		g2-\tweak extra-offset #'(0.5 . 1) _\ffgrandioso g4~
+		g2-\tweak extra-offset #'(0.5 . 1) \ff g4~
 		g g2
 		g2 g4~
 % Bars 131 to 135
@@ -177,30 +177,30 @@ musicCornoIIIMvtIII = \relative c'' {
 		c2.~\fp
 % Bars 161 to 165
 		c~\>
-		c~
-		c\pp
-		c->_\p \partCombineAutomatic
+		<< c~ {s4 s s8 s\!}>>
+		c2.\pp
+		c->\p \partCombineAutomatic
 		R2.
 % Bars 166 to 170
 		\partCombineApart c2.~\p
-		c~_\<
+		c~\<
 		c~
 		<< c {s4 s s\!}>>
-		c2.~_\fp
+		c2.~\fp
 % Bars 171 to 175
-		c~_\>
-		c~
-		c_\pp
-		c~_\fp
+		c~\>
+		<< c~ {s4 s s8 s\!}>>
+		c2.\pp
+		c~\fp
 		c~
 % Bars 176 to 180
-		c~_\<
+		c~\<
+		\after 4*2 \! c~
+		c~\fp
 		c~
-		c~_\fp
-		c~
-		c~_\<
+		<< c~\< {s4 s s\!}>>
 % Bars 181 to 185
-		c\! \partCombineAutomatic
+		c2.\! \partCombineAutomatic
 		R2.*4
 	
 	
@@ -267,7 +267,7 @@ musicCornoIIIMvtIII = \relative c'' {
 	c~
 	c~
 % Bars 266 to 270
-	c~_\dimmarkup
+	\markEO #'(3 . 3.5) c~_\dimmarkup
 	c~
 	c~
 	c4 r r
@@ -367,7 +367,7 @@ musicCornoIIIMvtIII = \relative c'' {
 	
 	
 	
-	\partCombineApart g,2_\p g4~
+	\partCombineApart g,2\p g4~
 % Bars 371 to 375
 	g aes2 \partCombineAutomatic
 	R2.*2
@@ -406,7 +406,7 @@ musicCornoIIIMvtIII = \relative c'' {
 	g2-> g4~->
 % Bars 411 to 415
 	g g2->
-	g2_\ffgrandioso g4~
+	g2\ff g4~
 	g g2
 	g2 g4~
 	g g2

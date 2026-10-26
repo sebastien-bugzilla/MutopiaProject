@@ -152,7 +152,7 @@ musicContrabassoMvtIII = \relative c {
 % Bars 116 to 120
 		aes-. aes-. aes-.
 		aes-. aes-. aes-.\!
-		a!-._\semprecresc a-. a-.
+		a!-. a-._\semprecresc a-.
 		a-. a-. a-.
 		a-. a-. a-. 
 % Bars 121 to 125
@@ -466,7 +466,7 @@ musicContrabassoMvtIII = \relative c {
 	aes-. aes-. aes-.
 % Bars 401 to 405
 	aes-. aes-. aes-.\!
-	a!-._\semprecresc a-. a-.
+	a!-. a-._\semprecresc a-.
 	a-. a-. a-.
 	a-. a-. a-.
 	a-. a-. a-.

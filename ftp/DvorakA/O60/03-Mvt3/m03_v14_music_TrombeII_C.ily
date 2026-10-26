@@ -245,7 +245,7 @@ musicTrombeIIMvtIII = \relative c' {
 	
 	
 	
-	r4 g'-.\f\< g-.\!
+	r4 g'-.-\tweak X-offset -2 \f\< g-.\!
 % Bars 326 to 330
 	g2->\ff c4
 	bes4 g2
@@ -294,7 +294,7 @@ musicTrombeIIMvtIII = \relative c' {
 	g,2-> g4~->
 % Bars 411 to 415
 	g g2->
-	c2 c4~
+	c2\ff c4~
 	c c2
 	c2 c4~
 	c c2

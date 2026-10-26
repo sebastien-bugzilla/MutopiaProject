@@ -256,7 +256,7 @@ nameStaffXIIIMvtII = {
 %###############################################################################
 nameStaffIMvtIII = {
 	\set Staff.instrumentName = \markup {
-		\column { \lower #1.5 "Flauti I. II." "(II muta in Fl. picc.)"}
+		\center-column { \lower #1 "Flauti I. II." "(II muta in picc.)"}
 	}
 	\set Staff.shortInstrumentName = "Fl."
 	\set Staff.midiInstrument = #""
@@ -335,7 +335,7 @@ nameStaffVIIMvtIII = {
 	}
 	\set Staff.shortInstrumentName =  \markup {
 		\center-column {
-			\lower #1 "Trbe." "I. II. in D"
+			\lower #1 "Trbe." "in D"
 		}
 	}
 	\set Staff.midiInstrument = #""

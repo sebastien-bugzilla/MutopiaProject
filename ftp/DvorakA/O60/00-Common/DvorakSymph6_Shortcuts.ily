@@ -163,11 +163,14 @@ flote = {
 I = \markup { I. }
 II = \markup { II.}
 fl = \markup {Fl.}
+fli = \markup {Fl.I}
+
+iimutainflautopiccolo = \markup {II. muta in Flauto piccolo}
 
 trio = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(key-signature)
 	\sectionLabel \markup {
-		\fontsize #+1 \bold "Trio."
+		\fontsize #+1 "TRIO"
 	}
 }
 trioPart = {
@@ -180,7 +183,7 @@ trioPart = {
 scherzo = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
 	\sectionLabel \markup {
-		\fontsize #+1 \bold "Scherzo."
+		\fontsize #+1 "SCHERZO"
 	}
 }
 
@@ -579,4 +582,6 @@ changeGrandStaffName = #(define-music-function
 	#}
 )
 
-unsetGrandStaffName = \unset GrandStaff.shortInstrumentName
+unsetGrandStaffName = \set GrandStaff.shortInstrumentName = ""
+
+preferDottedRight = \once \override Staff.NoteCollision.prefer-dotted-right = ##f

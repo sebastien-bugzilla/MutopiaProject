@@ -152,19 +152,19 @@ musicViolinoIMvtIII = \relative c''' {
 % Bars 116 to 120
 		f-. ees8( d ees4)
 		f-. ees8( d ees4)\!
-		f-._\semprecresc e!8( dis e4)
+		f-. e!8(_\semprecresc dis e4)
 		fis-. e8( dis e4)
 		fis-. e8( dis e4)
 % Bars 121 to 125
 		g-. e8( dis e4)
 		g-. ees8( d ees4)
 		aes-. ees8( d ees4)
-		cis'-.\ff cis,8( bis cis4)
+		\dynEO #'(0 . 2) cis'-.\ff cis,8( bis cis4)
 		cis'-. cis,8( bis cis4)
 % Bars 126 to 130
 		cis'-. cis,8( bis cis4)
 		cis'-. cis,8( bis cis4)
-		\markEO #'(0 . 1) cis4(_\ffgrandioso d) cis(
+		\dynEO #'(0 . 1) cis4(\ff d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
@@ -234,7 +234,7 @@ musicViolinoIMvtIII = \relative c''' {
 		e' dis e a, d a)
 		cis( b cis a d a
 		e' dis e a, fis' a,)
-		g'( fis_\dimmarkup g a, fis' a,
+		g'(_\dimmarkup fis g a, fis' a,
 % Bars 191 to 195
 		e' dis e a, d a)
 		cis( b cis a d a
@@ -312,7 +312,7 @@ musicViolinoIMvtIII = \relative c''' {
 	b( cis8 ais b4) 
 % Bars 256 to 260
 	b( cis8 ais b4) 
-	a!4(\p d, fis
+	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur a!4(\p d, fis
 	a\< d fis~
 	fis e d~
 	d cis b)\!
@@ -353,13 +353,13 @@ musicViolinoIMvtIII = \relative c''' {
 	cis4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 % Bars 291 to 295
-	\dynEO #'(0 . 2) e4-.\fz d8( cis d4)
-	\dynEO #'(0 . 2) e4-.\fz d8( cis d4)
+	e4-.\fz d8( cis d4)
+	e4-.\fz d8( cis d4)
 	gis,(-> a8) r gis4(-> 
 	a8) r gis4(-> a8) r
-	\dynEO #'(0 . 1) bes4-.\fz a8( gis a4)
+	bes4-.\fz a8( gis a4)
 % Bars 296 to 300
-	\dynEO #'(0 . 1) bes-.\fz a8( gis a4)
+	bes-.\fz a8( gis a4)
 	fis( g!8) r fis4( 
 	g8) r fis4( g8) r
 	a4-. e8( dis e4)
@@ -417,7 +417,7 @@ musicViolinoIMvtIII = \relative c''' {
 	dis( e!)\< dis(
 	e)\! e(\> a)\!
 	d,8( e f!\< g a bes
-	b!4)\! \dynEO #'(0 . 2) cis-.\f d-.
+	b!4)\! cis-.\f d-.
 % Bars 346 to 350
 	\dynEO #'(0 . 2) f(->\ff a) d,(->
 	e) f2->
@@ -486,19 +486,19 @@ musicViolinoIMvtIII = \relative c''' {
 	f-. ees8( d ees4) 
 % Bars 401 to 405
 	f-. ees8( d ees4)\!
-	f-._\semprecresc  e!8( dis e4)
+	f-. e!8(_\semprecresc dis e4)
 	fis-. e8( dis e4)
 	fis-. e8( dis e4)
 	g-. e8( dis e4)
 % Bars 406 to 410
 	g-. ees8( d! ees4)
 	aes-. ees8( d ees4)
-	cis'-.\ff cis,8( bis cis4) 
+	\dynEO #'(0 . 2) cis'-.\ff cis,8( bis cis4) 
 	cis'-. cis,8( bis cis4)
 	cis'-. cis,8( bis cis4)
 % Bars 411 to 415
 	cis'-. cis,8( bis cis4)
-	cis4(_\ffgrandioso d) cis(
+	cis4(\ff d) cis(
 	d) cis( d)
 	e-. d8( cis d4)
 	e-. d8( cis d4)

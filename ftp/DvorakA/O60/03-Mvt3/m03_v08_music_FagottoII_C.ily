@@ -84,7 +84,7 @@ musicFagottoIIMvtIII = \relative c, {
 		c2->\ff c,4~->
 		c f2->
 		d'2\p\< d4~
-		d bes2\!
+		d \after 4 \! bes2
 % Bars 66 to 70
 		a2\f bes4-.\>
 		c-. c,-. f-.\!
@@ -366,8 +366,8 @@ musicFagottoIIMvtIII = \relative c, {
 	c2->\ff c,4->~
 	c f2->
 	d'2\p d4~
-	d\< bes2
-	a2\f\> bes4-.
+	d\< \after 4 \! bes2
+	a2\f bes4-.\>
 % Bars 351 to 355
 	c\!-. c,-. f-.
 	R2.*4
@@ -442,7 +442,7 @@ musicFagottoIIMvtIII = \relative c, {
 	a!2-> a4~->
 % Bars 411 to 415
 	a a2->
-	d!2 d,4~
+	d!2\ff d,4~
 	d d2
 	d d4~
 	d d2
