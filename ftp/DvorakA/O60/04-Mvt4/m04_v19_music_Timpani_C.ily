@@ -37,8 +37,8 @@ musicTimpaniMvtIV = \relative c {
 	d
 % Bars 36 to 40
 	a\startTrillSpan
-	<< a {s4 s s s\stopTrillSpan } >> \mark \default
-	d4\ff r r a-.
+	a \mark \default
+	d4\ff\stopTrillSpan r r a-.
 	d-. r r2
 	r2 r4 a
 % Bars 41 to 45
@@ -224,7 +224,7 @@ musicTimpaniMvtIV = \relative c {
 	a2 a4\stopTrillSpan r8 a
 	d4 a d r8 a
 	d4 a d r8 a
-	a1\ff\startTrillSpan
+	\trillSpanPadding #2 a1\ff\startTrillSpan
 	a
 % Bars 296 to 300
 	a

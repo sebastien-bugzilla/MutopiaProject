@@ -101,7 +101,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	\partCombineApart a4 a8(\< b bis4 cis)\!
 	d a8(\< b! bis4 cis)\!
 	d r r2
-	r4 gis->\f eis-> cis->
+	r4 gis->-\offset X-offset -1 \f eis-> cis->
 % Bars 131 to 135
 	fis-> cis-> fis-> cis->
 	fis-> e-> a-> gis-> \partCombineAutomatic
@@ -233,7 +233,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	r2 cis4\f r
 	\partCombineApart R1*2
 	
-	r2 b->-\tweak X-offset #-1.6 \brack\f \partCombineAutomatic
+	r2 b->-\tweak X-offset #-2.5 \brack\f \partCombineAutomatic
 	b-> b->
 % Bars 281 to 285
 	e-> d->
@@ -441,7 +441,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	e^\ten r
 	g^\ten r
 	g^\ten r
-	e4 r a2\ff~
+	e4 r a2-\tweak X-offset 0.5 \ff~
 % Bars 526 to 530
 	a2. a4-.
 	a-. g-. g-. fis-.
@@ -450,7 +450,7 @@ musicTrombonoIMvtIV = \relative c'' {
 	b-. \partCombineApart a-. a-. \partCombineAutomatic g'-.
 % Bars 531 to 535
 	g-. fis-. fis-. e-. 
-	e-. d-. cis-. a'\ff
+	e-. d-. cis-. a'-\tweak X-offset 0.3 \ff
 	fis2->_\pesante e->
 	d-> a->
 	d2.-> d4

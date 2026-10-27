@@ -38,7 +38,7 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	cis1-^~
 	cis2. cis4-. \mark \default
-	d( e d a)
+	d(\ff e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -244,14 +244,14 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	
 	
-	r2 r4 \shape #'((0 . -1.5)(0 . -0.5)(0 . -0.5)(0 . -1.5)) Slur a(\p
+	r2 r4 a(\p
 	fis e d a)
 % Bars 251 to 255
 	d4.( d8 d4 e)
-	\tupletYOff #5.5 \tuplet 6/4 1 {fis4( a c e d c)}\mark \default
+	\omitTupletBracket \shape #'((0 . -1)(0 . 0)(0 . 0)(0 . 0)) Slur \tuplet 6/4 1 {fis4( a c e d c)}\mark \default
 	b2 r
 	R1
-	\omitTupletNumber \tuplet 6/4 1 { r4 a(\p\< c! ees! d c\!}
+	\omitTupletBracket \tupletYOff #-2 \tuplet 6/4 1 { r4 a(\p\< c! ees! d c\!}
 % Bars 256 to 260
 	bes4)\f r r2
 	R1*8
@@ -344,7 +344,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	cis'1\fp
 	d\fp
 	e\fp^(
-	fis8)-. r cis4(->\f d e
+	fis8)-. r cis4(->-\offset X-offset -2 \f d e
 	d) ais2.->~
 % Bars 346 to 350
 	ais4 b(-> c d
@@ -525,7 +525,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	fis( e8 fis e4 d)
 	g( fis8 g fis4 e)
 % Bars 516 to 520
-	a( g8 a g4 fis)
+	\shape #'((0.3 . -2)(0 . 1)(0 . 1)(0 . -2)) Slur a( g8 a g4 fis)
 	d4-> b-. cis!-> a-.
 	b-> g-. a-> fis-.
 	d'-> b-. cis-> a-.

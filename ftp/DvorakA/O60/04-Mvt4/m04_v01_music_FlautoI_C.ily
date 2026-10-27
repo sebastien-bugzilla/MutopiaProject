@@ -38,7 +38,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 36 to 40
 	a1-^~
 	a2. a4-. \mark \default
-	\partCombineApart fis(_\ffgrandioso e d a) \partCombineAutomatic
+	\partCombineApart fis( e d a) \partCombineAutomatic
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -83,7 +83,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 86 to 90
 	
 % Bars 91 to 95
-	a2->\ff a->
+	\dynEO #'(0 . 2) a2->\ff a->
 	a2.-> b8( cis)
 	d2-> d->
 	d2.-> e8( fis)
@@ -98,7 +98,7 @@ musicFlautoIMvtIV = \relative c''' {
 	R1*6
 % Bars 106 to 110
 	
-	a2->\ff a->
+	\dynEO #'(0 . 1) a2->\ff a->
 	a2.-> b8( cis)
 	d2-> d->
 	d2.-> e8( fis)
@@ -150,21 +150,21 @@ musicFlautoIMvtIV = \relative c''' {
 	
 % Bars 166 to 170
 	
-	\tupletUp a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
-	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
-	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
-	a4\fz \tuplet 3/2 4 {a8( g fis)} r2 \tupletNeutral
+	\tupletUp \dynEO #'(0 . 1) a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
+	\dynEO #'(0 . 1) a4\fz \tuplet 3/2 4 {a8( g fis)} r2
+	\dynEO #'(0 . 1) a4\fz \tuplet 3/2 4 {a8( g fis)} r2
+	\dynEO #'(0 . 1) a4\fz \tuplet 3/2 4 {a8( g fis)} r2 \tupletNeutral
 % Bars 171 to 175
 	r2 r4 b4-.\ff
 	e2.-> r4
 	r2 r4 b4-.
 	e2.-> r4
-	r2 r4 \dynEO #'(0 . 2) c\fz~
+	r2 r4 c\fz~
 % Bars 176 to 180
-	c2. \dynEO #'(0 . 2) c4\fz~
-	c2. \dynEO #'(0 . 2) cis!4\fz~
-	cis2. \dynEO #'(0 . 2) cis4\fz~
-	cis2. \dynEO #'(0 . 2) cis4-.\ff
+	c2. c4\fz~
+	c2. cis!4\fz~
+	cis2. cis4\fz~
+	cis2. cis4-.\ff
 	cis-. r b-. r
 % Bars 181 to 185
 	a-. r r2
@@ -179,8 +179,8 @@ musicFlautoIMvtIV = \relative c''' {
 	g~
 	g \mark \default
 % Bars 191 to 195
-	\hairpinShorten #'(0 . 2) fis4(_\p_\< a \hairpinShorten #'(-2 . 0) bes_\> g)\!
-	\shape #'((0 . -2.5)(0 . -0.5)(0 . 0)(0 . 0)) Slur fis1(
+	\hairpinShorten #'(0 . 2) fis4(\p\< a \hairpinShorten #'(-2 . 0) bes\> g)\!
+	fis1(
 	g
 	a2 d
 	cis4) r r2 \partCombineAutomatic
@@ -188,9 +188,9 @@ musicFlautoIMvtIV = \relative c''' {
 	R1*6
 % Bars 201 to 205
 	
-	\partCombineApart r4 fis,-._\mf r b-. \partCombineAutomatic
+	\partCombineApart r4 fis,-.-\offset X-offset -1.5 \mf r b-. \partCombineAutomatic
 	R1
-	\partCombineApart r4 b-.\brack\mf r e-. \partCombineAutomatic
+	\partCombineApart r4 b-.-\offset X-offset -2.5 \brack\mf r e-. \partCombineAutomatic
 	R1
 % Bars 206 to 210
 	\partCombineApart r4 b-. r e-. \partCombineAutomatic
@@ -251,7 +251,7 @@ musicFlautoIMvtIV = \relative c''' {
 	\mmrPos #14 R \mark \default
 	\mmrPos #9 R1 \partCombineAutomatic
 	R1
-	\tupletIgnoreSlur \tuplet 6/4 1 {a4( c ees g f ees}
+	\tupletIgnoreSlur \omitTupletBracket \shape #'( ((0 . 1)(0 . 0.5)(0 . 0)(0 . 0)) ()) Slur \tuplet 6/4 1 {a4( c ees g f ees}
 % Bars 256 to 260
 	d4) r r2
 	R1*8
@@ -275,7 +275,7 @@ musicFlautoIMvtIV = \relative c''' {
 	
 % Bars 276 to 280
 	
-	r2 fis->\f
+	r2 \aIIXoffset #-3 fis->\f
 	gis-> ais->
 	b-> b->
 	b-> b4.-> b'8-.
@@ -371,7 +371,7 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	\mark \default
 % Bars 366 to 370
-	\partCombineApart a4--\p \tuplet 3/2 4 {a8( g fis)} g4-- \tuplet 3/2 4 {g8( fis e)}
+	\partCombineApart a4---\offset X-offset 0.5 \p \tuplet 3/2 4 {a8( g fis)} g4-- \tuplet 3/2 4 {g8( fis e)}
 	d4-. a-. d2~
 	d4 a-. d2(~
 	d8 a d cis d e fis g)
@@ -382,7 +382,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 376 to 380
 	
 	
-	e'4->\p \tuplet 3/2 4 {e8( d cis-.)} cis4 \tuplet 3/2 4 {cis8( b a-.)}
+	\dynEO #'(0 . 1) e'4->\p \tuplet 3/2 4 {e8( d cis-.)} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 % Bars 381 to 385
@@ -394,7 +394,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 386 to 390
 	\once \partCombineApart d4 r r2
 	R1
-	d2->\f d->
+	\dynEO #'(0 . 1) d2->\f d->
 	d2.-> e8( fis)
 	g2-> g->
 % Bars 391 to 395

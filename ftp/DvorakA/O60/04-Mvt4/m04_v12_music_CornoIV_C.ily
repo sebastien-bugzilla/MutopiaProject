@@ -31,7 +31,7 @@ musicCornoIVMvtIV = \relative c' {
 	\mmrPos #-8 R1
 % Bars 21 to 25
 	\mmrPos #-6 R1
-	fis'4.\f fis8 fis4 gis\< 
+	fis'4.\f fis8 fis4-. gis-.\< 
 	a4. a8 a4 b\!
 	c!1\fz~
 	c4 r r2
@@ -416,12 +416,12 @@ musicCornoIVMvtIV = \relative c' {
 	R1*2
 % Bars 416 to 420
 	
-	g1\f->~
+	g1-\tweak X-offset -2 \f->~
 	g4 r r2
 	R1*2
 	
 % Bars 421 to 425
-	g4-.\f g-. g2~
+	g4-.-\tweak X-offset -2 \f g-. g2~
 	g1~
 	g2 c4-. c-.
 	g1~
@@ -516,7 +516,7 @@ musicCornoIVMvtIV = \relative c' {
 	
 % Bars 516 to 520
 	
-	c,4\ff c c c
+	c,4-\tweak X-offset -1 \ff c c c
 	c c c c
 	c c c c
 	c c c c \mark \default

@@ -125,7 +125,7 @@ musicTubaMvtIV = \relative c, {
 	R1*2
 % Bars 141 to 145
 	
-	\dynEO #'(-1.7 . 1) d1-^\ff
+	d1-^-\offset X-offset -2 \ff
 	c-^
 	bes-^~
 	bes
@@ -154,7 +154,7 @@ musicTubaMvtIV = \relative c, {
 	r2 r4 f\p
 	r2 r4 f\p
 	r2 r4 fis!\p
-	r2 r4 fis-.-\tweak extra-offset #'(-2.3 . 1.3) \ff
+	r2 r4 fis-.\ff
 	fis-. r fis-. r
 % Bars 181 to 185
 	fis-. r r2
@@ -284,7 +284,7 @@ musicTubaMvtIV = \relative c, {
 	
 	
 	
-	r2 a,2-\tweak X-offset #-4.5 \ppp~
+	r2 a,2\ppp~
 	a1~
 % Bars 316 to 320
 	a~
@@ -302,14 +302,14 @@ musicTubaMvtIV = \relative c, {
 	R1
 	R
 	R
-	\mmrPos #-8 R1
-	\mmrPos #-8 R1
+	\mmrPos #-6 R1
+	\mmrPos #-6 R1
 % Bars 346 to 350
+	\mmrPos #-6 R1
+	\mmrPos #-6 R1
 	\mmrPos #-8 R1
 	\mmrPos #-8 R1
-	\mmrPos #-8 R1
-	\mmrPos #-8 R1
-	\mmrPos #-8 R1
+	\mmrPos #-6 R1
 % Bars 351 to 355
 	R1*7
 % Bars 356 to 360
@@ -445,7 +445,7 @@ musicTubaMvtIV = \relative c, {
 	a4-. b!-. c-. cis-.
 	d r d,2->~
 	d1
-	g-\tweak X-offset #-2 \ff->~
+	g-\tweak X-offset #-2.5 \ff->~
 	g
 % Bars 511 to 515
 	c,~

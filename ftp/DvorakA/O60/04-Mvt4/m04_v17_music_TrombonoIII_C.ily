@@ -110,7 +110,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	\partCombineApart cis-. a8(\< b bis4 cis)\!
 	d a8(\< b! bis4 cis)\!
 	d r r2
-	r4 gis->\f eis-> cis->
+	r4 gis->-\offset X-offset -1 \f eis-> cis->
 % Bars 131 to 135
 	fis-> cis-> fis-> cis->
 	fis-> e-> a-> gis-> \partCombineAutomatic
@@ -154,7 +154,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	r2 r4 f\p
 	r2 r4 f\p
 	r2 r4 fis!\p
-	r2 r4 fis-.-\tweak extra-offset #'(-2.3 . 1.3) \ff
+	r2 r4 fis-.\ff
 	fis-. r fis-. r
 % Bars 181 to 185
 	fis-. r r2
@@ -172,7 +172,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	
-	\partCombineApart ais,1_\pp~
+	\partCombineApart ais,1\pp~
 % Bars 196 to 200
 	ais~
 	ais~
@@ -245,7 +245,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	R1
 % Bars 276 to 280
 	r2 e4\f r
-	\partCombineApart r2 e2_\f->
+	\partCombineApart r2 e2-\offset X-offset -2 \f->
 	d-> cis->
 	b-> a->
 	g-> fis->
@@ -284,7 +284,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	
-	r2 a,2-\tweak X-offset #-4.5 \ppp~
+	r2 a,2\ppp~
 	a1~
 % Bars 316 to 320
 	a~
@@ -362,7 +362,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	fis2\p\< a\!~
-	a4 g8( a_\crescmarkup g4 fis)
+	a4 g8(_\crescmarkup a g4 fis)
 % Bars 416 to 420
 	fis( a) g2
 	fis4-.\f fis-. e2->
@@ -436,7 +436,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	fis-> fis->
 	g-> e->
 % Bars 501 to 505
-	\once \partCombineApart d4 r c2\f->
+	\once \partCombineApart d4 r \aIIXoffset #-3 c2\f->
 	b-> bes->
 	a4-. b!-. c-. cis-.
 	d r c2->

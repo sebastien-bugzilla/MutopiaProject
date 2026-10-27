@@ -51,15 +51,15 @@ musicCornoIMvtIV = \relative c'' {
 % Bars 51 to 55
 	
 	
-	r4 g,2.-\tweak X-offset #-2.3 \f~
-	g4 g2.-\tweak X-offset #-2.5 \fz~
-	g4 g2.-\tweak X-offset #-2.5 \fz~
+	r4 g,2.\f~
+	g4 g2.\fz~
+	g4 g2.\fz~
 % Bars 56 to 60
-	g4 g2.-\tweak X-offset #-2.5 \fz
-	r4 c2.-\tweak X-offset #-2.5 \fz~
-	c4 c2.-\tweak X-offset #-2.5 \fz~
-	c4 c2.-\tweak X-offset #-2.5 \fz~
-	c4 c2.-\tweak X-offset #-2.5 \fz~
+	g4 g2.\fz
+	r4 c2.\fz~
+	c4 c2.\fz~
+	c4 c2.\fz~
+	c4 c2.\fz~
 % Bars 61 to 65
 	c4 r e r
 	e r e r
@@ -121,7 +121,7 @@ musicCornoIMvtIV = \relative c'' {
 	a( c) bes2
 % Bars 116 to 120
 	a4-. a-. g2->
-	f4 r f'2_\fz_\>~
+	f4 r f'2\fz\>~
 	f4\! r r2 \partCombineAutomatic
 	R1*2
 	
@@ -209,9 +209,9 @@ musicCornoIMvtIV = \relative c'' {
 % Bars 201 to 205
 	
 	
-	\partCombineApart r4 g,-._\mf r c-. \partCombineAutomatic
+	\partCombineApart r4 g,-.-\offset X-offset -1.5 \mf r c-. \partCombineAutomatic
 	R1
-	\partCombineApart r4 g-._\mf r c-. \partCombineAutomatic
+	\partCombineApart r4 g-.-\offset X-offset -1.5 \mf r c-. \partCombineAutomatic
 % Bars 206 to 210
 	R1*5
 % Bars 211 to 215
@@ -260,10 +260,10 @@ musicCornoIMvtIV = \relative c'' {
 	\partCombineApart d!4(\p c bes f)
 	bes4. bes8 bes4 c
 % Bars 251 to 255
-	\shape #'((0 . 1)(0 . -0.5)(0 . -0.5)(0 . 1)) Slur \tuplet 6/4 1 {d4( f aes g f ees)}
+	\omitTupletBracket \shape #'((0 . 1.5)(0 . -0.5)(0 . -0.5)(0 . 1.5)) Slur \tuplet 6/4 1 {d4( f aes g f ees)}
 	d2. r4 \partCombineAutomatic \mark \default
 	R1
-	\partCombineApart \tuplet 6/4 1 {aes4(_\p c ees ges f ees)} \partCombineAutomatic
+	\partCombineApart \omitTupletBracket \shape #'((0 . 1)(0 . -0.5)(0 . -0.5)(0 . 1)) Slur \tuplet 6/4 1 {aes4(\p c ees ges f ees)} \partCombineAutomatic
 	ees2(\< \tuplet 3/2 2 {aes,4 bes \once \stemUp ces!\!}
 % Bars 256 to 260
 	bes\f) r r2
@@ -284,7 +284,7 @@ musicCornoIMvtIV = \relative c'' {
 	r2 f4\f r
 % Bars 276 to 280
 	R1
-	r2 d2\f->
+	r2 \aIIXoffset #-3 d2\f->
 	d-> d->
 	d-> g,->
 	g-> g->

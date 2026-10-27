@@ -26,7 +26,7 @@ musicClarinettoIIMvtIV = \relative c'' {
 % Bars 21 to 25
 	b4.-\tweak X-offset #1 \f b8 b4-. e-.
 	dis r r2
-	fis4. \hairpinYoffset #0 #0.8 fis8\< fis4-. bes!-.\! \hairpinYoffset #0 #0 
+	fis4. fis8\< fis4-. bes!-.\! 
 	a r r2
 	R1*5
 % Bars 26 to 30
@@ -44,17 +44,17 @@ musicClarinettoIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e1-^~
 	e2. e4-. \mark \default
-	f8_\ffgrandioso\noBeam a,( c bes a g f e)
+	f8-\offset X-offset -1 \ff\noBeam a,( c bes a g f e)
 	d( e f e d c bes c)
 	a r f'( g a bes c bes)
 % Bars 41 to 45
 	a( g f g a d c bes)
 	c( bes a bes c d bes c)
 	a4( f b e,)
-	f( e8 d e4 f)
-	ees8( f ees4 a d,)
+	\shape #'((0 . -2)(0 . 0.3)(0 . 0.3)(0 . -2)) Slur f( e8 d e4 f)
+	\shape #'((0 . 0)(0 . 0.7)(0 . 0.7)(0 . 0)) Slur ees8( f ees4 a d,)
 % Bars 46 to 50
-	ees( d8 c d4 ees)
+	\shape #'((0 . -2)(0 . 0.3)(0 . 0.3)(0 . -2)) Slur ees( d8 c d4 ees)
 	f8-. r r4 r2
 	R1*6
 % Bars 51 to 55
@@ -128,7 +128,7 @@ musicClarinettoIIMvtIV = \relative c'' {
 	bes1~
 	\once \stemUp bes2 a4( aes)
 % Bars 116 to 120
-	g2 f2->
+	g2 f2-\tweak extra-offset #'(0.3 . 0.8) ->
 	e4 r r2
 	R1*3
 	
@@ -154,7 +154,7 @@ musicClarinettoIIMvtIV = \relative c'' {
 % Bars 136 to 140
 	r c-. c-. c-.
 	c-. r b-. r
-	c(\< e\! f\> d)\!
+	\hairpinShorten #'(0 . -1.8) c(\< e\! \hairpinShorten #'(-1.8 . 0) f\> d)\!
 	c-. e-. c-. e-.
 	r d-. g,-. d'-.
 % Bars 141 to 145
@@ -272,7 +272,7 @@ musicClarinettoIIMvtIV = \relative c'' {
 	\mark \default
 	R1
 	R
-	\omitTupletNumber \tuplet 6/4 1 {r4 c(\p\< ees! ges! f ees\!}
+	\omitTupletBracket \tupletYOff #-3.2 \tuplet 6/4 1 {r4 \shape #'( ((0 . -1)(0 . -0.5)(0 . 0)(0 . 0)) ()) Slur c(\p\< ees! ges! f ees\!}
 % Bars 256 to 260
 	des\f) r r2
 	R1*9
@@ -433,7 +433,7 @@ musicClarinettoIIMvtIV = \relative c'' {
 	bes2.-> r4
 	c,4\fz f-. d\fz f-.
 	f\fz f-. e\fz c-.
-	a r f,2\f(->
+	a r f,2-\offset X-offset -2 \f(->
 % Bars 411 to 415
 	fis1->)~
 	fis2 g4( f~

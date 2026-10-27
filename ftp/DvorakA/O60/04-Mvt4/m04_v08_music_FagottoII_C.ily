@@ -13,7 +13,7 @@ musicFagottoIIMvtIV = \relative c {
 	R1
 	r2 r4 e(\p
 	d fis a g
-	fis e fis) \shape #'((0 . -2.5)(0 . 0)(0 . 0)(0 . -2.5)) Slur g(
+	fis e fis) g(
 	fis e fis g8 a
 % Bars 6 to 10
 	b4) r4 r2
@@ -54,7 +54,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 36 to 40
 	e-. cis-. a-. g-.
 	e-. cis-. a'-. a-. \mark \default
-	d8( fis a g fis e d cis)
+	d8(\ff fis a g fis e d cis)
 	b( cis d cis b a g a)
 	fis r d'( e fis g a g)
 % Bars 41 to 45
@@ -64,7 +64,7 @@ musicFagottoIIMvtIV = \relative c {
 	d( cis8 b cis4 b)
 	a8( b c!4 fis b,)
 % Bars 46 to 50
-	c( b8 a b4 c)
+	\shape #'((0 . -2)(0 . 0.3)(0 . 0.3)(0 . -2)) Slur c( b8 a b4 c)
 	b8-. r r4 r2
 	r4 d(-\tweak X-offset #-2.5 \fz e fis
 	g8) r r4 r2
@@ -107,11 +107,11 @@ musicFagottoIIMvtIV = \relative c {
 	R1*3
 	
 	
-	g'!4-> \tuplet 3/2 4 { g4.:8 } g4-> \tuplet 3/2 4 { g4.:8 } 
+	g'!4-> \tuplet 3/2 4 { g8 g g } g4-> \tuplet 3/2 4 { g8 g g } 
 % Bars 86 to 90
-	g4-> \once \tupletUp \tuplet 3/2 4 { g4.:8 } g4-> \tuplet 3/2 4 { g4.:8 } 
-	g4-> \tuplet 3/2 4 { g4.:8 } g4-> \tuplet 3/2 4 { g4.:8 } 
-	g4-> \tuplet 3/2 4 { g4.:8 } g4-> \tuplet 3/2 4 { g4.:8 } 
+	g4-> \once \tupletUp \tuplet 3/2 4 { g8 g g } g4-> \tuplet 3/2 4 { g8 g g } 
+	g4-> \tuplet 3/2 4 { g8 g g } g4-> \tuplet 3/2 4 { g8 g g } 
+	g4-> \tuplet 3/2 4 { g8 g g } g4-> \tuplet 3/2 4 { g8 g g } 
 	g4\f r r2
 	R1
 % Bars 91 to 95
@@ -171,7 +171,7 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 136 to 140
 	r cis-. d-. a-.
 	a-. r gis-. r
-	a(\< cis\! d\> b)\!
+	\hairpinShorten #'(0 . -1.8) a(\< cis\! \hairpinShorten #'(-1.8 . 0) d\> b)\!
 	a-. cis-. a-. cis-.
 	r b-. e,-. b'-.
 % Bars 141 to 145
@@ -358,7 +358,7 @@ musicFagottoIIMvtIV = \relative c {
 	f2 bes,
 	\grace {s8} c1
 	c2-> d-> \mark \default
-	\grace {s8} a'1\ff\>~
+	\grace {s8} a'1-\offset X-offset -2 \ff\>~
 	a~
 % Bars 306 to 310
 	a4\p r r2
@@ -371,7 +371,7 @@ musicFagottoIIMvtIV = \relative c {
 	
 	
 	
-	r2 r4 e'(_\pptranquillo
+	r2 r4 e'(\pp
 	d fis a g
 % Bars 321 to 325
 	fis e fis g

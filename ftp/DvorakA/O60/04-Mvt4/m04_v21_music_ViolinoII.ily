@@ -338,7 +338,7 @@ musicViolinoIIMvtIV = \relative c'' {
 	
 	r2 <gis b e>4\f\arpeggio r
 	R1
-	r2 <cis, a' e'>4\f\arpeggio r
+	r2 <cis, a' e'>4\arpeggio r
 % Bars 276 to 280
 	R1
 	r2 cis'2\ff->

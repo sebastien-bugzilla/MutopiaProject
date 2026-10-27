@@ -51,15 +51,15 @@ musicCornoIIMvtIV = \relative c' {
 % Bars 51 to 55
 	
 	
-	r4 g,2.-\tweak X-offset #-2.3 \f~
-	g4 g2.-\tweak X-offset #-2.5 \fz~
-	g4 g2.-\tweak X-offset #-2.5 \fz~
+	r4 g,2.\f~
+	g4 g2.\fz~
+	g4 g2.\fz~
 % Bars 56 to 60
-	g4 g2.-\tweak X-offset #-2.5 \fz
-	r4 c2.-\tweak X-offset #-2.5 \fz~
-	c4 c2.-\tweak X-offset #-2.5 \fz~
-	c4 c2.-\tweak X-offset #-2.5 \fz~
-	c4 c2.-\tweak X-offset #-2.5 \fz~
+	g4 g2.\fz
+	r4 c2.\fz~
+	c4 c2.\fz~
+	c4 c2.\fz~
+	c4 c2.\fz~
 % Bars 61 to 65
 	c4 r bes' r
 	bes r bes r

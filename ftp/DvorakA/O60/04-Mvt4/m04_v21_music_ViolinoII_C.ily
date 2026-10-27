@@ -54,7 +54,7 @@ musicViolinoIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	a e a, a' a e a, a'
 	a e a, a' a e a, a' \mark \default
-	fis4(_\ffgrandioso e) d( a)
+	fis4(\ff e) d( a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4(-. e-.)
 % Bars 41 to 45
@@ -125,7 +125,7 @@ musicViolinoIIMvtIV = \relative c'' {
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	b,4-\tweak X-offset #0.8 \fp \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
+	b,4\fp \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
 	b4-> \tuplet 3/2 4 {b8 b b} b4-> \tuplet 3/2 4 {b8 b b} 
@@ -338,7 +338,7 @@ musicViolinoIIMvtIV = \relative c'' {
 	
 	r2 <gis b e>4\f\arpeggio r
 	R1
-	r2 <cis, a' e'>4\f\arpeggio r
+	r2 <cis, a' e'>4\arpeggio r
 % Bars 276 to 280
 	R1
 	r2 cis'2\ff->
@@ -382,8 +382,8 @@ musicViolinoIIMvtIV = \relative c'' {
 	
 % Bars 316 to 320
 	
-	r2 r4 a\pp(~
-	a2._\tranquillo e4
+	r2 r4 \shape #'((0 . 1.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur a\pp(~
+	a2. e4
 	d cis b g')
 	fis( a cis b8 cis
 % Bars 321 to 325
@@ -426,11 +426,11 @@ musicViolinoIIMvtIV = \relative c'' {
 	gis) gis(\fz\< a b\!~
 	b) b(\fz\< cis d\!~
 	d) d(\fz cis b 
-	a) a(\fz b cis~
-	cis) cis(\fz d e~
+	a) \dynEO #'(0 . 2) a(\fz b cis~
+	cis) \dynEO #'(0 . 2) cis(\fz d e~
 % Bars 356 to 360
-	e) e(\fz fis g~
-	g) g(\fz fis e~
+	e) \dynEO #'(0 . 2) e(\fz fis g~
+	g) \dynEO #'(0 . 2) g(\fz fis e~
 	e) r <a,,, g' cis> r 
 	q r q r
 	q r r8 a''(\f g fis

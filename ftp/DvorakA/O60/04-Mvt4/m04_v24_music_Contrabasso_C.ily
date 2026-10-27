@@ -54,7 +54,7 @@ musicContrabassoMvtIV = \relative c' {
 % Bars 36 to 40
 	e-> cis-> a-> g->
 	e-> cis-> a-> a'-> \mark \default
-	d,8_\ffgrandioso fis a g fis e d cis
+	d,8\ff fis a g fis e d cis
 	b cis d cis b a g a
 	fis e' d e fis g a g
 % Bars 41 to 45
@@ -390,7 +390,7 @@ musicContrabassoMvtIV = \relative c' {
 % Bars 316 to 320
 	a~
 	a4 r r a'(\pp
-	fis_\tranquillo e d cis)
+	fis e d cis)
 	b( a g e')
 	d( fis a g)
 % Bars 321 to 325

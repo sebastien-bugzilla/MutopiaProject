@@ -54,7 +54,7 @@ musicFagottoIMvtIV = \relative c' {
 % Bars 36 to 40
 	e-. cis-. a-. g-.
 	e-. cis-. \partCombineApart a-. a-. \partCombineAutomatic \mark \default
-	fis'8(_\ffgrandioso a cis b a g fis e)
+	fis'8(\ff a cis b a g fis e)
 	d( e fis e d cis b cis)
 	a r fis'( g a b cis b)
 % Bars 41 to 45
@@ -91,27 +91,27 @@ musicFagottoIMvtIV = \relative c' {
 	e,8(-\tweak X-offset #-0.3 _\pdim d' cis b) r2
 	R1*2
 	\mark \default
-	\partCombineApart a4_(_\p_\< e' \hairpinShorten #'(0 . -3) f_\> d\!
-	cis2 a4-.)_\dimmarkup e-.
+	\partCombineApart \shape #'((0 . -1.5)(0 . -0.8)(0 . -0.8)(0 . -1)) Slur a4(\p\< e' \hairpinShorten #'(0 . -3) f\> d\!
+	cis2 a4-.)-\dimmarkup e-.
 % Bars 71 to 75
 	a,-. r a'-. e-. 
 	a,2 r \partCombineAutomatic
 	R1*4
 % Bars 76 to 80
 	
-	\partCombineApart b'4(_\p_\< fis' \hairpinShorten #'(0 . -3) g!_\> e\!
+	\partCombineApart b'4(\p\< fis' \hairpinShorten #'(0 . -3) g!\> e\!
 	d) r r2 \partCombineAutomatic
 	R1*3
 % Bars 81 to 85
 	
-	\partCombineApart d4_\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
+	\partCombineApart d4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
 	d'4_\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
-	\partCombineAutomatic a4->_\fpcresc \once \tupletUp \tuplet 3/2 4 { a4.:8 } a4-> \tuplet 3/2 4 { a4.:8 } 
+	\partCombineAutomatic a4->_\fpcresc \once \tupletUp \tuplet 3/2 4 { a8 a a } a4-> \tuplet 3/2 4 { a8 a a } 
 % Bars 86 to 90
-	a4-> \tuplet 3/2 4 { a4.:8 } a4-> \tuplet 3/2 4 { a4.:8 } 
-	a4-> \tuplet 3/2 4 { a4.:8} a4-> \tuplet 3/2 4 { a4.:8} 
-	a4-> \tuplet 3/2 4 { a4.:8} a4-> \tuplet 3/2 4 { a4.:8} 
+	a4-> \tuplet 3/2 4 { a8 a a } a4-> \tuplet 3/2 4 { a8 a a } 
+	a4-> \tuplet 3/2 4 { a8 a a} a4-> \tuplet 3/2 4 { a8 a a} 
+	a4-> \tuplet 3/2 4 { a8 a a} a4-> \tuplet 3/2 4 { a8 a a} 
 	a4\f r r2
 	R1
 % Bars 91 to 95
@@ -123,9 +123,9 @@ musicFagottoIMvtIV = \relative c' {
 % Bars 96 to 100
 	e\fz r e\fz r
 	R1
-	\partCombineApart d'4_\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
+	\partCombineApart d'4-\offset X-offset -1 \fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis)-.}
 	gis4 r r2
-	d'4_\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)} \partCombineAutomatic
+	d'4-\offset X-offset -1 \fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)} \partCombineAutomatic
 % Bars 101 to 105
 	a4->-\tweak X-offset #-0.5 _\fpcresc \tuplet 3/2 4 { a8 a a} a4-> \tuplet 3/2 4 { a8 a a} 
 	a4-> \tuplet 3/2 4 { a8 a a} a4-> \tuplet 3/2 4 { a8 a a} 
@@ -202,7 +202,7 @@ musicFagottoIMvtIV = \relative c' {
 	R1*2
 % Bars 166 to 170
 	
-	c4\fz c r2
+	\aIIXoffset -4 c4\fz c r2
 	c4\fz c r2
 	b4\fz b r2
 	b4\fz b r2
@@ -211,7 +211,7 @@ musicFagottoIMvtIV = \relative c' {
 	r2 r4 b(\f
 	g fis e) b--
 	e4. e8 e4 b'(
-	g fis e) \aIIXoffset #-2.2 e,(\fz
+	g fis e) e,(\fz
 % Bars 176 to 180
 	g c e) f,(\fz
 	aes c f) f,(\fz
@@ -235,12 +235,12 @@ musicFagottoIMvtIV = \relative c' {
 	R1*5
 % Bars 196 to 200
 	
-	\partCombineApart r4 cis'-._\mf r fis-. \partCombineAutomatic
+	\partCombineApart r4 cis'-.-\offset X-offset -1.5 \mf r fis-. \partCombineAutomatic
 	R1
-	\partCombineApart r4 fis,-._\mf r b-. \partCombineAutomatic
+	\partCombineApart r4 fis,-.-\offset X-offset -1.5 \mf r b-. \partCombineAutomatic
 	R1
 % Bars 201 to 205
-	\partCombineApart r4 fis-._\mf r b-. \partCombineAutomatic
+	\partCombineApart r4 fis-.-\offset X-offset -1.5 \mf r b-. \partCombineAutomatic
 	R1*4
 	
 	
@@ -376,7 +376,7 @@ musicFagottoIMvtIV = \relative c' {
 % Bars 321 to 325
 	\mmrPos #7 R
 	\mmrPos #7 R
-	r4 cis8(-\tweak X-offset #-1 \p b e4 a,
+	r4 \shape #'((0 . 0)(0 . 0)(0 . 1)(0 . -1)) Slur cis8(-\tweak X-offset #-1 \p b e4 a,
 	b gis a b
 	c b8 a d4 e8 c
 % Bars 326 to 330
@@ -530,7 +530,7 @@ musicFagottoIMvtIV = \relative c' {
 % Bars 456 to 460
 	cis-. r r cis-.
 	cis-. r r a-.
-	d,8( e fis e d cis b cis
+	\shape #'((0 . -1.5)(0 . 0.5)(0 . 0)(0 . 0)) Slur d,8( e fis e d cis b cis
 	a b g a fis g e fis)
 	d( e d e fis g fis g
 % Bars 461 to 465

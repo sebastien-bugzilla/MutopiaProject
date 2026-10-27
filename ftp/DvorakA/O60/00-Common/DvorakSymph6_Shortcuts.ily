@@ -146,6 +146,7 @@ solo = \markup {Solo.}
 ten = \markup {\italic ten.}
 tranquillo = \markup {\italic tranquillo}
 leggiero = \markup {\italic leggiero}
+dolce = \markup {\italic dolce}
 
 %--------------------
 % Instrument modification
@@ -198,7 +199,7 @@ scherzofuriantPart = {
 finale = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
 	\sectionLabel \markup {
-		\fontsize #+1 \bold "Finale."
+		\fontsize #+1 "FINALE"
 	}
 }
 
@@ -335,8 +336,6 @@ aIIXoffset = #(define-music-function
 	#}
 )
 
-aIIOmit = \once \omit Voice.CombineTextScript
-
 trillXoffset = #(define-music-function
 	(offset)
 	(number?)
@@ -354,8 +353,6 @@ hairpinYoffset = #(define-music-function
 )
 
 tupletIgnoreSlur = \once \override Voice.TupletNumber.avoid-slur = #'ignore
-
-omitTupletNumber = \once \omit Voice.TupletNumber
 
 arpeggioPadding = #(define-music-function
 	(padding)
@@ -400,12 +397,14 @@ stopTremolo = #(define-music-function () ()
 
 omitFlag = \once \omit Flag
 omitBeam = \once \omit Beam
+omitStem = \once \omit Stem
+aIIOmit = \once \omit Voice.CombineTextScript
+omitTupletNumber = \once \omit Voice.TupletNumber
+omitTupletBracket = \once \omit Voice.TupletBracket
 
 omitAccidental = {
 	\override Accidental.stencil = ##t
 }
-
-omitStem = \once \omit Stem
 
 noteShift = #(define-music-function
 	(shift)
@@ -585,3 +584,4 @@ changeGrandStaffName = #(define-music-function
 unsetGrandStaffName = \set GrandStaff.shortInstrumentName = ""
 
 preferDottedRight = \once \override Staff.NoteCollision.prefer-dotted-right = ##f
+

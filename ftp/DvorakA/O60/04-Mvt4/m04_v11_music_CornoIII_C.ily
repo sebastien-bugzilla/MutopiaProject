@@ -73,7 +73,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 	
 	
-	g4->-\tweak extra-offset #'(-2.8 . 0.8) _\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
+	g4->_\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 % Bars 86 to 90
 	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g}  
 	g4-> \tuplet 3/2 4 {g8 g g}  g4-> \tuplet 3/2 4 {g8 g g}  
@@ -93,7 +93,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 	
 % Bars 101 to 105
-	g,4->-\tweak extra-offset #'(-2.3 . 0.5) _\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
+	g,4->_\fpcresc \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
 	g4-> \tuplet 3/2 4 {g8 g g} g4-> \tuplet 3/2 4 {g8 g g} 
@@ -263,7 +263,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	r2 d4\f r
 % Bars 276 to 280
 	R1
-	r2 e,\f->
+	r2 \aIIXoffset #-3 e,\f->
 	e-> e-> 
 	a,-> a'->
 	a-> a->
@@ -416,12 +416,12 @@ musicCornoIIIMvtIV = \relative c'' {
 	R1*2
 % Bars 416 to 420
 	
-	g1\f->~
+	g1-\tweak X-offset -2 \f->~
 	g4 r r2
 	R1*2
 	
 % Bars 421 to 425
-	g4-.\f g-. g2~
+	g4-.-\tweak X-offset -2 \f g-. g2~
 	g1~
 	g2 c4-. c-.
 	g1~
@@ -442,7 +442,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 	
 	
-	\partCombineApart r2 r4 g-._\f \section \mark \default
+	\partCombineApart r2 r4 g-.-\offset X-offset -1 \f \section \mark \default
 	e-. r r d-.
 % Bars 441 to 445
 	c-. r r g-.
@@ -516,7 +516,7 @@ musicCornoIIIMvtIV = \relative c'' {
 	
 % Bars 516 to 520
 	
-	c4\ff c c c
+	c4-\tweak X-offset -1 \ff c c c
 	c c c c
 	c c c c
 	c c c c \mark \default

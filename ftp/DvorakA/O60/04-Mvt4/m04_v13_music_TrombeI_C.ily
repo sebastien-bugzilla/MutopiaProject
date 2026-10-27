@@ -26,7 +26,7 @@ musicTrombeIMvtIV = \relative c''' {
 % Bars 36 to 40
 	g1-^\ff~
 	g2. g4-. \mark \default
-	e-._\ffgrandioso r r \partCombineApart g,-.
+	e-.-\tweak X-offset -1.5 \ff r r \partCombineApart g,-.
 	c-. \partCombineAutomatic r r2
 	r2 r4 g
 % Bars 41 to 45
@@ -79,9 +79,9 @@ musicTrombeIMvtIV = \relative c''' {
 	g-. r r2
 	c4-. r c-. r
 	c-. r r2
-	g4-\tweak X-offset -1.3 \fz r g-\tweak X-offset -1.3 \fz r
+	g4-\tweak X-offset -0.5 \fz r g-\tweak X-offset -0.5 \fz r
 % Bars 96 to 100
-	g-\tweak X-offset -1 \fz r d'-\tweak X-offset -1 \fz r
+	g\fz r d'\fz r
 	R1*8
 % Bars 101 to 105
 	
@@ -128,7 +128,7 @@ musicTrombeIMvtIV = \relative c''' {
 	R1*2
 % Bars 141 to 145
 	
-	c1-\tweak X-offset #-3 \ff~
+	c1\ff~
 	c~
 	c~
 	c
@@ -236,7 +236,7 @@ musicTrombeIMvtIV = \relative c''' {
 	R1*6
 % Bars 276 to 280
 	
-	r2 e,\f->
+	r2 \aIIXoffset #-3 e,\f->
 	e-> e->
 	a-> a->
 	a-> a->
@@ -348,7 +348,7 @@ musicTrombeIMvtIV = \relative c''' {
 % Bars 416 to 420
 	
 % Bars 421 to 425
-	r2 g\f~
+	r2 \aIIXoffset #-2 g\f~
 	g1~
 	g2 c4-. c-.
 	g1~

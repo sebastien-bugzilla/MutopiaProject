@@ -50,7 +50,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	e1-^~
 	e2. e4-. \mark \default
-	d( e d a)
+	d(\ff e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -163,7 +163,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 136 to 140
 	r g-. fis-. d-.
 	e-. r e-. r 
-	a,(\< cis\! d\> b\!)
+	\hairpinShorten #'(0 . -1.8) a,(\< cis\! \hairpinShorten #'(-1.8 . 0) d\> b\!)
 	a-. cis-. a-. cis-. 
 	r4 b-. e,-. b'-.
 % Bars 141 to 145
@@ -191,12 +191,12 @@ musicOboeIIMvtIV = \relative c'' {
 	R1*6
 % Bars 166 to 170
 	
-	fis'!4\fz d r2
-	fis4\fz d r2
+	\dynEO #'(0 . 1) fis'!4\fz d r2
+	\dynEO #'(0 . 1) fis4\fz d r2
 	dis4\fz dis r2
 	dis4\fz dis r2
 % Bars 171 to 175
-	r2 r4 b-\tweak X-offset #-2.2 \ff-.
+	r2 r4 b-\tweak X-offset -2 \ff-.
 	e2.-> r4
 	r2 r4 b-.
 	e2.-> r4
@@ -212,7 +212,7 @@ musicOboeIIMvtIV = \relative c'' {
 	cis4-. r r2
 	a1\fp\>~
 	<< a~ {s4 s s s\!}>>
-	\dynEO #'(0 . 0.5) a1\pp~
+	a1\pp~
 % Bars 186 to 190
 	a~
 	a~
@@ -290,7 +290,7 @@ musicOboeIIMvtIV = \relative c'' {
 % Bars 251 to 255
 	
 	\mark \default
-	\omitTupletNumber \tuplet 6/4 1 {r4 \hairpinShorten #'(0 . 2.8) b(\p\< d f \hairpinShorten #'(-2.8 . 0) e\> d)\!}
+	\omitTupletBracket \tupletYOff #-3.5 \tuplet 6/4 1 {r4 \hairpinShorten #'(0 . 2.8) b(-\offset X-offset -1.5 \p\< d f \hairpinShorten #'(-2.8 . 0) e\> d)\!}
 	c2 r
 	\tweak extra-offset #'(-1 . 0) R1
 % Bars 256 to 260
@@ -360,11 +360,11 @@ musicOboeIIMvtIV = \relative c'' {
 	
 	
 	
-	R1*4
+	R1*3
 	
 % Bars 316 to 320
 	
-	
+	\mmrPos #-6 R1
 	R1*7
 % Bars 321 to 325
 	
@@ -394,7 +394,7 @@ musicOboeIIMvtIV = \relative c'' {
 	cis1\fp
 	d\fp
 	e\fp\(
-	fis8\)-. r cis4(->\f d e
+	fis8\)-. r cis4(->-\offset X-offset -2 \f d e
 	d) ais2.->~
 % Bars 346 to 350
 	ais4 b4(-> c d
@@ -473,7 +473,7 @@ musicOboeIIMvtIV = \relative c'' {
 	g2.-> a8\( b\)
 	d,4\fz d-. d\fz d-.
 	d\fz d-. cis\fz a-.
-	d r d,2(->\f
+	d r d,2(->-\offset X-offset -2 \f
 % Bars 411 to 415
 	dis1)->~
 	dis2 e4( d~

@@ -17,7 +17,7 @@ musicVioloncelloMvtIV = \relative c' {
 	fis( e fis g8 a)
 % Bars 6 to 10
 	b4( d2 cis4)
-	d( cis8 b cis4 b)
+	\once \stemUp d( cis8 b cis4 b)
 	a( fis d e)
 	a1~
 	a
@@ -54,7 +54,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 36 to 40
 	e-> cis-> a-> g->
 	e-> cis-> a-> a'-> \mark \default
-	d,8_\ffgrandioso fis a g fis e d cis
+	d,8\ff fis a g fis e d cis
 	b cis d cis b a g a
 	fis e d e fis g a g
 % Bars 41 to 45
@@ -91,12 +91,12 @@ musicVioloncelloMvtIV = \relative c' {
 	e,8_\pdim d' cis b r2
 	R1*2
 	\mark \default
-	a4\p-\tweak X-offset #-4 ^\pizz r a r
+	a4\p^\pizz r a r
 	a r a_\dimmarkup e
 % Bars 71 to 75
 	a, r a' e
 	a, r r2
-	e'4-\tweak extra-offset #'(-0.7 . 0.7) \mf e' r e
+	e'4\mf e' r e
 	e, e'_\dimmarkup r e
 	e,\p e' r e
 % Bars 76 to 80
@@ -131,13 +131,13 @@ musicVioloncelloMvtIV = \relative c' {
 	d4-. b-. d2->
 % Bars 101 to 105
 	R1
-	e'4\fp \tuplet 3/2 4 {e8(-\crescmarkup d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
+	e'4-\fpcresc \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 	e'4\fz \tuplet 3/2 4 {e8( d cis-.)} cis4-> \tuplet 3/2 4 {cis8( b a-.)}
 	g4-.\f r r2
 % Bars 106 to 110
 	R1
-	fis8->-\tweak X-offset #-2 _\ffmarcato e d e fis-> e d e
+	fis8->_\ffmarcato e d e fis-> e d e
 	fis-> e d e fis-> e d cis
 	b-> cis d cis b-> cis d cis
 	b-> cis b a' gis fis e d
@@ -380,7 +380,7 @@ musicVioloncelloMvtIV = \relative c' {
 	a~
 	a4 r r2
 	r2 r4 r8 fis'(\pp
-	b,4) r8 d( b a g d
+	b,4) r8 \once \stemUp d( b a g d
 % Bars 311 to 317
 	a'4) r8 b( e,4) r8 fis\((
 	b1)
@@ -397,7 +397,7 @@ musicVioloncelloMvtIV = \relative c' {
 		e4
 	}>> r r a'(\pp
 % Bars 318 to 320
-	fis_\tranquillo e d cis
+	fis e d cis
 	b a g e)
 	d( fis a g
 % Bars 321 to 325
@@ -440,7 +440,7 @@ musicVioloncelloMvtIV = \relative c' {
 	d2-> b4-. gis-.
 	gis2-> e4-. b-.
 	gis'-. e( fis gis)
-	a r a'-.\f g!-.
+	a r \dynEO #'(0 . 2)  a'-.\f g!-.
 	g2-> e4-. cis-.
 % Bars 356 to 360
 	cis2-> a4-. e-.
@@ -517,7 +517,7 @@ musicVioloncelloMvtIV = \relative c' {
 % Bars 416 to 420
 	fis( a) g2
 	fis4-. fis-. e2->
-	d16(\< e fis g a b cis d)\! dis2:16\ff
+	d16(-\tweak rotation #'(6 -1 0) \< e fis g a b cis d)\! dis2:16\ff
 	dis1:
 	dis2: e4( fis8 g)
 % Bars 421 to 425

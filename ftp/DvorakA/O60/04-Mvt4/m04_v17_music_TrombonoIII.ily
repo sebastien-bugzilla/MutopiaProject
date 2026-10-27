@@ -365,7 +365,7 @@ musicTrombonoIIIMvtIV = \relative c {
 	
 	
 	fis2\p\< a\!~
-	a4 g8( a_\crescmarkup g4 fis)
+	a4 g8(_\crescmarkup a g4 fis)
 % Bars 416 to 420
 	fis( a) g2
 	fis4-.\f fis-. e2->

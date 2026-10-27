@@ -54,7 +54,7 @@ musicViolaMvtIV = \relative c' {
 % Bars 36 to 40
 	e-> e cis-> cis a-> a g-> g
 	e-> e cis-> cis a-> a a'-> a \mark \default
-	a_\ffgrandioso a, cis b a g' fis e
+	a\ff a, cis b a g' fis e
 	d e fis e d cis b cis
 	a g fis g a b cis b
 % Bars 41 to 45
@@ -91,12 +91,12 @@ musicViolaMvtIV = \relative c' {
 	e,8_\pdim d' cis b r2
 	R1
 	e,8(\pp d' cis b a gis fis' e) \mark \default
-	\hairpinYoffset #0 #-0.5 a,4(-\tweak extra-offset #'(0 . 3) _\pdolce\< e' \hairpinShorten #'(0 . -3) f\> d\! \hairpinYoffset #0 #0
+	\hairpinShorten #'(0 . -3.5) a,4(\p^\dolce\< e'\! \hairpinShorten #'(0 . -3) f\> d\!
 	cis2 a_\dimmarkup~
 % Bars 71 to 75
 	a1~
 	a4) r r2
-	e'4(\mf\< b' \hairpinShorten #'(0 . -3) c\> a)\!
+	\hairpinShorten #'(0 . 1) e'4(\mf\< b' \hairpinShorten #'(-1 . -3) c\> a)\!
 	gis \tuplet 3/2 4 {e8(-\tweak extra-offset #'(0 . 0.3) _\dimmarkup fis gis)} r4 \tuplet 3/2 4 {e8( fis gis)}
 	r4 \tuplet 3/2 4 {fis8(\p gis a)} r4 \tuplet 3/2 4 {fis8( gis a)}
 % Bars 76 to 80
@@ -125,7 +125,7 @@ musicViolaMvtIV = \relative c' {
 	e4\fz a-. fis\fz d-.
 % Bars 96 to 100
 	cis\fz a-. e'\fz gis,-.
-	<e gis>4-\tweak extra-offset #'(1.3 . 1.3) \fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+	<e gis>4\fp \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
 	q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
@@ -398,7 +398,7 @@ musicViolaMvtIV = \relative c' {
 % Bars 316 to 320
 	q~
 	q4 r r a'4\pp(~
-	a2._\tranquillo e4
+	a2. e4
 	fis2 g4 b8 cis)
 	a4( d cis b8 cis
 % Bars 321 to 325
@@ -449,7 +449,7 @@ musicViolaMvtIV = \relative c' {
 		\repeat tremolo 4 {g( a} \repeat tremolo 4 {g a)}
 	} \\ {
 % Bars 350 to 355
-		\repeat tremolo 6 {e,16(\f d')}
+		\repeat tremolo 6 {e,16(-\offset X-offset -2 \f d')}
 		\repeat tremolo 4 {e,( d'} \repeat tremolo 4 {e, d')} 
 		\repeat tremolo 4 {e,( d'} \repeat tremolo 4 {e, d')} 
 		\repeat tremolo 4 {e,( d'} \repeat tremolo 4 {e, d')}
