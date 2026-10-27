@@ -22,8 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameGrandStaff.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-%\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
-\include "./00-Common/DvorakSymph6_Format_temp.ily"
+\include "./00-Common/DvorakSymph6_Format_Cond_Mvt02.ily"
 \include "./02-Mvt2/m02_v01_music_FlautoI_C.ily"
 \include "./02-Mvt2/m02_v02_music_FlautoII_C.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI_C.ily"
@@ -67,9 +66,6 @@
 			\new StaffGroup <<
 				\new GrandStaff <<
 					\new Staff <<
-%						\new Voice {
-%							\displayFilterVoice
-%						}
 						\new Voice {
 							\formatConductorMvtII
 						}
@@ -143,11 +139,6 @@
 			breakbefore = ##t
 		}
 		\layout {
-%			system-count = 31
-%			\context {
-%				\Score 
-%				scriptDefinitions = #my-script-alist
-%			}
 		}
 	}
 }
