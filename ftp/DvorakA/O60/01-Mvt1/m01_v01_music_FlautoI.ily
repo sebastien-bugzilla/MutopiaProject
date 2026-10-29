@@ -24,15 +24,16 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 11 to 15
 		r r8 b'-.\p b( a)
 		g2 r4 
-		R2.*10
+		R2.*8
 	
 	
 % Bars 16 to 20
 	
 % Bars 21 to 25
-	
-	
-		\mmrnDown R2.*10
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*10
 	
 	
 % Bars 26 to 30
@@ -40,7 +41,7 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 31 to 35
 	
 	
-		\ni \mmrPos #-4 R2. \no
+		
 		a!4\f-. f-. b-.\fz
 		f-. c'\fz-. f,-. 
 % Bars 36 to 40
@@ -78,25 +79,25 @@ musicFlautoIMvtI = \relative c'' {
 		g-^ fis8( e d4)
 		g-^ fis8( e d4)
 		g-. r r
-		R2.*10
+		R2.*9
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
 	
 	
-	
 		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 76 to 80
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
-		\once \voiceOne r4-\offset X-offset -1 ^\solo r8 d8-.\p e-. fis-.
+		\once \voiceOne r4 r8 d8-.\p e-. fis-.
 		g4-- r8 cis,-. d-. e-.
 		fis4-- r8 b,-. cis-. d-.
 % Bars 81 to 85
 		e4-. e-. d-.
 		cis r r
-		R2.*25
+		R2.*18
 	
 	
 % Bars 86 to 90
@@ -106,7 +107,10 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 96 to 100
 	
 % Bars 101 to 105
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #6 R \no 
+		R2.*4
 % Bars 106 to 110
 	
 		\mark \default
@@ -224,12 +228,16 @@ musicFlautoIMvtI = \relative c'' {
 	b~
 	b(
 	d4) r r
-	R2.*12
+	R2.*8
 	
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 216 to 220
 	r4 d(\p e8 f)
 	r4 f( g8 a)
@@ -273,13 +281,17 @@ musicFlautoIMvtI = \relative c'' {
 	r4 bes(_\pcresc aes8 g)
 	g4 r r
 % Bars 251 to 255
-	R2.*10
+	R2.*6
 	
 	
 	
 	
 % Bars 256 to 260
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 261 to 265
 	d'4--\p r8 b-. c-. d-.
 	b4-- r8 g-. a-. b-.
@@ -302,13 +314,13 @@ musicFlautoIMvtI = \relative c'' {
 	a,4-- r8 a-. b-. cis-.
 	e,4-- r r 
 	R2. \mark \default
-	R2.*6
+	R2.*5
 	
 % Bars 281 to 285
 	
 	
 	
-	
+	\ni \mmrPos #-6 R2. \no
 	b'4\f r8 gis-. a-. b-.
 % Bars 286 to 290
 	e,2-> d'4-.
@@ -336,12 +348,15 @@ musicFlautoIMvtI = \relative c'' {
 	\dynEO #'(0 . 2) aes\fz~
 % Bars 306 to 310
 	aes4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #4 R2.
 % Bars 311 to 315
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -481,14 +496,14 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 436 to 440
 	a4)\! a(\> ais)\!
 	b r r 
-	R2.*7
+	R2.*5
 	
 	
 % Bars 441 to 445
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	r4 e,8\mf-. fis-. gis4->
 % Bars 446 to 450
 	gis8(\< a b bis cis b)\!
@@ -562,12 +577,16 @@ musicFlautoIMvtI = \relative c'' {
 	b,-. e-. a,-.
 	d4. r8 r4
 	d4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 516 to 520
-	
+	R2.*7
 % Bars 521 to 525
 	
 	
@@ -598,7 +617,7 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 551 to 555
 	\ni \mmrPos #-4 R2. \no
-	\once \voiceTwo r4 cis4(\pp d8 e
+	r4 cis4(\pp d8 e
 	fis2.)~
 	fis~
 	fis~

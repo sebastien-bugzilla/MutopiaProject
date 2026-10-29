@@ -24,28 +24,28 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 11 to 15
 		bes4-.\fz a8( gis a4)
 		bes-.\fz a8( gis a4)
-		R2.*11
+		R2.*9
 	
 	
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
-	
-	
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R \no
 	}
 	\repeat volta 2 {
-		R2.*16
+		R2.*12
 	
 % Bars 26 to 30
 	
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
-	
-	
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		a2\p\< d4~
 % Bars 41 to 45
 		d e-. f-.\!
@@ -75,32 +75,39 @@ musicFlautoIMvtIII = \relative c''' {
 		b4)\! cis\f-. d-.
 		f4(->\ff a) d,(->
 		e) f2->
-		R2.*38
+		R2.*16
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R2.
 % Bars 81 to 85
-	
+		\mmrPos #6 R
+		\mmrPos #6 R
+		\mmrPos #6 R \no
+		R2.*12
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	
-% Bars 101 to 105
-	
 		\ni \mmrPos #-4 R2.
 		\mmrPos #-4 R
 		\mmrPos #-4 R
-		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*8
+% Bars 101 to 105
+		
 % Bars 106 to 110
-		\mmrPos #-4 R
-		\mmrPos #-4 R
-		\mmrPos #-4 R
+		
+		
+		\ni \mmrPos #-4 R2.
 		\mmrPos #-4 R \no
 		r4 a,8(\mf gis a4)
 % Bars 111 to 115
@@ -129,19 +136,23 @@ musicFlautoIMvtIII = \relative c''' {
 		e-. d8( cis d4)
 % Bars 131 to 135
 		e-. d8( cis d4)
-		R2.*14
+		R2.*12
 	
 	
 	
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
+		
+		
+		
+		\ni \mmrPos #6 R2.
+		\mmrPos #-4 R
 % Bars 146 to 150
 	}
 	\alternative {
 		{
-			R2.
+			\mmrPos #-4 R2. \no
 		}
 		{
 			R2.
@@ -155,10 +166,10 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrnDown R2.*3
-	
+		\time 3/4 \trioPart \ni \mmrPos #-4 R2. \no
+		R2.
 % Bars 156 to 160
-	
+		\ni \mmrPos #-4 R \no
 		e,4(\p fis8 dis e4)
 		R2.*2
 	
@@ -167,10 +178,10 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	
-		R2.*2
+		R2.*3
 	
 % Bars 166 to 170
-		\ni \mmrPos #-4 R2. \no
+		
 		fis4(\p\< g8 eis fis4)\!
 		R2.*2
 	
@@ -328,26 +339,34 @@ musicFlautoIMvtIII = \relative c''' {
 	bes4-.\fz a8( gis a4)
 % Bars 296 to 300
 	bes-.\fz a8( gis a4)
-	R2.*11
+	R2.*8
 	
 	
 	
 % Bars 301 to 305
 	
-% Bars 306 to 310
 	
-	\section
-	R2.*16
+	
+	
+	\ni \mmrPos #-6 R2.
+% Bars 306 to 310
+	\mmrPos #4 R
+	\mmrPos #-4 R \no \section
+	R2.*12
 	
 	
 % Bars 311 to 315
 	
 % Bars 316 to 320
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 321 to 325
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a2\p\< d4~
 	d e-.\! f-.
 % Bars 326 to 330
@@ -377,7 +396,7 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 346 to 350
 	f->(\ff a) d,->(
 	e) f2->
-	R2.*38
+	R2.*16
 	
 	
 % Bars 351 to 355
@@ -386,23 +405,32 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 361 to 365
 	
-% Bars 366 to 370
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+% Bars 366 to 370
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 371 to 375
 	
 % Bars 376 to 380
 	
-% Bars 381 to 385
 	
-% Bars 386 to 390
+	
+	
 	\ni \mmrPos #-4 R2.
+% Bars 381 to 385
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*8
+% Bars 386 to 390
+	
 % Bars 391 to 395
-	\mmrPos #-4 R
-	\mmrPos #-4 R
+	
+	\ni \mmrPos #-4 R2.
 	\mmrPos #-4 R \no
 	r4 a,8(\mf gis a4)
 	r b8(_\crescmarkup ais b4)
@@ -431,7 +459,7 @@ musicFlautoIMvtIII = \relative c''' {
 	e-. d8( cis d4)
 	e-. d8( cis d4)
 % Bars 416 to 420
-	R2.*13
+	R2.*10
 	
 	
 	
@@ -439,15 +467,15 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 421 to 425
 	
 % Bars 426 to 430
-	
-	
-	
-	\mmrLength #12 \mmrnDown R2.*5
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 431 to 435
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	a'4-.\ff a,(-> b8 cis)
 	d4-. f-. d-.
 % Bars 436 to 440

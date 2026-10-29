@@ -3,7 +3,7 @@
 %###############################################################################
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
-%  work               : Symphony No. 6 in D Major  Op. 60
+%  work               : Symphony No. 6 in D Major Op.60 (B.112)
 %  Source             : Berlin N. Simrock, 1888. Plate 8215.
 %  Type of score      : Midi conductor mvt IV
 %  Typesetter         : Sébastien MANEN

@@ -203,9 +203,6 @@ finale = {
 	}
 }
 
-
-
-
 %--------------------
 % functions
 %--------------------
@@ -477,6 +474,19 @@ InCueContext = {
 %	\override Stem.length = #7
 %	\override Beam.length = #7
 	\set fontSize = #-3 %-3
+	\override Hairpin.height = 0.4
+	
+	\override NoteHead.color = #blue
+	\override Stem.color = #blue
+	\override Beam.color = #blue
+	\override TextScript.color = #blue
+	\override DynamicText.color = #blue
+	\override Slur.color = #blue
+	\override Tie.color = #blue
+	\override Script.color = #blue
+	\override Accidental.color = #blue
+	\override Hairpin.color = #blue
+	\override Rest.color = #blue
 }
 
 OutCueContext = {

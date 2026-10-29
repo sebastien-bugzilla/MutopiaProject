@@ -9,16 +9,20 @@ musicFlautoIIMvtII = \relative c''' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	R2*17
+	R2*14
 	
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 16 to 20
-	
-	
-	\voiceTwo r4 r8 \oneVoice g\mf
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	r4 r8 \oneVoice g\mf
 	f4 bes(\fz~
 	bes4_\dimmarkup a
 % Bars 21 to 25
@@ -31,7 +35,7 @@ musicFlautoIIMvtII = \relative c''' {
 	e8 g f e)
 	e8( c~ c16\< b d b)\!
 	c8 r r4
-	\mmrLength #21 \mmrnDown R2*6
+	R2*6
 % Bars 31 to 35
 	
 	
@@ -45,17 +49,21 @@ musicFlautoIIMvtII = \relative c''' {
 	d-- d-- 
 	d-- d--
 % Bars 41 to 45
-	R2*16
+	R2*12
 	
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
-% Bars 56 to 60
 	
 	\ni \mmrPos #-4 R2
+	\mmrPos #6 R
+	\mmrPos #-6 R
+% Bars 56 to 60
+	\mmrPos #-6 R
+	\mmrPos #-6 R2
 	\mmrPos #-4 R \no
-	bes4\p r
+	bes!4\p r
 	bes_\dimmarkup r
 % Bars 61 to 65
 	bes\pp r
@@ -66,19 +74,19 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*11
+	R2*7
 % Bars 76 to 80
 	
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2
 % Bars 81 to 85
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*2
 	
-	
-	
-	\ni \clef bass \mmrPos #-7 R2
-	\mmrPos #-7 R \no \clef treble
 % Bars 86 to 90
 	r8 g'\p\< g g\!
 	bes2\f
@@ -90,13 +98,13 @@ musicFlautoIIMvtII = \relative c''' {
 	f16) e( d) c( b) a( g) f(
 	e8) r r4
 	R2
-	R2*7
+	R2*6
 % Bars 96 to 100
 	
 % Bars 101 to 105
-	
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	des'2\ff->
 	c->
 % Bars 106 to 110
@@ -108,17 +116,21 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 111 to 115
 	gis\fz \mark \default
 	gis8 r r4
-	R2*8
+	R2*6
 % Bars 116 to 120
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 121 to 125
 	bes,2\pp~
 	bes
-	R2*6
+	R2*4
 % Bars 126 to 130
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r16 fis'-.\f d-. c'~ c a-. fis-. d'~
 	d\< d-. d-. d-. d-. d-. d-. d-.\!
 % Bars 131 to 135
@@ -132,12 +144,12 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 	\mark \default
-	R2*3
+	R2*2
 % Bars 141 to 145
 	
-	
-	bes2~\p\<
-	bes8(\mf\< d f d)\!
+	\ni \mmrPos #-4 R2 \no
+	bes2(~\p\<
+	bes8\mf\< d f d)\!
 	c2(\> 
 % Bars 146 to 150
 	bes8\p) r r4 
@@ -162,13 +174,13 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 	R2 \mark \default
-	R2*6
+	R2*5
 	
 % Bars 171 to 175
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2 \no 
 	r8 d(\mf\< ees e\!
 % Bars 176 to 180
 	f) r r4
@@ -179,14 +191,18 @@ musicFlautoIIMvtII = \relative c''' {
 % Bars 181 to 185
 	c8 a f16 ees d c
 	bes8) r r4
-	R2*15
+	R2*10
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 196 to 200
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 f''\ff-! d-! g-! 
 	ees-! c-! a-! a-^\noBeam
 	bes-^ r f4~\fp\>

@@ -3,7 +3,7 @@
 %###############################################################################
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
-%  work               : Symphony No. 6 in D Major  Op. 60
+%  work               : Symphony No. 6 in D Major Op.60 (B.112)
 %  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
 %                       1957. Plate H 2111.
 %  Type of score      : Score for Violoncell
@@ -44,7 +44,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60"
+			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112)"
 		}
 		instrument = \markup {
 			"Bassi"

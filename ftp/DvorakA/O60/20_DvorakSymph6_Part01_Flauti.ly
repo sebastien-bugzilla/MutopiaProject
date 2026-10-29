@@ -3,7 +3,7 @@
 %###############################################################################
 %
 %  Composer           : Antonín Dvořák (1841 - 1904)
-%  work               : Symphony No. 6 in D Major  Op. 60
+%  work               : Symphony No. 6 in D Major Op.60 (B.112)
 %  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
 %                       1957. Plate H 2111.
 %  Type of score      : Score for Floten
@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part01_Floten.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part01_Flauti.ily"
 \include "./01-Mvt1/m01_v01_music_FlautoI.ily"
 \include "./02-Mvt2/m02_v01_music_FlautoI.ily"
 \include "./03-Mvt3/m03_v01_music_FlautoI.ily"
@@ -44,20 +44,20 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major  Op. 60 — Floten"
+			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Flauti"
 		}
 		instrument = \markup {
-			"Floten"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(floteI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtI
 			}
@@ -76,12 +76,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(floteI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtII
 			}
@@ -92,7 +92,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #3.6 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -100,12 +100,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(floteI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtIII
 			}
@@ -114,7 +114,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold { 3. Scherzo. (Furiant.) }
 			}
@@ -124,12 +124,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(floteI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatFlautoIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(flautoI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIMvtIV
 			}
@@ -138,7 +138,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold { 4. Finale. }
 			}
@@ -148,12 +148,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(floteII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(flautoII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtI
 			}
@@ -172,12 +172,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(floteII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(flautoII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtII
 			}
@@ -188,7 +188,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2.3 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -196,12 +196,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(floteII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(flautoII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtIII
 			}
@@ -215,7 +215,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2 \bold { 3. Scherzo. (Furiant.) }
+				\bold { 3. Scherzo. (Furiant.) }
 			}
 		}
 		\layout {
@@ -223,12 +223,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFlautoIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'floteII \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatFlautoIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'flautoII \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFlautoIIMvtIV
 			}
@@ -239,7 +239,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.7 \bold {4. Finale.}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {

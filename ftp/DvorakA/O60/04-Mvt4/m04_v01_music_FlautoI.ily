@@ -30,13 +30,17 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	
 	
-	\mmrLength #15 R1*9
+	\ni \mmrPos #-4 R1
 % Bars 26 to 30
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*2
 	
+	\ni \mmrPos #-4 R1
 % Bars 31 to 35
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	e'1->~\ff\<
 	e\!
 % Bars 36 to 40
@@ -54,12 +58,16 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 46 to 50
 	a( fis g a)
 	g8-. r r4 r2
-	R1*10
+	R1*6
 % Bars 51 to 55
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 56 to 60
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b4\f r r2
 	d4 r r2
 	fis4 r e-. d-.
@@ -67,25 +75,33 @@ musicFlautoIMvtIV = \relative c''' {
 	d r d r
 	d r d r
 	d r r2
-	R1*5
+	R1*3
 	
 % Bars 66 to 70
 	
-	
-	\mark \default
-	\mmrLength #18 R1*12
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no \mark \default
+	R1*8
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
+	\ni \mmrPos #-6 R1
+	\mmrPos #4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 % Bars 81 to 85
 	d4\fp \tuplet 3/2 4 {d8( cis b)-.} b4-> \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
 	d'4\fp \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
 	gis4 r r2
-	R1*6
+	R1*4
 % Bars 86 to 90
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #4 R \no
 % Bars 91 to 95
 	a2->\ff a->
 	a2.-> b8( cis)
@@ -110,9 +126,13 @@ musicFlautoIMvtIV = \relative c''' {
 	e4\fz a-. fis\fz d-.
 	cis\fz a-. e'\fz gis,-. \mark \default
 	a r r2
-	R1*7
+	R1*3
 % Bars 116 to 120
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #6 R \no
 % Bars 121 to 125
 	r2 e'2\ff~
 	e4 d8( e d4 cis)
@@ -145,15 +165,19 @@ musicFlautoIMvtIV = \relative c''' {
 	f4-. f,4-. f'2->
 % Bars 146 to 150
 	f4\f r r2
-	R1*19
+	R1*12
 % Bars 151 to 155
 	
 % Bars 156 to 160
 	
-% Bars 161 to 165
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+% Bars 161 to 165
+	R1*5
 % Bars 166 to 170
-	\ni \mmrPos #-6 R1 \no
+	\ni \mmrPos #6 R1 \no
 	a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
@@ -189,15 +213,19 @@ musicFlautoIMvtIV = \relative c''' {
 	a2 d
 	cis4) r r2
 % Bars 196 to 200
-	R1*6
-% Bars 201 to 205
+	R1*4
 	
+	
+	
+	\ni \mmrPos #-4 R1 \no
+% Bars 201 to 205
+	R1
 	r4 fis,-.\mf r b-.
 	R1
 	r4 b-.\brack\mf r e-.
 	R1
 % Bars 206 to 210
-	r4 b-. r e-. %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	r4 b-. r e-.
 	g4(\ff f8 e) f4( e8 d)
 	c4 r d r
 	e r r2
@@ -258,13 +286,16 @@ musicFlautoIMvtIV = \relative c''' {
 	\tupletYOff #-2 \tuplet 3/2 2 {a4(\p\< c ees \tupletYOff #-2 g f ees\!}
 % Bars 256 to 260
 	d4\f) r r2
-	R1*8
+	R1*3
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 261 to 265
-	
-	
-	
-	
-	r2 r4 r8^\solo d-.\f
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no 
+	\voiceOne r2 r4 \oneVoice r8 d-.\f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
 	a2-> bes4. d8-.\fz
@@ -315,22 +346,22 @@ musicFlautoIMvtIV = \relative c''' {
 	e~
 % Bars 306 to 310
 	e4\p r r2
-	R1*7
+	R1*5
 % Bars 311 to 315
 	
-	
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
 	r2 r4 g'(\pp
 	e d cis b
 % Bars 316 to 320
 	e a, b fis
 	g e a) r
-	R1*7
+	R1*5
 % Bars 321 to 325
 	
 	
-	
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R \no 
 	r2 r4 d(\p
 % Bars 326 to 330
 	b a g d
@@ -369,11 +400,11 @@ musicFlautoIMvtIV = \relative c''' {
 	cis r cis r
 	cis r r2
 % Bars 361 to 365
-	R1*5
+	R1*3
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-6 R1
+	\mmrPos #6 R \no \mark \default
 % Bars 366 to 370
 	a4--\p \tuplet 3/2 4 {a8( g fis)} g4-- \tuplet 3/2 4 {g8( fis e)}
 	d4-. a-. d2~
@@ -382,10 +413,10 @@ musicFlautoIMvtIV = \relative c''' {
 	a1~
 % Bars 371 to 375
 	a4 r r2
-	R1*6
+	R1*5
 % Bars 376 to 380
 	
-	
+	\ni \mmrPos #-4 R1 \no 
 	e'4->\p \tuplet 3/2 4 {e8( d cis-.)} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 	e'4-> \tuplet 3/2 4 {e8(_\crescmarkup d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
@@ -456,7 +487,7 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	
 	\mark \default \section
-	R1*20
+	R1*22
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -465,14 +496,10 @@ musicFlautoIMvtIV = \relative c''' {
 	
 % Bars 456 to 460
 	
-	
-	
-	
-	\ni \voiceTwo  R1
 % Bars 461 to 465
-	R
-	R \no
-	r2 r4 \oneVoice d-.\f
+	
+	\ni \mmrPos #-4 R1 \no
+	\voiceOne r2 r4 \oneVoice d-.\f
 	d-. r r d-.
 	d-. r r d-.
 % Bars 466 to 470
@@ -488,13 +515,13 @@ musicFlautoIMvtIV = \relative c''' {
 	fis2.\ff eis4(
 	fis) eis( fis) r
 % Bars 476 to 480
-	R1*8
+	R1*6
 	
 % Bars 481 to 485
 	
-	
-	
-	r2 r4 a-.\ff
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	\voiceOne r2 r4 \oneVoice a-.\ff
 	e-> d-. cis-> b-.
 % Bars 486 to 490
 	a-> e-. a-. r
@@ -553,9 +580,14 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 531 to 535
 	e-> d-. d-> cis-.
 	cis'-. b-. a-. r
-	R1*10
-% Bars 536 to 540
+	R1*2
 	
+	\ni \mmrPos #-4 R1
+% Bars 536 to 540
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1*4
 % Bars 541 to 545
 	
 	

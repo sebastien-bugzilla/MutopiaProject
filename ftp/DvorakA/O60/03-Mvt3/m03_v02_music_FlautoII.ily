@@ -24,21 +24,23 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 11 to 15
 		bes4-.\fz a8( gis a4)
 		bes-.\fz a8( gis a4)
-		R2.*11
+		R2.*9
 	
 	
 % Bars 16 to 20
 	
 % Bars 21 to 25
 	
-	
-	
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R \no
 	}
 	\repeat volta 2 {
-		R2.*16
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 26 to 30
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*12
 % Bars 31 to 35
 	
 % Bars 36 to 40
@@ -51,38 +53,57 @@ musicFlautoIIMvtIII = \relative c''' {
 		a a-. a-.\!
 		c2\ff-> bes4->~
 		bes a2->
-		R2.*16
-	
+		R2.*2
+		
 % Bars 46 to 50
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+		R2.*2
+		
+		\ni \mmrPos #-4 R2.
 % Bars 51 to 55
-	
+		\mmrPos #-4 R \no
+		R2.*2
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 % Bars 56 to 60
-	
-	
-	
-	
+		R2.*2
+		
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R \no
 		d,8(\p\< e f! g a bes
 % Bars 61 to 65
 		b4)\! cis\f-. d-.
 		c!2->\ff bes!4->~
 		bes a2->
-		R2.*46
+		R2.*16
 	
 % Bars 66 to 70
 	
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R2.
 % Bars 81 to 85
-	
+		\mmrPos #4 R
+		\mmrPos #6 R
+		\mmrPos #6 R \no
+		R2.*12
 % Bars 86 to 90
 	
 % Bars 91 to 95
 	
 % Bars 96 to 100
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*10
 % Bars 101 to 105
 	
 % Bars 106 to 110
@@ -90,10 +111,10 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-		\ni \voiceTwo R2.
+		\ni \mmrPos #-4 R2.
 % Bars 111 to 115
-		R
-		R \no \oneVoice 
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		r4 c!2\brack\mf\<
 		\startMeasureCount des4-.\f\< c-. c-. 
 		des-. c-. c-. 
@@ -117,19 +138,23 @@ musicFlautoIIMvtIII = \relative c''' {
 		e-. d8( cis d4)
 % Bars 131 to 135
 		e-. d8( cis d4)
-		R2.*14
+		R2.*12
 	
 	
 	
 % Bars 136 to 140
 	
 % Bars 141 to 145
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 146 to 150
 	}
 	\alternative {
 		{
-			R2.
+			\mmrPos #-4 R2. \no
 		}
 		{
 			R2.
@@ -143,7 +168,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	\section \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 R2.*48
+		\time 3/4 s2.*48
 	
 % Bars 156 to 160
 	
@@ -166,20 +191,31 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 201 to 205
 	
 	}
-	R2.*87
+	R2.*8
 	
 	
 	
 % Bars 206 to 210
 	
-% Bars 211 to 215
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 211 to 215
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 216 to 220
 	
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*23
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -190,8 +226,13 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 251 to 255
 	
-% Bars 256 to 260
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 256 to 260
+	\mmrPos #-4 R \no
+	R2.*24
 % Bars 261 to 265
 	
 % Bars 266 to 270
@@ -201,11 +242,15 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 286 to 290
-	
-	
-	\section \key d \minor \break
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \section \key d \minor \break
 	\flote cis4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 % Bars 291 to 295
@@ -216,20 +261,25 @@ musicFlautoIIMvtIII = \relative c''' {
 	bes4-.\fz a8( gis a4)
 % Bars 296 to 300
 	bes-.\fz a8( gis a4)
-	R2.*11
+	R2.*8
 	
 	
 	
 % Bars 301 to 305
 	
+	
+	
+	
+	\ni \mmrPos #6 R2.
 % Bars 306 to 310
-	
-	\section
-	R2.*16
-	
-	
+	\mmrPos #6 R
+	\mmrPos #6 R \section
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 311 to 315
-	
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -241,23 +291,31 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 326 to 330
 	c2->\ff bes4->~
 	bes a2->
-	R2.*16
+	R2.*2
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 331 to 335
+	\mmrPos #-4 R \no
+	R2.*2
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 336 to 340
+	R2.*2
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	R2.*2
 % Bars 341 to 345
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	d,8(\p\< e f! g a bes
 	b4\!) cis-.\f d-.
 % Bars 346 to 350
 	c!2->\ff bes4->~
 	bes a2->
-	R2.*46
+	R2.*16
 	
 	
 % Bars 351 to 355
@@ -266,24 +324,37 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 % Bars 361 to 365
 	
-% Bars 366 to 370
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #6 R
+% Bars 366 to 370
+	\mmrPos #6 R
+	\mmrPos #6 R \no
+	R2.*12
 % Bars 371 to 375
 	
 % Bars 376 to 380
 	
-% Bars 381 to 385
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 381 to 385
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*10
 % Bars 386 to 390
 	
 % Bars 391 to 395
 	
 	
 	
-	\ni \voiceTwo R2.
-	R
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 396 to 400
-	R \no \oneVoice 
+	\mmrPos #-4 R \no 
 	r4 c!2\brack\mf\<
 	\startMeasureCount des4-.\f\< c-. c-. 
 	des-. c-. c-.
@@ -318,12 +389,12 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-	\mmrLength #14 R2.*5
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 431 to 435
-	
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	a'4-.\ff a,(-> b8 cis)
 	d4-. f-. d-.
 % Bars 436 to 440

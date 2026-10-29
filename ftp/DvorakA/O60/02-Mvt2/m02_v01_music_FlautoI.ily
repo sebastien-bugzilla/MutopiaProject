@@ -9,17 +9,21 @@ musicFlautoIMvtII = \relative c'' {
 	\key bes \major
 %	\transposition a
 % Bars 1 to 5
-	\ni \mmrPos #-7 R2 \no
+	\ni \mmrPos #-8 R2 \no
 	r8 bes(\p a d~
 	d4.\< e8\!
 	f2\fp\>~
 	f8)\pp r r4
 % Bars 6 to 10
-	R2*12
+	R2*6
 % Bars 11 to 15
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 16 to 20
-	
+	R2*2
 	
 	r8 a(\p\<-- bes-- c--)\!
 	d4 f(~\fz
@@ -52,13 +56,17 @@ musicFlautoIMvtII = \relative c'' {
 	r4 \tuplet 3/2 4 {c8-.\f g'-. c-.}
 	R2
 	r4 \tuplet 3/2 4 {bes,8\p-. f'-. bes-.}
-	R2*12
+	R2*10
 % Bars 46 to 50
 	
 % Bars 51 to 55
 	
-% Bars 56 to 60
 	
+	
+	
+	\ni \mmrPos #-6 R2
+% Bars 56 to 60
+	\mmrPos #-6 R \no
 	r8 d,\p\<( bes e~\!~
 	e4)\fz r
 	e\p r
@@ -72,12 +80,14 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*6
+	\ni \mmrPos #-8 R2
+	\mmrPos #-8 R
+	\mmrPos #-4 R
 % Bars 76 to 80
-	
-	
-	
-	\ni \mmrPos #-4 R2 \no
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f4(\pp bes~
 % Bars 81 to 85
 	bes8 a g f)
@@ -90,18 +100,21 @@ musicFlautoIMvtII = \relative c'' {
 	d4\f f\fz~
 	f8\> ees16( d f ees\! d c) \mark \default
 	bes4.\pp r8
-	R2*14
+	R2*5
 % Bars 91 to 95
 	
 	
 	
 	
+	\ni \mmrPos #-6 R2
 % Bars 96 to 100
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
+	R2*3
 % Bars 101 to 105
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f'4.\ff( ges8~
 	ges f4.~
 % Bars 106 to 110
@@ -113,17 +126,23 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 111 to 115
 	b\fz \mark \default
 	b8 r r4
-	R2*8
-% Bars 116 to 120
+	R2*2
 	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R 
+	\mmrPos #-4 R \no
+	R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 121 to 125
 	des,2\pp~
 	des
-	R2*6
+	R2*4
 % Bars 126 to 130
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r16 fis-.\f d-. c'~ c a-. fis-. d'~
 	d\< d-. d-. d-. d-. d-. d-. d-.\!
 % Bars 131 to 135
@@ -188,14 +207,20 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 181 to 185
 	f2~
 	f8 r r4
-	R2*15
+	R2*4
+	
+	
 % Bars 186 to 190
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 191 to 195
-	
+	R2*5
 % Bars 196 to 200
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r8 f\ff-! d-! g-! 
 	ees-! c-! a-! d-^\noBeam
 	d-^ r f4~\fp\>

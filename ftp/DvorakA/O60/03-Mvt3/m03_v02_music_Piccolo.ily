@@ -10,7 +10,7 @@ musicPiccoloMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*23
+		s2.*23
 	
 	
 	
@@ -27,7 +27,7 @@ musicPiccoloMvtIII = \relative c''' {
 	
 	}
 	\repeat volta 2 {
-		R2.*122
+		s2.*122
 	
 % Bars 26 to 30
 	
@@ -81,10 +81,10 @@ musicPiccoloMvtIII = \relative c''' {
 	}
 	\alternative {
 		{
-			R2.
+			s2.
 		}
 		{
-			R2.
+			s2.
 		}
 	}
 	R2.*6
@@ -95,42 +95,42 @@ musicPiccoloMvtIII = \relative c''' {
 	
 	\section
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrLength #25 R2.*6
+		\time 3/4 \trioPart  R2.*3
 	
 % Bars 156 to 160
 	
-	
-	
+		\ni \mmrPos #-4 R2. \no
+		R2.*2
 	
 		\piccolo e,,4(\brack\p\< b') e(
 % Bars 161 to 165
 		b' e)\! b~
 		b\> b8( a g a
 		b2.)\pp
-		\mmrLength #12 R2.*6
+		R2.*3
 	
 % Bars 166 to 170
 	
-	
-	
+		\ni \mmrPos #-4 R2. \no
+		R2.*2
 	
 		d,,4\brack\p\<( a') d(
 % Bars 171 to 175
 		a') d(\! a)
 		fis-. \hairpinShorten #'(1.5 . 0) a8(\> g fis g\!
 		a2.)\pp
-		R2.*8
+		R2.*7
 	
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	
+		\ni \mmrPos #-4 R2. \no
 		d,2.\f\>~
 		d~
 		d~
 		d2\! r4 
 % Bars 186 to 190
-		R2.*16
+		R2.*12
 	
 	
 	
@@ -138,11 +138,15 @@ musicPiccoloMvtIII = \relative c''' {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 201 to 205
-	
+		\mmrPos #-4 R \no
 	}
-	R2.*87
+	s2.*87
 	
 	
 	
@@ -182,7 +186,7 @@ musicPiccoloMvtIII = \relative c''' {
 	
 	
 	\section
-	R2.*19
+	s2.*19
 	
 % Bars 291 to 295
 	
@@ -193,7 +197,7 @@ musicPiccoloMvtIII = \relative c''' {
 % Bars 306 to 310
 	
 	\section
-	R2.*132
+	s2.*132
 	
 	
 % Bars 311 to 315
