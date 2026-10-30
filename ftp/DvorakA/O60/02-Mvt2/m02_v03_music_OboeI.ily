@@ -10,7 +10,7 @@ musicOboeIMvtII = \relative c'' {
 %	\transposition a
 % Bars 1 to 5
 	\ni \mmrPos #4 R2 \no 
-	r8 \stemUp bes(\p a4
+	\once \voiceOne r8 \stemUp bes(\p a4
 	bes2~\< \stemNeutral
 	bes8\fp d bes\> c
 	d)\pp r r4
@@ -23,11 +23,11 @@ musicOboeIMvtII = \relative c'' {
 % Bars 11 to 15
 	\stemUp bes4.\>( g16 a\!
 	bes8) \stemNeutral r r4
-	R2*6
+	R2*5
 % Bars 16 to 20
 	
 	
-	
+	\ni \mmrPos #4 R2 \no
 	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8(_\crescmarkup^\brack\mf bes d f~
 	f_\dimmarkup ees d c
 % Bars 21 to 25
@@ -87,32 +87,38 @@ musicOboeIMvtII = \relative c'' {
 % Bars 66 to 70
 	r4 r8. a,16\f
 	r8. a16_\dimmarkup r8. f16
-	R2*5
+	R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 71 to 75
-	
-	\mark \default
-	R2*2
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \mark \default
+	\mmrPos #-4 R \no
+	R2
 	bes4\p( g8 c
 % Bars 76 to 80
 	bes\< g d e)\!
 	<<f2~ {s8\> s s s\! }>>
 	f2~
 	f8 r r4
-	R2*6
+	R2*4
 % Bars 81 to 85
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 86 to 90
 	r8 c'8\p\< c c\!
 	d2\f
 	ees4(\> c8 a\! \mark \default
 	bes4.)\pp r8
-	R2*5
+	R2*3
 % Bars 91 to 95
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	d8->\mf bes-> g16( a) bes-. c-.
 % Bars 96 to 100
 	d8->_\crescmarkup bes-> g16( a) bes-. c-.
@@ -202,25 +208,28 @@ musicOboeIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	R2*5
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
 % Bars 171 to 175
-	
-	
-	
-	r8 d(\p\< ees e\!
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	\once \voiceOne r8 d(\p\< ees e\!
 	f)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
 	f)\noBeam d(\f\< ees e\!
 	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes!->-.\!
-	a->-.8\ff r g4-^~
+	a8->-.\ff r g4-^~
 	g8\> bes( a g~\!
 	g\p f4) r8
 % Bars 181 to 185
-	R2*6
+	R2*3
 	
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 186 to 190
-	
+	\mmrPos #-4 R \no
 	r8 f(\p g a)
 	bes2(~\<
 	bes8\> aes ges f)\!

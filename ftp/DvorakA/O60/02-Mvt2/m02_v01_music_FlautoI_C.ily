@@ -71,7 +71,7 @@ musicFlautoIMvtII = \relative c'' {
 	
 % Bars 71 to 75
 	
-	\mark \default
+	\markXoffset #-0.2 \mark \default
 	R2*7
 % Bars 76 to 80
 	

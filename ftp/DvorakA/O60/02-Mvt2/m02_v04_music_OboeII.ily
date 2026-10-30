@@ -15,27 +15,29 @@ musicOboeIIMvtII = \relative c' {
 	\stemUp bes4\fp( g8\> a
 	bes)\pp \stemNeutral r r4
 % Bars 6 to 10
-	R2*12
+	R2*9
 	
 % Bars 11 to 15
 	
 	
 	
+	
+	\ni \mmrPos #4 R2
 % Bars 16 to 20
-	
-	
-	r8 fis(\p g e)
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	\once \voiceOne r8 fis(\p g e)
 	f!8 r r4
-	R2*8
+	R2*4
 % Bars 21 to 25
 	
 	
 	
-	
-	
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
 % Bars 26 to 30
-	
-	
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 	g8(\p\< a \once \stemUp bes4)\!
 	bes8\fp-> g4-> g16--( a--)
 	bes8-> g4->_\crescmarkup g16--( a--)
@@ -52,14 +54,14 @@ musicOboeIIMvtII = \relative c' {
 	d-- d--
 	d-- d-- 
 % Bars 41 to 45
-	R2*6
+	R2*4
 	
 	
 	
-	
+	\ni \mmrPos #4 R2
 % Bars 46 to 50
-	
-	r4 g,\pp\<(
+	\mmrPos #6 R \no
+	\once \voiceOne r4 g,\pp\<(
 	f2\>
 	g8) g--\pp g-- g--
 	f2->(
@@ -68,11 +70,11 @@ musicOboeIIMvtII = \relative c' {
 	e!2\f\>
 	g\p\>~
 	g8\! r r4
-	R2*4
+	R2*2
 % Bars 56 to 60
 	
-	
-	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R \no
 	g4\p r
 	g_\dimmarkup r
 % Bars 61 to 65
@@ -88,32 +90,32 @@ musicOboeIIMvtII = \relative c' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*11
+	R2*2
 	
-	
+	\ni \mmrPos #-4 R2
 % Bars 76 to 80
-	
-	
-	
-	
-	
+	\mmrPos #6 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R
 % Bars 81 to 85
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*2
 	
-	
-	
-	\ni \clef bass \mmrPos #-7 R2
-	\mmrPos #-7 R \no \clef treble
 % Bars 86 to 90
 	r8 bes16(\p\< a) a( g) g8\!
 	bes2\f
 	c4\> f,~\! \mark \default
 	f4.\pp r8
-	R2*5
+	R2
 % Bars 91 to 95
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2
 	bes8->\mf g4->  g16-. a-.
 % Bars 96 to 100
 	bes8->_\crescmarkup g4-> g16-. a-.
@@ -136,41 +138,41 @@ musicOboeIIMvtII = \relative c' {
 % Bars 111 to 115
 	b\fz \mark \default
 	b8 r r4
-	R2*6
+	R2*2
 	
-	
+	\ni \mmrPos #-4 R2
 % Bars 116 to 120
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2
 	dis2\p~\<
 	dis\!
 % Bars 121 to 125
 	ees!\pp~
 	ees
-	R2*7
+	R2*4
 	
 	
 % Bars 126 to 130
 	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r16 c\f\<-. c-. c-.  c-. c-. c-. c-.\! 
 % Bars 131 to 135
 	c\ff r r8 r4
-	R2*8
+	R2*6
 	
 	
 	
 % Bars 136 to 140
 	
 	
-	
-	\mark \default
-	R2*2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \mark \default
+	\mmrPos #-4 R \no
 % Bars 141 to 145
-	
+	R2
 	bes4\p\<( g8 c
 	bes g d e)\!
 	f2\mf\<~
@@ -195,7 +197,7 @@ musicOboeIIMvtII = \relative c' {
 	r8 d4(\p\< c16 bes!~
 % Bars 161 to 165
 	bes8) a16(\! g\> a4)
-	aes8(\p( c4 bes16\> aes)~
+	aes8(\p c4 bes16\> aes~
 	aes8) g16(\! f g4~
 	g8) ges4\pp( f16 ees~
 	ees8) r r4
@@ -220,18 +222,22 @@ musicOboeIIMvtII = \relative c' {
 % Bars 181 to 185
 	r4 a(\pp 
 	bes8) r r4
-	R2*13
+	R2*4
 % Bars 186 to 190
 	
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 191 to 195
+	R2*2
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 196 to 200
-	\ni \voiceTwo R2
-	R \no \oneVoice 
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 f'\ff-! d-! g-!
 	ees-! c-! a-! d-^
 	d-^ r f,4\fp\>(

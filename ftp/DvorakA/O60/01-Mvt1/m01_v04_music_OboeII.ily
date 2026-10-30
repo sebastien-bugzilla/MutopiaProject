@@ -86,25 +86,37 @@ musicOboeIIMvtI = \relative c' {
 		g2)\! e8(\< fis
 		g2)\! e8( fis
 		g4-.) r r
-		R2.*9
+		R2.*4
 % Bars 66 to 70
-	
+		
+		
+		
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
 % Bars 71 to 75
-	
-	
-	
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
 		a,4\f r r
-		R2.*6
+		R2.*4
 % Bars 76 to 80
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 % Bars 81 to 85
 		r4 r eis'-.\p
 		fis r r
-		R2.*8
+		R2.*6
 	
 	
 % Bars 86 to 90
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 % Bars 91 to 95
 		e,2(\f fis8 e)
 		dis8 r \stemUp b'2(~
@@ -135,10 +147,10 @@ musicOboeIIMvtI = \relative c' {
 	
 % Bars 121 to 125
 	
-		\ni \voiceTwo R2.
-		R
-		R
-		R \no \oneVoice 
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no 
 % Bars 126 to 130
 		fis2.\p~
 		fis
@@ -206,11 +218,11 @@ musicOboeIIMvtI = \relative c' {
 		{
 			R2.*2
 	
-			\ni \mmrPos #-2 R2.
-			\mmrPos #-2 R
+			\ni \mmrPos #-4 R2.
+			\mmrPos #-4 R
 % Bars 181 to 185
-			\mmrPos #-2 R
-			\mmrPos #-2 R \no
+			\mmrPos #-4 R
+			\mmrPos #-4 R \no
 			\override Score.MeasureCounter.outside-staff-priority = #100 \startMeasureCount a2.\pp~
 			a~
 			a~
@@ -244,20 +256,28 @@ musicOboeIIMvtI = \relative c' {
 	
 % Bars 206 to 210
 	
-	\ni \voiceTwo R2.
-	R \oneVoice \no
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R \no
 	a4\p\<( d f)
 	f2(\! e8 d)
 % Bars 211 to 215
 	d2(\> c8 b)\!
 	b2 r4
-	R2.*16
+	R2.*7
 	
 	
 % Bars 216 to 220
 	
-% Bars 221 to 225
 	
+	
+	
+	\ni \mmrPos #-4 R2. \no
+% Bars 221 to 225
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.*4
 % Bars 226 to 230
 	
 	
@@ -286,11 +306,11 @@ musicOboeIIMvtI = \relative c' {
 	fis4 r r
 	R2.
 	r4 des'( c8 bes)
-	R2.*6
+	R2.*2
 	
 % Bars 251 to 255
-	
-	
+	\ni \mmrPos #-4 R2. \no
+	R2.*3
 	
 	
 	a2.->_\fmarc
@@ -356,12 +376,15 @@ musicOboeIIMvtI = \relative c' {
 	d~\fz
 % Bars 306 to 310
 	d4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #4 R2.
 % Bars 311 to 315
-	
+	\mmrPos #4 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -435,13 +458,13 @@ musicOboeIIMvtI = \relative c' {
 % Bars 381 to 385
 	r4 e-.\p d-.
 	cis r r
-	R2.*6
-	
-	
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.*2
 % Bars 386 to 390
 	
-	
-	
+	\ni \mmrPos #-4 R2. \no
+	R2.
 	r4 d-.\p r
 	r e_\crescmarkup r
 % Bars 391 to 395
@@ -473,20 +496,24 @@ musicOboeIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*14
+	R2.*9
 % Bars 416 to 420
 	
 % Bars 421 to 425
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 426 to 430
-	
-	
-	
-	\ni \voiceTwo R2.
-	R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 431 to 435
-	R
-	R \no \oneVoice 
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \oneVoice 
 	a2.~\pp
 	a~
 	a~\<
@@ -555,8 +582,8 @@ musicOboeIIMvtI = \relative c' {
 % Bars 491 to 495
 	
 	
-	\ni \voiceTwo R2.
-	R \no \oneVoice 
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	g2.\f~->
 % Bars 496 to 500
 	g
@@ -574,12 +601,16 @@ musicOboeIIMvtI = \relative c' {
 	g,-. cis-. fis,-.
 	f'4. r8 r4
 	f4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 516 to 520
-	
+	R2.*7
 % Bars 521 to 525
 	
 	
@@ -609,13 +640,13 @@ musicOboeIIMvtI = \relative c' {
 	fis2 a4~
 	a2.\>~
 	a2\! r4
-	R2.*9
+	R2.*6
 % Bars 546 to 550
 	
 % Bars 551 to 555
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	R2.
 	fis'2.--\pp
 	fis--
 % Bars 556 to 560

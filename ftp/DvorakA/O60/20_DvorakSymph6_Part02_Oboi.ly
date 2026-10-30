@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part02_Oboen.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part02_Oboi.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI.ily"
@@ -43,20 +43,20 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Oboen"
+			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Oboi"
 		}
 		instrument = \markup {
-			"Oboen"
+			""
 		}
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatOboeIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtI
 			}
@@ -75,12 +75,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatOboeIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtII
 			}
@@ -99,12 +99,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIII
 			}
@@ -123,12 +123,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(oboeI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatOboeIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIV
 			}
@@ -147,12 +147,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatOboeIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtI
 			}
@@ -171,12 +171,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatOboeIIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtII
 			}
@@ -185,7 +185,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold 2.
 			}
@@ -195,12 +195,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatOboeIIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIII
 			}
@@ -209,7 +209,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {3. Scherzo. (Furiant.)}
 			}
@@ -219,12 +219,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatOboeIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(oboeII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatOboeIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(oboeII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIV
 			}
@@ -233,7 +233,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold { 4. Finale.}
 			}
