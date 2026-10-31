@@ -107,12 +107,17 @@ musicClarinettoIMvtIII = \relative c'' {
 		bes c-. des-.
 		c2-> aes4->~
 		aes aes2->
-		R2.*12
+		R2.*6
 	
 % Bars 86 to 90
-	
+		
+		
+		
+		
+		\ni \mmrPos #4 R2.
 % Bars 91 to 95
-	
+		\mmrPos #4 R \no
+		R2.*4
 % Bars 96 to 100
 		b'2\pp b4~
 		b b2
@@ -271,7 +276,7 @@ musicClarinettoIMvtIII = \relative c'' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	\shape #'((0.5 . -1.5)(3 . 0.5)(-3 . 0.5)(0 . -2.3)) Slur a,4(\p d f
+	a,4(\p d f
 % Bars 231 to 235
 	a d f~
 	f2 e4
@@ -297,7 +302,7 @@ musicClarinettoIMvtIII = \relative c'' {
 	a
 	d4( e8 cis d4)
 % Bars 251 to 255
-	R2.*15
+	R2.*10
 	
 	
 	
@@ -305,17 +310,25 @@ musicClarinettoIMvtIII = \relative c'' {
 % Bars 256 to 260
 	
 % Bars 261 to 265
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no 
 % Bars 266 to 270
 	bes2(_\pdim c4
 	d e! f)
 	c2.~
 	c4 r r
-	R2.*11
+	R2.*7
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 281 to 285
 	\startMeasureCountAt 1 f4(\pp g8 e f4)
 	f( g8\< e f4)
@@ -417,13 +430,17 @@ musicClarinettoIMvtIII = \relative c'' {
 % Bars 366 to 370
 	c2-> aes4~->
 	aes aes2->
-	R2.*12
+	R2.*6
 	
 	
 % Bars 371 to 375
 	
-% Bars 376 to 380
 	
+	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
+% Bars 376 to 380
+	R2.*4
 	
 	
 	

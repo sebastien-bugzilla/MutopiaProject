@@ -9,21 +9,25 @@ musicClarinettoIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	\ni \voiceOne R2 \no 
-	r8 \oneVoice c(\p b e~
+	R2
+	r8 c(\p b e~
 	e4.\< fis8\!
 	g2\fp~\>
 	g8)\pp r e4(~
 % Bars 6 to 10
 	e16 d b16. a32 gis4
 	a) r
-	R2*10
+	R2*7
 % Bars 11 to 15
 	
+	
+	
+	
+	\ni \mmrPos #4 R2
 % Bars 16 to 20
-	
-	
-	r8 e'\p\<-- e-- d--\!
+	\mmrPos #4 R
+	\mmrPos #6 R \no
+	\once \voiceOne r8 e'\p\<-- e-- d--\!
 	e2-\tweak X-offset #0 _\fzdimD
 	c4( b
 % Bars 21 to 25
@@ -90,21 +94,21 @@ musicClarinettoIMvtII = \relative c'' {
 	e(_\dimmarkup d g4~
 	g2)\pp~ \mark \default
 	g8 r r4
-	R2*7
+	R2*6
 % Bars 76 to 80
 	
 	
 	
 	
-	
+	\ni \mmrPos #4 R2 \no
 % Bars 81 to 85
-	r8 g16(\pp\< a) a( b) b( d)\!
+	\once \voiceOne r8 g16(\pp\< a) a( b) b( d)\!
 	c4(\> a8 b\!
 	c) r r4
-	R2*3
+	R2*2
 	
 % Bars 86 to 90
-	
+	\ni \mmrPos #-4 R2 \no
 	r16 g,(-\tweak X-offset #-2.5 \f c\< e g c e g~\!
 	g8\> f16 e g f e d)\! \mark \default
 	g4.\pp r8
@@ -136,9 +140,15 @@ musicClarinettoIMvtII = \relative c'' {
 % Bars 111 to 115
 	aes\fz \mark \default
 	g8 r r4
-	R2*8
-% Bars 116 to 120
+	R2*2
 	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 121 to 125
 	ees2\pp(->
 	c4 f)
@@ -153,9 +163,9 @@ musicClarinettoIMvtII = \relative c'' {
 	d16-.\< gis-. gis-. gis-.  gis-. gis-. gis-. gis-.\!
 % Bars 131 to 135
 	gis\ff r r8 r4
-	R2*3
-	
-	
+	R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r4 cis,(\pp
 % Bars 136 to 140
 	b!2)
@@ -164,34 +174,38 @@ musicClarinettoIMvtII = \relative c'' {
 	d4.(\pp e16 f! \markWhiteout \mark \default
 	e4) r
 % Bars 141 to 145
-	R2*2
-	
+	R2
+	\ni \mmrPos #-4 R2 \no
 	\hairpinShorten #'(-0.5 . -0.5) c2\p\<~
 	c8\mf\< e( g e)\!
 	d2\>(
 % Bars 146 to 150
 	c8)\p r r4
-	R2*3
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #6 R \no
 	e,16_\pcresc( g c e a c b a)
 % Bars 151 to 155
 	g2~\mf\>
 	g8\! r r4
-	R2*4
+	R2*3
 	
 % Bars 156 to 160
-	
-	r8 cis,4->\p( b16 a
+	\ni \mmrPos #-4 R2 \no
+	\once \voiceOne r8 cis,4->\p( b16 a
 	e8) r r4
 	r8 c'!4\pp( b16 a
 	e8) r r4
 % Bars 161 to 165
-	R2*8
+	R2*4
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 166 to 170
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no \mark \default
 	r8 e'4(\p d16 c)
 	c8 r r4
 % Bars 171 to 175
@@ -216,11 +230,15 @@ musicClarinettoIMvtII = \relative c'' {
 	e2(\pp\<
 	\hairpinShorten #'(0 . 1.5) d\>
 	c8\!) r r4
-	R2*8
+	R2*4
 % Bars 191 to 195
 	
-% Bars 196 to 200
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 196 to 200
+	\mmrPos #-4 R \no
 	dis2\pp(
 	e8)\noBeam g\ff-! e-! a-! 
 	f-! d-! b-! d-^

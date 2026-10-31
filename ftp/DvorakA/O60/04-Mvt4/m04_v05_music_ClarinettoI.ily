@@ -10,30 +10,34 @@ musicClarinettoIMvtIV = \relative c''' {
 	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*7
+	R1*5
 % Bars 6 to 10
-	
-	
-	r2 r4 g\p(
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r4 \oneVoice g\p(
 	e d c g)
 	c( bes' a aes)
 % Bars 11 to 15
 	g8( c b a! g a f g
 	e4) c-. r2
-	R1*8
+	R1*7
 % Bars 16 to 20
 	
+	
+	
+	
+	\ni \mmrPos #4 R1 \no
 % Bars 21 to 25
 	d,4.\f d8 d4-. fis-.
 	fis r r2
 	a4. a8\< a4-. des-.\!
 	c r r2
-	R1*5
+	R1*3
 % Bars 26 to 30
 	
 	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 	g'1\ff~
 % Bars 31 to 35
 	g
@@ -56,11 +60,11 @@ musicClarinettoIMvtIV = \relative c''' {
 % Bars 46 to 50
 	g( f8 ees f4 g8 a)
 	bes8-. r r4 r2
-	R1*6
+	R1*5
 % Bars 51 to 55
 	
 	
-	
+	\ni \mmrPos #4 R1 \no
 	a4\f r r2
 	c4 r r2
 % Bars 56 to 60
@@ -86,9 +90,13 @@ musicClarinettoIMvtIV = \relative c''' {
 	c8 g\< c b c d e f)\!
 	g1~\mf\> 
 	g4\! r r2
-	R1*6
+	R1*3
 % Bars 76 to 80
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 % Bars 81 to 85
 	f4\fp \tuplet 3/2 4 {f8( e d-.)} d4-> \tuplet 3/2 4 {d8( c b)-.} 
 	b4 r r2
@@ -176,9 +184,13 @@ musicClarinettoIMvtIV = \relative c''' {
 	a1~
 	a4) r r2
 % Bars 156 to 160
-	R1*10
-% Bars 161 to 165
+	R1*3
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R \no
+% Bars 161 to 165
+	R1*5
 % Bars 166 to 170
 	ees4\f-- \tuplet 3/2 4 {ees8( des c-.)} c4-- \tuplet 3/2 4 {c8( bes! aes)-.}
 	a'!4\fz f r2
@@ -209,28 +221,35 @@ musicClarinettoIMvtIV = \relative c''' {
 	g e c bes \mark \default
 % Bars 191 to 195
 	a) r r2
-	R1*6
+	R1*3
+	
+	
+	\ni \mmrPos #-6 R1
 % Bars 196 to 200
-	
-	
+	\mmrPos #-4 R \no
+	R1
 	r4 e'-.\mf r a-.
-	R1*8
+	R1*4
 % Bars 201 to 205
 	
-% Bars 206 to 210
 	
+	\ni \mmrPos #4 R1
+	\mmrPos #-4 R
+	\mmrPos #4 R \no
+% Bars 206 to 210
+	R1
 	bes4(\ff aes8 g) aes4( g8 f)
 	g4 r f r
 	g r r2
-	R1*6
+	R1*3
 % Bars 211 to 215
 	
 	
-	
-	
-	\mark \default
+	\ni \mmrPos #6 R1
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 216 to 220
-	r2 r4 r8. bes,16\f
+	\once \voiceOne r2 r4 r8. bes,16\f
 	bes4-> g-> bes-> r
 	r2 r4 r8. ees16
 	ees4-> c-> ees-> r
@@ -270,14 +289,18 @@ musicClarinettoIMvtIV = \relative c''' {
 % Bars 251 to 255
 	
 	\mark \default
-	R1
+	\ni \mmrPos #-4 R1 \no
 	\tuplet 3/2 2 {g,4(\p bes des f ees des)}
 	\tupletYOff #-2 \tuplet 3/2 2 {c(\< ees ges \tupletYOff #-2 bes aes ges\!}
 % Bars 256 to 260
 	f\f) r r2
-	R1*9
-% Bars 261 to 265
+	R1*3
 	
+	
+	\ni \mmrPos #-4 R1
+% Bars 261 to 265
+	\mmrPos #-4 R \no
+	R1*4
 % Bars 266 to 270
 	r4 r8^\solo f-.\f des-. c-. bes-. f-.
 	a2-> bes->
@@ -330,13 +353,21 @@ musicClarinettoIMvtIV = \relative c''' {
 	e4\p^\solo r8 g(\mp e d c g 
 	c4) r8 g'( e d c g
 	c4) r r2
-	R1*16
+	R1*5
 % Bars 311 to 315
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 316 to 320
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 321 to 325
-	
+	R1*4
 	
 	
 	
@@ -346,12 +377,12 @@ musicClarinettoIMvtIV = \relative c''' {
 	\shape #'((0 . 1)(0 . 1)(0 . 0)(0 . 0)) Slur bes( aes' g ges
 	f8) bes( a! g! f g ees f
 	d4) bes-. r2
-	R1*8
+	R1*7
 % Bars 331 to 335
 	
 % Bars 336 to 340
 	
-	
+	\ni \mmrPos #4 R1 \no
 	c,4.\f c8 c4-. e-.
 	e r r2
 	g4.\f g8 g4-. b-.
@@ -380,22 +411,26 @@ musicClarinettoIMvtIV = \relative c''' {
 	g r g r
 	g r r2
 % Bars 361 to 365
-	R1*5
+	R1*3
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R1
+	\mmrPos #6 R \no \mark \default
 % Bars 366 to 370
 	c,4\p r bes r
 	c r c( d
 	c) r c( d
 	c) r r2
-	R1*8
+	R1*3
 % Bars 371 to 375
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 376 to 380
-	
-	
+	R1
+	\ni \mmrPos #-4 R1 \no
 	g'4->\p \tuplet 3/2 4 {g8( f e-.)} e4 \tuplet 3/2 4 {e8( d c-.)}
 	c4 r r2
 	g'4-> \tuplet 3/2 4 {g8(_\crescmarkup f e-.)} e4 \tuplet 3/2 4 {e8( d c-.)}
@@ -479,12 +514,16 @@ musicClarinettoIMvtIV = \relative c''' {
 	a-. r r c-.
 % Bars 451 to 455
 	bes-. r r2
-	R1*11
+	R1*6
 % Bars 456 to 460
 	
+	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R
+	\mmrPos #4 R
 % Bars 461 to 465
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	r2 r4 f'-.\f
 	f-. r r f-.
 	f-. r r f-.
@@ -569,12 +608,18 @@ musicClarinettoIMvtIV = \relative c''' {
 % Bars 531 to 535
 	g-> f-. f-> e-.
 	e-. d-. c-. r
-	R1*10
+	R1*2
+	
+	\ni \mmrPos #-6 R1
 % Bars 536 to 540
-	
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
 % Bars 541 to 545
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	a'1\fff~
 	a~
 	a~

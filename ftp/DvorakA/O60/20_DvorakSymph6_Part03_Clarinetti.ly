@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
 \include "./02-Mvt2/m02_v05_music_ClarinettoI.ily"
 \include "./03-Mvt3/m03_v05_music_ClarinettoI.ily"
@@ -51,12 +51,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtI
 			}
@@ -75,12 +75,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtII
 			}
@@ -89,7 +89,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold 2.
 			}
@@ -99,12 +99,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIII
 			}
@@ -123,12 +123,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatClarinettoIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIV
 			}
@@ -147,12 +147,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtI
 			}
@@ -171,12 +171,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtII
 			}
@@ -185,7 +185,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold 2.
 			}
@@ -195,12 +195,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIII
 			}
@@ -209,7 +209,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold { 3. Scherzo. (Furiant.)}
 			}
@@ -219,12 +219,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatClarinettoIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatClarinettoIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIV
 			}
@@ -233,7 +233,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {4. Finale.}
 			}

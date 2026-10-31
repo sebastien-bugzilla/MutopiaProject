@@ -22,24 +22,32 @@ musicClarinettoIMvtI = \relative c'' {
 		fis2->(\f\> g8 a)\!
 		d,2\p r4
 % Bars 11 to 15
-		R2.*10
+		R2.*5
 	
 	
 	
 	
 % Bars 16 to 20
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 % Bars 21 to 25
 		r4 f(\p\> e
 		d e d\!
 		cis8\pp) r r4 r
-		R2.*9
+		R2.*5
 	
 % Bars 26 to 30
-	
+		
+		
+		
+		\ni \mmrPos #-6 R2.
+		\mmrPos #6 R
 % Bars 31 to 35
-	
-	
+		\mmrPos #-6 R
+		\mmrPos #6 R \no
 		aes8\f\<-. bes-. ces-. ces-. bes-. aes-.\!
 		c!4-.\f aes-. d\fz-.
 		aes-. ees'-.\fz aes,-.
@@ -107,13 +115,13 @@ musicClarinettoIMvtI = \relative c'' {
 	
 		e,4\pp r r
 		e r r
-		R2.*6
+		R2.*4
 	
 % Bars 91 to 95
 	
 	
-	
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		g'2(-^\f f8 ees)
 % Bars 96 to 100
 		d4 r r
@@ -142,14 +150,14 @@ musicClarinettoIMvtI = \relative c'' {
 % Bars 116 to 120
 		cis( d e 
 		d) r r
-		R2.*10
+		R2.*8
 	
 	
 % Bars 121 to 125
 	
 % Bars 126 to 130
-	
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		d8(--\p\< e-- fis4--) fis8--( g--
 		fis4--)\! fis--\> e--\!
 		dis2(\pp e4
@@ -368,12 +376,15 @@ musicClarinettoIMvtI = \relative c'' {
 	ces\fz~
 % Bars 306 to 310
 	ces4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #-6 R2.
 % Bars 311 to 315
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -493,14 +504,14 @@ musicClarinettoIMvtI = \relative c'' {
 	aes4. g8 f4
 	e! f g)
 	f r r
-	R2.*10
+	R2.*8
 % Bars 426 to 430
 	
 % Bars 431 to 435
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	c8\pp\< c f4 f8 f
 % Bars 436 to 440
 	a4\! a(\> g)\!
@@ -590,10 +601,15 @@ musicClarinettoIMvtI = \relative c'' {
 	d,-. g-. c,-.
 	aes'4. r8 r4
 	aes4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
+	R2.*7
 % Bars 516 to 520
 	
 % Bars 521 to 525
@@ -627,14 +643,14 @@ musicClarinettoIMvtI = \relative c'' {
 	
 	
 % Bars 546 to 550
-	\mmrLength #12 R2.*6
+	R2.*5
 	
 	
 	
 	
 % Bars 551 to 555
-	
 	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	f2.\pp--
 	f--

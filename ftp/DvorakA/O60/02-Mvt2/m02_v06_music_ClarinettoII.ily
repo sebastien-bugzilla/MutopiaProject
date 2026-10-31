@@ -9,19 +9,19 @@ musicClarinettoIIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	R2*14
+	R2*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-	
-	
-	
-	\ni \mmrPos #4 R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #4 R2
 % Bars 16 to 20
 	\mmrPos #4 R
-	\mmrPos #4 R \no
-	r8 b\p\<-- c-- c--\!
+	\mmrPos #6 R \no
+	\once \voiceOne r8 b\p\<-- c-- c--\!
 	c2-\tweak X-offset #0 _\fzdimD
 	a4( g~
 % Bars 21 to 25
@@ -34,13 +34,13 @@ musicClarinettoIIMvtII = \relative c'' {
 	fis8 a g fis)
 	fis4 e\<(
 	d8)\! r r4
-	\mmrLength #20 \mmrnDown R2*6
+	R2*3
 	
 % Bars 31 to 35
 	
-	
-	
-	\section \mark \default
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R
+	\mmrPos #8 R \no \section \mark \default
 	r4 gis\pp--
 % Bars 36 to 40
 	gis-- gis--
@@ -49,15 +49,23 @@ musicClarinettoIIMvtII = \relative c'' {
 	g!-- g--
 	g-- g--
 % Bars 41 to 45
-	R2*12
+	R2
+	\ni \mmrPos #-4 R2 \no
+	R2
+	\ni \mmrPos #-4 R2 \no
+	R2*2
 % Bars 46 to 50
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 51 to 55
-	
-	
-	\ni \voiceTwo R2
-	R
-	R \no \oneVoice 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+	\mmrPos #-4 R \no
 % Bars 56 to 60
 	r8 a(\p gis4
 	a2)\<~
@@ -79,31 +87,36 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*7
+	R2*2
 	
+	\ni \mmrPos #-4 R2
 % Bars 76 to 80
-	
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	c,4(\pp e)
 % Bars 81 to 85
 	\after 8*3 \! f2\<
 	e4\> d(\!
 	a8) r r4
-	R2*5
+	R2*3
 	
 % Bars 86 to 90
 	
-	
-	\mark \default
-	R2*9
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \mark \default
+	\mmrPos #-4 R \no
+	R2
 % Bars 91 to 95
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2
+	\ni \mmrPos #-4 R2
 % Bars 96 to 100
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r8 e''16-.\ff g-. c,-. g-. c-. d-.
 	c8-> d-> c-> b->
 	c4-> c->
@@ -122,13 +135,13 @@ musicClarinettoIIMvtII = \relative c'' {
 % Bars 111 to 115
 	aes\fz \mark \default
 	g8 r r4
-	R2*11
+	R2*8
 % Bars 116 to 120
 	
 % Bars 121 to 125
-	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	bes,2-\ppocoapococrescendo
 	b!->
 % Bars 126 to 130
@@ -139,9 +152,9 @@ musicClarinettoIIMvtII = \relative c'' {
 	gis16-.\< b-. b-. b-. \stemUp b-. b-. b-. b-.\! 
 % Bars 131 to 135
 	b\ff \stemNeutral r r8 r4
-	R2*3
-	
-	
+	R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r4 a(~\pp
 % Bars 136 to 140
 	a gis)
@@ -150,9 +163,13 @@ musicClarinettoIIMvtII = \relative c'' {
 	b2(\pp  \mark \default
 	c4) r
 % Bars 141 to 145
-	R2*6
-% Bars 146 to 150
+	R2*2
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 146 to 150
+	\mmrPos #-4 R \no
 	g4(\pp c~
 	c8 b a g)
 	g(~ g32 a g f-.) f4(
@@ -161,19 +178,24 @@ musicClarinettoIIMvtII = \relative c'' {
 	g8( d'4\mf\> c8)
 	b4.(\! d8\p
 	c) r r4
-	R2*3
-% Bars 156 to 160
+	R2*2
 	
+% Bars 156 to 160
+	\ni \mmrPos #-4 R2 \no
 	r8 e,4->\p( d16 cis
 	c!8) r r4
 	r8 e4\pp( d16 c!~
 	c8) r r4
 % Bars 161 to 165
-	R2*8
+	R2*4
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 166 to 170
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #-6 R \no \mark \default
 	r8 c'4(\p g16 e)
 	e8 r r4
 % Bars 171 to 175
@@ -187,22 +209,27 @@ musicClarinettoIIMvtII = \relative c'' {
 	e16)\noBeam b\f->-. cis!->-. cis->-. d->-.\< e->-. d->-. dis->-.\!
 	b8-.->\ff r cis-^-. r
 	c!-^-. r r4
-	R2*4
+	\ni \mmrPos #-4 R2
 % Bars 181 to 185
-	
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	cis2_\fpdim
 	c!~
 % Bars 186 to 190
 	c2\pp\<
 	\after 8*3 \! g\>~
 	g8\! r r4
-	R2*8
+	R2*4
+	
 % Bars 191 to 195
 	
-% Bars 196 to 200
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 196 to 200
+	\mmrPos #-4 R \no
 	b2\pp(
 	c8)\noBeam g'\ff-! e-! a-! 
 	f-! d-! b-! b-^

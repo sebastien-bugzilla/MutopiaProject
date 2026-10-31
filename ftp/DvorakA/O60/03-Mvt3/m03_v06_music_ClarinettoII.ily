@@ -117,12 +117,16 @@ musicClarinettoIIMvtIII = \relative c'' {
 		a2\p a4~
 % Bars 91 to 95
 		a bes2
-		R2.*10
+		R2.*4
 	
 	
 	
 % Bars 96 to 100
-	
+		\ni \mmrPos #4 R2.
+		\mmrPos #4 R
+		\mmrPos #4 R
+		\mmrPos #4 R \no
+		R2.*2
 % Bars 101 to 105
 	
 		r4 bes'-.\pp r
@@ -234,7 +238,7 @@ musicClarinettoIIMvtIII = \relative c'' {
 		bes~
 		bes2\! r4
 % Bars 186 to 190
-		R2.*16
+		R2.*12
 	
 	
 	
@@ -242,16 +246,20 @@ musicClarinettoIIMvtIII = \relative c'' {
 % Bars 191 to 195
 	
 % Bars 196 to 200
-	
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 201 to 205
-	
+		\mmrPos #-4 R
 	}
-	R2.*24
-	
-	
-	
+	\mmrPos #-4 R \no
+	R2.
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 % Bars 206 to 210
-	
+	R2.*20
 % Bars 211 to 215
 	
 % Bars 216 to 220
@@ -289,7 +297,7 @@ musicClarinettoIIMvtIII = \relative c'' {
 	a
 	d4( e8 cis d4)
 % Bars 251 to 255
-	R2.*15
+	R2.*10
 	
 	
 	
@@ -297,27 +305,31 @@ musicClarinettoIIMvtIII = \relative c'' {
 % Bars 256 to 260
 	
 % Bars 261 to 265
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 266 to 270
 	g2(_\pdim a4
 	bes c d)
 	c2.~
 	c4 r r
-	R2.*12
+	R2.*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
-	R2.*7
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 286 to 290
-	
-	
-	\section \key f \minor
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \section \key f \minor
 	c2\f-> c4~->
 	c c2->
 % Bars 291 to 295
@@ -419,12 +431,16 @@ musicClarinettoIIMvtIII = \relative c'' {
 	a2\p a4~
 	a bes2
 % Bars 376 to 380
-	R2.*10
+	R2.*4
 	
 	
 	
-	
+	\ni \mmrPos #4 R2.
 % Bars 381 to 385
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R2.*2
 	
 % Bars 386 to 390
 	r4 bes'-.\pp r
@@ -436,11 +452,11 @@ musicClarinettoIIMvtIII = \relative c'' {
 	ces r ces
 	r4 des2
 	r4 des2
-	R2.*4
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 396 to 400
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	e4\f\<-. dis-. dis-.
 	e-. dis-. dis-.
 	e-. dis-. dis-.
