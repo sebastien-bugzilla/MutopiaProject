@@ -102,13 +102,13 @@ musicFagottoIMvtI = \relative c {
 % Bars 76 to 80
 		e 
 		cis!)
-		R2.*6
+		R2.*5
 	
 	
 % Bars 81 to 85
 	
 	
-	
+		\ni \mmrPos #-6 R2. \no
 		r4 fis2\p(~
 		fis8 e g e b b'
 % Bars 86 to 90
@@ -257,7 +257,7 @@ musicFagottoIMvtI = \relative c {
 	r4 r b(\pp
 	fis'8) r fis r r4
 % Bars 201 to 205
-	R2.*13
+	R2.*11
 	
 	
 	
@@ -266,10 +266,10 @@ musicFagottoIMvtI = \relative c {
 	
 % Bars 211 to 215
 	
-	
-	
-	\ni \clef treble \voiceTwo R2.
-	R \no \oneVoice 
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 216 to 220
 	\clef tenor a2->(\p\> g8 f)\!
 	f2(\< e8 d)\!
@@ -376,12 +376,15 @@ musicFagottoIMvtI = \relative c {
 	aes\fz~
 % Bars 306 to 310
 	aes4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #6 R2.
 % Bars 311 to 315
-	
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #7 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -463,13 +466,13 @@ musicFagottoIMvtI = \relative c {
 	
 	bes,8-.\p c-. d4 r
 % Bars 386 to 390
-	R2.*6
+	R2.*3
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 391 to 395
-	
+	\mmrPos #-4 R \no
 	r4 bes\mf r
 	r bes_\crescmarkup r
 	bes\f r r
@@ -513,14 +516,14 @@ musicFagottoIMvtI = \relative c {
 % Bars 426 to 430
 	b\! d\> cis!)\!
 	d\p r r
-	R2.*7
+	R2.*5
 	
 	
 % Bars 431 to 435
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	a8\pp\< a a4 d8 d
 % Bars 436 to 440
 	fis4\! fis(\> e)\!
@@ -610,12 +613,16 @@ musicFagottoIMvtI = \relative c {
 	b,-. e-. a,-.
 	gis4. r8 r4
 	gis4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 516 to 520
-	
+	R2.*7
 % Bars 521 to 525
 	
 	
@@ -647,15 +654,19 @@ musicFagottoIMvtI = \relative c {
 	d4 r r
 	R2.
 % Bars 546 to 550
-	\mmrnDown \mmrLength #12 R2.*11
+	R2.*5
 	
 	
 	
 	
 % Bars 551 to 555
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 556 to 560
-	
+	\mmrPos #-4 R \no
 	d'2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 a,->

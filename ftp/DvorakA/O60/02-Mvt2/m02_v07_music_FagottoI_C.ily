@@ -97,8 +97,8 @@ musicFagottoIMvtII = \relative c' {
 % Bars 86 to 90
 	\partCombineApart g\p\< e' e e\!
 	\shape #'((0 . -1)(0 . -1)(0 . -1)(-0.5 . -1.5)) Slur f2-\offset X-offset -1.5 \fz(~
-	f4.\> ees!8\! \mark \default
-	d4.) r8
+	f4.\> ees!8)\! \mark \default
+	d4. r8
 	R2
 % Bars 91 to 95
 	g,2\pp~

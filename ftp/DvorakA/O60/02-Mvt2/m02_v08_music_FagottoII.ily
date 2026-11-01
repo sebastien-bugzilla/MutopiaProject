@@ -15,29 +15,31 @@ musicFagottoIIMvtII = \relative c {
 	f8\fp\>( f,4) f8(
 	bes8)\pp r r4
 % Bars 6 to 10
-	R2*9
+	R2*7
 % Bars 11 to 15
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r4 e,\brack\p\<
 % Bars 16 to 20
 	f2\f~
 	f4._\dimmarkup fis8
 	g\p r r4
-	R2*10
+	R2*9
 	
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 	
-	\mmrLength #28 \mmrnDown R2*6
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 31 to 35
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*2
 	\section \mark \default
 	r4 d'--\pp
 % Bars 36 to 40
@@ -51,26 +53,30 @@ musicFagottoIIMvtII = \relative c {
 	c  c\!
 	c\> f,4
 	bes bes\!
-	R2*6
+	R2*3
 % Bars 46 to 50
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #4 R
+	\mmrPos #-4 R \no
 % Bars 51 to 55
-	r8 ees,\p\< ees ees\!
+	\once \voiceOne r8 ees,\p\< ees ees\!
 	cis2\f\>
 	d4\p r
-	R2*9
+	R2*7
 	
 % Bars 56 to 60
 	
 % Bars 61 to 65
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r8 a''(\p c f,~
 	f) r r4 
-	R2*3
+	R2
 % Bars 66 to 70
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r4 f,8\pp r
 	r f r4
 	r f--
@@ -103,11 +109,11 @@ musicFagottoIIMvtII = \relative c {
 	g
 	c8) r r4
 	R2
-	\mmrLength #15 \mmrnDown R2*3
+	\ni \mmrPos #-4 R2
 % Bars 96 to 100
-	
-	
-	r8. f,16\f-. bes(\< f)\! d-. c-.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	r8 r16 f,16\f-. bes(\< f)\! d-. c-.
 	bes8-\offset X-offset #-3 \ff^> a'^> g^> fis^>
 	g4-> c,->
 % Bars 101 to 105
@@ -125,9 +131,11 @@ musicFagottoIIMvtII = \relative c {
 % Bars 111 to 115
 	cis\fz \mark \default
 	cis8 r r4
-	R2*4
-% Bars 116 to 120
+	R2*2
 	
+	\ni \mmrPos #-4 R2
+% Bars 116 to 120
+	\mmrPos #-4 R \no
 	c'!2\p~
 	c
 	b~\<
@@ -146,22 +154,25 @@ musicFagottoIIMvtII = \relative c {
 	d16-.\< d-. d-. d-.  d-. d-. d-. d-.\!
 % Bars 131 to 135
 	d\ff r r8 r4
-	R2*8
+	R2*3
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 136 to 140
-	
-	
-	
-	\mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	bes2\pp(
 % Bars 141 to 145
 	c4 d)
 	g2
-	R2*7
+	R2*5
 % Bars 146 to 150
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	r4 e\mf
 % Bars 151 to 155
 	\after 8*3 \! f2\<
@@ -207,12 +218,12 @@ musicFagottoIIMvtII = \relative c {
 	g4 c,(
 % Bars 186 to 190
 	f8)\pp r r4
-	R2*6
+	R2*2
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 % Bars 191 to 195
-	
+	R2*2
 	
 	e2(-\offset X-offset -2 _\ppespr
 	f8) r r4

@@ -10,7 +10,7 @@ musicFagottoIIMvtIV = \relative c {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	\ni \mmrPos #-4 R1 \no
+	R1
 	r2 r4 e(-\offset X-offset #0.5 \p
 	d fis a g
 	fis e fis) g(
@@ -91,7 +91,7 @@ musicFagottoIIMvtIV = \relative c {
 	e,8(_\pdim d' cis b) r2
 	R1*2
 	\mark \default
-	R1*16
+	R1*13
 	
 % Bars 71 to 75
 	
@@ -99,9 +99,9 @@ musicFagottoIIMvtIV = \relative c {
 	
 % Bars 81 to 85
 	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	\tupletUp g'!4->_\fpcresc \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 { g4.:8} 
 % Bars 86 to 90
 	g4-> \tuplet 3/2 4 {g4.:8} g4-> \tuplet 3/2 4 {g4.:8} 
@@ -183,14 +183,18 @@ musicFagottoIIMvtIV = \relative c {
 	e r
 % Bars 151 to 155
 	fis r
-	R1*10
+	R1*7
 	
 	
 	
 % Bars 156 to 160
 	
-% Bars 161 to 165
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R
+% Bars 161 to 165
+	\mmrPos #-4 R \no
 	e'4--\pp \tuplet 3/2 4 {e8( d c-.)} c4-- \tuplet 3/2 4 {c8( g e-.)}
 	R1
 	e'4--\p \tuplet 3/2 4 {e8( d c-.)} c4-- \tuplet 3/2 4 {c8( g e)-.}
@@ -226,11 +230,23 @@ musicFagottoIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 191 to 195
-	R1*15
+	R1*4
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 196 to 200
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R1
+	\ni \mmrPos #-4 R1 \no
+	R1
 % Bars 201 to 205
-	
+	\ni \mmrPos #-4 R1 \no
+	R1
+	\ni \mmrPos #-4 R1 \no
+	R1
+	\ni \mmrPos #-4 R1 \no
 % Bars 206 to 210
 	r2 r4 \tuplet 3/2 4 {g'8(\f\< a b)\!}
 	c4-.\ff g-. c2->
@@ -239,10 +255,10 @@ musicFagottoIIMvtIV = \relative c {
 	d4-. g,-. d'2->
 % Bars 211 to 215
 	e4-. r r2
-	R1*4
-	
-	
-	\mark \default
+	R1
+	\ni \mmrPos #6 R1
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 216 to 220
 	r2 r4 r8. g16\f
 	g4-> e-> g-> r
@@ -284,10 +300,11 @@ musicFagottoIIMvtIV = \relative c {
 % Bars 251 to 255
 	
 	\mark \default
-	R1*3
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 256 to 260
-	r2 r4 f'-.\f
+	\once \voiceTwo r2 r4 f'-.\f
 	d-. c-. bes-. r
 	r2 r4 a-.
 	f-. e-. d-. r
@@ -348,13 +365,17 @@ musicFagottoIIMvtIV = \relative c {
 	a~
 % Bars 306 to 310
 	a4\p r r2
-	R1*10
+	R1*7
 % Bars 311 to 315
 	
-% Bars 316 to 320
 	
-	\ni \voiceTwo R1
-	\mmrPos #-6 R \no \oneVoice 
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R
+% Bars 316 to 320
+	\mmrPos #-6 R 
+	\mmrPos #-6 R \no
+	R1
 	r2 r4 e'(_\pptranquillo
 	d fis a g
 % Bars 321 to 325
@@ -412,12 +433,16 @@ musicFagottoIIMvtIV = \relative c {
 	
 	\mark \default
 % Bars 366 to 370
-	R1*12
+	R1*8
 % Bars 371 to 375
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 376 to 380
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g'4->\p \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
 	g4 \tuplet 3/2 4 {g8 g g} g4 \tuplet 3/2 4 {g8 g g} 
 	g4 \tuplet 3/2 4 {g8_\crescmarkup g g} g4 \tuplet 3/2 4 {g8 g g} 

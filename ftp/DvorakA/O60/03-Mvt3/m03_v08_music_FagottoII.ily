@@ -218,27 +218,43 @@ musicFagottoIIMvtIII = \relative c, {
 	
 	
 	
-		\mmrLength #11 \mmrnDown R2.*4
+		\ni \mmrPos #6 R2.
 % Bars 171 to 175
-	
-	
-	
-		\mmrnDown R2.*28
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*9
 	
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	
+		
+		
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-4 R
+		\mmrPos #-6 R
 % Bars 186 to 190
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*4
 % Bars 191 to 195
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 196 to 200
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 201 to 205
-	
+		\mmrPos #-4 R \no
 	}
-	R2.*24
+	R2.*12
 	
 	
 	
@@ -246,15 +262,25 @@ musicFagottoIIMvtIII = \relative c, {
 	
 % Bars 211 to 215
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
 % Bars 216 to 220
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 221 to 225
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*7
 % Bars 226 to 230
-	\ni \clef treble \mmrPos #-4 R2.
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no \clef bass
+	
+	
+	
+	
 	b2\p r4
 % Bars 231 to 235
 	R2.
@@ -269,7 +295,7 @@ musicFagottoIIMvtIII = \relative c, {
 	R2.
 	b2 r4
 % Bars 241 to 245
-	R2.*25
+	R2.*20
 	
 	
 	
@@ -281,17 +307,25 @@ musicFagottoIIMvtIII = \relative c, {
 % Bars 256 to 260
 	
 % Bars 261 to 265
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 266 to 270
 	e'2(_\pdim fis4
 	g a b)
 	a2.~
 	a4 r r
-	R2.*11
+	R2.*7
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 281 to 285
 	\startMeasureCountAt #1 d,4--\pp d-- d--
 	d-- d-- d--\<

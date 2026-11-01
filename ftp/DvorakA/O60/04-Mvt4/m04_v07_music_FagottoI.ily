@@ -10,7 +10,11 @@ musicFagottoIMvtIV = \relative c' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*5
+	R1
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 6 to 10
 	r4 cis8(\p b e4 a,)
 	b( gis a b)
@@ -189,9 +193,9 @@ musicFagottoIMvtIV = \relative c' {
 	fis1~
 	fis4) r r2
 % Bars 156 to 160
-	R1*6
+	R1*5
 % Bars 161 to 165
-	
+	\ni \mmrPos #-4 R1 \no
 	g4--\pp^\solo \tuplet 3/2 4 {g8( f e-.)} e4-- \tuplet 3/2 4 {e8( d c-.)}
 	R1
 	g'4--\p \tuplet 3/2 4 {g8( f e-.)} e4-- \tuplet 3/2 4 {e8( d c)-.}
@@ -228,9 +232,12 @@ musicFagottoIMvtIV = \relative c' {
 	e cis a g \markWhiteout \mark \default
 % Bars 191 to 195
 	fis) r r2
-	R1*5
-% Bars 196 to 200
+	R1*3
 	
+	
+	\ni \mmrPos #-4 R1
+% Bars 196 to 200
+	\mmrPos #-4 R \no
 	r4 cis'-.\mf r fis-.
 	R1
 	r4 fis,-.\mf r b-.
@@ -249,12 +256,12 @@ musicFagottoIMvtIV = \relative c' {
 	f4-. g,-. f'2->
 % Bars 211 to 215
 	g4-. r r2
-	R1*4
-	
-	
-	\mark \default
+	R1
+	\ni \mmrPos #6 R1
+	\mmrPos #4 R
+	\mmrPos #4 R \no \mark \default
 % Bars 216 to 220
-	r2 r4 r8. g16\f
+	\voiceOne r2 r4 \oneVoice r8. g16\f
 	g4-> e-> g-> r
 	r2 r4 r8. c16
 	c4-> a-> c-> r
@@ -288,14 +295,19 @@ musicFagottoIMvtIV = \relative c' {
 	f4.-> f8 f4 ees
 	f4.-> f8 f4 ees
 	f\p r r2
-	R1*8
+	R1*4
 % Bars 246 to 250
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 251 to 255
-	
-	\mark \default
-	R1*3
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \mark \default
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 256 to 260
 	r2 r4 f'-.\f
 	d-. c-. bes-. r
@@ -367,11 +379,11 @@ musicFagottoIMvtIV = \relative c' {
 	
 	
 	
-	\ni \voiceTwo R1
-	R
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 321 to 325
-	R
-	R \no \oneVoice 
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no 
 	r4 cis8(\p b e4 a,
 	b gis a b
 	c b8 a d4 e8 c
@@ -424,12 +436,20 @@ musicFagottoIMvtIV = \relative c' {
 	
 	\mark \default
 % Bars 366 to 370
-	R1*12
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 % Bars 371 to 375
+	R1*2
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 376 to 380
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	cis4->\p \tuplet 3/2 4 {cis8 cis cis} cis4 \tuplet 3/2 4 {cis8 cis cis}
 	cis4 \tuplet 3/2 4 {cis8 cis cis} cis4 \tuplet 3/2 4 {cis8 cis cis}
 	cis4 \tuplet 3/2 4 {cis8_\crescmarkup cis cis} cis4 \tuplet 3/2 4 {cis8 cis cis}

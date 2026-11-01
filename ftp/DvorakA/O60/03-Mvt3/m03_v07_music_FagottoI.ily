@@ -210,11 +210,11 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-		\mmrLength #11 R2.*4
+		\ni \mmrPos #-6 R2.
 % Bars 161 to 165
-	
-	
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		\mmrLength #11 R2.*6
 	
 % Bars 166 to 170
@@ -222,27 +222,31 @@ musicFagottoIMvtIII = \relative c {
 	
 	
 	
-		\mmrLength #11 R2.*4
+		\ni \mmrPos #-6 R2.
 % Bars 171 to 175
-	
-	
-	
-		R2.*12
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*8
 	
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R 
 % Bars 186 to 190
-		\ni \clef treble \voiceTwo R2.
-		R
-		R
-		R
-		R
+		\mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 191 to 195
-		R
-		R
-		R \no \clef bass \oneVoice 
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no \clef bass 
 		d2(\pp e4
 		cis2_\dimmarkup d4
 % Bars 196 to 200
@@ -255,15 +259,19 @@ musicFagottoIMvtIII = \relative c {
 		e)
 	}
 	fis4 r r
-	R2.*11
+	R2.*5
 	
 	
 % Bars 206 to 210
 	
+	
+	\ni \mmrPos #4 R2.
+	\mmrPos #6 R
+	\mmrPos #-4 R
 % Bars 211 to 215
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d'2(\p^\solo a4
 	e2 fis4
 % Bars 216 to 220
@@ -297,7 +305,7 @@ musicFagottoIMvtIII = \relative c {
 	R2.
 	b2 r4
 % Bars 241 to 245
-	R2.*25
+	R2.*20
 	
 	
 	
@@ -309,7 +317,11 @@ musicFagottoIMvtIII = \relative c {
 % Bars 256 to 260
 	
 % Bars 261 to 265
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 266 to 270
 	g'2(_\pdim a4
 	b cis! d)

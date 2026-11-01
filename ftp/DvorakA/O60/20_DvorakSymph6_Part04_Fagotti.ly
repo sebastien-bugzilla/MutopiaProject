@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part04_Fagotte.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part04_Fagotte.ily"
 \include "./01-Mvt1/m01_v07_music_FagottoI.ily"
 \include "./02-Mvt2/m02_v07_music_FagottoI.ily"
 \include "./03-Mvt3/m03_v07_music_FagottoI.ily"
@@ -51,12 +51,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtI
 			}
@@ -75,12 +75,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtII
 			}
@@ -99,12 +99,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIII
 			}
@@ -123,12 +123,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(fagottI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatFagottoIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIV
 			}
@@ -147,12 +147,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtI
 			}
@@ -171,12 +171,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtII
 			}
@@ -185,7 +185,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold 2.
 			}
@@ -195,12 +195,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIII
 			}
@@ -209,7 +209,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {3. Scherzo. (Furiant.)}
 			}
@@ -219,12 +219,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatFagottoIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(fagottII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatFagottoIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(fagottII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIV
 			}
@@ -233,7 +233,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {4. Finale.}
 			}

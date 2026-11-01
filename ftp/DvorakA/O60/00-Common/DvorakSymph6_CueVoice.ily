@@ -2933,62 +2933,595 @@ cueVoiceClarinettoIIMvtIV = \relative c {
 %#                  C U E   V O I C E   F O R   F A G O T T I                  #
 %###############################################################################
 cueVoiceFagottoIMvtI = \relative c {
-	s2.*213
-	% bar 200 - 201
-	<f'' a>2(-\tweak X-offset #-3 ^\markup {Clar.} <e g>8 <d f>)
-	<d f>2( <c e>8 <b d>)
+	s2.*78
+	% bar 79
+	<>^\markup {Cl.}
+	s2.*2
+	% bar 81
+	<>^\markup {Ob.}
+	s2.*2
+	% bar 83
+	fis,4\pp^\markup {Fg.II.} fis' r
+	s2.*24
+	% bar 108
+	<>^\markup {Fg.II.}
+	s2.*96
+	% bar 204
+	<>^\markup {Cl.}
+	s2.*4
+	% bar 208
+	<>^\markup {Ob.}
+	s2.*4
+	% bars 212 - 215
+	\transpose c d {
+		\relative c'' {
+			\clef treble <ees g>2(\p^\markup {Cor.D} <d f>8 <c ees>)
+			<c ees>2( <bes d>8 <a c>)
+		}
+	}
+	\transpose c a, {
+		\relative c''' {
+			<aes c>2(\mfp^\markup {Cl.A} <g bes>8 <f aes>)
+			<f aes>2(\> <ees g>8 <d f>)\! \clef bass
+		}
+	}
+	s2.*17
+	% bar 233
+	<>^\markup {Pos.}
+	s2.*77
+	% bars 310 - 313
+	\clef treble r4^\markup {Archi} f'-.->-\ffrinforz g-.->
+	aes-.-> f-.-> g-.->
+	aes-.-> f-.-> g-.->
+	aes-.-> aes-.-> bes-.-> \clef bass
+	s2.*75
+	% bars 389 - 391
+	\clef treble r4^\markup {Ob.} <d f>-. r
+	r <e g>-. r
+	r <f a>-. r \clef bass
+	s2.*38
+	% bar 430
+	<>^\markup {Cor.}
+	s2.*3
+	% bars 433 - 434
+	\clef treble d8(^\markup {Fl.,Ob.} e fis2
+	d8 e fis2) \clef bass
+	s2.*77
+	% bars 512 - 515
+	\clef treble r4^\markup {Archi} b,,4-.->\ff cis-.->
+	d-.-> b-.-> cis-.->
+	d-.-> d-.-> e-.->
+	fis-.-> d-.-> e-.-> \clef bass
+	s2.*35
+	% bars 551 - 556
+	\clef treble r4^\markup {Ob.} cis'(\pp d8 e
+	fis4) cis'(^\markup {Fl.} d8 e
+	fis2.)
+	<fis, a>--\pp^\markup {Legni}
+	q--
+	q-- \clef bass
 }
 cueVoiceFagottoIMvtII = \relative c {
-%	no cue voice for Mvt II
+	s2*9
+	% bars 10 - 12
+	\clef treble f'8\p^\markup {Ob.} f( g a)
+	bes4.( g16 a
+	bes8) r r4 \clef bass
+	s2*12
+	% bars 25 - 28
+	\clef treble <c e>8(\p^\markup {Fl.} <e! g> <e c'>4~
+	q8 <g b> <f a> <e g>)
+	<< {
+		\InCueContext g8(~ g32 a g) f-. f4(
+		\once \stemDown \omitFlag e8) \oneVoice r \clef bass s4
+	} \\ {
+		\InCueContext e8( c~ c16 b d b)
+		c8 s s4
+	} >>
+	s2*18
+	% bar 47
+	\transpose c bes, {
+		\relative c'' {
+			\clef treble c8(\pp^\markup {Cl.B} a'4 g16 f) \clef bass
+		}
+	}
+	s2*13
+	% bars 61 - 63
+	\clef treble r8^\markup {Vl.I} g'(\pp e bes'~
+	bes g e bes'
+	a) \clef bass s s4
+	s2*11
+	% bar 75
+	<>^\markup {Ob.}
+	s2*5
+	% bars 80 - 83
+	\clef treble f4(\pp^\markup {Fl.} bes~
+	bes8 a g f)
+	f(~ f32 g f) e-. e4(
+	\once \stemUp d8) \clef bass s s4
+	s2*11
+	% bars 95 - 98
+	<< {
+		\InCueContext \clef treble d8->^\markup {Ob.} bes-> g16( a) bes-. c-.
+		d8-> bes-> g16( a) bes-. c-.
+		d8-> bes-> g16( a) bes-. c-.
+		d8 \clef bass s s4
+	} \\ {
+		\InCueContext bes8\mf g4 g16-. a-.
+		bes8 g4-\crescmarkup g16-. a-.
+		bes8\f\< g4 g16-. a-.\!
+		\once \stemUp \omitFlag bes8 s s4
+	} >>
+	s2*16
+	% bars 115 - 116
+	\clef treble f'2\p(^\markup {Ob.I.} 
+	d4 g) \clef bass
+	s2*20
+	% bars 137 - 139
+	\transpose c f {
+		\relative c'' {
+			\clef treble r4^\markup {Cor.I} b8\pp\< b
+			c2\>~
+			c\pp \clef bass
+		}
+	}
+	s2*6
+	% bars 146 - 147
+	\clef treble bes4(~^\markup {Fl.I.} bes16 c g a
+	bes4) r \clef bass
 }
 cueVoiceFagottoIMvtIII = \relative c {
-	s2.*185
-	% bar 185 - 192
-	g'''2(^\markup {Clar.} fis4
-	e2 d4
-	cis2 d4
-	e2 fis4)
-	g2( fis4
-	e2 d4
-	cis2 d4
-	e2 fis4)
+	s2.*159
+	% bars 160 - 163
+	\clef treble e'4(\p\<^\markup {Fl.picc.} b') e(
+	b' e) b\!~
+	b\> b8( a g a\!
+	b2.)\pp
+	s2.*6
+	% bars 170 - 173
+	d,,4(\p^\markup {Fl.picc.} a') d(
+	a') d( a)
+	fis a8( g fis g
+	a2.)
+	s2.*8
+	% bars 182 - 193
+	d,2.\fz^\markup {Legni}~
+	d~
+	d~
+	d2 r4
+	e'2(\p^\markup {Fl.I.} d4
+	cis2 b4
+	a2 b4
+	cis2 d4)
+	e2( d4
+	cis2 b4
+	a2 b4
+	cis2 d4) \clef bass
+	s2.*14
+	% bars 208 - 213
+	\clef treble r4 e,,(\p^\markup {Ob.} g)
+	r b( e)
+	fis,(\p^\markup {Ob.} a d
+	c2.
+	b4 a g
+	fis g e) \clef bass
+	s2.*12
+	% bar 226
+	<>^\markup {Vl.I.}
+	s2.*27
+	% bar 253
+	<>^\markup {Vl.I.}
+	s2.*4
+	% bar 257
+	<>^\markup {Fl.I.}
+	s2.*4
+	% bars 261 - 265
+	\clef treble a'4(\mf d, fis~
+	fis a d~
+	d cis b~
+	b a g)
+	fis( a d) \clef bass
 }
 cueVoiceFagottoIMvtIV = \relative c {
-	\partial 4 s4
-	s1*318
-	% bar 319 - 323
-	r2 r4^\markup {Fag.II} e(
-	d fis a g)
-	fis( e fis g
-	fis e fis g8 a)
-	b4 s s2
+	s4*1 s1*1
+	% bars 2 - 6
+	r2^\markup {Fg.II} r4 e(\p
+	d fis a g
+	fis e fis) g(
+	fis e fis g8 a
+	\once \voiceOne b4) s s2
+	s1*69
+	% bar 76
+	<>^\markup {Ob.II.}
+	s1*5
+	% bar 81
+	<>^\markup {Fl.,Cl.}
+	s1*78
+	% bar 159
+	<>^\markup {Ob.}
+	s1*2
+	% bar 161
+	\clef treble g''4\(--^\markup {Vl.I.} \tuplet 3/2 4 {g8( f e)\)} e4--\( \tuplet 3/2 4 {e8( d c)\)} \clef bass
+	s1*33
+	% bars 195 - 196
+	\transpose c e {
+		\relative c'' {
+			\clef treble d4-^\f a-^ d2-^~
+			d4 r r2 \clef bass
+		}
+	}
+	s1*16
+	% bars 213 - 216
+	\clef treble b4->\f^\markup {Ob.} \tuplet 3/2 4 {b8( a g)} a4-> \tuplet 3/2 4 {a8( g fis)}
+	e4-. b-. e2->
+	fis4-. b,-. fis'2->
+	\voiceTwo g4 r r \oneVoice \clef bass s
+	s1*32
+	% bars 249 - 255
+	\transpose c e {
+		\relative c'' {
+			\clef treble d4(\p^\markup {Cor.I.} c bes f)
+			bes4. bes8 bes4 c
+			\tuplet 6/4 1 {d( f aes g f ees)}
+			d2. r4
+		}
+	}
+	\tuplet 6/4 1 {b4(\p\<^\markup {Ob.} <b d> <d f>\! <f! a>\> <e g> <d f>)\!}
+	\transpose c a, {
+		\relative c'' {
+			\tuplet 6/4 1 {g4\p(^\markup {Cl.I.} bes des f ees des)}
+		}
+	}
+	\tuplet 6/4 1 {a'4(\p\<^\markup {Fl.} <a c> <c! ees> <ees! g> <d f> <c ees>)\!} \clef bass
+	s1*59
+	% bar 315
+	<>^\markup {Fl.,Ob.}
+	s1*4
+	% bars 319 - 323
+	r2 r4^\markup {Fg.II.} e,,,(\pp
+	d fis a g
+	fis e fis g
+	fis e fis g8 a
+	\once \stemUp b4) s s2
+	s1*42
+	% bars 366 - 370
+	\clef treble a''4\p\<^\markup {Fl.,Ob.} \tuplet 3/2 4 {a8( g fis)\!} g4--\> \tuplet 3/2 4 {g8( fis e)\!}
+	d4-. a-. d2~
+	d4 a-. d2(~
+	d8 a d cis d e fis g)
+	e'4--\fp^\markup {Vl.I.} \tuplet 3/2 4 {e8( d cis)} d4-- \tuplet 3/2 4 {d8( cis b)}
+	s1*2
+	% bars 373 - 377
+	r4^\markup {Ob.} a,8(\p\< b cis d e fis)\!
+	<g b>4\mf \tuplet 3/2 4 {<g b>8( <fis a> <e g>)} << {\InCueContext a4 \tuplet 3/2 4 {a8( g fis)} } \\ {\InCueContext e2} >>
+	e4-. b-. e2->
+	fis4-. c-. fis2->
+	g8( fis e fis g a b a) \clef bass
 }
 cueVoiceFagottoIIMvtI = \relative c {
-	s2.*213
-	% bar 200 - 201
-	<f'' a>2(^\markup {Clar.} <e g>8 <d f>)
-	<d f>2( <c e>8 <b d>)
+	s2.*80
+	% bars 81 - 82
+	\clef treble g'''4\p-.^\markup {Ob.} g-. <eis gis>-.
+	<fis ais> r r \clef bass
+	s2.*40
+	% bar 123
+	<>^\markup {Fg.I.}
+	s2.*3
+	% bars 126 - 127
+	dis,8( cis b2)
+	dis8( cis b2)
+	s2.*44
+	% bar 172
+	<>^\markup {Fg.I.}
+	s2.*28
+	% bars 200 - 201
+	\transpose c d {
+		\relative c' {
+			\clef treble r4^\markup {Cor.D} r <a a'>4\pp(
+			<e' e'>8) r q r r4
+		}
+	}
+	s2.*6
+	% bar 208
+	<>^\markup {Ob.}
+	s2.*4
+	% bars 212 - 215
+	\transpose c d {
+		\relative c'' {
+			\clef treble <ees g>2(\p^\markup {Cor.D} <d f>8 <c ees>)
+			<c ees>2( <bes d>8 <a c!>)
+		}
+	}
+	\transpose c a, {
+		\relative c''' {
+			<aes c>2(\mfp^\markup {Cl.A} <g bes>8 <f aes>)
+			<f aes>2(\> <ees g>8 <d f>)\! \clef bass
+		}
+	}
+	s2.*17
+	% bar 233
+	<>^\markup {Pos.}
+	s2.*77
+	% bars 310 - 313
+	\clef treble r4^\markup {Archi} f'-.->-\ffrinforz g-.->
+	aes-.-> f-.-> g-.->
+	aes-.-> f-.-> g-.->
+	aes-.-> aes-.-> bes-.-> \clef bass
+	s2.*61
+	% bar 375
+	<>^\markup {Fg.I.}
+	s2.*10
+	% bar 385
+	<>^\markup {Fg.I.}
+	s2.*4
+	% bars 389 - 391
+	\clef treble r4^\markup {Ob.} <d f>-. r
+	r <e g>-.-\crescmarkup r
+	r <f a>-. r \clef bass
+	s2.*38
+	% bar 430
+	<>^\markup {Cor.}
+	s2.*3
+	% bars 433 - 434
+	\transpose c d {
+		\relative c'' {
+			\clef treble e8-. d-. c2
+			e8-. d-. c2 \clef bass
+		}
+	}
+	s2.*77
+	% bars 512 - 515
+	\clef treble r4^\markup {Archi} b,,4-.-> cis-.->
+	d-.-> b-.-> cis-.->
+	d-.-> d-.-> e-.->
+	fis-.-> d-.-> e-.-> \clef bass
+	s2.*35
+	% bars 551 - 556
+	\clef treble r4^\markup {Ob.} cis'(\pp d8 e
+	fis4) cis'(^\markup {Fl.} d8 e
+	fis2.)
+	<fis, a>--\pp^\markup {Legni}
+	q--
+	q-- \clef bass
 }
 cueVoiceFagottoIIMvtII = \relative c {
 	s2*2
-	% bar 3
-	r8-\offset X-offset -3 ^\markup {Fag.I} bes'( g c)
+	% bars 3
+	r8^\markup {Fg.I.} bes'(\p\< g c)\!
+	s2*9
+	% bars 13 - 15
+	c2\pp^\markup {Fg.I.}
+	bes4(~ bes16 g a c)
+	f,4 s
+	s2*7
+	% bar 23
+	<>^\markup {Fl.}
+	s2*2
+	% bar 25
+	<>^\markup {Cl.}
+	s2*3
+	% bars 28 - 32
+	r4^\markup {Fg.I.} g'(
+	f8) r ees4->(
+	d8) r ees4(
+	d8) r ees4(
+	d8) r r4
+	s2*14
+	% bar 47
+	<>^\markup {Cl.}
+	s2
+	% bar 48 - 51
+	r16^\markup {Fg.I.} ees(\p d ces aes f ees aes,)
+	ees8 r r4
+	r16 ees''(\pp d ces aes f ees aes,)
+	\once \voiceTwo ees8 s s4
+	s2*9
+	% bars 61 - 63
+	\clef treble r8^\markup {Vl.I} g'''(\pp e bes'~
+	bes g e bes'
+	\once \stemUp a) \clef bass s s4
+	s2*2
+	% bars 66 - 67
+	\transpose c f {
+		\relative c'' {
+			\clef treble r4^\markup {Cor.F} r8. <g bes>16\f
+			r8. q16-\dimmarkup r8. q16 \clef bass
+		}
+	}
+	s2*27
+	% bars 95 - 98
+	<< {
+		\InCueContext \clef treble d,8->^\markup {Ob.} bes-> g16( a) bes-. c-.
+		d8-> bes-> g16( a) bes-. c-.
+		d8-> bes-> g16( a) bes-. c-.
+		d8 \clef bass s s4
+	} \\ {
+		\InCueContext bes8\mf g4 g16-. a-.
+		bes8 g4-\crescmarkup g16-. a-.
+		bes8\f\< g4 g16-. a-.\!
+		\once \stemUp \omitFlag bes8 s s4
+	} >>
+	s2*16
+	% bars 115 - 116
+	\clef treble f'2\p(^\markup {Ob.I.} 
+	d4 g) \clef bass
+	s2*18
+	% bars 135 - 139
+	\clef treble r8^\markup {Fl.} d'( b e)
+	c( a fis b)
+	b4.(\< cis8)\!
+	d4 f~\>
+	f8\! ees!16( d-\dimmarkup f ees d c) \clef bass
+	s2*8
+	% bars 148 - 150
+	c,,2\pp^\markup {Fg.I.}
+	bes4(~ bes16 c g a)
+	\once \stemUp f4 s
+	s2*38
+	% bars 189 - 190
+	c'2(\pp^\markup {Fg.I.}
+	bes4) r
 }
 cueVoiceFagottoIIMvtIII = \relative c {
-	s2.*225
-	% bar 225 - 228
-	fis''4^(-\offset X-offset -3 ^\markup {Viol.} g8 e fis4
-	a b8 gis a4)
-	d^( e8 cis d4
-	d e8 cis d4)
+	s2.*159
+	% bar 160
+	<>^\markup {Fl.picc.}
+	s2.*10
+	% bars 170 - 173
+	\clef treble d'4(\p^\markup {Fl.picc.} a') d(
+	a') d( a)
+	fis-. a8( g fis g
+	a2.)
+	s2.*9
+	% bars 183 - 189
+	\clef bass bes,,,4\f^\pizz^\markup {Vcl.} e g
+	bes\f^\markup {Vla} d ees \clef treble
+	g\p^\markup {Vl.II.} bes a
+	e''2(\p^\markup {Fl.,Cl.} d4
+	cis2 b4
+	a2 b4
+	cis2 d4)
+	s2.*4
+	% bars 194 - 201
+	\clef bass d,,2(\pp^\markup {Fg.I.} e4
+	cis2 d4
+	b2 cis4
+	a2 b4)
+	g2.(~
+	g
+	fis
+	e)
+	s2.*12
+	% bars 214 - 222
+	d'2(\p^\markup {Fg.I.} a4
+	e2 fis4
+	g a b
+	a e g)
+	fis2.(-\dimmarkup
+	b4 a g)
+	fis2.(
+	b4 a g)
+	fis r r
+	s2.*3
+	% bar 226
+	<>^\markup {Vl.I.}
+	s2.*27
+	% bar 253
+	<>^\markup {Vl.I.}
+	s2.*4
+	% bar 257
+	<>^\markup {Fl.I.}
+	s2.*4
+	% bars 261 - 265
+	\clef treble a''4(\mf d, fis~
+	fis a d~
+	d cis b~
+	b a g)
+	fis( a d) \clef bass
+	s2.*4
+	% bar 270
+	<>^\markup {Fg.I.}
+	s2.*7
+	% bars 277 - 280
+	fis,,,4(^\markup {Fg.I.} g e 
+	fis g e)
+	fis( g e
+	fis g e)
+	s2.*47
+	% bar 328
+	<>^\markup {Fg.I.}
 }
 cueVoiceFagottoIIMvtIV = \relative c {
-	\voiceOne \partial 4 a'4(-\offset X-offset -4 ^\markup {Bässe}
-	fis e d cis) \oneVoice 
-	s1*315
-	% bar 317 - 318
-	r2 r4 a'(^\markup {C.B}
-	fis e d cis)
+	s4*1 s1*68
+	% bar 69
+	<>^\markup {Fg.I.}
+	s1*8
+	% bar 77
+	<>^\markup {Fg.I.}
+	s1*5
+	% bars 82 - 84
+	d'4^\markup {Fg.I.} \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
+	gis4 r r2
+	d'4 \tuplet 3/2 4 {d8( cis b-.)} b4-> \tuplet 3/2 4 {b8( a gis-.)}
+	s1*67
+	% bar 152
+	<>^\markup {Fg.I.}
+	s1*7
+	% bars 159 - 161
+	\clef treble r4^\markup {Ob.} d''(\p <f a> <e g>8 <d f!>)
+	<d f>4\(( <c e>8 <b d>) <b d>4( <a c!>8 <g b>)\)
+	g'4\(--^\markup {Vl.I.} \tuplet 3/2 4 {g8( f e)\)} e4--\( \tuplet 3/2 4 {e8( d c)\)} \clef bass
+	s1*23
+	% bar 185
+	<>^\markup {Fg.I.}
+	s1*10
+	% bars 195 - 197
+	\transpose c e {
+		\relative c'' {
+			\clef treble d4-^\f^\markup {Cor.E} a-^ d2-^~
+			d4 r r2 \clef bass
+		}
+	}
+	r4^\markup {Fg.I.} cis,-.\mf r fis-.
+	s1
+	% bar 199
+	r4 fis,-.\mf r b-.
+	s1
+	% bar 201
+	r4 fis-.\mf r b-.
+	s1
+	% bar 203 - 205
+	\transpose c e {
+		\relative c'' {
+			\clef treble r4^\markup {Cor.E} g-.\mf r c-.
+			s1
+			r4 g-.\mf r c-. \clef bass
+		}
+	}
+	s1*7
+	% bars 213 - 215
+	\clef treble b'4->\f^\markup {Ob.} \tuplet 3/2 4 {b8( a g)} a4-> \tuplet 3/2 4 {a8( g fis)}
+	e4-. b-. e2->
+	fis4-. b,-. fis'2-> \clef bass
+	s1*33
+	% bar 249
+	<>^\markup {Cor.}
+	s1*4
+	% bars 253 - 256
+	\tuplet 6/4 1 {\clef treble b4(\p\<^\markup {Ob.} <b d> <d f>\! <f! a>\> <e g> <d f>)\!}
+	\transpose c a, {
+		\relative c'' {
+			\tuplet 6/4 1 {g4\p(^\markup {Cl.I.} bes des f ees des)}
+		}
+	}
+	\tuplet 6/4 1 {a'4(\p\<^\markup {Fl.} <a c> <c! ees> <ees! g> <d f> <c ees>\!}
+	<bes d>4)\f r \clef bass s2 
+	s1*50
+	% bar 307
+	<>^\markup {Fg.I.}
+	s1*7
+	% bar 314 - 317
+	\clef treble r2^\markup {Ob.,Fl.} r4 g(\pp
+	e d cis b
+	e a, b fis
+	g e a) r \clef bass
+	s1*48
+	% bar 366
+	<>^\markup {Legni}
+	s1*4
+	% bar 370
+	<>^\markup {Vl.}
+	s1*4
+	% bars 374 - 377
+	<< {
+		\InCueContext \clef treble \oneVoice <g' b>4\mf \tuplet 3/2 4 {<g b>8( <fis a> <e g>)} \voiceOne a4 \tuplet 3/2 4 {a8( g fis)}
+		e4-. \oneVoice b-. e2->
+	} \\ {
+		\InCueContext s2 e2~
+		e4-. s s2
+	} >>
+	fis4-. c-. fis2->
+	g8( fis e fis g a b a) \clef bass
 }
 %###############################################################################
 %#                    C U E   V O I C E   F O R   C O R N I                    #

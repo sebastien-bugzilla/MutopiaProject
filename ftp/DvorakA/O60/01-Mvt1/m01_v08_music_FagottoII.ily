@@ -102,12 +102,12 @@ musicFagottoIIMvtI = \relative c {
 % Bars 76 to 80
 		e 
 		cis!)
-		R2.*5
+		R2.*3
 	
 	
 % Bars 81 to 85
-	
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		fis,4\pp-. fis'-. r
 		fis,-. fis'-. r
 		R2.*2
@@ -154,14 +154,14 @@ musicFagottoIIMvtI = \relative c {
 		e4(\! cis!\! fis!)\!
 		b,\p r r
 % Bars 121 to 125
-		R2.*7
+		R2.*5
 	
 	
 	
 	
 % Bars 126 to 130
-	
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		b4--\p\< b-- b--
 		b--\! b--\> ees--\!
 		aes,\pp r bes
@@ -251,21 +251,22 @@ musicFagottoIIMvtI = \relative c {
 % Bars 196 to 200
 		}
 	}
-	R2.*18
+	R2.*4
 	
 	
 	
-	
+	\ni \mmrPos #8 R2.
 % Bars 201 to 205
-	
+	\mmrPos #8 R \no
+	R2.*10
 % Bars 206 to 210
 	
 % Bars 211 to 215
 	
-	
-	
-	\ni \clef treble \voiceTwo R2.
-	R \no \oneVoice 
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no 
 % Bars 216 to 220
 	\clef bass f2(->\p\> e8 d)\!
 	d2(\< c8 b)\!
@@ -372,12 +373,15 @@ musicFagottoIIMvtI = \relative c {
 	b\fz~
 % Bars 306 to 310
 	b4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #6 R2.
 % Bars 311 to 315
-	
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -454,14 +458,18 @@ musicFagottoIIMvtI = \relative c {
 	d(
 % Bars 381 to 385
 	e4-.) r r
-	R2.*10
+	R2.*7
 	
 	
 	
 % Bars 386 to 390
 	
-% Bars 391 to 395
 	
+	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+% Bars 391 to 395
+	\mmrPos #-4 R \no
 	r4 g,\mf r
 	r g_\crescmarkup r
 	g\f r r
@@ -505,14 +513,14 @@ musicFagottoIIMvtI = \relative c {
 % Bars 426 to 430
 	g!4(\! e\> a)\!
 	d\p r r
-	R2.*7
+	R2.*5
 	
 	
 % Bars 431 to 435
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
 	d8\pp\< d d4 d8 d
 % Bars 436 to 440
 	d4\! d'(\> cis)\!
@@ -602,12 +610,16 @@ musicFagottoIIMvtI = \relative c {
 	g,-. cis-. fis,-.
 	f4. r8 r4
 	f4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 516 to 520
-	
+	R2.*7
 % Bars 521 to 525
 	
 	
@@ -639,15 +651,19 @@ musicFagottoIIMvtI = \relative c {
 	d4 r r
 	R2.*1
 % Bars 546 to 550
-	\mmrLength #14 \mmrnDown R2.*11
+	R2.*5
 	
 	
 	
 	
 % Bars 551 to 555
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 556 to 560
-	
+	\mmrPos #-4 R \no
 	d''2-^\f cis4-.
 	a8-. fis-. g-. a-. e4
 	d8-. fis-. a4 a,->
