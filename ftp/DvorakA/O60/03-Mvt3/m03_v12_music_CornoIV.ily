@@ -19,13 +19,13 @@ musicCornoIVMvtIII = \relative c' {
 		c c2->
 		r4 c-. c-.
 		r c-. c-.
-		R2.*6
-	
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-6 R
 % Bars 11 to 15
-	
-	
-	
-	
+		\mmrPos #-6 R
+		\mmrPos #-6 R
+		\mmrPos #-6 R
+		\mmrPos #-6 R \no
 		g4-. g-. g-.
 % Bars 16 to 20
 		g-. g-. g-.
@@ -39,10 +39,12 @@ musicCornoIVMvtIII = \relative c' {
 		c r r
 	}
 	\repeat volta 2 {
-		R2.*16
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 26 to 30
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*12
 % Bars 31 to 35
 	
 % Bars 36 to 40
@@ -84,24 +86,28 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 66 to 70
 		g2->\f f4\>~->
 		f ees2->\!
-		R2.*22
+		R2.*8
 	
 	
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
+		\ni \mmrPos #8 R2.
+		\mmrPos #8 R
+		\mmrPos #8 R
+		\mmrPos #8 R \no
+		R2.*6
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	
-	
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+		R2.*2
 	
 		c,2\p^\solo c4~
 % Bars 91 to 95
 		c f,2
-		R2.*26
+		R2.*22
 	
 	
 	
@@ -112,10 +118,14 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 106 to 110
 	
 % Bars 111 to 115
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 116 to 120
-	
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		g'4-.\f g-._\semprecresc g-.
 		g-. g-. g-.
 		g-. g-. g-. 
@@ -167,36 +177,40 @@ musicCornoIVMvtIII = \relative c' {
 	c
 	c \attaccatrio \bar ".|:-||" \key c \major \break 
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrLength #25 \mmrnDown R2.*6
+		\time 3/4 \trioPart R2.*6
 	
 % Bars 156 to 160
 	
 	
 	
 	
-		\mmrLength #10.5 R2.*4
+		\ni \mmrPos #6 R2.
 % Bars 161 to 165
-	
-	
-	
-		\mmrLength #10.5 R2.*6
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*6
 	
 % Bars 166 to 170
 	
 	
 	
 	
-		\mmrLength #10.5 R2.*4
+		\ni \mmrPos #6 R2.
 % Bars 171 to 175
-	
-	
-	
-		\mmrLength #10.5 R2.*12
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*8
 	
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 % Bars 186 to 190
 		\startMeasureCount g2.\p~
 		g~
@@ -229,7 +243,7 @@ musicCornoIVMvtIII = \relative c' {
 	c~ \stopMeasureCount
 	c4 r r
 % Bars 211 to 215
-	R2.*42
+	R2.*15
 	
 	
 	
@@ -239,7 +253,11 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*23
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -251,11 +269,11 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 251 to 255
 	
 	
-	\ni \mmrPos #-2 \clef treble R2.
-	\mmrPos #-2 R
-	\mmrPos #-2 R
+	\ni \mmrPos #-4 \clef treble R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 256 to 260
-	\mmrPos #-2 R \clef bass \no
+	\mmrPos #-4 R \clef bass \no
 	\startMeasureCount c2.\p~
 	c~
 	c~
@@ -271,16 +289,16 @@ musicCornoIVMvtIII = \relative c' {
 	c~
 	c~ \stopMeasureCount
 	c4 r r
-	R2.*12
+	R2.*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
-	\mmrnDown R2.*3
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	c2.\p~
 % Bars 286 to 290
 	c~_\crescmarkup
@@ -309,11 +327,12 @@ musicCornoIVMvtIII = \relative c' {
 % Bars 306 to 310
 	c-. c-. c-.
 	c r r \section
-	R2.*16
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 311 to 315
-	
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -354,14 +373,21 @@ musicCornoIVMvtIII = \relative c' {
 	g2\f-> f4->~\>
 % Bars 351 to 355
 	f ees2->\!
-	R2.*22
+	R2.*8
 	
 	
 	
 % Bars 356 to 360
 	
-% Bars 361 to 365
 	
+	
+	
+	\ni \mmrPos #8 R2.
+% Bars 361 to 365
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R \no
+	R2.*10
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -371,21 +397,30 @@ musicCornoIVMvtIII = \relative c' {
 	c,2\p^\solo c4~
 	c f,2
 % Bars 376 to 380
-	R2.*26
+	R2.*4
 	
 	
 	
-	
+	\ni \mmrPos #4 R2.
 % Bars 381 to 385
-	
+	\mmrPos #4 R \no
+	R2.*6
 % Bars 386 to 390
 	
+	
+	\ni \mmrPos #6 R2.
+	\mmrPos #6 R \no
+	R2.*8
 % Bars 391 to 395
 	
 % Bars 396 to 400
 	
-% Bars 401 to 405
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+% Bars 401 to 405
+	\mmrPos #-4 R \no
 	g'4-._\fsemprecresc g-. g-.
 	g-. g-. g-.
 	g-. g-. g-.

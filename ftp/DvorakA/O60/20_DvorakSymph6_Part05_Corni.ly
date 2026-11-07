@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part05_Horner.ily"
 \include "./01-Mvt1/m01_v09_music_CornoI.ily"
 \include "./02-Mvt2/m02_v09_music_CornoI.ily"
 \include "./03-Mvt3/m03_v09_music_CornoI.ily"
@@ -51,7 +51,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Horner"
+			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Corni"
 		}
 		instrument = \markup {
 			"Horner"
@@ -59,12 +59,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatCornoIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtI
 			}
@@ -83,12 +83,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatCornoIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtII
 			}
@@ -99,7 +99,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.3 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -107,12 +107,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtIII
 			}
@@ -123,7 +123,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #-2 \bold {3. Scherzo. (Furiant.)}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -131,12 +131,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(hornI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtIV
 			}
@@ -147,7 +147,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.3 \bold {4. Finale.}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -155,12 +155,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatCornoIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtI
 			}
@@ -179,12 +179,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatCornoIIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtII
 			}
@@ -195,7 +195,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.2 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -203,12 +203,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtIII
 			}
@@ -219,7 +219,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #0.9 \bold {3. Scherzo. (Furiant.)}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -227,12 +227,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(hornII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtIV
 			}
@@ -241,7 +241,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {4. Finale.}
 			}
@@ -251,12 +251,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtI
 			}
@@ -275,12 +275,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtII
 			}
@@ -291,7 +291,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2.5 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -299,12 +299,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtIII
 			}
@@ -315,7 +315,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #3 \bold {3. Scherzo. (Furiant.)}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -323,12 +323,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(hornIII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtIV
 			}
@@ -339,7 +339,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.5 \bold {4. Finale.}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {
@@ -347,12 +347,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatCornoIVMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIV) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtI
 			}
@@ -371,12 +371,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatCornoIVMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIV) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtII
 			}
@@ -387,7 +387,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -395,12 +395,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatCornoIVMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIV) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtIII
 			}
@@ -411,7 +411,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2 \bold {3. Scherzo. (Furiant.)}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -419,12 +419,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatCornoIVMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(hornIV) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatCornoIVMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(hornIV) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtIV
 			}

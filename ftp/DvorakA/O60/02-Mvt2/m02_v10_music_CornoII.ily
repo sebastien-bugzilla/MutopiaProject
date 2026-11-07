@@ -9,23 +9,27 @@ musicCornoIIMvtII = \relative c'' {
 	\key c \major
 	\transposition f
 % Bars 1 to 5
-	R2*2
-	
-	\ni \clef bass \mmrPos #-4 R2 \clef treble \no
+	\ni \mmrPos #4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 	a4\fp\> g(
 	f8)\pp r r4
 % Bars 6 to 10
-	R2*21
+	R2*6
 % Bars 11 to 15
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 16 to 20
-	
+	R2*11
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
-	\ni \voiceTwo R2
-	R \oneVoice \no
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R \no
 	f16\fp f f f   g g g g 
 	f f f f g\< g g g
 % Bars 31 to 35
@@ -41,9 +45,13 @@ musicCornoIIMvtII = \relative c'' {
 	e-- e-- 
 	e-- e--
 % Bars 41 to 45
-	R2*10
+	R2*6
 % Bars 46 to 50
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 51 to 55
 	r8 f'\p\< f f\!
 	e2\f\>
@@ -51,22 +59,22 @@ musicCornoIIMvtII = \relative c'' {
 	f f8 f8~\!
 	f\pp r r4
 % Bars 56 to 60
-	R2*9
+	R2*7
 % Bars 61 to 65
 	
 	
-	
-	
-	\ni \voiceTwo R2 \no
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 66 to 70
-	r4 r8. g16\f \oneVoice  
+	\voiceOne r4 \oneVoice r8. g16\f
 	r8. g16_\dimmarkup r8. g16
 	r4 c,8\pp r
-	R2*4
+	R2*2
 	
 % Bars 71 to 75
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 	r8 c_\semprepp r d
 	r d r e
 	r f r g
@@ -86,13 +94,13 @@ musicCornoIIMvtII = \relative c'' {
 	R2*3
 	
 	\mark \default
-	R2*2
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-6 R \no
 % Bars 91 to 95
 	a'2\pp(~
 	a
-	g8) r r4
-	R2
+	g8) r \once \voiceTwo r4
+	\ni \mmrPos #-7 R2 \no
 	c,16\mf c c c  c c c c 
 % Bars 96 to 100
 	c c c_\crescmarkup c   c c c c 
@@ -115,11 +123,15 @@ musicCornoIIMvtII = \relative c'' {
 % Bars 111 to 115
 	fis dis-.-> gis,-.-> fis'->( \markWhiteout \mark \default
 	dis) r r4
-	R2*10
+	R2*4
 	
 	
 % Bars 116 to 120
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*3
 % Bars 121 to 125
 	
 	
@@ -134,15 +146,15 @@ musicCornoIIMvtII = \relative c'' {
 	cis\< a e' cis a e' cis a\!
 % Bars 131 to 135
 	cis\ff r r8 r4
-	R2*8
+	R2*5
 	
 	
 	
 % Bars 136 to 140
 	
-	
-	
-	\mark \default
+	\ni \mmrPos #4 R2
+	\mmrPos #6 R
+	\mmrPos #6 R \no \mark \default
 	r16 c,8--\pp c16-. r c8-- d16-.
 % Bars 141 to 145
 	r d8-- d16-. r e8-- e16-.
@@ -153,15 +165,15 @@ musicCornoIIMvtII = \relative c'' {
 % Bars 146 to 150
 	r c8--_\pdim c16-. r d8-- c16-.
 	r c8-- c16-. r4
-	R2*8
+	R2*5
 	
 	
 % Bars 151 to 155
 	
 	
-	
-	
-	
+	\ni \mmrPos #6 R2
+	\mmrPos #-6 R
+	\mmrPos #-4 R \no
 % Bars 156 to 160
 	d4\pp-- d--
 	d-- d--
@@ -169,7 +181,7 @@ musicCornoIIMvtII = \relative c'' {
 	d-- d--
 	d-- r
 % Bars 161 to 165
-	R2*8
+	R2*7
 	
 	
 	
@@ -177,7 +189,7 @@ musicCornoIIMvtII = \relative c'' {
 % Bars 166 to 170
 	
 	
-	\mark \default
+	\ni \mmrPos #4 R2 \no \mark \default
 	f8\pp f4 f8~
 	f f(\< g gis\!
 % Bars 171 to 175
@@ -191,29 +203,37 @@ musicCornoIIMvtII = \relative c'' {
 	c r r4
 	r fis8\ff-^-. r
 	f!-^-. r r4
-	R2*6
+	R2*2
 % Bars 181 to 185
 	
+	\ni \mmrPos #4 R2
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R2
 % Bars 186 to 190
 	\hairpinShorten #'(0 . -0.7) c2\pp\<(
 	\hairpinShorten #'(0.7 . 0) bes'\>
 	a8)\! r r4
-	R2*10
+	R2*4
 	
 % Bars 191 to 195
 	
+	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 196 to 200
-	
-	
-	
+	\mmrPos #-4 R \no
+	R2
+	\ni \mmrPos #-6 R2 \no
 	r4 r8 cis\ff-^
 	d-^ r a r
 % Bars 201 to 205
-	R2*5
-	
-	
-	
-	
+	R2
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bar 206
-	\ni R2\fermata \fine
+	\mmrPos #-4 R_\fermata \no \fine
 }

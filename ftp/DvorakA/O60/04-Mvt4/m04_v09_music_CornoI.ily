@@ -10,20 +10,16 @@ musicCornoIMvtIV = \relative c'' {
 	\transposition e
 	\partial 4 r4
 % Bars 1 to 5
-	\mmrLength #13 \mmrnDown R1*12
+	R1*15
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
-	
-	\ni \mmrPos #-4 R1
-	\mmrPos #-4 R
-	\mmrPos #-4 R
 % Bars 16 to 20
+	\ni \mmrPos #-4 R1
+	\mmrPos #4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #4 R \no
 	a4.\mf a8 a4-. d-.
 % Bars 21 to 25
 	c4.\< c8 c4-. b-.\!
@@ -47,11 +43,17 @@ musicCornoIMvtIV = \relative c'' {
 	ees-^\ff~
 	ees2. ees4-. \mark \default
 	d-. r r2
-	R1*14
+	R1*5
 % Bars 41 to 45
 	
-% Bars 46 to 50
 	
+	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R
+% Bars 46 to 50
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R1*5
 % Bars 51 to 55
 	
 	
@@ -74,10 +76,10 @@ musicCornoIMvtIV = \relative c'' {
 	c2\p r
 	R1*2
 	\mark \default
-	\mmrnDown R1*5
-	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R \no
 % Bars 71 to 75
-	
+	R1*3
 	
 	
 	r4 c2.\fp~
@@ -167,13 +169,17 @@ musicCornoIMvtIV = \relative c'' {
 	ees r
 % Bars 151 to 155
 	d r
-	R1*15
+	R1*7
 % Bars 156 to 160
 	
+	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R \no
 % Bars 161 to 165
-	
+	R1*5
 % Bars 166 to 170
-	
+	\ni \mmrPos #-6 R1 \no
 	f4\fz f r2
 	f4\fz f r2
 	f4\fz f r2
@@ -202,17 +208,17 @@ musicCornoIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 191 to 195
-	R1*4
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	d4-^\f^\solo a-^ d2-^~
 % Bars 196 to 200
 	d4 r r2
-	R1*6
+	R1*5
 % Bars 201 to 205
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	r4 g,-.\mf r c-.
 	R1
 	r4 g-.\mf r c-.
@@ -226,11 +232,11 @@ musicCornoIMvtIV = \relative c'' {
 	d4-. g,-. d'2-> \mark \default
 % Bars 216 to 220
 	ees4 r r2
-	R1*7
+	R1*6
 % Bars 221 to 225
 	
 	
-	
+	\ni \mmrPos #-4 R1 \no
 	r2 r4 r8. des16\f
 	des4-. aes-. des2->
 % Bars 226 to 230
@@ -271,12 +277,16 @@ musicCornoIMvtIV = \relative c'' {
 	ees2(\< \tuplet 3/2 2 {\tupletYOff #3 aes,4 bes ces\!}
 % Bars 256 to 260
 	bes\f) r r2
-	R1*11
+	R1*8
 % Bars 261 to 265
 	
+	
+	
+	
+	\ni \mmrPos #-4 R1
 % Bars 266 to 270
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	f'4\f r r2
 	R1
 	e4\f r r2
@@ -324,7 +334,7 @@ musicCornoIMvtIV = \relative c'' {
 	c~
 % Bars 306 to 310
 	c4\p r r2
-	R1*23
+	R1*26
 % Bars 311 to 315
 	
 % Bars 316 to 320
@@ -333,18 +343,14 @@ musicCornoIMvtIV = \relative c'' {
 	
 % Bars 326 to 330
 	
-	
-	
-	
-	\ni \voiceTwo R1
 % Bars 331 to 335
-	R
-	R
-	R \no \oneVoice 
-	\mmrDown R1*3
 	
+	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 336 to 340
-	
+	\mmrPos #-6 R \no
 	g4.\f g8 g4-. c-.
 	bes4. bes8 bes4-. ees-.
 	d4. d8 d4-. g-.
@@ -380,55 +386,63 @@ musicCornoIMvtIV = \relative c'' {
 	
 	\mark \default
 % Bars 366 to 370
-	R1*4
-	
-	
-	
+	\ni \mmrPos #6 R1
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 	a,4\pp c r des
 % Bars 371 to 375
 	r c  r c
 	r des r des
 	c r r2
-	R1*8
+	R1*4
 % Bars 376 to 380
 	
-% Bars 381 to 385
 	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+% Bars 381 to 385
+	\mmrPos #-6 R \no
 	f4\mf \tuplet 3/2 4 {f8 f f} f4 \tuplet 3/2 4 {f8 f f} 
 	f4 \tuplet 3/2 4 {f8 f f} f4 \tuplet 3/2 4 {f8 f f} 
 	f4 \tuplet 3/2 4 {f8_\crescmarkup f f} f4 \tuplet 3/2 4 {f8 f f} 
 	f4 \tuplet 3/2 4 {f8 f f} f4 \tuplet 3/2 4 {f8 f f} 
 % Bars 386 to 390
 	f4\f r r2
-	R1*11
+	R1*7
 % Bars 391 to 395
 	
+	
+	
+	\ni \mmrPos #-6 R1
+	\mmrPos #-6 R
 % Bars 396 to 400
-	
-	
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	f4\mf \tuplet 3/2 4 {f8 f f} f4 \tuplet 3/2 4 {f8 f f} 
 	f4 \tuplet 3/2 4 {f8 f f} f4 \tuplet 3/2 4 {f8 f f} 
 	f4 \tuplet 3/2 4 {f8_\crescmarkup f f} f4 \tuplet 3/2 4 {f8 f f} 
 % Bars 401 to 405
 	f4 \tuplet 3/2 4 {f8 f f} f4 \tuplet 3/2 4 {f8 f f} 
 	f4\f r r2
-	R1*7
+	R1*5
 % Bars 406 to 410
 	
 	
-	
-	
+	\ni \mmrPos #7 R1
+	\mmrPos #7 R \no
 	r2 d->\f~
 % Bars 411 to 415
 	d4 ees8( f ees4 d)
 	d( f ees2)
 	d4-. d-. c2->
 	f,4 r r2
-	R1*3
+	R1*2
 % Bars 416 to 420
 	
-	
-	r2 f'2\f~
+	\ni \mmrPos #4 R1 \no
+	\once \voiceOne r2 f'2\f~
 	f4 ees8( f ees4 d)
 	d( f) ees2
 % Bars 421 to 425
@@ -453,7 +467,7 @@ musicCornoIMvtIV = \relative c'' {
 	
 	
 	\section \mark \default
-	\mmrLength #27 R1*34
+	R1*16
 % Bars 441 to 445
 	
 % Bars 446 to 450
@@ -461,7 +475,9 @@ musicCornoIMvtIV = \relative c'' {
 % Bars 451 to 455
 	
 % Bars 456 to 460
-	
+	\ni \mmrPos #4 R1
+	\mmrPos #4 R \no
+	R1*16
 % Bars 461 to 465
 	
 % Bars 466 to 470
@@ -470,11 +486,11 @@ musicCornoIMvtIV = \relative c'' {
 	
 	
 	\mark #11
-	R1*3
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
 % Bars 476 to 480
-	
-	r2 r4 g->\ff
+	\mmrPos #-4 R \no
+	\voiceTwo r2 r4 \oneVoice g->\ff
 	c-> g-. ees-> d-.
 	c-> d-. ees-> g,-.
 	c-> d-. ees-> r

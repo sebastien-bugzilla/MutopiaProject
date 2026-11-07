@@ -39,10 +39,12 @@ musicCornoIIMvtIII = \relative c'' {
 		R2.
 	}
 	\repeat volta 2 {
-		R2.*16
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-6 R
 % Bars 26 to 30
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*12
 % Bars 31 to 35
 	
 % Bars 36 to 40
@@ -183,54 +185,66 @@ musicCornoIIMvtIII = \relative c'' {
 	e
 	e \attaccatrio \bar ".|:-||" \key c \major \break
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrLength #24 \mmrnDown R2.*6
+		\time 3/4 \trioPart R2.*6
 	
 % Bars 156 to 160
 	
 	
 	
 	
-		\mmrLength #10.5 R2.*4
+		\ni \mmrPos #4 R2.
 % Bars 161 to 165
-	
-	
-	
-		\mmrLength #10.5 R2.*6
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*6
 	
 % Bars 166 to 170
 	
 	
 	
 	
-		\mmrLength #10.5 R2.*4
+		\ni \mmrPos #4 R2.
 % Bars 171 to 175
-	
-	
-	
-		\mmrLength #10.5 R2.*8
+		\mmrPos #-4 R
+		\mmrPos #-6 R
+		\mmrPos #-4 R \no
+		R2.*3
 	
 % Bars 176 to 180
-	
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 181 to 185
-	
+		\mmrPos #-4 R \no
 		b'2.\f~
 		b~\>
 		b~
 		b2\! r4
 % Bars 186 to 190
-		R2.*16
+		R2.*8
 	
 	
 	
 	
 % Bars 191 to 195
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 196 to 200
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 201 to 205
-	
+		\mmrPos #-4 R \no
 	}
-	R2.*51
+	R2.*24
 	
 	
 	
@@ -243,7 +257,11 @@ musicCornoIIMvtIII = \relative c'' {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*23
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -255,11 +273,11 @@ musicCornoIIMvtIII = \relative c'' {
 % Bars 251 to 255
 	
 	
-	\ni \mmrPos #-2 R2.
-	\mmrPos #-2 R
-	\mmrPos #-2 R
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 256 to 260
-	\mmrPos #-2 R \no
+	\mmrPos #-4 R \no
 	\startMeasureCount a,4\pp r a'
 	a,\< r a'
 	a, r a'
@@ -282,14 +300,14 @@ musicCornoIIMvtIII = \relative c'' {
 	
 % Bars 281 to 285
 	
-	\mmrDown R2.*7
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 286 to 290
-	
-	
-	\section
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #7 R \no \section
 	c'2->\f c4~->
 	c c2->
 % Bars 291 to 295
@@ -313,11 +331,12 @@ musicCornoIIMvtIII = \relative c'' {
 % Bars 306 to 310
 	a-. r r
 	R2. \section
-	R2.*16
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 311 to 315
-	
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325

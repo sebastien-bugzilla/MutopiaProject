@@ -39,10 +39,12 @@ musicCornoIMvtIII = \relative c'' {
 		R2.
 	}
 	\repeat volta 2 {
-		R2.*16
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 26 to 30
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*12
 % Bars 31 to 35
 	
 % Bars 36 to 40
@@ -183,35 +185,35 @@ musicCornoIMvtIII = \relative c'' {
 	e
 	e \attaccatrioDown \stopMeasureCount \bar ".|:-||" \key c \major \break 
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrLength #20 \mmrnDown R2.*6
+		\time 3/4 \trioPart R2.*6
 	
 % Bars 156 to 160
 	
 	
 	
 	
-		\mmrLength #10.5 \mmrnDown R2.*4
+		\ni \mmrPos #6 R2.
 % Bars 161 to 165
-	
-	
-	
-		\mmrLength #10.5 \mmrnDown R2.*6
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*6
 	
 % Bars 166 to 170
 	
 	
 	
 	
-		\mmrLength #10.5 \mmrnDown R2.*4
+		\ni \mmrPos #6 R2.
 % Bars 171 to 175
-	
-	
-	
-		\mmrLength #10 \mmrnDown R2.*2
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*3
 	
 % Bars 176 to 180
+		
 		\ni \mmrPos #-4 R2.
-		\mmrPos #-4 R
 		\mmrPos #-4 R
 		\mmrPos #-4 R
 		\mmrPos #-4 R
@@ -238,7 +240,7 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 201 to 205
 	
 	}
-	R2.*51 
+	R2.*24 
 	
 	
 	
@@ -251,7 +253,11 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*23
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -283,21 +289,21 @@ musicCornoIMvtIII = \relative c'' {
 	a, r a'
 	a, r a' \stopMeasureCount
 	a,\pp r r 
-	\mmrLength #16 R2.*12
+	R2.*12
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
 	
-	\mmrDown \mmrLength #14 R2.*7
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 286 to 290
-	
-	
-	\section
+	\mmrPos #-4 R
+	\mmrPos #4 R
+	\mmrPos #7 R \no \section
 	e''2->\f e4~->
 	e e2->
 % Bars 291 to 295
@@ -321,11 +327,12 @@ musicCornoIMvtIII = \relative c'' {
 % Bars 306 to 310
 	a-. r r
 	R2. \section
-	R2.*16
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 311 to 315
-	
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
