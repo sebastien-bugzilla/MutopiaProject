@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part06_Trompeten.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part06_Trompeten.ily"
 \include "./01-Mvt1/m01_v13_music_TrombeI.ily"
 \include "./01-Mvt1/m01_v14_music_TrombeII.ily"
 \include "./02-Mvt2/m02_v13_music_TrombeI.ily"
@@ -43,20 +43,20 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Trompeten"
+			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Tromba"
 		}
 		instrument = \markup {
-			"Trompeten"
+			"Tromba"
 		}
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatTrombeIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtI
 			}
@@ -75,12 +75,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatTrombeIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtII
 			}
@@ -99,12 +99,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatTrombeIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIII
 			}
@@ -113,7 +113,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {3. Scherzo. (Furiant.) }
 			}
@@ -123,12 +123,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatTrombeIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIV
 			}
@@ -137,7 +137,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {4. Finale.}
 			}
@@ -147,12 +147,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtI
 			}
@@ -171,12 +171,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteII) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtII
 			}
@@ -195,12 +195,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteII) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIII
 			}
@@ -219,12 +219,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombeIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(trompeteII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatTrombeIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(trompeteII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIV
 			}

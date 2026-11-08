@@ -39,19 +39,25 @@ musicTrombeIIMvtIII = \relative c' {
 		c r r
 	}
 	\repeat volta 2 {
-		R2.*17
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 26 to 30
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*12
 % Bars 31 to 35
 	
 % Bars 36 to 40
-	
+		
+		
+		
+		
+		\ni \mmrPos #-4 R2. \no
 % Bars 41 to 45
 		r4 g'-.\brack\f\< g-.
 		g2->\ff c4-.
 		bes-. g2->
-		R2.*70
+		R2.*32
 	
 % Bars 46 to 50
 	
@@ -66,7 +72,11 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	
+		\ni \mmrPos #8 R2.
+		\mmrPos #8 R
+		\mmrPos #8 R
+		\mmrPos #8 R \no
+		R2.*28
 % Bars 81 to 85
 	
 % Bars 86 to 90
@@ -78,16 +88,20 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 101 to 105
 	
 % Bars 106 to 110
-	
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 111 to 115
-	
-	
-	
-		\ni \voiceTwo R2.
-		R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 116 to 120
-		R
-		R \no \oneVoice 
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		\startMeasureCount g4-._\fsemprecresc g-. g-.
 		g-. g-. g-.
 		g-. g-. g-.
@@ -139,46 +153,54 @@ musicTrombeIIMvtIII = \relative c' {
 	c
 	c \attaccatrio \stopMeasureCount \bar ".|:-||" \key c \major \break
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrLength #24 \mmrnDown R2.*6
+		\time 3/4 \trioPart R2.*6
 	
 % Bars 156 to 160
 	
 	
 	
 	
-		\mmrLength #10.5 \mmrnDown R2.*4
+		\ni \mmrPos #7 R2.
 % Bars 161 to 165
-	
-	
-	
-		\mmrLength #10.5 \mmrnDown R2.*6
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*6
 	
 % Bars 166 to 170
 	
 	
 	
 	
-		\mmrLength #10.5 \mmrnDown R2.*4
+		\ni \mmrPos #7 R2.
 % Bars 171 to 175
-	
-	
-	
-		\mmrLength #10.5 \mmrnDown R2.*28
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		R2.*12
 	
 % Bars 176 to 180
 	
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 191 to 195
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R\no
+		R2.*7
 % Bars 196 to 200
 	
 % Bars 201 to 205
 	
 	}
-	R2.*51
+	R2.*24
 	
 	
 	
@@ -191,7 +213,11 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*23
 % Bars 231 to 235
 	
 % Bars 236 to 240
@@ -203,11 +229,11 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 251 to 255
 	
 	
-	\ni \voiceTwo R2.
-	R
-	R
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 256 to 260
-	R \no \oneVoice 
+	\mmrPos #-4 R \no
 	\startMeasureCountAt #1 r4 c\pp c
 	r c\< c
 	r c c
@@ -230,14 +256,14 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 281 to 285
 	
-	\mmrLength #14 \mmrnDown R2.*7
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 286 to 290
-	
-	
-	\section \key a \minor
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no \section \key a \minor
 	c2->\f c4~->
 	c c2->
 % Bars 291 to 295
@@ -261,23 +287,24 @@ musicTrombeIIMvtIII = \relative c' {
 % Bars 306 to 310
 	c-. c,-. c-.
 	c r r \section
-	R2.*17
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 311 to 315
-	
+	\mmrPos #-4 R \no
+	R2.*12
 % Bars 316 to 320
 	
 % Bars 321 to 325
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2. \no
 	r4 g'-.\f\< g-.
 % Bars 326 to 330
 	g2->\ff c4-.
 	bes4-. g2->
-	R2.*70
+	R2.*32
 	
 	
 % Bars 331 to 335
@@ -292,8 +319,15 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 356 to 360
 	
-% Bars 361 to 365
 	
+	
+	
+	\ni \mmrPos #8 R2.
+% Bars 361 to 365
+	\mmrPos #8 R
+	\mmrPos #8 R
+	\mmrPos #8 R \no
+	R2.*28
 % Bars 366 to 370
 	
 % Bars 371 to 375
@@ -306,14 +340,18 @@ musicTrombeIIMvtIII = \relative c' {
 	
 % Bars 391 to 395
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 396 to 400
-	
-	
-	\ni \voiceTwo R2.
-	R
-	R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 401 to 405
-	R \no \oneVoice 
+	\mmrPos #-4 R \no
 	g4-._\fsemprecresc g-. g-.
 	g-. g-. g-.
 	g-. g-. g-.

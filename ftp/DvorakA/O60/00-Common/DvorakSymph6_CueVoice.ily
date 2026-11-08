@@ -6825,190 +6825,1682 @@ cueVoiceCornoIVMvtIV = \relative c {
 %#                   C U E   V O I C E   F O R   T R O M B E                   #
 %###############################################################################
 cueVoiceTrombeIMvtI = \relative c {
-	\transposition d
-	s2.*151
-	% bar 152 - 159
-	c'''!4-^-\tweak X-offset #-4.5 ^\markup {Viol.} c-^ a8 b
-	c!2.
-	c!4 c a8 b
-	c!2.:16
-	cis:
-	d2: dis4:
-	dis: e2:
-	eis2: s4
-	s2.*91
-	% bar 237 - 238
-	bes2(-\tweak X-offset #-4.8 ^\markup {Viol.} aes8 g)
-	b!2( a!8 gis)
-	s2.*27
-	% bar 266 - 268
-	\voiceOne b8-.-\tweak X-offset #-4 ^\markup {Viol.} f16_( g f8) b,-. b-. b'-.
-	b4 r r
-	b8-. g16_( a g8) e-. e-. e'-. \oneVoice 
-	s2.*109
-	% bar 378 - 382
-	bes4.-\tweak X-offset #-4.8 ^\markup {Viol.} g8-.[ a-. bes-.]
-	bes4. g8-.[ a-. bes-.]
-	bes4 r8 g-.[ a-. bes-.]
-	bes4 r8 g-.[ a-. bes-.]
-	\voiceOne bes-.[ a-. g-. f-. e-.] s \oneVoice 
+	s2.*26
+	% bar 27 - 33
+	\transpose d c {
+		\relative c'' {
+			<< {
+				\InCueContext \once \oneVoice r4^\markup {Ob.} f( e
+				d cis b)
+				\oneVoice <fis a>8-.-\rinforz <g b>-. <a c>-. <a c>-. <g b>-. <fis a>-.
+				<g b>4-. <b, e>-. r
+				\voiceOne c'8-. d-. ees-. ees-. d-. c-.
+				\oneVoice <g b>4-. <d g>-. r
+				\voiceOne f'8-. g-. aes-. aes-. g-. f-.
+			} \\ {
+				\InCueContext s4 b,2(~\f
+				b4 e, fis8 g)
+				s2.
+				s
+				fis4-. c'8-. c-. b-. a-.
+				s2.
+				c4\< b8-. f'-. e-. d-.\!
+			} >>
+		}
+	}
+	s2.*74
+	% bars 108 - 111
+	\transpose d c {
+		\relative c' {
+			fis8-.-\ppleggiero^\markup {Vl.I.} fis16( gis) ais8-. ais16( b) cis8-. cis16( d)
+			b8-. b16( cis) d8-. d16( e) fis8-.\< fis16( g)
+			e8-. e16( fis) g8-. g16( fis) g8-. g16( a)\!
+			fis8-.\> fis16( g) a8-. a16( b) a8-. a16( d)\!
+		}
+	}
+	s2.*28
+	% bars 140 - 143
+	\transpose d c {
+		\relative c''' {
+			fis8\f^\markup {Vl.I.} ais,,( b cis) b4->
+			fis'8-. ais,( b cis) b4->
+			fis'8-. ais,( cis fis) g->[ a,(
+			cis\< g')] gis-. cis,( e ais)\!
+		}
+	}
+	% bar 144
+	<>^\markup {Legni}
+	s2.*4
+	% bars 148 - 158
+	\transpose d c {
+		\relative c'' {
+			fis8(\p^\markup {Vl.I.} dis) e-. fis-. b,4
+			fis'8( dis) e-. fis-. b,4
+			g'8(-\crescmarkup e) fis-. g-. b,4
+			a'8( fis) g-. a-. b,4
+			c'-^-\ffmarc c-^ a8-^ b-^
+			c2.-^
+			c4-^ c-^ a8-^ b-^
+			c2.:16-^
+			cis:
+			d2: dis4:
+			dis: e2:
+		}
+	}
+	s2.*30
+	% bars 189 - 190
+	\transpose d e {
+		\relative c' {
+			<bes d>8\p^\markup {Cor.III.IV.} q4 q q8
+			q q4 q q8
+		}
+	}
+	% bar 191
+	<>^\markup {Pos.}
+	s2.*21
+	% bars 212 - 214
+	<ees'' g>2\p(^\markup {Cor.I.II.} <d f>8 <c ees!>)
+	<c ees>2( <bes d>8 <a c>)
+	q2 r4
+	s2.*18
+	% bar 233
+	<>^\markup {Pos.}
+	s2.*4
+	% bars 237 - 240
+	\transpose d c {
+		\relative c' {
+			<< {
+				\clef alto \InCueContext cis4. cis8 cis4
+				cis2.~
+				cis~
+				cis
+			} \\ {
+				\InCueContext e,4(\pp f g)
+				bes2( a8 g)
+				g2.
+				eis4( gis b)
+			} >>
+		}
+	}
+	s2.*8
+	% bars 249 - 252
+	\transpose d c {
+		\relative c' {
+			<< {
+				\InCueContext e4. e8 e4
+				e2.~
+				e~
+				e
+			} \\ {
+				\InCueContext << des2.(~ {s2 s4-\crescmarkup}>>
+				des2 c8 bes)
+				bes4. bes8 bes4
+				gis( b! d!) \clef treble
+			} >>
+		}
+	}
+	s2.*8
+	% bar 261
+	<>^\markup {Legni}
+	s2.*14
+	% bars 275 - 279
+	\transpose d c {
+		\relative c''' {
+			<cis e>4--\p^\markup {Fl.} r8 <a cis!>-. <b d>-. <cis e>-.
+			<< \InCueContext a4-- \\ {\InCueContext fis8([ e)]}>> r8 <cis a'>8-. <e b'>-. <a cis>-.
+			<< \InCueContext e4-- \\ {\InCueContext d8( cis)}>> % mesure incomplete
+		}
+	}
+	\transpose d a, {
+		\relative c'' {
+			<< {
+				\InCueContext \oneVoice r8^\markup {Cl.A} <c e>-. <d f>-. <e g>-. % mesure incomplete
+				\voiceOne a4.( bes8 a4)
+			} \\ {
+				\InCueContext s2 % mesure incomplete
+				cis,4\< r r\!
+			} >>
+		}
+	}
+	\transpose d e {
+		\relative c'' {
+			<g d'>4\f^\markup {Cor.III.IV.} r r
+		}
+	}
+	% bar 280
+	<>^\markup {Cl.,Fg.}
+	s2.*30
+	% bars 310 - 313
+	\transpose d c {
+		\relative c' {
+			r4^\markup {Archi} f-.->-\ffrinforz g-.->
+			aes-.-> f-.-> g-.->
+			aes-.-> f-.-> g-.->
+			aes-.-> aes-.-> bes-.->
+		}
+	}
+	s2.*40
+	% bar 354
+	<>^\markup {Fg.}
+	s2.*2
+	% bars 356 - 360
+	\transpose d c {
+		\relative c' {
+			<fis a>8-.\f^\markup {Ob.} <g b>-. <a c>-. q-. <g b>-. <f a>-.
+			<g b>4-> <b, e>-> r
+			<< {
+				\InCueContext c'8-. d-. ees-. ees-. d-. c-.
+			} \\ {
+				\InCueContext fis,4 c'!8-. c-. b-. a-.
+			} >>
+			<b d>4-> <d, g>-> r
+			f'8-.-\fsempre^\markup {Fl.} g-. aes-. aes-. g-. f-.
+		}
+	}
+	s2.*28
+	% bars 389 - 395
+	\transpose d c {
+		\relative c'' {
+			f4.^\markup {Vl.} d8-.( e-. f-.)
+			g4.-\crescmarkup e8-.( f-. g-.)
+			a4. f8-.( g-. a-.)
+			bes4. g8-.( a-. bes-.)
+			bes4. g8-.( a-. bes-.)
+		}
+	}
+	<b d>4\f^\markup {Cor.I.II.} r r
+	q r r
+	s2.*19
+	% bars 415 - 418
+	<< {
+		\InCueContext g4(^\markup {Cor.I.II.} d' f)
+	} \\ {
+		\InCueContext g,2(-\pespress d'4)
+	} >>
+	<c ees>4.( <g d'>8\< <ees c'>4)
+	bes'( <f' aes>8)\! r q4-.
+	<ees g>2(\> <bes f'>8 <g ees'!>)\!
+	s2.*11
+	% bars 430 - 434
+	g8(\p^\markup {Cor.I.} b g'4 f)
+	e2( d4)
+	g,8( b g'4 f)
+	e8-. d-. c2
+	e8-. d-. c2
+	s2.*8
+	% bars 443 - 444
+	\transpose d e {
+		\relative c' {
+			<d d'>2.~^\markup {Cor.III.IV.}
+			q
+		}
+	}
+	% bar 445
+	<>^\markup {Cor.I.II.}
+	s2.*14
+	% bar 459
+	<>^\markup {Cor.III.IV.}
+	s2.*3
+	% bars 462 - 465
+	\transpose d c {
+		\relative c''' {
+			a4-^\f^\markup {Fl.,Ob.} c8( a) bes-. c-.
+			<g bes>2.
+			<a, c>2-\crescmarkup <c ees>8( <a c>)
+			<bes d>-. <c ees>-. <bes d>2
+		}
+	}
 	s2.*46
-	% bar 429 - 432
-	b8^\markup {Viol.} d f4 gis8 ais
-	b cis d4 d8 dis
-	e2.:16
-	e2.:16
-	s2.*111
-	% bar 544 - 545
-	\voiceOne a,8^\markup {Viol.} f g a e4
-	d8 f a4 s \oneVoice 
+	% bars 512 - 515
+	\transpose d c {
+		\relative c' {
+			r4^\markup {Archi} b-.->\ff cis-.->
+			d-.-> b-.-> cis-.->
+			d-.-> d-.-> e-.->
+			fis-.-> d-.-> e-.->
+		}
+	}
+	s2.*35
+	% bars 551 - 559
+	\transpose d c {
+		\relative c'' {
+			r4^\markup {Ob.} cis(\pp d8 e
+			fis4) cis'(^\markup {Fl.} d8 e
+			fis2.)
+		}
+	}
+	c2.--\pp^\markup {Cor.I.}
+	c--
+	c--
+	\transpose d c {
+		\relative c'' {
+			d2-^\ff^\markup {Archi} cis4-.
+			a8-. fis-. g-. a-. e4
+			\voiceTwo d8-. fis-. a4 \oneVoice s
+		}
+	}
 }
 cueVoiceTrombeIMvtII = \relative c {
-	\transposition bes
-	s2*100
-	% bar 101 - 103
-	\voiceOne r8 c''(^\markup {Horner in F.} a des~
-	des4 c
-	bes g) \oneVoice 
-	s2*65
-	% bar 169 - 174
-	a8-\tweak X-offset #1.2 ^\markup {Horner in F.} a4 a8_~
-	a a_(\< bes b)\!
-	c a4\p a8_~
-	a a_(\< bes b)\!
-	c a4\p a8_~
-	a a_(\< bes b)\!
+	s2*11
+	% bars 12 - 15
+	\transpose bes f {
+		\relative c'' {
+			c4(\pp^\markup {Cor.I.} f~
+			f8 e d c)
+			c(~ c32 d c bes-.) bes4(
+			a8) r r4
+		}
+	}
+	s2*13
+	% bars 29 - 32
+	<g'' c e>16\fp^\markup {Cor.B} q q q <g d' f> q q q
+	<g c e> q q q <g d' f>\< q q q
+	<g c e> q q q <g d' f> q q q\!
+	<g c e>8 r r4
+	s2*36
+	% bars 69 - 73
+	\transpose bes f {
+		\relative c'' {
+			c16(\p\<^\markup {Cor.I.} d f e\! d\> c bes a)\!
+			\tuplet 3/2 4 {c8(-- bes--\< a--} c8\> bes)\!
+			a(-\dimmarkup g c4~
+			c2)\pp~
+			c8 r r4
+		}
+	}
+	s2*15
+	% bars 89 - 103
+	\transpose bes f {
+		\relative c'' {
+			r4^\markup {Cor.I} r8 c\p(
+			a\< ees'\! c\> a)\!
+			<a c>2\pp~
+			q(
+			<g b>8) r r d'(\p
+			b-\crescmarkup f' d b)
+		}
+	}
+	<g c e>16\mf^\markup {Cor.B} q q q <g d' f> q q q
+	<g c e>4:16-\crescmarkup <g d' f>:
+	<g c e>: <g d' f>:
+	\transpose bes f {
+		\relative c' {
+			<c c'>8\noBeam^\markup {Cor.F} a'16-. c-. f,-.\< <c g'>-. <f a>-. <g bes>-.\!
+			<a c>8->\ff <a cis>-> <a d>-> <a e'>->
+			<f  d'>4-> q->
+			r8 c'\f a des->(~
+			des4-\dimmarkup c
+			bes\p\> g)\!
+		}
+	}
+	s2*19
+	% bars 123 - 128
+	\transpose bes f {
+		\relative c'' {
+			des4(\mf^\markup {Cor.I.II.} bes8 ees)
+			des2-\pocoapococresc
+			des4( bes8 e)
+			cis2
+			cis4-> a8-. e'-.
+			cis4-> a8-. e'-.
+		}
+	}
+	s2*8
+	% bars 137 - 139
+	\transpose bes f {
+		\relative c'' {
+			r4^\markup {Cor.I.} b8\pp\< b
+			c2\>~
+			c\pp
+		}
+	}
+	s2*7
+	% bars 147 - 155
+	\transpose bes f {
+		\relative c'' {
+			c4(\pp^\markup {Cor.I.} f~
+			f8 e d c)
+			c(~ c32 d c bes-.) bes4(
+			a) d8->\mf\< e16-> f->\!
+			f8\f c a4-\dimmarkup
+			g2\p
+			r8 e(\pp\< f g16 gis)\!
+			a4 c(~\fz
+			c8 bes16\> a \acciaccatura c8 bes8. a16)\!
+		}
+	}
+	s2*9
+	% bars 165 - 174
+	\transpose bes c' {
+		\relative c''' {
+			a16(\p^\markup {Fl.I.} bes32 a g16 a c a g f
+			d ees a->-\dimmarkup f e c b c
+			f-> ees c a gis a d c
+			a f e f ees f c f)\p
+		}
+	}
+	\transpose bes f {
+		\relative c' {
+			<f a>8\pp^\markup {Cor.I.II.} q4 q8~
+			q q(\< <g bes> <gis b>\!
+			<a c>) <f a>4\pp q8~
+			q <f a>(\< <g bes> <gis b>\!
+			<a c>) <f a>4\p q8~
+			q <f a>(\< <g bes> <gis b>)\!
+		}
+	}
+	s2*18
+	% bars 193 - 196
+	\transpose bes f {
+		\relative c'' {
+			g4.(\pp\<^\markup {Cor.I.} gis8
+			a)\!\noBeam c( a d~
+			d4.) c8~
+			c r^\markup {Fl.} r4
+		}
+	}
 }
 cueVoiceTrombeIMvtIII = \relative c {
-	\transposition d
-	s2.*113
-	% bar 114 - 117
-	ees''4^\markup {Hörner in F.} ees ees
-	ees ees ees
-	ees ees  ees
-	ees ees ees
-	s2.*135
-	% bar 252 - 255
-	b'4(-\offset X-offset -4 ^\markup {Viol.} c8 ais b4)
-	b( c8 ais b4)
-	b( c8 ais b4)
-	b( c8 ais b4)
-	s2.*141
-	% bar 397 - 400
-	ees,4^\markup {Hörner in F.} ees ees
-	ees ees ees
-	ees ees ees
-	ees ees ees
+	s2.*23
+	% bars 24 - 27
+	\transpose d c {
+		\relative c'' {
+			c2(-\pdolce^\markup {Vl.} f4~
+			f e f)
+			g2( c,4~
+			c2.)
+		}
+	}
+	s2.*12
+	% bars 40 - 41
+	\transpose d f {
+		\relative c'' {
+			<c e>2\p\<^\markup {Cor.I.II.} q4~
+			\once \stemUp q\! s2
+		}
+	}
+	s2.*22
+	% bar 64
+	<>^\markup {Cor.}
+	s2.*4
+	% bar 68
+	<>^\markup {Archi}
+	s2.*4
+	% bar 72
+	<>^\markup {Legni}
+	s2.*4
+	% bars 76 - 79
+	\transpose d f {
+		\relative c' {
+			<d d'>4-.\p\<^\markup {Cor.I.II.} q-. q-.
+			q-. q-. q-.\!
+			<c c'>2.\f~
+			q
+		}
+	}
+	% bar 80
+	<>^\markup {Legni}
+	s2.*4
+	% bar 84
+	<>^\markup {Archi}
+	s2.*2
+	% bar 86
+	<>^\markup {Cor.}
+	s2.*2
+	% bar 88
+	<>^\markup {Archi}
+	s2.*2
+	% bar 90
+	<>^\markup {Legni}
+	s2.*2
+	% bar 92
+	<>^\markup {Archi}
+	s2.*4
+	% bar 96
+	<>^\markup {Legni,Cor.}
+	s2.*12
+	% bars 108 - 117
+	\transpose d c {
+		\relative c''' {
+			aes4-.^\markup {Vl.}-\pocoapococresc g8( fis g4)
+			aes-. g8( fis g4)
+			bes-. a!8( gis a4)
+			c-. b8( ais b4)
+			d-. cis8( bis cis4)
+			e-. ees8( d ees4)
+			f-.\f\< ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)\!
+		}
+	}
+	s2.*42
+	% bars 160 - 163
+	\transpose d c {
+		\relative c' {
+			e4(\p\<^\markup {Fl.picc.} b') e(
+			b' e) b~\!
+			b\> b8( a g a\!
+			b2.)\pp
+		}
+	}
+	s2.*6
+	% bars 170 - 173
+	\transpose d c {
+		\relative c' {
+			d4(\p\<^\markup {Fl.picc.} a') d(
+			a') d( a)\!
+			fis-. a8(\> g fis g\!
+			a2.)\p
+		}
+	}
+	s2.*12
+	% bars 186 - 194
+	\transpose d f {
+		\relative c'' {
+			d2(\p^\markup {Cor.I.} cis4
+			b2 a4)
+			gis2( a4
+			b2 cis4)
+			d2(-\dimmarkup cis4
+			b2 a4)
+			gis2( a4
+			b2 cis4)
+			a\pp r r
+		}
+	}
+	s2.*31
+	% bars 226 - 229
+	\transpose d c {
+		\relative c'' {
+			fis4(\pp^\markup {Vl.I.} g8 e fis4
+			a b8 gis a4
+			d e8 cis d4
+			d e8 cis d4)
+		}
+	}
+	s2.*23
+	% bars 253 - 256
+	\transpose d c {
+		\relative c''' {
+			b4(\pp^\markup {Vl.} cis8 ais b4)
+			b( cis8 ais b4)
+			b( cis8 ais b4)
+			b( cis8 ais b4)
+		}
+	}
+	s2.*28
+	% bars 285 - 288
+	\transpose d c {
+		\relative c''' {
+			\acciaccatura a8 a'2-\pcresc^\markup {Vl.I.} d,4~
+			d a2
+			d, a4~
+			a \tuplet 3/2 4 {d,8(\< f a d f a\!)}
+		}
+	}
+	s2.*19
+	% bars 308 - 311
+	\transpose d c {
+		\relative c'' {
+			c2(-\pdolce^\markup {Vl.} f4~
+			f e f)
+			g2( c,4~
+			c2.)
+		}
+	}
+	s2.*12
+	% bars 324 - 325
+	\transpose d f {
+		\relative c'' {
+			<c e>2\p\<^\markup {Cor.I.II.} q4~
+			\once \stemUp q\! s2
+		}
+	}
+	s2.*22
+	% bar 348
+	<>^\markup {Cor.}
+	s2.*4
+	% bar 352
+	<>^\markup {Archi}
+	s2.*4
+	% bar 356
+	<>^\markup {Legni}
+	s2.*4
+	% bars 360 - 363
+	\transpose d f {
+		\relative c' {
+			<d d'>4-.\p\<^\markup {Cor.I.II.} q-. q-.
+			q-. q-. q-.\!
+			<c c'>2.\f~
+			q
+		}
+	}
+	% bar 364
+	<>^\markup {Legni}
+	s2.*4
+	% bar 368
+	<>^\markup {Archi}
+	s2.*2
+	% bar 370
+	<>^\markup {Cor.}
+	s2.*2
+	% bar 372
+	<>^\markup {Archi}
+	s2.*2
+	% bar 374
+	<>^\markup {Legni}
+	s2.*2
+	% bar 376
+	<>^\markup {Archi}
+	s2.*4
+	% bar 380
+	<>^\markup {Cor.,Legni}
+	s2.*4
+	% bar 384
+	<>^\markup {Archi}
+	s2.*8
+	% bars 392 - 401
+	\transpose d c {
+		\relative c''' {
+			aes4-.^\markup {Vl.I.}-\pocoapococresc g8( fis g4)
+			aes-. g8( fis g4)
+			bes-. a!8( gis a4)
+			c-. b8( ais b4)
+			d-. cis8( bis cis4)
+			e-. ees8( d ees4)
+			f-.\f\< ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)\!
+		}
+	}
 }
 cueVoiceTrombeIMvtIV = \relative c {
-	\transposition d
-	\partial 4 s4
-	s1*29
-	% bar 30 - 35
-	e''8-\offset X-offset -4 ^\markup {Viol.} g, e e' e g, e e'
-	e g, e e' e g, e g'
-	g e g, g' g e g, g'
-	g e g, g' g e g, e''
-	e g, e e' e g, e g'
-	g e g, g' g e a, a'
-	s1*305
-	% bar 341 - 343
-	b,,1\fp^\markup {Hörner in D.} 
-	c\fp
-	d\fp
+	s4*1 s1*8
+	% bars 9
+	<>^\markup {Cor.III.IV.}
+	s1*11
+	% bars 20 - 35
+	\transpose d e {
+		\relative c' {
+			<e a>4.\mf^\markup {Cor.I.II.} q8 q4-. <aes d>-.
+			<g c>4.\< q8 q4-. <a b>-.\!
+			<gis b>4.\f q8 q4-. <c ees>-.
+			<b d>4.\< q8 q4-. <ees ges>-.\!
+			<d f>4. q8 q4-. <ees g!>-.
+		}
+	}
+	\transpose d c {
+		\relative c, {
+			\clef bass <d d'>1\ff~^\markup {Pos.III.,Tba}
+			q~
+			q~
+			q~
+			q2. r4 \clef treble
+		}
+	}
+	\transpose d e {
+		\relative c'' {
+			<c ees>1\f~^\markup {Cor.I.II.}
+			q
+			q->~
+			q
+			q->~
+			q
+		}
+	}
+	s1*49
+	% bars 85 - 88
+	\transpose d e {
+		\relative c'' {
+			<a c>4->-\fpcresc^\markup {Cor.E} \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+		}
+	}
+	s1*12
+	% bars 101 - 104
+	\transpose d e {
+		\relative c'' {
+			q4->-\fpcresc^\markup {Cor.E} \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+		}
+	}
+	s1*12
+	% bars 117 - 120
+	\transpose d c {
+		\relative c'' {
+			r2^\markup {Vl.I.} e2\fz\>~
+			e4 d8( e d4 cis)\!
+			cis( e)\< d2
+			cis4 cis b2->\!
+		}
+	}
+	s1*46
+	% bars 167 - 178
+	\transpose d e {
+		\relative c'' {
+			<bes f'>4\fz^\markup {Cor.E} q r2
+			q4\fz q r2
+			<b f'>4\fz q r2
+			q4 q r2
+			s1
+			r2 r4 g-.\f
+			c2.-> r4
+			r2 r4 g-.
+			c2.-> % mesure incomplete
+		}
+	}
+	\transpose d c {
+		\relative c, {
+			\clef bass <e e' g c>4\p^\markup {Pos.} % mesure incomplete
+			r2 r4 <f f' aes c>\p
+			r2 r4 <f f' aes des>\p
+			r2 r4 <fis fis' a cis>\p \clef treble
+		}
+	}
+	s1*16
+	% bars 195 - 196
+	\transpose d e {
+		\relative c'' {
+			d4-^\f^\markup {Cor.I.II.} a-^ d2-^~
+			d4 r r2
+		}
+	}
+	s1*10
+	% bars 207 - 209
+	\transpose d c {
+		\relative c, {
+			\clef bass <c c' c' e>4-.\f^\markup {Pos.} <g' g'>-. <c c' e>2->
+			<g g' c e>4 r <f f' b d> r
+			<c' c' e> r r2 \clef treble
+		}
+	}
+	s1
+	% bars 211 - 216
+	\transpose d e {
+		\relative c'' {
+			r2^\markup {Cor.I.II.} ees4-.\f c-.
+			f2-> f4-. d-.
+			g r r2
+			c,4-.\f g-. c2->
+			d4-. g,-. d'2->
+			ees4\f r r2
+		}
+	}
+	s1*7
+	% bars 224 - 227
+	\transpose d e {
+		\relative c'' {
+			r2^\markup {Cor.I.II.} r4 r8. des16
+			des4-. aes-. des2->
+			r2 r4 r8. b16
+			b4-. fis-. b2->
+		}
+	}
+	s1*21
+	% bars 249 - 252
+	\transpose d e {
+		\relative c'' {
+			d4(\p^\markup {Cor.I.} c bes f)
+			bes4. bes8 bes4 c
+			\tuplet 6/4 1 {d( f aes g f ees)}
+			d2. r4
+		}
+	}
+	% bar 253
+	<ees'' g>2(\p\<^\markup {Cor.III.IV.} \tuplet 3/2 2 {<a, c>4\> <bes d> <c ees>)\!}
+	% bar 254 - 256
+	\transpose d e {
+		\relative c'' {
+			\tuplet 6/4 1 {aes4(\p^\markup {Cor.I.} c ees ges f ees)}
+			<c ees>2(\p\< \tuplet 3/2 2 {<f, aes>4 <ges bes> <aes! ces!>\!}
+			<ges bes>)\f r r2
+		}
+	}
+	s1*15
+	% bar 272
+	<>^\markup {Pos.}
+	s1*1
+	% bar 273 - 275
+	\transpose d e {
+		\relative c'' {
+			r2^\markup {Cor.E} <bes e>4\f r
+			<>^\markup {Pos.} s1
+			r2^\markup {Cor.E} <a f'>4\f r
+		}
+	}
+	% bar 276
+	<>^\markup {Pos.}
+	s1*36
+	% bar 312
+	<>^\markup {Vcl.,Cb.}
+	s1*2
+	% bar 314
+	<>^\markup {Pos.}
+	s1*12
+	% bar 326
+	<>^\markup {Cor.III.IV.}
+	s1*11
+	% bars 337 - 343
+	\transpose d e {
+		\relative c' {
+			<d g>4.\f^\markup {Cor.I.II.} q8 q4-. <ges c>-.
+			<f bes>4. q8 q4-. <a ees'>-.
+			<a d>4. q8 q4-. <des g>-.
+			<c f>4. q8 q4-. <d! e>-.
+			a1\fp
+			bes\fp
+			c\fp
+		}
+	}
+	s1*22
+	% bar 366
+	<>^\markup {Cor.III.}
+	s1*4
+	% bar 370
+	<>^\markup {Cor.I.II.}
+	s1*4
+	% bar 374
+	<>^\markup {Cor.III.}
+	s1*4
+	% bars 378 - 381
+	<g d'>4->\p^\markup {Cor.III.IV.} \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4-\crescmarkup \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	% bars 382 - 385
+	\transpose d e {
+		\relative c'' {
+			<d f>4\mf^\markup {Cor.I.II.} \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+			q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+			q4-\crescmarkup \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+			q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+		}
+	}
+	s1*2
+	% bar 388
+	<>^\markup {Pos.}
+	s1*6
+	% bar 394
+	<>^\markup {Cor.III.IV.}
+	s1*4
+	% bar 398
+	<>^\markup {Cor.I.II.III.IV.}
+	s1*6
+	% bar 404
+	<>^\markup {Pos.}
+	s1*13
+	% bars 417 - 421
+	<g, g'>1->~^\markup {Cor.III.IV.}
+	q4 r % mesure incomplete
+	\transpose d e {
+		\relative c'' {
+			f2\f~^\markup {Cor.I.II.} % mesure incomplete
+			f4 ees8( f ees4 d)
+			d( f) ees2
+			\voiceOne d4-. d-. \oneVoice s2
+		}
+	}
+	s1*18
+	% bar 440
+	<>^\markup {Cor.III.IV.,Vcl.}
+	s1*6
+	% bar 446
+	<>^\markup {Vla}
+	s1*6
+	% bar 452
+	<>^\markup {Vl.II.}
+	s1*4
+	% bars 456 - 458
+	g'4-.\f^\markup {Cor.IV.} r r g-.
+	g-. r r g-.
+	g-. r r2
 }
 cueVoiceTrombeIIMvtI = \relative c {
-	\transposition d
-	s2.*151
-	% bar 152 - 159
-	c'''!4-^-\tweak X-offset #-4.5 ^\markup {Viol.} c-^ a8 b
-	c!2.
-	c!4 c a8 b
-	c!2.:16
-	cis:
-	d2: dis4:
-	dis: e2:
-	eis2: s4
-	s2.*91
-	% bar 237 - 238
-	bes2(-\tweak X-offset #-3 ^\markup {Viol.} aes8 g)
-	b!2( a!8 gis)
-	s2.*27
-	% bar 266 - 268
-	b8-.^\markup {Viol.} f16( g f8) b,-. b-. b'-.
-	b4 r r
-	b8-. g16( a g8) e-. e-. e'-.
-	s2.*109
-	% bar 378 - 382
-	bes4.^\markup {Viol.} g8-.[ a-. bes-.]
-	bes4. g8-.[ a-. bes-.]
-	bes4 r8 g-.[ a-. bes-.]
-	bes4 r8 g-.[ a-. bes-.]
-	\voiceOne bes-.[ a-. g-. f-. e-.] s \oneVoice 
+	s2.*26
+	% bars 27 - 33
+	\transpose d c {
+		\relative c'' {
+			<< {
+				\InCueContext \once \oneVoice r4^\markup {Ob.} f( e
+				d cis b)
+				\oneVoice <fis a>8-.-\rinforz <g b>-. <a c>-. <a c>-. <g b>-. <fis a>-.
+				<g b>4-. <b, e>-. r
+				\voiceOne c'8-. d-. ees-. ees-. d-. c-.
+				\oneVoice <g b>4-. <d g>-. r
+				\voiceOne f'8-. g-. aes-. aes-. g-. f-.
+			} \\ {
+				\InCueContext s4 b,2(~\f
+				b4 e, fis8 g)
+				s2.
+				s
+				fis4-. c'8-. c-. b-. a-.
+				s2.
+				c4\< b8-. f'-. e-. d-.\!
+			} >>
+		}
+	}
+	s2.*74
+	% bars 108 - 111
+	\transpose d c {
+		\relative c' {
+			fis8-.-\ppleggiero^\markup {Vl.I.} fis16( gis) ais8-. ais16( b) cis8-. cis16( d)
+			b8-. b16( cis) d8-. d16( e) fis8-.\< fis16( g)
+			e8-. e16( fis) g8-. g16( fis) g8-. g16( a)\!
+			fis8-.\> fis16( g) a8-. a16( b) a8-. a16( d)\!
+		}
+	}
+	s2.*28
+	% bars 140 - 143
+	\transpose d c {
+		\relative c''' {
+			fis8\f^\markup {Vl.I.} ais,,( b cis) b4->
+			fis'8-. ais,( b cis) b4->
+			fis'8-. ais,( cis fis) g->[ a,(
+			cis\< g')] gis-. cis,( e ais)\!
+		}
+	}
+	% bar 144
+	<>^\markup {Legni}
+	s2.*4
+	% bars 148 - 158
+	\transpose d c {
+		\relative c'' {
+			fis8(\p^\markup {Vl.I.} dis) e-. fis-. b,4
+			fis'8( dis) e-. fis-. b,4
+			g'8(-\crescmarkup e) fis-. g-. b,4
+			a'8( fis) g-. a-. b,4
+			c'-^-\ffmarcato c-^ a8-^ b-^
+			c2.-^
+			c4-^ c-^ a8-^ b-^
+			c2.:16-^
+			cis:
+			d2: dis4:
+			dis: e2:
+		}
+	}
+	s2.*30
+	% bars 189 - 190
+	\transpose d e {
+		\relative c' {
+			<bes d>8\p^\markup {Cor.III.IV.} q4 q q8
+			q q4 q q8
+		}
+	}
+	% bar 191
+	<>^\markup {Pos.}
+	s2.*17
+	% bar 208
+	<>^\markup {Legni}
+	s2.*4
+	% bars 212 - 214
+	<ees'' g>2\p(^\markup {Cor.I.II.} <d f>8 <c ees!>)
+	<c ees>2( <bes d>8 <a c>)
+	q2 r4
+	s2.*18
+	% bar 233
+	<>^\markup {Pos.}
+	s2.*4
+	% bars 237 - 240
+	\transpose d c {
+		\relative c' {
+			<< {
+				\clef alto \InCueContext cis4. cis8 cis4
+				cis2.~
+				cis~
+				cis
+			} \\ {
+				\InCueContext e,4(\pp f g)
+				bes2( a8 g)
+				g2.
+				eis4( gis b)
+			} >>
+		}
+	}
+	s2.*8
+	% bars 249 - 252
+	\transpose d c {
+		\relative c' {
+			<< {
+				\InCueContext e4. e8 e4
+				e2.~
+				e~
+				e
+			} \\ {
+				\InCueContext << des2.(~ {s2 s4-\crescmarkup}>>
+				des2 c8 bes)
+				bes4. bes8 bes4
+				gis( b! d!) \clef treble
+			} >>
+		}
+	}
+	s2.*8
+	% bar 261
+	<>^\markup {Legni}
+	s2.*14
+	% bars 275 - 279
+	\transpose d c {
+		\relative c''' {
+			<cis e>4--\p^\markup {Fl.} r8 <a cis!>-. <b d>-. <cis e>-.
+			<< \InCueContext a4-- \\ {\InCueContext fis8([ e)]}>> r8 <cis a'>8-. <e b'>-. <a cis>-.
+			<< \InCueContext e4-- \\ {\InCueContext d8( cis)}>> % mesure incomplete
+		}
+	}
+	\transpose d a, {
+		\relative c'' {
+			<< {
+				\InCueContext \oneVoice r8^\markup {Cl.A} <c e>-. <d f>-. <e g>-. % mesure incomplete
+				\voiceOne a4.( bes8 a4)
+			} \\ {
+				\InCueContext s2 % mesure incomplete
+				cis,4\< r r\!
+			} >>
+		}
+	}
+	\transpose d e {
+		\relative c'' {
+			<g d'>4\f^\markup {Cor.III.IV.} r r
+		}
+	}
+	% bar 280
+	<>^\markup {Cl.,Fg.}
+	s2.*30
+	% bars 310 - 313
+	\transpose d c {
+		\relative c' {
+			r4^\markup {Archi} f-.->-\ffrinforz g-.->
+			aes-.-> f-.-> g-.->
+			aes-.-> f-.-> g-.->
+			aes-.-> aes-.-> bes-.->
+		}
+	}
+	s2.*40
+	% bar 354
+	<>^\markup {Fg.}
+	s2.*2
+	% bars 356 - 360
+	\transpose d c {
+		\relative c' {
+			<fis a>8-.\f^\markup {Ob.} <g b>-. <a c>-. q-. <g b>-. <f a>-.
+			<g b>4-> <b, e>-> r
+			<< {
+				\InCueContext c'8-. d-. ees-. ees-. d-. c-.
+			} \\ {
+				\InCueContext fis,4 c'!8-. c-. b-. a-.
+			} >>
+			<b d>4-> <d, g>-> r
+			f'8-.-\fsempre^\markup {Fl.} g-. aes-. aes-. g-. f-.
+		}
+	}
+	s2.*28
+	% bars 389 - 395
+	\transpose d c {
+		\relative c'' {
+			f4.^\markup {Vl.} d8-.( e-. f-.)
+			g4.-\crescmarkup e8-.( f-. g-.)
+			a4. f8-.( g-. a-.)
+			bes4. g8-.( a-. bes-.)
+			bes4. g8-.( a-. bes-.)
+		}
+	}
+	<b d>4\f^\markup {Cor.I.II.} r r
+	q r r 
+	s2.*19
+	% bars 415 - 418
+	<< {
+		\InCueContext g4(^\markup {Cor.I.II.} d' f)
+	} \\ {
+		\InCueContext g,2(-\pespress d'4)
+	} >>
+	<c ees>4.( <g d'>8\< <ees c'>4)
+	bes'( <f' aes>8)\! r q4-.
+	<ees g>2(\> <bes f'>8 <g ees'!>)\!
+	s2.*11
+	% bars 430 - 434
+	g8(\p^\markup {Cor.I.} b g'4 f)
+	e2( d4)
+	g,8( b g'4 f)
+	e8-. d-. c2
+	e8-. d-. c2
+	s2.*8
+	% bars 443 - 444
+	\transpose d e {
+		\relative c' {
+			\stemDown <d d'>2.~^\markup {Cor.III.IV.}
+			q \stemNeutral
+		}
+	}
+	% bar 445
+	<>^\markup {Cor.I.II.}
+	s2.*14
+	% bar 459
+	<>^\markup {Cor.III.IV.}
+	s2.*3
+	% bars 462 - 465
+	\transpose d c {
+		\relative c''' {
+			a4-^\f^\markup {Fl.,Ob.} c8( a) bes-. c-.
+			<g bes>2.
+			<a, c>2-\crescmarkup <c ees>8( <a c>)
+			<bes d>-. <c ees>-. <bes d>2
+		}
+	}
 	s2.*46
-	% bar 429 - 432
-	b8^\markup {Viol.} d f4 gis8 ais
-	b cis d4 d8 dis
-	e2.:16
-	e2.:16
-	s2.*111
-	% bar 544 - 545
-	a,8-\offset X-offset -4 ^\markup {Viol.} f g a e4
-	\voiceOne d8 f a4 \oneVoice s
+	% bars 512 - 515
+	\transpose d c {
+		\relative c' {
+			r4^\markup {Archi} b-.->\ff cis-.->
+			d-.-> b-.-> cis-.->
+			d-.-> d-.-> e-.->
+			fis-.-> d-.-> e-.->
+		}
+	}
+	s2.*35
+	% bars 551 - 559
+	\transpose d c {
+		\relative c'' {
+			r4^\markup {Ob.} cis(\pp d8 e
+			fis4) cis'(^\markup {Fl.} d8 e
+			fis2.)
+		}
+	}
+	c2.--\pp^\markup {Cor.I.}
+	c--
+	c--
+	\transpose d c {
+		\relative c'' {
+			d2-^\ff^\markup {Archi} cis4-.
+			a8-. fis-. g-. a-. e4
+			\voiceTwo d8-. fis-. a4 \oneVoice s
+		}
+	}
 }
 cueVoiceTrombeIIMvtII = \relative c {
-	\transposition bes
-	s2*100
-	% bar 101 - 103
-	\voiceOne r8 c''(^\markup {Horner in F.} a des~
-	des4 c
-	bes g) \oneVoice 
-	s2*65
-	% bar 169 - 174
-	a8^\markup {Horner in F.} a4 a8~
-	a a(\< bes b)\!
-	c a4\p a8_~
-	a a(\< bes b)\!
-	c a4\p a8_~
-	a a(\< bes b)\!
+	s2*11
+	% bars 12 - 15
+	\transpose bes f {
+		\relative c'' {
+			c4(\pp^\markup {Cor.I.} f~
+			f8 e d c)
+			c(~ c32 d c bes-.) bes4(
+			a8) r r4
+		}
+	}
+	s2*13
+	% bars 29 - 32
+	<g'' c e>16\fp^\markup {Cor.B} q q q <g d' f> q q q
+	<g c e> q q q <g d' f>\< q q q
+	<g c e> q q q <g d' f> q q q\!
+	<g c e>8 r r4
+	s2*36
+	% bars 69 - 73
+	\transpose bes f {
+		\relative c'' {
+			c16(\p\<^\markup {Cor.I.} d f e\! d\> c bes a)\!
+			\tuplet 3/2 4 {c8(-- bes--\< a--} c8\> bes)\!
+			a(-\dimmarkup g c4~
+			c2)\pp~
+			c8 r r4
+		}
+	}
+	s2*15
+	% bars 89 - 103
+	\transpose bes f {
+		\relative c'' {
+			r4^\markup {Cor.I} r8 c\p(
+			a\< ees'\! c\> a)\!
+			<a c>2\pp~
+			q(
+			<g b>8) r r d'(\p
+			b-\crescmarkup f' d b)
+		}
+	}
+	<g c e>16\mf^\markup {Cor.B} q q q <g d' f> q q q
+	<g c e>4:16-\crescmarkup <g d' f>:
+	<g c e>: <g d' f>:
+	\transpose bes f {
+		\relative c' {
+			<c c'>8\noBeam^\markup {Cor.F} a'16-. c-. f,-.\< <c g'>-. <f a>-. <g bes>-.\!
+			<a c>8->\ff <a cis>-> <a d>-> <a e'>->
+			<f  d'>4-> q->
+			r8 c'\f a des->(~
+			des4-\dimmarkup c
+			bes\p\> g)\!
+		}
+	}
+	s2*19
+	% bars 123 - 128
+	\transpose bes f {
+		\relative c'' {
+			des4(\mf^\markup {Cor.I.II.} bes8 ees)
+			des2-\pocoapococresc
+			des4( bes8 e)
+			cis2
+			cis4-> a8-. e'-.
+			cis4-> a8-. e'-.
+		}
+	}
+	s2*8
+	% bars 137 - 139
+	\transpose bes f {
+		\relative c'' {
+			r4^\markup {Cor.I.} b8\pp\< b
+			c2\>~
+			c\pp
+		}
+	}
+	s2*7
+	% bars 147 - 155
+	\transpose bes f {
+		\relative c'' {
+			c4(\pp^\markup {Cor.I.} f~
+			f8 e d c)
+			c(~ c32 d c bes-.) bes4(
+			a) d8->\mf\< e16-> f->\!
+			f8\f c a4-\dimmarkup
+			g2\p
+			r8 e(\pp\< f g16 gis)\!
+			a4 c(~\fz
+			c8 bes16\> a \acciaccatura c8 bes8. a16)\!
+		}
+	}
+	s2*9
+	% bars 165 - 174
+	\transpose bes c' {
+		\relative c''' {
+			a16(\p^\markup {Fl.I.} bes32 a g16 a c a g f
+			d ees a->-\dimmarkup f e c b c
+			f-> ees c a gis a d c
+			a f e f ees f c f)\p
+		}
+	}
+	\transpose bes f {
+		\relative c' {
+			<f a>8\pp^\markup {Cor.I.II.} q4 q8~
+			q q(\< <g bes> <gis b>\!
+			<a c>) <f a>4\pp q8~
+			q <f a>(\< <g bes> <gis b>\!
+			<a c>) <f a>4\p q8~
+			q <f a>(\< <g bes> <gis b>)\!
+		}
+	}
+	s2*18
+	% bars 193 - 196
+	\transpose bes f {
+		\relative c'' {
+			g4.(\pp\<^\markup {Cor.I.} gis8
+			a)\!\noBeam c( a d~
+			d4.) c8~
+			c\noBeam f(^\markup {Fl.} d g~
+			g4. f8)
+		}
+	}
 }
 cueVoiceTrombeIIMvtIII = \relative c {
-	\transposition d
-	s2.*113
-	% bar 114 - 117
-	ees''4^\markup {Hörner in F.} ees ees
-	ees ees ees
-	ees ees  ees
-	ees ees ees
-	s2.*135
-	% bar 252 - 255
-	b'4(-\offset X-offset -4 ^\markup {Viol.} c8 ais b4)
-	b( c8 ais b4)
-	b( c8 ais b4)
-	b( c8 ais b4)
-	s2.*141
-	% bar 397 - 400
-	ees,4^\markup {Hörner in F.} ees ees
-	ees ees ees
-	ees ees ees
-	ees ees ees
+	s2.*23
+	% bars 24 - 27
+	\transpose d c {
+		\relative c'' {
+			c2(-\pdolce^\markup {Vl.} f4~
+			f e f)
+			g2( c,4~
+			c2.)
+		}
+	}
+	s2.*12
+	% bars 40 - 41
+	\transpose d f {
+		\relative c'' {
+			<c e>2\p\<^\markup {Cor.I.II.} q4~
+			\once \stemUp q\! s2
+		}
+	}
+	s2.*22
+	% bar 64
+	<>^\markup {Cor.}
+	s2.*4
+	% bar 68
+	<>^\markup {Archi}
+	s2.*4
+	% bar 72
+	<>^\markup {Legni}
+	s2.*4
+	% bars 76 - 79
+	\transpose d f {
+		\relative c' {
+			<d d'>4-.\p\<^\markup {Cor.I.II.} q-. q-.
+			q-. q-. q-.\!
+			<c c'>2.\f~
+			q
+		}
+	}
+	% bar 80
+	<>^\markup {Legni}
+	s2.*4
+	% bar 84
+	<>^\markup {Archi}
+	s2.*2
+	% bar 86
+	<>^\markup {Cor.}
+	s2.*2
+	% bar 88
+	<>^\markup {Archi}
+	s2.*2
+	% bar 90
+	<>^\markup {Legni}
+	s2.*2
+	% bar 92
+	<>^\markup {Archi}
+	s2.*4
+	% bar 96
+	<>^\markup {Legni,Cor.}
+	s2.*12
+	% bars 108 - 117
+	\transpose d c {
+		\relative c''' {
+			aes4-.^\markup {Vl.}-\pocoapococresc g8( fis g4)
+			aes-. g8( fis g4)
+			bes-. a!8( gis a4)
+			c-. b8( ais b4)
+			d-. cis8( bis cis4)
+			e-. ees8( d ees4)
+			f-.\f\< ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)\!
+		}
+	}
+	s2.*42
+	% bars 160 - 163
+	\transpose d c {
+		\relative c' {
+			e4(\p\<^\markup {Fl.picc.} b') e(
+			b' e) b~\!
+			b\> b8( a g a\!
+			b2.)\pp
+		}
+	}
+	s2.*6
+	% bars 170 - 173
+	\transpose d c {
+		\relative c' {
+			d4(\p\<^\markup {Fl.picc.} a') d(
+			a') d( a)\!
+			fis-. a8(\> g fis g\!
+			a2.)\p
+		}
+	}
+	s2.*12
+	% bars 186 - 194
+	\transpose d f {
+		\relative c'' {
+			d2(\p^\markup {Cor.I.} cis4
+			b2 a4)
+			gis2( a4
+			b2 cis4)
+			d2(-\dimmarkup cis4
+			b2 a4)
+			gis2( a4
+			b2 cis4)
+			a\pp r r
+		}
+	}
+	s2.*31
+	% bars 226 - 229
+	\transpose d c {
+		\relative c'' {
+			fis4(\pp^\markup {Vl.I.} g8 e fis4
+			a b8 gis a4
+			d e8 cis d4
+			d e8 cis d4)
+		}
+	}
+	s2.*23
+	% bars 253 - 256
+	\transpose d c {
+		\relative c''' {
+			b4(\pp^\markup {Vl.} cis8 ais b4)
+			b( cis8 ais b4)
+			b( cis8 ais b4)
+			b( cis8 ais b4)
+		}
+	}
+	s2.*28
+	% bars 285 - 288
+	\transpose d c {
+		\relative c''' {
+			\acciaccatura a8 a'2-\pcresc^\markup {Vl.I.} d,4~
+			d a2
+			d, a4~
+			a \tuplet 3/2 4 {d,8(\< f a d f a\!)}
+		}
+	}
+	s2.*19
+	% bars 308 - 311
+	\transpose d c {
+		\relative c'' {
+			c2(-\pdolce^\markup {Vl.} f4~
+			f e f)
+			g2( c,4~
+			c2.)
+		}
+	}
+	s2.*12
+	% bars 324 - 325
+	\transpose d f {
+		\relative c'' {
+			<c e>2\p\<^\markup {Cor.I.II.} q4~
+			\once \stemUp q\! s2
+		}
+	}
+	s2.*22
+	% bar 348
+	<>^\markup {Cor.}
+	s2.*4
+	% bar 352
+	<>^\markup {Archi}
+	s2.*4
+	% bar 356
+	<>^\markup {Legni}
+	s2.*4
+	% bars 360 - 363
+	\transpose d f {
+		\relative c' {
+			<d d'>4-.\p\<^\markup {Cor.I.II.} q-. q-.
+			q-. q-. q-.\!
+			\stemDown <c c'>2.\f~
+			q \stemNeutral
+		}
+	}
+	% bar 364
+	<>^\markup {Legni}
+	s2.*4
+	% bar 368
+	<>^\markup {Archi}
+	s2.*2
+	% bar 370
+	<>^\markup {Cor.}
+	s2.*2
+	% bar 372
+	<>^\markup {Archi}
+	s2.*2
+	% bar 374
+	<>^\markup {Legni}
+	s2.*2
+	% bar 376
+	<>^\markup {Archi}
+	s2.*4
+	% bar 380
+	<>^\markup {Cor.,Legni}
+	s2.*4
+	% bar 384
+	<>^\markup {Archi}
+	s2.*8
+	% bars 392 - 401
+	\transpose d c {
+		\relative c''' {
+			aes4-.^\markup {Vl.I.}-\pocoapococresc g8( fis g4)
+			aes-. g8( fis g4)
+			bes-. a!8( gis a4)
+			c-. b8( ais b4)
+			d-. cis8( bis cis4)
+			e-. ees8( d ees4)
+			f-.\f\< ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)
+			f-. ees8( d ees4)\!
+		}
+	}
 }
 cueVoiceTrombeIIMvtIV = \relative c {
-	\transposition d
-	\partial 4 s4
-	s1*29
-	% bar 30 - 35
-	e''8-\offset X-offset -3 ^\markup {Viol.} g, e e' e g, e e'
-	e g, e e' e g, e g'
-	g e g, g' g e g, g'
-	g e g, g' g e g, e''
-	e g, e e' e g, e g'
-	g e g, g' g e a, a'
-	s1*305
-	% bar 341 - 343
-	b,,1\fp^\markup {Hörner in D.} 
-	c\fp
-	d\fp
+	s4*1 s1*8
+	% bars 9
+	<>^\markup {Cor.III.IV.}
+	s1*11
+	% bars 20 - 35
+	\transpose d e {
+		\relative c' {
+			<e a>4.\mf^\markup {Cor.I.II.} q8 q4-. <aes d>-.
+			<g c>4.\< q8 q4-. <a b>-.\!
+			<gis b>4.\f q8 q4-. <c ees>-.
+			<b d>4.\< q8 q4-. <ees ges>-.\!
+			<d f>4. q8 q4-. <ees g!>-.
+		}
+	}
+	\transpose d c {
+		\relative c, {
+			\clef bass <d d'>1\ff~^\markup {Pos.III.,Tba}
+			q~
+			q~
+			q~
+			q2. r4 \clef treble
+		}
+	}
+	\transpose d e {
+		\relative c'' {
+			<c ees>1\f~^\markup {Cor.I.II.}
+			q
+			q->~
+			q
+			q->~
+			q
+		}
+	}
+	s1*49
+	% bars 85 - 88
+	\transpose d e {
+		\relative c'' {
+			<a c>4->-\fpcresc^\markup {Cor.E} \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+		}
+	}
+	s1*12
+	% bars 101 - 104
+	\transpose d e {
+		\relative c'' {
+			q4->-\fpcresc^\markup {Cor.E} \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+			q4-> \tuplet 3/2 4 {q8 q q} q4-> \tuplet 3/2 4 {q8 q q} 
+		}
+	}
+	s1*12
+	% bars 117 - 120
+	\transpose d c {
+		\relative c'' {
+			r2^\markup {Vl.I.} e2\fz\>~
+			e4 d8( e d4 cis)\!
+			cis( e)\< d2
+			cis4 cis b2->\!
+		}
+	}
+	s1*46
+	% bars 167 - 178
+	\transpose d e {
+		\relative c'' {
+			<bes f'>4\fz^\markup {Cor.E} q r2
+			q4\fz q r2
+			<b f'>4\fz q r2
+			q4 q r2
+			s1
+			r2 r4 g-.\f
+			c2.-> r4
+			r2 r4 g-.
+			c2.-> % mesure incomplete
+		}
+	}
+	\transpose d c {
+		\relative c, {
+			\clef bass <e e' g c>4\p^\markup {Pos.} % mesure incomplete
+			r2 r4 <f f' aes c>\p
+			r2 r4 <f f' aes des>\p
+			r2 r4 <fis fis' a cis>\p \clef treble
+		}
+	}
+	s1*16
+	% bars 195 - 196
+	\transpose d e {
+		\relative c'' {
+			d4-^\f^\markup {Cor.I.II.} a-^ d2-^~
+			d4 r r2
+		}
+	}
+	s1*10
+	% bars 207 - 209
+	\transpose d c {
+		\relative c, {
+			\clef bass <c c' c' e>4-.\f^\markup {Pos.} <g' g'>-. <c c' e>2->
+			<g g' c e>4 r <f f' b d> r
+			<c' c' e> r r2 \clef treble
+		}
+	}
+	s1
+	% bars 211 - 216
+	\transpose d e {
+		\relative c'' {
+			r2^\markup {Cor.I.II.} ees4-.\f c-.
+			f2-> f4-. d-.
+			g r r2
+			c,4-.\f g-. c2->
+			d4-. g,-. d'2->
+			ees4\f r r2
+		}
+	}
+	s1*7
+	% bars 224 - 227
+	\transpose d e {
+		\relative c'' {
+			r2^\markup {Cor.I.II.} r4 r8. des16
+			des4-. aes-. des2->
+			r2 r4 r8. b16
+			b4-. fis-. b2->
+		}
+	}
+	s1*21
+	% bars 249 - 252
+	\transpose d e {
+		\relative c'' {
+			d4(\p^\markup {Cor.I.} c bes f)
+			bes4. bes8 bes4 c
+			\tuplet 6/4 1 {d( f aes g f ees)}
+			d2. r4
+		}
+	}
+	% bar 253
+	<ees'' g>2(\p\<^\markup {Cor.III.IV.} \tuplet 3/2 2 {<a, c>4\> <bes d> <c ees>)\!}
+	% bar 254 - 256
+	\transpose d e {
+		\relative c'' {
+			\tuplet 6/4 1 {aes4(\p^\markup {Cor.I.} c ees ges f ees)}
+			<c ees>2(\p\< \tuplet 3/2 2 {\once \stemDown <f, aes>4 <ges bes> <aes! ces!>\!}
+			<ges bes>)\f r r2
+		}
+	}
+	s1*15
+	% bar 272
+	<>^\markup {Pos.}
+	s1*1
+	% bar 273 - 275
+	\transpose d e {
+		\relative c'' {
+			r2^\markup {Cor.E} <bes e>4\f r
+			<>^\markup {Pos.} s1
+			r2^\markup {Cor.E} <a f'>4\f r
+		}
+	}
+	% bar 276
+	<>^\markup {Pos.}
+	s1*36
+	% bar 312
+	<>^\markup {Vcl.,Cb.}
+	s1*2
+	% bar 314
+	<>^\markup {Pos.}
+	s1*12
+	% bar 326
+	<>^\markup {Cor.III.IV.}
+	s1*11
+	% bars 337 - 343
+	\transpose d e {
+		\relative c' {
+			<d g>4.\f^\markup {Cor.I.II.} q8 q4-. <ges c>-.
+			<f bes>4. q8 q4-. <a ees'>-.
+			<a d>4. q8 q4-. <des g>-.
+			<c f>4. q8 q4-. <d! e>-.
+			a1\fp
+			bes\fp
+			c\fp
+		}
+	}
+	s1*22
+	% bar 366
+	<>^\markup {Cor.III.}
+	s1*4
+	% bar 370
+	<>^\markup {Cor.I.II.}
+	s1*4
+	% bar 374
+	<>^\markup {Cor.III.}
+	s1*4
+	% bars 378 - 381
+	<g d'>4->\p^\markup {Cor.III.IV.} \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4-\crescmarkup \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+	% bars 382 - 385
+	\transpose d e {
+		\relative c'' {
+			<d f>4\mf^\markup {Cor.I.II.} \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+			q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+			q4-\crescmarkup \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+			q4 \tuplet 3/2 4 {q8 q q} q4 \tuplet 3/2 4 {q8 q q} 
+		}
+	}
+	s1*2
+	% bar 388
+	<>^\markup {Pos.}
+	s1*6
+	% bar 394
+	<>^\markup {Cor.III.IV.}
+	s1*4
+	% bar 398
+	<>^\markup {Cor.I.II.III.IV.}
+	s1*6
+	% bar 404
+	<>^\markup {Pos.}
+	s1*13
+	% bars 417 - 421
+	<g, g'>1->~^\markup {Cor.III.IV.}
+	q4 r % mesure incomplete
+	\transpose d e {
+		\relative c'' {
+			f2\f~^\markup {Cor.I.II.} % mesure incomplete
+			f4 ees8( f ees4 d)
+			d( f) ees2
+			\voiceOne d4-. d-. \oneVoice s2
+		}
+	}
+	s1*18
+	% bar 440
+	<>^\markup {Cor.III.IV.,Vcl.}
+	s1*6
+	% bar 446
+	<>^\markup {Vla}
+	s1*6
+	% bar 452
+	<>^\markup {Vl.II.}
+	s1*4
+	% bars 456 - 458
+	g'4-.\f^\markup {Cor.IV.} r r g-.
+	g-. r r g-.
+	g-. r r2
 }
 %###############################################################################
 %#                 C U E   V O I C E   F O R   T R O M B O N I                 #

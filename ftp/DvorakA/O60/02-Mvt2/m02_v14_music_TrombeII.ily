@@ -9,26 +9,31 @@ musicTrombeIIMvtII = \relative c'' {
 	\key c \major
 	\transposition bes
 % Bars 1 to 5
-	\mmrLength #20 \mmrnDown R2*28
+	R2*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #6 R
+	\mmrPos #4 R \no
 % Bars 16 to 20
-	
+	R2*13
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 	
 	
-	\mmrLength #22 \mmrnDown R2*6
+	\ni \mmrPos #7 R2
+	\mmrPos #7 R
 % Bars 31 to 35
-	
-	
-	
+	\mmrPos #7 R
+	\mmrPos #4 R \no
+	R2*2
 	\section \mark \default
-	\mmrLength #16 \mmrnDown R2*38
+	R2*34
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -43,10 +48,15 @@ musicTrombeIIMvtII = \relative c'' {
 	
 % Bars 66 to 70
 	
-% Bars 71 to 75
 	
-	\mark \default
-	\mmrnDown R2*16
+	
+	\ni \mmrPos #7 R2
+	\mmrPos #6 R
+% Bars 71 to 75
+	\mmrPos #6 R
+	\mmrPos #6 R \mark \default
+	\mmrPos #6 R \no
+	R2*15
 % Bars 76 to 80
 	
 % Bars 81 to 85
@@ -55,20 +65,24 @@ musicTrombeIIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\mmrnDown R2*6
-	
+	\ni \mmrPos #4 R2
+	\mmrPos #6 R
 % Bars 91 to 95
-	
-	
-	
-	
-	\mmrnDown R2*6
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #8 R
+	\mmrPos #6 R
 % Bars 96 to 100
-	
+	\mmrPos #7 R
+	\mmrPos #7 R
+	\mmrPos #6 R
+	\mmrPos #7 R
+	\mmrPos #6 R
 % Bars 101 to 105
-	\ni \voiceTwo R2
-	R
-	R \no \oneVoice 
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #4 R \no
 	c2->\f
 	d->
 % Bars 106 to 110
@@ -80,63 +94,83 @@ musicTrombeIIMvtII = \relative c'' {
 % Bars 111 to 115
 	aes\fz \mark \default
 	g8 r r4
-	R2*16
+	R2*10
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
+	
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
 % Bars 126 to 130
-	
-	
-	
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 	e8\f e e e
 	e16\< e e e   e e e e\!
 % Bars 131 to 135
 	e\ff r r8 r4 
-	R2*8
+	R2*5
 % Bars 136 to 140
 	
-	
-	
-	\mark \default
-	R2*29
+	\ni \mmrPos #6 R2
+	\mmrPos #6 R
+	\mmrPos #6 R \no \mark \default
+	R2*7
 % Bars 141 to 145
 	
 % Bars 146 to 150
 	
+	\ni \mmrPos #-6 R2
+	\mmrPos #-4 R
+	\mmrPos #-5 R
+	\mmrPos #2 R
 % Bars 151 to 155
-	
+	\mmrPos #7 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 % Bars 156 to 160
-	
+	R2*9
 % Bars 161 to 165
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2
 % Bars 166 to 170
-	
-	
-	\mark \default
-	\ni \voiceTwo R2
-	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \mark \default
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 171 to 175
-	R
-	\mmrPos #-6 R
-	R
-	\mmrPos #-6 R \no \oneVoice 
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 	r8 g4\mf\< g8~
 % Bars 176 to 180
 	g g4\f g8~
 	g16 r g\f\<-> g->  g-> g-> g-> c->\!
 	e8->-.\ff r e-^-. r
 	c-.-^ r r4
-	R2*18
+	R2*13
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	\ni \mmrPos #4 R2
+	\mmrPos #6 R
+	\mmrPos #6 R
 % Bars 196 to 200
-	
-	
+	\mmrPos #7 R
+	\mmrPos #7 R \no
 	r8 g\ff-! g-! g-! 
 	g-! g-! g-! e-^
 	e-^ r r4

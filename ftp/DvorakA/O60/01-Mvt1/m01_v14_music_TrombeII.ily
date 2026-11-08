@@ -9,10 +9,10 @@ musicTrombeIIMvtI = \relative c'' {
 	\key c \major
 	\transposition d
 % Bars 1 to 5
-	\mmrnDown R2.*2
+	R2.*2
 	
 	\repeat volta 2 {
-		\mmrnDown R2.*20
+		R2.*20
 	
 	
 % Bars 6 to 10
@@ -24,15 +24,19 @@ musicTrombeIIMvtI = \relative c'' {
 % Bars 21 to 25
 	
 	
-		\mmrnDown R2.*11
+		\mmrnDown R2.*4
 	
 	
 % Bars 26 to 30
-	
+		
+		\ni \mmrPos #8 R2.
+		\mmrPos #8 R
+		\mmrPos #7 R
+		\mmrPos #4 R
 % Bars 31 to 35
-	
-	
-	
+		\mmrPos #9 R
+		\mmrPos #6 R
+		\mmrPos #2 R \no
 		c8-.\f r c2\fz~
 		c2.~
 % Bars 36 to 40
@@ -51,7 +55,7 @@ musicTrombeIIMvtI = \relative c'' {
 		d g,2->~\<
 		g2.~
 		g\! \mark \default
-		c4-\offset X-offset #5.5 _\ffgrandiosoD r r
+		c4_\ffgrandiosoD r r
 		r r e,-.\f
 % Bars 51 to 55
 		e2-^ r4
@@ -90,17 +94,18 @@ musicTrombeIIMvtI = \relative c'' {
 % Bars 106 to 110
 	
 		\mark \default
-		R2.*12
-	
-	
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-6 R
+		\mmrPos #-4 R
 % Bars 111 to 115
-	
+		\mmrPos #-4 R \no
+		R2.*8
 % Bars 116 to 120
 	
 	
 	
 	
-		\mmrLength #19 R2.*20
+		R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -112,22 +117,29 @@ musicTrombeIIMvtI = \relative c'' {
 	
 	
 		\mark \default
-		R2.*12
+		\ni \mmrPos #6 R2.
 % Bars 141 to 145
-	
+		\mmrPos #6 R
+		\mmrPos #7 R
+		\mmrPos #8 R \no
+		R2.*4
 % Bars 146 to 150
-	
+		
+		
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-6 R
+		\mmrPos #-4 R
 % Bars 151 to 155
-	
-		\ni \voiceTwo R2.
-		R
-		R
-		R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 156 to 160
-		R
-		R
-		R \no
-		r4 r \oneVoice e->\f~
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
+		r4 r e->\f~
 		e\< e-> e->\!
 % Bars 161 to 165
 		\startMeasureCount e2.\ff
@@ -152,14 +164,18 @@ musicTrombeIIMvtI = \relative c'' {
 	}
 	\alternative {
 		{
-			R2.*14
+			R2.*12
 	
 	
 	
 % Bars 181 to 185
 	
 % Bars 186 to 190
-	
+			
+			
+			
+			\ni \mmrPos #4 R2.
+			\mmrPos #4 R \no
 % Bars 191 to 195
 		}
 		{
@@ -171,7 +187,7 @@ musicTrombeIIMvtI = \relative c'' {
 % Bars 196 to 200
 		}
 	}
-	R2.*33
+	R2.*16
 	
 	
 	
@@ -182,6 +198,10 @@ musicTrombeIIMvtI = \relative c'' {
 	
 % Bars 211 to 215
 	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
+	R2.*14
 % Bars 216 to 220
 	
 % Bars 221 to 225
@@ -190,21 +210,29 @@ musicTrombeIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R2.*22
+	R2.*8
 	
 % Bars 231 to 235
 	
 % Bars 236 to 240
 	
+	\ni \mmrPos #6 R2.
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 % Bars 241 to 245
-	
+	R2.*8
 % Bars 246 to 250
 	
+	
+	
+	\ni \mmrPos #8 R2.
+	\mmrPos #8 R
 % Bars 251 to 255
-	\ni \voiceTwo R2.
-	R \no \oneVoice 
+	\mmrPos #7 R
+	\mmrPos #7 R \no
 	g4\f r r
-	R2.*25
+	R2.*21
 	
 % Bars 256 to 260
 	
@@ -214,15 +242,19 @@ musicTrombeIIMvtI = \relative c'' {
 	
 % Bars 271 to 275
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 276 to 280
-	
-	
-	\mark \default
-	R2.
-	\ni \voiceTwo \mmrPos #-7 R2.
+	\mmrPos #-6 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \mark \default
+	\mmrPos #-4 R \no
+	R2.*3
 % Bars 281 to 285
-	R
-	R \no \oneVoice 
+	
+	
 	a2.\f
 	R2.
 	d,2.\f->~
@@ -252,12 +284,15 @@ musicTrombeIIMvtI = \relative c'' {
 	c2.\fz~
 % Bars 306 to 310
 	c4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #4 R2.
 % Bars 311 to 315
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #6 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -271,7 +306,7 @@ musicTrombeIIMvtI = \relative c'' {
 	g~
 	g2 g4-. \mark \default
 	c-. r r
-	\mmrnDown R2.*20
+	R2.*20
 % Bars 331 to 335
 	
 % Bars 336 to 340
@@ -283,11 +318,15 @@ musicTrombeIIMvtI = \relative c'' {
 	
 	
 	
-	\mmrnDown R2.*11
+	R2.*6
 % Bars 351 to 355
 	
 % Bars 356 to 360
-	
+	\ni \mmrPos #7 R2.
+	\mmrPos #4 R
+	\mmrPos #-7 R
+	\mmrPos #6 R
+	\mmrPos #-4 R \no
 % Bars 361 to 365
 	c8-.\f r c2->~
 	c2.~
@@ -305,21 +344,25 @@ musicTrombeIIMvtI = \relative c'' {
 	d2\fz d4\fz~
 	d g,2\fz \mark \default
 	g4-. r r
-	R2.*17
+	R2.*14
 % Bars 376 to 380
 	
 % Bars 381 to 385
 	
 % Bars 386 to 390
 	
-% Bars 391 to 395
 	
-	\ni \voiceTwo R2.
-	R
-	R
-	R \no 
+	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-4 R
+% Bars 391 to 395
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 396 to 400
-	r4 r r8 \oneVoice g\f
+	r4 r r8 g\f
 	c4 r r
 	R2.*17
 	
@@ -333,23 +376,34 @@ musicTrombeIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R2.*28
+	\ni \mmrPos #-6 R2.
 % Bars 416 to 420
-	
+	\mmrPos #8 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.*11
 % Bars 421 to 425
 	
 % Bars 426 to 430
 	
-% Bars 431 to 435
 	
+	
+	
+	\ni \mmrPos #-4 R2.
+% Bars 431 to 435
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
+	R2.*8
 % Bars 436 to 440
 	
 % Bars 441 to 445
 	
 	
-	\ni \voiceTwo R2.
-	R
-	R \no
+	\ni \mmrPos #8 R2.
+	\mmrPos #8 R \no
+	R2.
 % Bars 446 to 450
 	r4 r \oneVoice d,-.\f
 	g-. r c-.
@@ -366,10 +420,14 @@ musicTrombeIIMvtI = \relative c'' {
 	
 	
 	\mark \default
-	R2.*7
+	R2.*3
 	
 % Bars 461 to 465
 	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #6 R
+	\mmrPos #-7 R \no
 % Bars 466 to 470
 	r4 r g\f~
 	g\< g-. g-.\!
@@ -422,12 +480,16 @@ musicTrombeIIMvtI = \relative c'' {
 	R2.
 	c4. r8 r4
 	c4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 516 to 520
-	
+	R2.*7
 % Bars 521 to 525
 	
 	
@@ -459,17 +521,21 @@ musicTrombeIIMvtI = \relative c'' {
 	
 	
 % Bars 546 to 550
-	\mmrLength #14 R2.*11
+	R2.*5
 	
 	
 	
 	
 % Bars 551 to 555
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 556 to 560
-	
-	R2.*1
-	\ni \voiceTwo R2. \no
-	r4 r \oneVoice g->\f
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
+	\voiceOne r4 r \oneVoice g->\f
 	e-> r r \fine
 }
