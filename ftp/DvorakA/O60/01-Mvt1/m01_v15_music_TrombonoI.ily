@@ -12,7 +12,7 @@ musicTrombonoIMvtI = \relative c' {
 	\mmrnDown R2.*2
 	
 	\repeat volta 2 {
-		\mmrLength #15 \mmrnDown R2.*20
+		R2.*20
 	
 	
 % Bars 6 to 10
@@ -24,20 +24,32 @@ musicTrombonoIMvtI = \relative c' {
 % Bars 21 to 25
 	
 	
-		\mmrLength #20 \mmrnDown R2.*23
+		R2.*11
 	
 	
 % Bars 26 to 30
 	
 % Bars 31 to 35
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 36 to 40
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 41 to 45
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 46 to 50
-		\ni \clef treble \voiceTwo R2.
-		\mmrPos #-6 R \no \oneVoice 
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		r4 r \clef alto cis-.\ff \mark \default
 		d-._\grandioso r r
 		r r a-.\f
@@ -78,17 +90,18 @@ musicTrombonoIMvtI = \relative c' {
 % Bars 106 to 110
 	
 		\mark \default
-		R2.*12
-	
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-6 R
+		\mmrPos #-4 R
 % Bars 111 to 115
-	
+		\mmrPos #-4 R \no
+		R2.*8
 % Bars 116 to 120
 	
 	
 	
 	
-		\mmrLength #16 R2.*20
+		R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130
@@ -100,19 +113,27 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 		\mark \default
-		R2.*19
+		R2.*8
 % Bars 141 to 145
 	
 % Bars 146 to 150
-	
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 151 to 155
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 156 to 160
-	
-	
-	
-		\ni \clef treble \mmrPos #-6 R2.
-		\mmrPos #-6 R \no \clef alto
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-6 R
+		\mmrPos #-6 R \no
 % Bars 161 to 165
 		dis2(\ff e4)
 		fis( b ais)
@@ -126,24 +147,28 @@ musicTrombonoIMvtI = \relative c' {
 		d! r r
 		d r r
 % Bars 171 to 175
-		R2.*6
+		R2.*4
 	
 	
 	
-	
+		\ni \mmrPos #4 R2.
 % Bars 176 to 180
-	
+		\mmrPos #-4 R
 	}
 	\alternative {
 		{
-			R2.*14
-	
-	
-	
+			\mmrPos #-4 R \no
+			R2.
+			\ni \mmrPos #-4 R2.
+			\mmrPos #-4 R \no
 % Bars 181 to 185
-	
+			R2.*8
 % Bars 186 to 190
-	
+			
+			
+			
+			\ni \mmrPos #4 R2.
+			\mmrPos #4 R \no
 % Bars 191 to 195
 		}
 		{
@@ -155,14 +180,14 @@ musicTrombonoIMvtI = \relative c' {
 % Bars 196 to 200
 		}
 	}
-	R2.*7
+	R2.*4
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 201 to 205
-	
-	
+	\mmrPos #-6 R \no
+	R2.
 	\startMeasureCount a2.\ppp~
 	a~
 	a
@@ -170,23 +195,31 @@ musicTrombonoIMvtI = \relative c' {
 	a~
 	a~ \stopMeasureCount
 	a4 r r
-	R2.*20
+	R2.*7
 	
 % Bars 211 to 215
 	
 % Bars 216 to 220
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2.
+	\ni \mmrPos #-4 R2. \no
 % Bars 221 to 225
-	
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.*4
 % Bars 226 to 230
 	
 	
 	\mark \default
-	\ni \clef treble \mmrPos #-2 R2.
-	\mmrPos #-2 R
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 231 to 235
-	\mmrPos #-2 R
-	\mmrPos #-2 R \no \clef alto
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	c2.\pp(~
 	c~
 	c
@@ -226,19 +259,19 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.
-	\ni \clef treble \mmrPos #-7 R2.
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 281 to 285
-	\mmrPos #-4 R
+	\mmrPos #6 R
 	\mmrPos #-4 R \no \clef alto
 	fis2.\f
-	R2.*9
+	R2.*8
 	
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
-	
+	\ni \mmrPos #7 R2. \no
 	r4 r c\ff-.
 	g'2-> r4
 	r r c,-.
@@ -256,12 +289,15 @@ musicTrombonoIMvtI = \relative c' {
 	f2.\fz ~
 % Bars 306 to 310
 	f4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #6 R2.
 % Bars 311 to 315
-	
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -287,25 +323,29 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 	
-	\mmrLength #18 \mmrnDown R2.*18
+	R2.*11
 % Bars 351 to 355
 	
 % Bars 356 to 360
 	
 % Bars 361 to 365
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 366 to 370
-	
-	
-	\ni \clef treble \voiceTwo R2.
-	R \no \clef alto \oneVoice 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	g!2\ff fis4\fz~
 % Bars 371 to 375
 	fis e2\fz
 	e\fz e4~\fz
 	e d2\fz \mark \default
 	dis4-. r r
-	R2.*40
+	R2.*21
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -315,7 +355,9 @@ musicTrombonoIMvtI = \relative c' {
 % Bars 391 to 395
 	
 % Bars 396 to 400
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	R2.*17
 % Bars 401 to 405
 	
 % Bars 406 to 410
@@ -325,29 +367,38 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	\mmrLength #15 R2.*12
+	\ni \mmrPos #-4 R2.
 % Bars 416 to 420
-	
+	\mmrPos #9 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 421 to 425
-	
+	R2.*6
 % Bars 426 to 430
 	
-	\mmrLength #14 R2.*16
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 431 to 435
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-7 R
 % Bars 436 to 440
-	
+	\mmrPos #-7 R \no
+	R2.*4
 % Bars 441 to 445
-	
-	
-	\ni \clef treble \voiceTwo R2.
-	R
-	R \no 
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 446 to 450
-	r4 r \oneVoice \clef alto e-.\f
+	r4 r \clef alto e-.\f
 	cis-. r d-.
 	cis-. r d-.
 	cis-. r e\<-.
@@ -362,13 +413,13 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*9
+	R2.*7
 	
 % Bars 461 to 465
 	
 % Bars 466 to 470
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R \no
 	a2(\ff g4)
 	fis2( e4)
 	fis2( g4)
@@ -385,25 +436,29 @@ musicTrombonoIMvtI = \relative c' {
 	gis->
 	a4 r r
 % Bars 481 to 485
-	R2.*8
+	R2.*4
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 486 to 490
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
 	a4\f e2->~
 	e4 fis-> d->
 % Bars 491 to 495
 	g-> c,-> fis->
 	b,-> e-> a,8-. g-.
 	fis4 r r
-	R2.*7
+	R2.*5
 	
 % Bars 496 to 500
 	
+	
+	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R \no
 % Bars 501 to 505
 	g'2\ff g4~
 	g g g
@@ -414,17 +469,21 @@ musicTrombonoIMvtI = \relative c' {
 	b,-. e-. a,-.
 	d4. r8 r4
 	d4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 516 to 520
-	
+	R2.*7
 % Bars 521 to 525
 	
 	
-	\ni \clef bass \voiceOne R2. \no 
-	r4 r \clef alto \oneVoice a\ff-^
+	\ni \mmrPos #-4 R2. \no
+	\voiceOne r4 r \oneVoice a\ff-^
 	d2-^_\marc r4
 % Bars 526 to 530
 	r r a-.
@@ -451,17 +510,21 @@ musicTrombonoIMvtI = \relative c' {
 	
 	
 % Bars 546 to 550
-	\mmrLength #15 R2.*11
+	R2.*5
 	
 	
 	
 	
 % Bars 551 to 555
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 556 to 560
-	
-	R2.*1
-	\ni \clef treble \voiceTwo R2. \no
-	r4 r \clef alto \oneVoice e\f->
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	\voiceTwo r4 r \oneVoice e\f->
 	fis-> r r \fine
 }

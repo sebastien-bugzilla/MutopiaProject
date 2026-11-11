@@ -9,10 +9,10 @@ musicTrombonoIIMvtI = \relative c' {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	\mmrnDown R2.*2
+	R2.*2
 	
 	\repeat volta 2 {
-		\mmrLength #12 \mmrnDown R2.*20
+		R2.*20
 	
 	
 % Bars 6 to 10
@@ -24,20 +24,32 @@ musicTrombonoIIMvtI = \relative c' {
 % Bars 21 to 25
 	
 	
-		\mmrLength #20 \mmrnDown R2.*23
+		R2.*11
 	
 	
 % Bars 26 to 30
 	
 % Bars 31 to 35
-	
+		
+		
+		
+		\ni \mmrPos #6 R2.
+		\mmrPos #-4 R
 % Bars 36 to 40
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #6 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 41 to 45
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 46 to 50
-		\clef treble \ni \voiceTwo R2.
-		\mmrPos #-6 R \no \oneVoice 
+		\mmrPos #-6 R
+		\mmrPos #-6 R \no
 		r4 r \clef alto g-.\ff \mark \default
 		fis-._\grandioso r r
 		r r fis-.\f
@@ -78,11 +90,12 @@ musicTrombonoIIMvtI = \relative c' {
 % Bars 106 to 110
 	
 		\mark \default
-		\mmrLength #10 R2.*12
-	
-	
+		\ni \mmrPos #7 R2.
+		\mmrPos #-6 R
+		\mmrPos #-4 R
 % Bars 111 to 115
-	
+		\mmrPos #-4 R \no
+		R2.*8
 % Bars 116 to 120
 	
 	
@@ -100,19 +113,27 @@ musicTrombonoIIMvtI = \relative c' {
 	
 	
 		\mark \default
-		R2.*19
+		R2.*8
 % Bars 141 to 145
 	
 % Bars 146 to 150
-	
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 151 to 155
-	
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
 % Bars 156 to 160
-	
-	
-	
-		\ni \clef treble \voiceTwo R2.
-		\mmrPos #-7 R \no \clef alto \oneVoice 
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-4 R
+		\mmrPos #-6 R
+		\mmrPos #-7 R \no
 % Bars 161 to 165
 		b2(\ff ais4)
 		b2( cis4)
@@ -126,24 +147,28 @@ musicTrombonoIIMvtI = \relative c' {
 		b r r
 		b r r
 % Bars 171 to 175
-		R2.*6
+		R2.*4
 	
 	
 	
-	
+		\ni \mmrPos #6 R2.
 % Bars 176 to 180
-	
+		\mmrPos #-4 R
 	}
 	\alternative {
 		{
-			R2.*14
-	
-	
-	
+			\mmrPos #-4 R \no
+			R2.
+			\ni \mmrPos #-4 R
+			\mmrPos #-4 R \no
 % Bars 181 to 185
-	
+			R2.*8
 % Bars 186 to 190
-	
+			
+			
+			
+			\ni \mmrPos #4 R2.
+			\mmrPos #4 R \no
 % Bars 191 to 195
 		}
 		{
@@ -182,16 +207,16 @@ musicTrombonoIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*4
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 231 to 235
-	
-	
-	\ni \voiceTwo R2.
-	R
-	R
+	\mmrPos #-6 R
+	\mmrPos #-6 R 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 236 to 240
-	R \no \oneVoice 
+	\mmrPos #-4 R \no
 	e4(\pp^\solo f g)
 	bes2( a8 g)
 	g2.
@@ -226,19 +251,19 @@ musicTrombonoIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.
-	\ni \clef treble \voiceTwo \mmrPos #-6 R2.
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
 % Bars 281 to 285
-	R
-	R \no \clef alto \oneVoice 
+	\mmrPos #6 R
+	\mmrPos #-4 R \no
 	dis2.\f
-	R2.*9
+	R2.*8
 	
 % Bars 286 to 290
 	
 % Bars 291 to 295
 	
-	
+	\ni \mmrPos #-7 R2. \no
 	r4 r c\ff-.
 	g2-> r4
 	r r c-.
@@ -256,12 +281,15 @@ musicTrombonoIIMvtI = \relative c' {
 	aes2.\fz ~
 % Bars 306 to 310
 	aes4 r r
-	R2.*14
+	R2.*3
 	
 	
-	
+	\ni \mmrPos #6 R2.
 % Bars 311 to 315
-	
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #7 R \no
+	R2.*7
 % Bars 316 to 320
 	
 % Bars 321 to 325
@@ -287,25 +315,29 @@ musicTrombonoIIMvtI = \relative c' {
 	
 	
 	
-	\mmrLength #13 R2.*18
+	R2.*11
 % Bars 351 to 355
 	
 % Bars 356 to 360
 	
 % Bars 361 to 365
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 366 to 370
-	
-	
-	\ni \clef treble \voiceTwo R2.
-	R \clef alto \no \oneVoice 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	cis'2\ff cis4\fz~
 % Bars 371 to 375
 	cis cis2\fz
 	cis\fz cis4~\fz
 	cis a2\fz \mark \default
 	a4-. r r
-	R2.*40
+	R2.*21
 % Bars 376 to 380
 	
 % Bars 381 to 385
@@ -315,7 +347,9 @@ musicTrombonoIIMvtI = \relative c' {
 % Bars 391 to 395
 	
 % Bars 396 to 400
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R \no
+	R2.*17
 % Bars 401 to 405
 	
 % Bars 406 to 410
@@ -325,23 +359,36 @@ musicTrombonoIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*28
+	\ni \mmrPos #-4 R2.
 % Bars 416 to 420
-	
+	\mmrPos #9 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R 
+	\mmrPos #-6 R \no
 % Bars 421 to 425
-	
+	R2.*9
 % Bars 426 to 430
 	
+	
+	
+	
+	\ni \mmrPos #-4 R2.
 % Bars 431 to 435
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-7 R
 % Bars 436 to 440
-	
+	\mmrPos #-7 R \no
+	R2.*4
 % Bars 441 to 445
-	
-	
-	\ni \clef treble \voiceTwo R2.
-	R
-	R \no \clef alto \oneVoice 
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 446 to 450
 	r4 r gis-.\f
 	a-. r bes-.
@@ -358,13 +405,13 @@ musicTrombonoIIMvtI = \relative c' {
 	
 	
 	\mark \default
-	R2.*9
+	R2.*7
 	
 % Bars 461 to 465
 	
 % Bars 466 to 470
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #9 R \no
 	fis2(\ff e4)
 	a,2 a4
 	d2( cis4)
@@ -381,25 +428,29 @@ musicTrombonoIIMvtI = \relative c' {
 	d->
 	a4 r r
 % Bars 481 to 485
-	R2.*8
+	R2.*4
 	
 	
 	
-	
+	\ni \mmrPos #-4 R2.
 % Bars 486 to 490
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R \no
 	c4\f gis2->~
 	gis4 a-> fis->
 % Bars 491 to 495
 	b-> e,-> a->
 	d,-> g-> fis8-. e-.
 	d4 r r
-	R2.*7
+	R2.*5
 	
 % Bars 496 to 500
 	
+	
+	
+	\ni \mmrPos #8 R2.
+	\mmrPos #8 R \no
 % Bars 501 to 505
 	cis'2\ff cis4~
 	cis cis cis
@@ -410,16 +461,20 @@ musicTrombonoIIMvtI = \relative c' {
 	g,-. cis-. fis,-.
 	gis4. r8 r4
 	gis4. r8 r4 \mark #11
-	R2.*14
+	R2.*3
 	
 % Bars 511 to 515
 	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
 % Bars 516 to 520
-	
+	R2.*7
 % Bars 521 to 525
 	
 	
-	\ni \clef bass \mmrPos #-4 R2. \no
+	\ni \mmrPos #-4 R2. \no
 	\voiceOne r4 r \oneVoice \clef alto a\ff-^
 	d2-^_\marc r4
 % Bars 526 to 530
@@ -441,23 +496,27 @@ musicTrombonoIIMvtI = \relative c' {
 	a~
 	a4\p r r
 % Bars 541 to 545
-	\mmrLength #10 R2.*5
+	R2.*5
 	
 	
 	
 	
 % Bars 546 to 550
-	\mmrLength #13 R2.*11
+	R2.*5
 	
 	
 	
 	
 % Bars 551 to 555
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 556 to 560
-	
-	R2.
-	\ni \clef treble \voiceTwo R2. \no
-	r4 r \clef alto \oneVoice cis\f->
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no
+	\voiceOne r4 r \clef alto \oneVoice cis\f->
 	a-> r r \fine
 }

@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part07_Posaune.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part07_Posaune.ily"
 \include "./01-Mvt1/m01_v15_music_TrombonoI.ily"
 \include "./04-Mvt4/m04_v15_music_TrombonoI.ily"
 \include "./01-Mvt1/m01_v16_music_TrombonoII.ily"
@@ -43,7 +43,7 @@
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112)"
+			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Tromboni"
 		}
 		instrument = \markup {
 			"Posaune"
@@ -51,12 +51,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(posauneI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatTrombonoIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(posauneI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtI
 			}
@@ -75,12 +75,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(posauneI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatTrombonoIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(posauneI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtIV
 			}
@@ -99,12 +99,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(posauneII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatTrombonoIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(posauneII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtI
 			}
@@ -123,12 +123,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(posauneII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatTrombonoIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(posauneII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtIV
 			}
@@ -147,12 +147,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(posauneIII) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatTrombonoIIIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(posauneIII) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtI
 			}
@@ -171,12 +171,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTrombonoIIIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(posauneIII) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatTrombonoIIIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(posauneIII) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtIV
 			}
@@ -195,12 +195,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTubaMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(tuba) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatTubaMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(tuba) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTubaMvtI
 			}
@@ -219,12 +219,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTubaMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(tuba) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatTubaMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(tuba) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTubaMvtIV
 			}
