@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part08_Timpani.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part08_Timpani.ily"
 \include "./01-Mvt1/m01_v19_music_Timpani.ily"
 \include "./02-Mvt2/m02_v19_music_Timpani.ily"
 \include "./03-Mvt3/m03_v19_music_Timpani.ily"
@@ -47,12 +47,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatTimpaniMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(pauken) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtI
 			}
@@ -71,12 +71,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatTimpaniMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(pauken) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1.7 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -95,12 +95,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatTimpaniMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(pauken) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIII
 			}
@@ -109,7 +109,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {3. Scherzo. (Furiant.)}
 			}
@@ -119,12 +119,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatTimpaniMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(pauken) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatTimpaniMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(pauken) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIV
 			}
@@ -135,7 +135,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2.1 \bold {4. Finale.}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {

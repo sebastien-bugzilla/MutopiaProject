@@ -9,26 +9,31 @@ musicTimpaniMvtII = \relative c {
 	\key c \major
 %	\transposition a
 % Bars 1 to 5
-	\mmrLength #20 \mmrnDown R2*28
+	R2*11
 % Bars 6 to 10
 	
 % Bars 11 to 15
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 16 to 20
-	
+	R2*13
 % Bars 21 to 25
 	
 % Bars 26 to 30
 	
 	
 	
-	\mmrLength #23 \mmrnDown R2*6
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 31 to 35
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*2
 	\section \mark \default
-	\mmrLength #16 \mmrnDown R2*38
+	R2*28
 % Bars 36 to 40
 	
 % Bars 41 to 45
@@ -41,34 +46,47 @@ musicTimpaniMvtII = \relative c {
 	
 % Bars 61 to 65
 	
+	
+	\ni \mmrPos #-7 R2
+	\mmrPos #-6 R
+	\mmrPos #-7 R
 % Bars 66 to 70
-	
+	\mmrPos #0 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #8 R
+	\mmrPos #4 R
 % Bars 71 to 75
-	
-	\mark \default
-	R2*16
+	\mmrPos #4 R
+	\mmrPos #4 R \mark \default
+	\mmrPos #4 R \no
+	R2*12
 % Bars 76 to 80
 	
 % Bars 81 to 85
 	
 % Bars 86 to 90
-	
-	
-	\mark \default
-	R2*6
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \mark \default
+	\mmrPos #-4 R \no
+	R2
 % Bars 91 to 95
-	
-	
-	
-	
-	\mmrnDown R2*6
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2
+	\ni \mmrPos #-4 R2
 % Bars 96 to 100
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #8 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R
 % Bars 101 to 105
-	\ni \clef treble \voiceTwo \mmrPos #-7 R2
-	\tweak extra-offset #'(-0.5 . 0) R
-	R \no \clef bass \oneVoice 
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	bes2\ff\trill
 	f'\trill
 % Bars 106 to 110
@@ -80,25 +98,43 @@ musicTimpaniMvtII = \relative c {
 % Bars 111 to 115
 	\trillSpanPadding #5 \countEO #'(0.8 . -4.65) b\startTrillSpan \stopMeasureCount \mark \default
 	f'8\stopTrillSpan r r4
-	R2*27
+	R2*10
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 126 to 130
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 131 to 135
-	
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+	\mmrPos #-4 R
+	\mmrPos #-7 R
+	\mmrPos #-4 R \no
 % Bars 136 to 140
-	
+	R2*4
 	
 	
 	\mark \default
-	R2*24
+	\ni \mmrPos #-4 R2
 % Bars 141 to 145
-	
+	\mmrPos #-7 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 146 to 150
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
+	R2*16
 % Bars 151 to 155
 	
 % Bars 156 to 160
@@ -107,12 +143,12 @@ musicTimpaniMvtII = \relative c {
 	
 	
 	
-	\ni \clef treble \voiceTwo R2
-	R
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 166 to 170
 	\mmrPos #-6 R
 	\mmrPos #-6 R
-	\mmrPos #-6 R \no \clef bass \oneVoice \mark \default
+	\mmrPos #-6 R \no \mark \default
 	bes,8\pp^\solo f'16-. f-. f8-. f-.
 	bes, f'16-.\< f-. f8-. f-.\!
 % Bars 171 to 175
@@ -126,16 +162,20 @@ musicTimpaniMvtII = \relative c {
 	bes,16 f'-. f\<-. f-.  f-. f-. f-. f-.\!
 	f8-.->\ff r f-.-^ r
 	bes,-.-^ r r4
-	R2*16
+	R2*13
 % Bars 181 to 185
 	
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+	\mmrPos #-4 R
 % Bars 196 to 200
-	\ni \clef treble \voiceTwo R2
-	R \no \clef bass \oneVoice 
+	\mmrPos #-4 R \no
+	R \oneVoice 
 	r8 f'\ff f f
 	f f f bes,
 	bes r f' r
