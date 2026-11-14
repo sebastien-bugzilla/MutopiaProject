@@ -11357,20 +11357,56 @@ cueVoiceViolaMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   V I O L O N C E L L O              #
 %###############################################################################
 cueVoiceVioloncelloMvtI = \relative c {
-%	no cue voice for mvtI
+	s2.*178
+	% bars 179 - 181
+	\clef treble d'''2(^\markup {Vl.I.} cis4
+	a8 fis g a) a,[(^\markup {Vl.II.} fis
+	g a]) a,(^\markup {Vla} fis g a) \clef bass
+	s2.*9
+	% bars 191 - 192
+	\clef treble b'8(^\markup {Vl.I.} d fis2)
+	b,,8(^\markup {Vl.II.} d fis2) \clef bass
 }
 cueVoiceVioloncelloMvtII = \relative c {
-%	no cue voice for mvtII
+	s2*68
+	% bars 69 - 71
+	\transpose c f {
+		\relative c'' {
+			\clef treble c16(^\markup {Cor.I.} d f e d c bes a)
+			\tuplet 3/2 4 {c8( bes a} c8 bes)
+			a( g c4) \clef bass
+		}
+	}
+	s2*66
+	% bars 138 - 139
+	\clef treble d'''4^\markup {Fl.I.} f~
+	f8 ees16( d f ees d c) \clef bass
 }
 cueVoiceVioloncelloMvtIII = \relative c {
-	s2.*180
-	% bar 180 - 181
-	d'''4^(-\tweak X-offset #-2.5 ^\markup {Fl.} e8 cis d4)
+	s2.*178
+	% bars 179 - 182
+	\clef treble d'''4(^\markup {Fl.I.} cis d)
 	g2.
-	
+	d4( e8 cis d4)
+	g2. \clef bass
+	s2.*43
+	% bar 226
+	<>^\markup {Vl.I.}
+	s2.*27
+	% bar 253
+	<>^\markup {Vl.I.}
+	s2.*28
+	% bars 281 - 285
+	\clef treble d,4(^\markup {Fl.I.} e8 cis d4)
+	d( e8 cis d4)
+	d( e8 cis d4)
+	d( e8 cis d4) \clef bass \grace s8 
 }
 cueVoiceVioloncelloMvtIV = \relative c {
-%	no cue voice for mvt IV
+	s4*1 s1*437
+	% bars 438 - 439
+	\clef treble a'8:16^\markup {Vl.I.} a': g: e: cis: a: a': g:
+	e: cis: a: a': g: e: cis: a: \clef bass
 }
 %###############################################################################
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #

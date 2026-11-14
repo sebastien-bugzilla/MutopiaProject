@@ -88,9 +88,12 @@ musicVioloncelloMvtII = \relative c {
 	f16\f f8 f8 f f16~
 % Bars 66 to 70
 	f8 r r4
-	R2*5
-% Bars 71 to 75
+	R2*2
 	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 71 to 75
+	\mmrPos #-6 R \no
 	r4 c'8(\pp f, \markWhiteout \mark \default
 	bes16) f'8_\semprepp f16 bes, g'8 g16
 	c,16 g'8 g16 d, d'8 d16
@@ -163,12 +166,12 @@ musicVioloncelloMvtII = \relative c {
 	q32[\< q q q] q[ q q q] q[ q q q] q[ q q q]\!
 % Bars 131 to 135
 	q16\ff r r8 r4
-	R2*8
+	R2*6
 % Bars 136 to 140
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 	bes8(\pp f bes g)
 % Bars 141 to 145
 	c,( c' a d,)

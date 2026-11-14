@@ -536,12 +536,12 @@ musicVioloncelloMvtIV = \relative c' {
 	d4 b-. gis-. e-.
 	a,1:16
 	a8 r r4 r2
-	R1*6
+	R1*4
 % Bars 436 to 440
 	
 	
-	
-	\mark \default \section
+	\ni \mmrPos #7 R1
+	\mmrPos #7 R \no \mark \default \section
 	d'8\f e fis e d cis b cis
 % Bars 441 to 445
 	a b g a fis g e fis

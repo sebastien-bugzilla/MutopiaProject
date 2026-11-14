@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part13_Contrabasso.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part13_Contrabasso.ily"
 \include "./01-Mvt1/m01_v24_music_Contrabasso.ily"
 \include "./02-Mvt2/m02_v24_music_Contrabasso.ily"
 \include "./03-Mvt3/m03_v24_music_Contrabasso.ily"
@@ -47,12 +47,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatContrabassoMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(kontrabass) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtI
 			}
@@ -69,76 +69,76 @@
 		\layout {
 		}
 	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceContrabassoMvtII
-			}
-			\new Voice {
-				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\vspace #3.1 \bold 2.
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtIII
-			}
-			\new Voice {
-				\InCueContext \cueVoiceContrabassoMvtIII
-			}
-			\new Voice {
-				\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\vspace #2 \bold {3. Scherzo. (Furiant.)}
-			}
-		}
-		\layout {
-		}
-	}
-	\score {
-		\new Staff <<
-			\new Voice {
-				\formatContrabassoMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(kontrabass) \tempiPartMvtIV
-			}
-			\new Voice {
-				\InCueContext \cueVoiceContrabassoMvtIV
-			}
-			\new Voice {
-				\timeMvtIV \nameContrabassoMvtIV \musicContrabassoMvtIV
-			}
-		>>
-		\header {
-			breakbefore = ##f
-			piece = \markup {
-				\vspace #1.2 \bold {4. Finale.}
-			}
-		}
-		\layout {
-		}
-	}
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatContrabassoMvtII
+%%			}
+%%			\new Voice {
+%%				\keepWithTag #'(kontrabass) \tempiPartMvtII
+%%			}
+%			\new Voice {
+%				\InCueContext \cueVoiceContrabassoMvtII
+%			}
+%			\new Voice {
+%				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##t
+%			piece = \markup {
+%				\bold 2.
+%			}
+%		}
+%		\layout {
+%		}
+%	}
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatContrabassoMvtIII
+%%			}
+%%			\new Voice {
+%%				\keepWithTag #'(kontrabass) \tempiPartMvtIII
+%%			}
+%			\new Voice {
+%				\InCueContext \cueVoiceContrabassoMvtIII
+%			}
+%			\new Voice {
+%				\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##t
+%			piece = \markup {
+%				\bold {3. Scherzo. (Furiant.)}
+%			}
+%		}
+%		\layout {
+%		}
+%	}
+%	\score {
+%		\new Staff <<
+%%			\new Voice {
+%%				\formatContrabassoMvtIV
+%%			}
+%%			\new Voice {
+%%				\keepWithTag #'(kontrabass) \tempiPartMvtIV
+%%			}
+%			\new Voice {
+%				\InCueContext \cueVoiceContrabassoMvtIV
+%			}
+%			\new Voice {
+%				\timeMvtIV \nameContrabassoMvtIV \musicContrabassoMvtIV
+%			}
+%		>>
+%		\header {
+%			breakbefore = ##t
+%			piece = \markup {
+%				\bold {4. Finale.}
+%			}
+%		}
+%		\layout {
+%		}
+%	}
 }

@@ -218,7 +218,7 @@ musicVioloncelloMvtIII = \relative c {
 		R2.
 		d'4(\pp^\arco e8 cis d4)
 % Bars 166 to 170
-		R2.*15
+		R2.*13
 	
 	
 	
@@ -226,10 +226,14 @@ musicVioloncelloMvtIII = \relative c {
 % Bars 171 to 175
 	
 % Bars 176 to 180
-	
+		
+		
+		
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 181 to 185
-		\ni \clef treble \mmrPos #-2 R2.
-		\mmrPos #-2 R \no \clef bass
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		bes4\f^\pizz e g
 		R2.*2
 	
@@ -335,16 +339,16 @@ musicVioloncelloMvtIII = \relative c {
 	g( a b
 	a e g)
 	fis\pp r r
-	R2.*12
+	R2.*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
-	\mmrLength #20 \mmrDown R2.*3
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	\acciaccatura a8( a'2)\p d,4~\<_\crescmarkup
 % Bars 286 to 290
 	d a2

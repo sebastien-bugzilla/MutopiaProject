@@ -224,12 +224,12 @@ musicVioloncelloMvtI = \relative c {
 	}
 	\alternative {
 		{
-			R2.*5
-	
-	
-	
+			R2.*2
+			
+			\ni \mmrPos #-4 R2.
+			\mmrPos #-4 R
 % Bars 181 to 185
-	
+			\mmrPos #4 R \no
 			a,8(-\offset X-offset -2 \pp fis g a~ a4) 
 			R2.
 			r4 r a8(\pp d 
@@ -243,8 +243,8 @@ musicVioloncelloMvtI = \relative c {
 % Bars 191 to 195
 		}
 		{
-			R2.*2
-	
+			\ni \mmrPos #-6 R2.
+			\mmrPos #4 R \no
 			b8(_\ppsempremoltotranquillo d fis2)~
 			fis2.~
 			fis~
