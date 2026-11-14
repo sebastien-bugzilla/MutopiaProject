@@ -12,7 +12,7 @@
     144     394    3606 20_DvorakSymph6_Part08_Percussion.ly
     144     392    3622 20_DvorakSymph6_Part09_ViolineI.ly
     144     395    3664 20_DvorakSymph6_Part10_ViolineII.ly
-    144     372    3552 20_DvorakSymph6_Part11_Viola.ly
+    144     394    3564 20_DvorakSymph6_Part11_Viola.ly
     157     403    4033 20_DvorakSymph6_Part12_Violoncello.ly
     144     376    3734 20_DvorakSymph6_Part13_Contrabasso.ly
     250     615    5913 20_DvorakSymph6_Part14_Bassi.ly
@@ -21,7 +21,7 @@
     144     494    5011 30_DvorakSymph6_midi_Mvt3.ly
     157     552    5546 30_DvorakSymph6_midi_Mvt4.ly
      54     189    1267 test.ly
-  11368   38580  209858 00-Common/DvorakSymph6_CueVoice.ily
+  11420   38743  210703 00-Common/DvorakSymph6_CueVoice.ily
     322    1717   14292 00-Common/DvorakSymph6_Format_Cond_Mvt01.ily
     134     686    5956 00-Common/DvorakSymph6_Format_Cond_Mvt02.ily
     210    1050    9195 00-Common/DvorakSymph6_Format_Cond_Mvt03.ily
@@ -49,7 +49,7 @@
     667    2308   19026 00-Common/DvorakSymph6_NameVoice.ily
      70     192    1680 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
-    597    1698   15001 00-Common/DvorakSymph6_Shortcuts.ily
+    598    1704   15041 00-Common/DvorakSymph6_Shortcuts.ily
    1240    3783   28701 00-Common/DvorakSymph6_Tempi.ily
      33     164    1133 00-Common/DvorakSymph6_timeMvt.ily
     615    1867   10061 01-Mvt1/m01_v01_music_FlautoI_C.ily
@@ -95,7 +95,7 @@
     667    2664   13057 01-Mvt1/m01_v21_music_ViolinoII_C.ily
     683    2676   13326 01-Mvt1/m01_v21_music_ViolinoII.ily
     738    2957   14544 01-Mvt1/m01_v22_music_Viola_C.ily
-    737    2827   13903 01-Mvt1/m01_v22_music_Viola.ily
+    745    2870   14109 01-Mvt1/m01_v22_music_Viola.ily
     689    2593   12939 01-Mvt1/m01_v23_music_Violoncello_Bassi.ily
     717    2780   13767 01-Mvt1/m01_v23_music_Violoncello_C.ily
     354     955    4448 01-Mvt1/m01_v23_music_Violoncello_div.ily
@@ -138,7 +138,7 @@
     238     925    4476 02-Mvt2/m02_v21_music_ViolinoII_C.ily
     242     923    4644 02-Mvt2/m02_v21_music_ViolinoII.ily
     270    1172    5691 02-Mvt2/m02_v22_music_Viola_C.ily
-    270    1160    5583 02-Mvt2/m02_v22_music_Viola.ily
+    274    1174    5653 02-Mvt2/m02_v22_music_Viola.ily
     249     995    4990 02-Mvt2/m02_v23_music_Violoncello_Bassi.ily
     249     980    4929 02-Mvt2/m02_v23_music_Violoncello_C.ily
     249     963    4846 02-Mvt2/m02_v23_music_Violoncello.ily
@@ -182,7 +182,7 @@
     522    1449    7210 03-Mvt3/m03_v21_music_ViolinoII_C.ily
     526    1484    7500 03-Mvt3/m03_v21_music_ViolinoII.ily
     559    1857    8855 03-Mvt3/m03_v22_music_Viola_C.ily
-    545    1764    8630 03-Mvt3/m03_v22_music_Viola.ily
+    545    1760    8583 03-Mvt3/m03_v22_music_Viola.ily
     537    1550    7748 03-Mvt3/m03_v23_music_Violoncello_Bassi.ily
     534    1557    7670 03-Mvt3/m03_v23_music_Violoncello_C.ily
     534    1525    7594 03-Mvt3/m03_v23_music_Violoncello.ily
@@ -239,4 +239,4 @@
     690    2695   11308 04-Mvt4/m04_v24_music_Contrabasso_Bassi.ily
     670    2417   10500 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     670    2420   10557 04-Mvt4/m04_v24_music_Contrabasso.ily
- 123619  388196 2231136 total
+ 123684  388440 2232262 total

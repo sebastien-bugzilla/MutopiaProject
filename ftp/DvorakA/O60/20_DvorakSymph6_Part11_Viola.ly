@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part11_Viola.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part11_Viola.ily"
 \include "./01-Mvt1/m01_v22_music_Viola.ily"
 \include "./02-Mvt2/m02_v22_music_Viola.ily"
 \include "./03-Mvt3/m03_v22_music_Viola.ily"
@@ -47,12 +47,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatViolaMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(bratsche) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtI
 			}
@@ -71,12 +71,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatViolaMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(bratsche) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtII
 			}
@@ -85,7 +85,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold 2.
 			}
@@ -95,12 +95,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatViolaMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(bratsche) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIII
 			}
@@ -109,7 +109,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {3. Scherzo. (Furiant.)}
 			}
@@ -119,12 +119,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolaMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(bratsche) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatViolaMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(bratsche) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIV
 			}
@@ -135,7 +135,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2.5 \bold {4. Finale.}
+				\bold {4. Finale.}
 			}
 		}
 		\layout {

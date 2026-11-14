@@ -133,6 +133,7 @@ semprecresc = \markup {\italic {sempre cresc.}}
 %--------------------
 arco = \markup {\italic arco}
 benmarcato = \markup {\italic {ben marcato}}
+benmarc = \markup {\italic {ben marc.}}
 div = \markup {div.}
 grandioso = \markup {\italic grandioso}
 legg = \markup {\italic legg.}

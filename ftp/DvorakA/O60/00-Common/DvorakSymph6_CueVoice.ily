@@ -11281,22 +11281,74 @@ cueVoiceViolinoIIMvtIV = \relative c {
 %#                    C U E   V O I C E   F O R   V I O L A                    #
 %###############################################################################
 cueVoiceViolaMvtI = \relative c {
-	s2.*179
-	% bar 180_1 - 181_1
-	\voiceTwo r4 r a''8(^\markup {V.II.} fis
-	g a) s4 s \oneVoice 
+	s2.*174
+	% bars 175 - 177
+	\clef treble r4^\markup {Vl.I.} r \tuplet 3/2 4 {b''8(\pp cis b}
+	b'2.)~
+	b4 r r
+	s2.*1
+	% bars 179 - 181
+	d2(^\markup {Vl.I.} cis4
+	a8 fis g a) a,[(^\markup {Vl.II.} fis
+	g a]) \clef alto s2
+	s2.*9
+	% bars 191 - 195
+	\clef treble b8(\pp^\markup {Vl.I.} d fis2~
+	fis2.~
+	fis~
+	fis8 d fis4 d8 b)
+	fis( cis' fis2) \clef alto
+	s2.*22
+	% bars 218 - 224
+	\clef treble r4^\markup {Vl.I.} a( g8 f)
+	s2. 
+	r4 f( e8 d)
+	s2.
+	r4 d( c8 b)
+	s2.
+	r4 b( a8 g) \clef alto
 }
 cueVoiceViolaMvtII = \relative c {
-%	no cue voice for mvt II
+	s2*57
+	% bar 58
+	<>^\markup {archi}
+	s2*11
+	% bars 69 - 72
+	\transpose c f {
+		\relative c'' {
+			\clef treble c16( d f e d c bes a)
+			\tuplet 3/2 4 {c8( bes a} c bes)
+			a( g c4~
+			c2) \clef alto
+		}
+	}
 }
 cueVoiceViolaMvtIII = \relative c {
-	s2.*182
-	% bar 182
-	\voiceOne bes4^\pizz-\offset X-offset -3.5 ^\markup {Vcll.} e g \oneVoice 
-	s2.*56
-	% bar 239 - 240
-	e4(^\markup {Vcell.} fis g
-	fis cis e)
+	s2.*159
+	% bar 160
+	<>^\markup {Vl.I,Vcl.}
+	s2.*5
+	% bar 165
+	\clef bass d4(^\markup {Vcl.,Cb.} e8 cis d4) \clef alto
+	s2.*17
+	% bar 183
+	\clef bass bes4^\markup {Vcl.} e g \clef alto
+	s2.*30
+	% bar 214
+	<>^\markup {Vcl.}
+	s2.*12
+	% bar 226
+	<>^\markup {Vl.I.}
+	s2.*4
+	% bar 230 
+	<>^\markup {Vl.II,Vcl.,Cb.}
+	s2.*10
+	% bar 240 - 241
+	\clef bass e4(^\markup {Vcl.} fis g
+	fis cis e) \clef alto
+	s2.*11
+	% bar 253
+	<>^\markup {Vl.I.}
 }
 cueVoiceViolaMvtIV = \relative c {
 %	no cue voice for mvtIV

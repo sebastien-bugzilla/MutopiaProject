@@ -110,7 +110,7 @@ musicViolaMvtIV = \relative c' {
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
-	<g a!>->4_\fpcresc \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
+	<g a!>4->_\fpcresc \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 % Bars 86 to 90
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 
 	q4-> \tuplet 3/2 4 {q4.:8} q4-> \tuplet 3/2 4 {q4.:8} 

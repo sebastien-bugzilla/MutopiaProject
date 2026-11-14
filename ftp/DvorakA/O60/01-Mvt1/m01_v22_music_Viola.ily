@@ -263,20 +263,20 @@ musicViolaMvtI = \relative c {
 		fis'8( d!) e-. fis-. b,4
 		fis'8( d) e-. fis-. b,4
 % Bars 171 to 175
-		R2.*6
+		R2.*4
 	
 	
 	
-	
+		\ni \mmrPos #-4 R2.
 % Bars 176 to 180
-	
+		\mmrPos #-4 R
 	}
 	\alternative {
 		{
-			R2.*3
-	
-	
-			\ni \voiceOne << \tweak extra-offset #'(-1.5 . 0) R2. {s4 s \clef treble s} >> \no
+			\mmrPos #-4 R \no
+			R2.
+			\ni \mmrPos #-4 R2.
+			\mmrPos #-4 R \no
 % Bars 181 to 185
 			r4 \oneVoice \clef alto a8(\pp fis g a)
 			R2.*9
@@ -288,11 +288,11 @@ musicViolaMvtI = \relative c {
 % Bars 191 to 195
 		}
 		{
-			R2.*5
-	
-	
-	
-	
+			\ni \mmrPos #-4 R2.
+			\mmrPos #-4 R
+			\mmrPos #-4 R
+			\mmrPos #-4 R
+			\mmrPos #-4 R \no
 % Bars 196 to 200
 		}
 	}
@@ -311,14 +311,22 @@ musicViolaMvtI = \relative c {
 	q~
 	q~
 	q4 r r
-	R2.*20
+	R2.*9
 	
 % Bars 211 to 215
 	
 % Bars 216 to 220
 	
-% Bars 221 to 225
 	
+	\ni \mmrPos #-4 R2. \no
+	R2.
+	\ni \mmrPos #-4 R2. \no
+% Bars 221 to 225
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.*4
 % Bars 226 to 230
 	
 	
@@ -362,7 +370,7 @@ musicViolaMvtI = \relative c {
 	a8 a-. a2~
 	a8\p a-. a2
 % Bars 261 to 265
-	<g b>2.:32_\ppsubponticello
+	<g b>2.:32_\ppsulponticello
 	q:
 	q:
 	<< <d c'>: {\hairpinShorten #'(-3 . 2) s8\< s s \hairpinShorten #'(-2 . -0.5)  s\> s s\!} >>

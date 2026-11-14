@@ -215,15 +215,15 @@ musicViolaMvtIII = \relative c {
 	
 	
 	
-		\mmrLength #11 R2.*4
+		R2.*4
 % Bars 161 to 165
 	
 	
 	
-		\mmrLength #11 R2.*6
-	
+		R2.
+		\ni \mmrPos #-6 R2. \no
 % Bars 166 to 170
-	
+		R2.*4
 	
 	
 	
@@ -239,7 +239,7 @@ musicViolaMvtIII = \relative c {
 % Bars 181 to 185
 	
 	
-		\ni \clef bass \voiceTwo R2. \no \oneVoice \clef alto
+		\ni \mmrPos #-6 R2. \no
 		bes'4^\pizz\brack\f\> d e\!
 		R2.
 % Bars 186 to 190
@@ -292,9 +292,9 @@ musicViolaMvtIII = \relative c {
 	
 	
 	
-	\ni \clef bass \voiceTwo R2.
+	\ni \mmrPos #-6 R2. 
 % Bars 241 to 245
-	R \no \oneVoice \clef alto
+	\mmrPos #-4 R2. \no
 	d,4(\pp fis b
 	a2.
 	g4 fis e

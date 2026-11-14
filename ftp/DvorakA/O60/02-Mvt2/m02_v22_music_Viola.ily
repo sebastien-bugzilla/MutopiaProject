@@ -83,12 +83,16 @@ musicViolaMvtII = \relative c {
 	r q--\pp
 	r q--
 	<f a>8 r r4
-	R2*9
+	R2*5
 % Bars 66 to 70
 	
-% Bars 71 to 80
 	
-	\mark \default
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
+% Bars 71 to 80
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no \mark \default
 	<<{
 		f'4( d8 g)
 		ees8 c32( d c) bes-. a8( d)
