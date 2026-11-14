@@ -204,24 +204,20 @@ musicViolinoIIMvtIII = \relative c' {
 	q \stopMeasureCount \attaccatrioDown \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
 		\time 3/4 \trioPart fis4\pp r r
-		R2.*5
+		R2.*10
 % Bars 156 to 160
-	
-	
-	
-	
-		\mmrLength #11 R2.*4
+		
 % Bars 161 to 165
-	
-	
-	
-		\mmrLength #11 R2.*4
-	
+		
+		
+		
+		
+		\ni \mmrPos #-7 R2. \no
 % Bars 166 to 170
-	
-	
-		\ni \voiceTwo R2.
-		R \no \oneVoice 
+		R2.*4
+		
+		
+		
 		<a, fis' d'>4-\offset X-offset -5 ^\pizz\fz\arpeggio r r
 % Bars 171 to 175
 		q\arpeggio\> r r
@@ -234,8 +230,8 @@ musicViolinoIIMvtIII = \relative c' {
 % Bars 181 to 185
 	
 	
-		\ni \clef bass \mmrPos #-6 R2.
-		\clef alto \mmrPos #-6 R \no \clef treble
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-6 R \no
 		g'4\p^\pizz bes a
 % Bars 186 to 190
 		g r fis
@@ -279,10 +275,10 @@ musicViolinoIIMvtIII = \relative c' {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	\ni \voiceTwo R2.
-	R
-	R
-	R \no \oneVoice 
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	fis2.\pp(~
 % Bars 231 to 235
 	fis
@@ -331,16 +327,16 @@ musicViolinoIIMvtIII = \relative c' {
 	g( a \once \stemUp b 
 	a e g)
 	fis\pp r r
-	R2.*15
+	R2.*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R \no
 	\acciaccatura a8( a'2\p) d,4~_\crescmarkup
 % Bars 286 to 290
 	d a2

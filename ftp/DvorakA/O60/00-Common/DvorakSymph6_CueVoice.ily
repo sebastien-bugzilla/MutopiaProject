@@ -11206,48 +11206,73 @@ cueVoiceViolinoIMvtIV = \relative c {
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #
 %###############################################################################
 cueVoiceViolinoIIMvtI = \relative c {
-	% bar 1 - 2
-	<d fis a>8^\markup {Br.}\pp q4 q q8
-	q8 q4 q q8
-	s2.*176
-	% bar 179_1 - 180_1
-	d'''2(-\tweak X-offset #-5 ^\markup {Viol.I.} cis4
-	a8[ fis g a]) s4
-	s2.*10
-	% bar 177_2
-	b,8(_\markup {Viol.I.} d fis2)\laissezVibrer
+	s2.*219
+	% bars 220 - 224
+	r4^\markup {Vl.I.} f''( e8 d)
+	s2.
+	r4 d( c8 b)
+	s2.
+	r4 b( a8 g)
+	s2.*321
+	% bars 546 - 554
+	r4^\markup {Vl.I.} cis,( d8 e
+	fis2~ fis8) r
+	r4 cis( d8 e
+	fis2~ fis8) r
+	r4 cis( d8 e
+	fis2.)~
+	fis~
+	fis~
+	fis4 r r
 }
 cueVoiceViolinoIIMvtII = \relative c {
-	s2*77
-	% bar 78 - 79
-	f''8-\tweak X-offset #-4 ^\markup {Viol.I} f16( g) g( a) a( c)
-	bes4( c)
-	s2*24
-	% bar 104 - 105
-	\voiceOne r8 f,-\tweak X-offset #-4 ^\markup {Viol.I} des ges~
-	ges f \oneVoice s4
+	s2*72
+	% bar 73
+	<>^\markup {Vla}
+	s2*2
+	% bar 75
+	<>^\markup {Vl.I.}
+	s2*113
+	% bars 188 - 190
+	<< {
+		\InCueContext \clef alto \once \oneVoice r4 f(
+		ges4 aes8 a)
+		bes \oneVoice r r4 \clef treble
+	} \\ {
+		\InCueContext s4 d,(
+		ees2
+		d8) s s4
+	} >>
 }
 cueVoiceViolinoIIMvtIII = \relative c {
-	s2.*167
-	% bar 167 - 168
-	g'''4(^\markup {Hoboe} a8 fis g4
-	b2 a4)
-	s2.*13
-	% bar 182 - 183
-	bes,,,4^\markup {Vcll.}^\pizz e g
-	bes^\markup {Viola} d e
+	s2.*159
+	% bar 160
+	<>^\markup {Vl.I., Vcl.}
+	s2.*5
+	% bar 165
+	\clef bass d4(^\markup {Vcl.,Cb.} e8 cis d4) \clef treble
+	s2.*17
+	% bars 183 - 184
+	\clef bass bes4^\markup {Vcll.}^\pizz e g \clef alto
+	bes^\markup {Viola} d e \clef treble
 	s2.*41
-	% bar 225 - 228
-	fis'4(^\markup {Viol.I} g8 e fis4
+	% bars 226 - 229
+	fis'4(^\markup {Vl.I.} g8 e fis4
 	a b8 gis a4
 	d e8 cis d4
 	d e8 cis d4)
+	s2.*51
+	% bars 281 - 284
+	d,4(^\markup {Fl.} e8 cis d4)
+	d( e8 cis d4)
+	d( e8 cis d4)
+	d( e8 cis d4)
 }
 cueVoiceViolinoIIMvtIV = \relative c {
 	\partial 4 s4 
 	s1*313
-	% bar 314 - 317
-	r2 r4 g''''(-\tweak X-offset #-3 ^\markup {Fl.}
+	% bars 314 - 317
+	r2^\markup {Fl.,Ob.} r4 g'''(
 	e d cis b
 	e a, b fis 
 	g e a) s

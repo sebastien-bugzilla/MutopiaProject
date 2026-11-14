@@ -9,8 +9,8 @@ musicViolinoIIMvtI = \relative c' {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	\ni \clef alto \voiceOne R2.
-	R \oneVoice \no \clef treble
+	R2.*2
+	
 	\repeat volta 2 {
 		R2.*3
 	
@@ -224,9 +224,9 @@ musicViolinoIIMvtI = \relative c' {
 	}
 	\alternative {
 		{
-			R2.*2
+			R2.*3
 	
-			\ni \mmrPos #-4 R2. \no
+			
 			r4 r a,8[(\pp fis
 % Bars 181 to 185
 			g a)] r4 r 
@@ -239,7 +239,7 @@ musicViolinoIIMvtI = \relative c' {
 % Bars 191 to 195
 		}
 		{
-			\ni \mmrPos #-4 R2. \no
+			R2.
 			b8(-\offset X-offset -2.5 \pp d fis2)~
 			\startMeasureCount fis2.~
 			fis~
@@ -269,11 +269,19 @@ musicViolinoIIMvtI = \relative c' {
 	b,4.\pp( b8 b4~
 	b d fis!8 g
 	\once \stemUp b4) r r
-	R2.*14
+	R2.*5
 % Bars 216 to 220
 	
-% Bars 221 to 225
 	
+	
+	
+	\ni \mmrPos #-4 R2. \no
+% Bars 221 to 225
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.
+	\ni \mmrPos #-4 R2. \no
+	R2.*4
 % Bars 226 to 230
 	
 	
@@ -655,13 +663,17 @@ musicViolinoIIMvtI = \relative c' {
 	
 	
 % Bars 546 to 550
-	\mmrLength #15 R2.*11
-	
-	
-	
-	
+	\ni \mmrPos #4 R2.
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
 % Bars 551 to 555
-	
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #4 R \no
+	R2.*2
 % Bars 556 to 560
 	
 	d2-^\ff cis4-.

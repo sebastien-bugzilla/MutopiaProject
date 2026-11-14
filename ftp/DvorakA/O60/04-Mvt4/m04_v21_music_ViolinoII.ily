@@ -382,10 +382,10 @@ musicViolinoIIMvtIV = \relative c'' {
 	
 	
 	
-	\ni \voiceTwo R1
-	R
+	\ni \mmrPos #-4 R1
+	\mmrPos #-6 R
 % Bars 316 to 320
-	R \no \oneVoice 
+	\mmrPos #-6 R \no
 	r2 r4 a\pp_\tranquillo(~
 	a2. e4
 	d cis b g')

@@ -90,12 +90,12 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 71 to 75
 	
 	\mark \default
-	R2*5
+	R2*7
 % Bars 76 to 80
 	
 	
-	\ni \voiceTwo R2
-	R \no \oneVoice 
+	
+	
 	bes,16(\p f'8) f16-. d(\pp f8) f16~
 % Bars 81 to 85
 	f8 r r4
@@ -124,8 +124,8 @@ musicViolinoIIMvtII = \relative c' {
 % Bars 101 to 105
 	<f d'>\arpeggio r r4
 	<c ees a>8\arpeggio r r4
-	R2
-	\ni \voiceTwo R2 \no
+	R2*2
+	
 	r8 \voiceOne f_._>-\tweak X-offset #-3.3 \ff[ c_._> f]_>(~ \oneVoice 
 % Bars 106 to 110
 	f ees) r4
@@ -216,9 +216,13 @@ musicViolinoIIMvtII = \relative c' {
 	d8\pp^\pizz r r4
 	c8 r a_\crescmarkup r
 	b r r4
-	R2*6
+	R2*3
 % Bars 186 to 190
 	
+	
+	\ni \mmrPos #6 R2
+	\mmrPos #8 R
+	\mmrPos #6 R \no
 % Bars 191 to 195
 	bes!2\ppp~^\arco
 	bes8 r r4
