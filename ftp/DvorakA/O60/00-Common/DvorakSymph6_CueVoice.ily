@@ -11148,56 +11148,59 @@ cueVoiceTimpaniMvtIV = \relative c {
 %#                 C U E   V O I C E   F O R   V I O L I N E I                 #
 %###############################################################################
 cueVoiceViolinoIMvtI = \relative c {
-	% bar 1 - 5
-	<d fis a>8^\markup {Br.}\pp q4 q q8
-	q8 q4 q q8
-	q8 q4 q q8
-	q q4 q q8
-	q q4 q q8
-	s2.*206
-	% bar 198 - 199
-	b'4.\pp^\markup {Viol.II} b8 b4~
-	b( d fis!8 g)
-	s2.*59
-	% bar 259 - 265
-	r4^\markup {Clar.} r8 cis-. d-. e-.
-	e4.( fis8 e4)
-	<cis' e>4^\markup {Fl.} r8 <a cis>-. <b d>-. <cis e>-.
-	a4 r8 a b cis
-	e,4 r8 cis-.^\markup {Clar.} d-. e-.
-	fis4.( g8 fis4)
-	fis r r
+	s2.*278
+	% bar 279
+	\clef bass dis4^\markup {Vcl.,Cb.,Fg.} r8 dis-! e-! fis-! \clef treble
 }
 cueVoiceViolinoIMvtII = \relative c {
 	s2*72
-	% bar 73 - 74
-	f'4^\markup {Br.} d8 g
-	ees c32 d c bes a8 d
+	% bars 73 - 74
+	<< {
+		\InCueContext \clef alto f'4(^\markup {Vla} d8 g)
+		ees8 c32( d c) bes-. a8( d) \clef treble
+	} \\ {
+		\InCueContext d4( bes8 d)
+		c a16. g32 g8( fis)
+	} >>
 	s2*94
-	% bar 169 - 170
-	\voiceOne r8_\markup {Clar.} d'4( c16 bes)
-	bes8 \oneVoice s s4
+	% bar 169
+	<>^\markup {Vla}
 }
 cueVoiceViolinoIMvtIII = \relative c {
 	s2.*182
-	% bar 182 - 184
-	bes4^\pizz^\markup {Vcell.} \once \stemUp e g
-	bes^\markup {Br.} \once \stemUp d e
-	\voiceTwo g-\offset X-offset -1 _\markup {Viol.II} bes \oneVoice s
+	% bar 183 - 184
+	\clef bass bes4^\pizz^\markup {Vcl.} \once \stemUp e g \clef alto
+	bes^\markup {Vla} \once \stemUp d e \clef treble
+	s2.*66
+	% bars 251 - 252
+	\clef bass b,4(^\markup {Vcl.,Cb.} cis8 ais b4) \clef treble
+	b''4(^\markup {Vl.II.} cis8 ais b4)
 }
 cueVoiceViolinoIMvtIV = \relative c {
-	\partial 4 s4
-	s1*252
-	% bar 253 - 255
-	f'2^\markup {Viol.II} r4 f
-	e2 r4 e
-	ees2 s
-	s1*58
-	% bar 314 - 317
-	r2 r4-\offset X-offset -2 ^\markup {Fl.} g''^(
-	e d cis b
-	e a, b fis
-	g e a) s
+	s4*1 s1*248
+	% bar 249
+	<>^\markup {Cor.I.}
+	s1*4
+	% bar 253
+	<>^\markup {Cor.III.IV.}
+	s1
+	% bars 254 - 255
+	\transpose c e {
+		\relative c'' {
+			\tuplet 6/4 1 {aes4(^\markup {Cor.I.} c ees ges f ees)}
+			\once \voiceOne <ces ees>2 s
+		}
+	}
+	s1*189
+	% bars 445 - 450
+	r2^\markup {Vl.II.} r4 d''-.
+	b-. r r a-.
+	g-. r r d-.
+	g-. r r g-.
+	g-. r r a-.
+	b-. r r b-.
+	% bar 451
+	<>^\markup {Vl.I.}
 }
 %###############################################################################
 %#                C U E   V O I C E   F O R   V I O L I N E I I                #

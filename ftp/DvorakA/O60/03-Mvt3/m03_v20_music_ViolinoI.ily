@@ -234,9 +234,9 @@ musicViolinoIMvtIII = \relative c''' {
 % Bars 181 to 185
 	
 	
-		\ni \clef bass \voiceTwo R2.
-		\clef alto R \no 
-		\clef treble \voiceOne r4 r \oneVoice a''8(\p^\arco a,
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
+		r4 r a''8(\p^\arco a,
 % Bars 186 to 190
 		g' fis g a, fis' a,
 		e' dis e a, d a)
@@ -307,14 +307,14 @@ musicViolinoIMvtIII = \relative c''' {
 % Bars 241 to 245
 	b~
 	b4 r r
-	R2.*10
+	R2.*8
 	
 	
 % Bars 246 to 250
 	
 % Bars 251 to 255
-	
-	
+	\ni \mmrPos #7 R2.
+	\mmrPos #-6 R \no
 	b4(\pp cis8 ais b4)
 	b( cis8 ais b4) 
 	b( cis8 ais b4) 

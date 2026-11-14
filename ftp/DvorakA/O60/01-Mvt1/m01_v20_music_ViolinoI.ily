@@ -9,14 +9,14 @@ musicViolinoIMvtI = \relative c'' {
 	\key d \major
 %	\transposition a
 % Bars 1 to 5
-	\ni \clef alto \voiceOne R2.
-	R
+	R2.*2
+	
 	\repeat volta 2 {
-		R2.
-		R
-		R \no \oneVoice 
+		R2.*3
+		
+		
 % Bars 6 to 10
-		r4 r \clef treble a(\pp
+		r4 r a(\pp
 		d4.) d8\< d4
 		d( e fis)\!
 		a2\f\>( g8 fis)\!
@@ -262,12 +262,12 @@ musicViolinoIMvtI = \relative c'' {
 	d~
 	d~
 	d4 r r
-	R2.*3
+	R2.*5
 	
 % Bars 211 to 215
 	
-	\ni \voiceOne R2.
-	R \no \oneVoice 
+	
+	
 	b,4.(\pp b8 b4~
 	b d fis!8 g)
 % Bars 216 to 220
@@ -326,7 +326,7 @@ musicViolinoIMvtI = \relative c'' {
 	<d d'>8-.\p a'16( b a8) fis-. fis-. d-.
 % Bars 261 to 265
 	d4 r r
-	R2.*11
+	R2.*17
 	
 	
 	
@@ -334,15 +334,11 @@ musicViolinoIMvtI = \relative c'' {
 	
 % Bars 271 to 275
 	
-	
-	\ni \voiceTwo \mmrPos #-6 R2.
-	R
-	R
 % Bars 276 to 280
-	R
-	\mmrPos #-6 R 
-	R \mark \default
-	R2. \no \oneVoice
+	
+	
+	
+	\ni \mmrPos #6 R2. \no
 	b'8-.\f fis16( g fis8) b,-. b-. b'-.
 % Bars 281 to 285
 	b4 r r

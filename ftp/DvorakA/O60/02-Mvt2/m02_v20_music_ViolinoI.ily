@@ -89,8 +89,8 @@ musicViolinoIMvtII = \relative c'' {
 % Bars 71 to 75
 	
 	\mark \default
-	\ni \voiceOne R2
-	R \no \oneVoice 
+	\ni \mmrPos #-7 R2
+	\mmrPos #-9 R \no
 	r16 d,(\pp g\prall fis g a bes c)
 % Bars 76 to 80
 	d( g d c bes\< a\! g\> bes)\!
@@ -197,7 +197,7 @@ musicViolinoIMvtII = \relative c'' {
 	
 	
 	\mark \default
-	\ni \voiceTwo R2 \no
+	R2
 	r8 \oneVoice \shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur d,(\p\< ees e\!
 % Bars 171 to 175
 	f)\f r r4

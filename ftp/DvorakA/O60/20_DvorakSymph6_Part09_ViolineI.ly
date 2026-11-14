@@ -13,7 +13,7 @@
 %###############################################################################
 %#                          I N C L U D E   F I L E S                          #
 %###############################################################################
-\version "2.24.1"
+\version "2.26.0"
 \include "./00-Common/DvorakSymph6_Header.ily"
 \include "./00-Common/DvorakSymph6_Shortcuts.ily"
 \include "./00-Common/DvorakSymph6_PaperParts.ily"
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-\include "./00-Common/DvorakSymph6_Format_Part09_ViolinoI.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part09_ViolinoI.ily"
 \include "./01-Mvt1/m01_v20_music_ViolinoI.ily"
 \include "./02-Mvt2/m02_v20_music_ViolinoI.ily"
 \include "./03-Mvt3/m03_v20_music_ViolinoI.ily"
@@ -47,12 +47,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtI
-			}
-			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtI
-			}
+%			\new Voice {
+%				\formatViolinoIMvtI
+%			}
+%			\new Voice {
+%				\keepWithTag #'(violinI) \tempiPartMvtI
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtI
 			}
@@ -71,12 +71,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtII
-			}
-			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtII
-			}
+%			\new Voice {
+%				\formatViolinoIMvtII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(violinI) \tempiPartMvtII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtII
 			}
@@ -87,7 +87,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #1 \bold 2.
+				\bold 2.
 			}
 		}
 		\layout {
@@ -95,12 +95,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtIII
-			}
-			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtIII
-			}
+%			\new Voice {
+%				\formatViolinoIMvtIII
+%			}
+%			\new Voice {
+%				\keepWithTag #'(violinI) \tempiPartMvtIII
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtIII
 			}
@@ -111,7 +111,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\vspace #2.4 \bold {3. Scherzo. (Furiant.)}
+				\bold {3. Scherzo. (Furiant.)}
 			}
 		}
 		\layout {
@@ -119,12 +119,12 @@
 	}
 	\score {
 		\new Staff <<
-			\new Voice {
-				\formatViolinoIMvtIV
-			}
-			\new Voice {
-				\keepWithTag #'(violinI) \tempiPartMvtIV
-			}
+%			\new Voice {
+%				\formatViolinoIMvtIV
+%			}
+%			\new Voice {
+%				\keepWithTag #'(violinI) \tempiPartMvtIV
+%			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIMvtIV
 			}
@@ -133,7 +133,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##t
+			breakbefore = ##f
 			piece = \markup {
 				\bold {4. Finale.}
 			}

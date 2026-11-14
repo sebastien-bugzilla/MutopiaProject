@@ -308,9 +308,9 @@ musicViolinoIMvtIV = \relative c''' {
 % Bars 251 to 255
 	
 	\mark \default
-	\ni \voiceOne R1
-	R \no 
-	r2 \oneVoice r4 f-.\f
+	R1
+	\ni \mmrPos #-2 R1 \no 
+	\once \voiceTwo r2 r4 f-.\f
 % Bars 256 to 260
 	d-. c-. bes-. r
 	r2 r4 a'-.\f
@@ -378,13 +378,13 @@ musicViolinoIMvtIV = \relative c''' {
 	a4) r8 b( e,4) r8 fis(
 	b,4) r r2
 % Bars 311 to 315
-	R1*3
+	R1*6
 	
 	
-	\ni \mmrPos #-4 R1
-	\mmrPos #-4 R
+	
+	
 % Bars 316 to 320
-	\mmrPos #-4 R \no
+	
 	r2 r4 a''(_\pptranquillo
 	fis e d a)
 	d4.( d8 d4 e
@@ -534,9 +534,17 @@ musicViolinoIMvtIV = \relative c''' {
 	e: cis: a: a':-> g: e: cis: a: \mark \default \section
 	d4\f r r2
 % Bars 441 to 445
-	\mmrnDown R1*10
-% Bars 446 to 450
+	R1*4
 	
+	
+	
+	\ni \mmrPos #-4 R1
+% Bars 446 to 450
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 451 to 455
 	r2 r4 e'-.\f
 	cis-. r r b-.
