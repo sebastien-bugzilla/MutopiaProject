@@ -11412,45 +11412,125 @@ cueVoiceVioloncelloMvtIV = \relative c {
 %#              C U E   V O I C E   F O R   C O N T R A B A S S O              #
 %###############################################################################
 cueVoiceContrabassoMvtI = \relative c {
-%	no cue voice for mvtI
+	s2.*174
+	% bars 175 - 176
+	\clef treble r4^\markup {Vl.I.} r \tuplet 3/2 4 {b''8(\pp cis b}
+	b'2.)
+	s2.*5
+	% bar 182
+	\clef bass a,,,8(\pp^\markup {Vcl.} fis g a~ a4)
+	s2.*91
+	% bar 274 - 275
+	r4^\markup {Vcl.} e'\pp e
+	a r r
+	s2.*1
+	% bars 277 - 278
+	\transpose c a, {
+		\relative c'' {
+			<< {
+				\InCueContext \clef treble \oneVoice r4^\markup {Cl.A} r8 \voiceOne e-. f-. g-.
+				a4.( bes8 a4) \clef bass
+			} \\ {
+				\InCueContext s4 s8 c,-. d-. e-.
+				cis4 r r 
+			} >>
+		}
+	}
 }
 cueVoiceContrabassoMvtII = \relative c {
-%	no cue voice for mvtII
+	s2*37
+	% bar 38
+	<>^\markup {Vcl.}
+	s2*20
+	% bar 58
+	r8^\markup {Vcl.} bes(\mf g des')
+	s2*13
+	% bar 72
+	r4^\markup {Vcl.} c8(\pp f,)
+	s2*48
+	% bar 121
+	<>^\markup {Vcl.}
+	s2*3
+	% bars 124 - 128
+	\clef treble ges'''4(^\markup {Ob.}-\pocoapococresc ees8 aes
+	ges2~
+	ges4) ees!8( aes~
+	aes) fis-. d-. a'~
+	a fis-. d-. a'\laissezVibrer \clef bass
+	s2*9
+	% bars 138 - 139
+	\clef treble d4^\markup {Fl.} f!~
+	f8 ees!16( d f ees d c) \clef bass
+	s2*18
+	% bar 158 - 159
+	\clef treble r8^\markup {Fl.} <d, bes'!>4( <c a'>16 <bes g'>
+	<bes d>8) r r4 \clef bass
 }
 cueVoiceContrabassoMvtIII = \relative c {
-	s2.*159
-	% bar 159 - 162
-	<g d' b'>4\f-\tweak X-offset #-3.5 ^\pizz-\tweak X-offset #-3.5 ^\markup {Vlc.} r r
-	q_\dimmarkup r r
-	q r r 
-	q\pp r r
-	s2.*30
-	% bar 193 - 196
-	d''2^(^\markup {Fag.I} e4
-	cis2 d4
-	b2 cis4
-	a2 b4)
+	s2.*163
+	% bar 164
+	\clef treble e''4(^\markup {Ob.I.} fis8 dis e4) \clef bass
+	s2.*16
+	% bars 181 - 183
+	\clef treble d'4(^\markup {Fl.I.} e8 cis d4)
+	g2. \clef bass
+	bes,,,,4\f^\pizz^\markup {Vcl.} e g
+	s2.*2
+	% bar 186
+	<>^\markup {Vl.I.}
+	s2.*8
+	% bars 194 - 197
+	\clef treble b''2(^\markup {Fl.I.} cis4
+	a2 b4
+	g2 a4
+	fis2 g4) \clef bass
+	s2.*28
+	% bars 226 - 229
+	\clef treble fis4(\pp^\markup {Vl.I.} g8 e fis4
+	a b8 gis a4
+	d e8 cis d4
+	d e8 cis d4) \clef bass
+	s2.*23
+	% bar 253
+	<>^\markup {Vl.I.}
+	s2.*28
+	% bars 281 - 288
+	\clef treble d,4(\pp^\markup {Fl.I.} e8 cis d4)
+	d( e8 cis d4)
+	d( e8 cis d4)
+	d( e8 cis d4)
+	a''2-\pcresc^\markup {archi} d,4~
+	d a2
+	d, a4~
+	a \tuplet 3/2 4 {d,8(\f\< f a d f a)\!} \clef bass
 }
 cueVoiceContrabassoMvtIV = \relative c {
-%	no cue voice for mvtIV
+	s4*1 s1*116
+	% bars 117 - 120
+	r2^\markup {Vcl.} e'~\fz\>
+	e4 d8( e\! d4 cis)
+	cis( e) d2\<
+	cis4-. cis-. b2->\!
+	s1*71
+	% bars 192 - 194
+	\clef treble r2^\markup {Vl.I.} r8 fis'''(\pp e d
+	cis b a g fis e d cis)
+	d( a d fis a fis a d) \clef bass
+	s1*239
+	% bar 434
+	<>^\markup {Vl.I.}
+	s1*6
+	% bar 440
+	<>^\markup {Vcl.}
+	s1*6
+	% bar 446
+	<>^\markup {Vla}
+	s1*6
+	% bars 452 - 457
+	a,,2->\f^\markup {Vcl.} cis,->
+	fis,-> gis->
+	a-> d->
+	cis-> e->
+	a-> gis->
+	\once \voiceOne fis-> s
 }
-%###############################################################################
-%#                    C U E   V O I C E   F O R   B A S S I                    #
-%###############################################################################
-cueVoiceBassiMvtI = \relative c {
-%	no cue voice for mvtI
-}
-cueVoiceBassiMvtII = \relative c {
-%	no cue voice for mvtII
-}
-cueVoiceBassiMvtIII = \relative c {
-	s2.*180
-	% bar 180 - 181
-	d'''4^(-\tweak X-offset #-2.5 ^\markup {Fl.} e8 cis d4)
-	g2.
-	
-}
-cueVoiceBassiMvtIV = \relative c {
-%	no cue voice for mvt IV
-}
-

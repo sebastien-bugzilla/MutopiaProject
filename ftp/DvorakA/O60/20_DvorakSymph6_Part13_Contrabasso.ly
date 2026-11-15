@@ -69,76 +69,76 @@
 		\layout {
 		}
 	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatContrabassoMvtII
-%%			}
-%%			\new Voice {
-%%				\keepWithTag #'(kontrabass) \tempiPartMvtII
-%%			}
+	\score {
+		\new Staff <<
 %			\new Voice {
-%				\InCueContext \cueVoiceContrabassoMvtII
+%				\formatContrabassoMvtII
 %			}
 %			\new Voice {
-%				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
+%				\keepWithTag #'(kontrabass) \tempiPartMvtII
 %			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold 2.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatContrabassoMvtIII
-%%			}
-%%			\new Voice {
-%%				\keepWithTag #'(kontrabass) \tempiPartMvtIII
-%%			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameContrabassoMvtII \musicContrabassoMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold 2.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
 %			\new Voice {
-%				\InCueContext \cueVoiceContrabassoMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold {3. Scherzo. (Furiant.)}
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatContrabassoMvtIV
-%%			}
-%%			\new Voice {
-%%				\keepWithTag #'(kontrabass) \tempiPartMvtIV
-%%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceContrabassoMvtIV
+%				\formatContrabassoMvtIII
 %			}
 %			\new Voice {
-%				\timeMvtIV \nameContrabassoMvtIV \musicContrabassoMvtIV
+%				\keepWithTag #'(kontrabass) \tempiPartMvtIII
 %			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold {4. Finale.}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameContrabassoMvtIII \musicContrabassoMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold {3. Scherzo. (Furiant.)}
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+%			\new Voice {
+%				\formatContrabassoMvtIV
 %			}
-%		}
-%		\layout {
-%		}
-%	}
+%			\new Voice {
+%				\keepWithTag #'(kontrabass) \tempiPartMvtIV
+%			}
+			\new Voice {
+				\InCueContext \cueVoiceContrabassoMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameContrabassoMvtIV \musicContrabassoMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold {4. Finale.}
+			}
+		}
+		\layout {
+		}
+	}
 }

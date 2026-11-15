@@ -145,14 +145,14 @@ musicContrabassoMvtIV = \relative c' {
 	cis4\fz a-. d\fz b-.
 	e\fz r e\fz r \mark \default
 	a, r r2
-	R1*7
+	R1*3
 	
 % Bars 116 to 120
 	
-	
-	
-	
-	
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 % Bars 121 to 125
 	r2 g'8\ff g g g
 	g g g g  g g g g
@@ -238,11 +238,11 @@ musicContrabassoMvtIV = \relative c' {
 	
 	\mark \default
 % Bars 191 to 195
-	R1*7
-	
-	
-	
-	
+	R1
+	\ni \mmrPos #-4 R1
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no 
+	R1*3
 % Bars 196 to 200
 	
 	
@@ -535,16 +535,20 @@ musicContrabassoMvtIV = \relative c' {
 	
 	
 	\mark \default \section
-	R1*17
+	R1*12
 % Bars 441 to 445
 	
 % Bars 446 to 450
 	
 % Bars 451 to 455
 	
+	\ni \mmrPos #-4 R1
+	\mmrPos #4 R
+	\mmrPos #4 R
+	\mmrPos #-4 R
 % Bars 456 to 460
-	
-	r2 e''4-.\f a,-.
+	\mmrPos #-4 R \no
+	\once \voiceTwo r2 e''4-.\f a,-.
 	d8 e fis e d cis b cis
 	a b g a fis g e fis
 	d e d e fis g fis g

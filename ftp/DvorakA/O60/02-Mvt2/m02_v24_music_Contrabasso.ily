@@ -72,12 +72,12 @@ musicContrabassoMvtII = \relative c {
 	r8 ees\p\<-- ees-- ees--\!
 	\hairpinShorten #'(-0.3 . -1) \after 2*7/8 \! cis2\f\>
 	d8\p r r4
-	R2*5
+	R2*4
 	
 % Bars 56 to 60
 	
 	
-	
+	\ni \mmrPos #7 R2 \no
 	r4 g--\p
 	r g--_\dimmarkup
 % Bars 61 to 65
@@ -88,10 +88,10 @@ musicContrabassoMvtII = \relative c {
 	f\f~
 % Bars 66 to 70
 	f8 r r4
-	R2*6
+	R2*5
 % Bars 71 to 75
 	
-	\mark \default
+	\ni \mmrPos #7 R2 \no \mark \default
 	bes8^\pizz\pp r r4
 	c8 r d r
 	g, r  r4
@@ -140,27 +140,31 @@ musicContrabassoMvtII = \relative c {
 % Bars 111 to 115
 	cis,-> cis'-> \mark \default
 	cis,8 r r4
-	R2*16
+	R2*11
 	
 	
 % Bars 116 to 120
 	
 % Bars 121 to 125
 	
+	
+	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R
 % Bars 126 to 130
-	
-	
-	
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	r16 d-.\f d-. d-.  d-. d-. d-. d-.
 	d32[(\< d') d d] d[ d d d] d[ d d d] d[ d d d]\!
 % Bars 131 to 135
 	d,16\ff r r8 r4
-	R2*8
+	R2*6
 % Bars 136 to 140
 	
 	
-	
-	\mark \default
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no \mark \default
 	bes2(\pp 
 % Bars 141 to 145
 	c4 \once \stemUp d)
@@ -178,13 +182,13 @@ musicContrabassoMvtII = \relative c {
 	f2\fz
 	f4.-\tweak X-offset #-1.5 _\dimmarkup fis8\p
 	g r r4
-	R2*6
+	R2*4
 	
 % Bars 156 to 160
 	
 	
-	
-	
+	\ni \mmrPos #-4 R2
+	\mmrPos #-4 R \no
 	g,8\brack\pp\<^\pizz r c r
 % Bars 161 to 165
 	f r f,\! r

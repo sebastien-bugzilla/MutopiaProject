@@ -206,44 +206,47 @@ musicContrabassoMvtIII = \relative c {
 		\time 3/4 \trioPart d4\pp r r
 		d4(\pp e8 cis d4)
 % Bars 156 to 160
-		R2.*4
+		R2.*8
 	
 	
 	
-		\ni \voiceTwo R2.
+		
 % Bars 161 to 165
-		R
-		R
-		R \no \oneVoice 
-		R2.
+		
+		
+		
+		\ni \mmrPos #-4 R2. \no
 		d4(\pp e8 cis d4)
 % Bars 166 to 170
 		R2.*4
 	
 	
 	
-		\mmrLength #15.5 R2.*4
+		R2.*4
 % Bars 171 to 175
 	
 	
 	
-		\mmrLength #15 R2.*20
+		R2.*7
 	
 % Bars 176 to 180
 	
 % Bars 181 to 185
-	
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
+		\mmrPos #-6 R \no
+		R2.*10
 % Bars 186 to 190
 	
 % Bars 191 to 195
 	
 	
 	
-		\ni \voiceTwo R2.
-		R
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R
 % Bars 196 to 200
-		R
-		R \no \oneVoice 
+		\mmrPos #-4 R
+		\mmrPos #-4 R \no
 		a2.~\ppp
 		a~
 		a~
@@ -251,7 +254,7 @@ musicContrabassoMvtIII = \relative c {
 		a
 	}
 	d4\brack\p r r
-	R2.*27
+	R2.*23
 	
 	
 % Bars 206 to 210
@@ -263,10 +266,10 @@ musicContrabassoMvtIII = \relative c {
 % Bars 221 to 225
 	
 % Bars 226 to 230
-	
-	
-	
-	
+	\ni \mmrPos #-4 R2.
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-4 R \no
 	b4^\pizz\p r r
 % Bars 231 to 235
 	r b b
@@ -315,21 +318,21 @@ musicContrabassoMvtIII = \relative c {
 	d, r d'
 	d, r d' \stopMeasureCount
 	d,\pp r r
-	R2.*12
+	R2.*11
 % Bars 271 to 275
 	
 % Bars 276 to 280
 	
 % Bars 281 to 285
-	
-	\mmrnDown R2.*7
-	
-	
-	
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-4 R
 % Bars 286 to 290
-	
-	
-	\section \key d \minor
+	\mmrPos #-4 R
+	\mmrPos #-4 R
+	\mmrPos #-6 R \no \section \key d \minor
 	d2\f->^\arco d4~->
 	d d2->
 % Bars 291 to 295
