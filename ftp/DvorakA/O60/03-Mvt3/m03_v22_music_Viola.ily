@@ -343,7 +343,7 @@ musicViolaMvtIII = \relative c {
 	r8 d d4 r8 d
 % Bars 281 to 285
 	d4 r r
-	\mmrLength #11 \mmrnDown R2.*3
+	R2.*3
 	
 	
 	\acciaccatura a'8( a'2\p) d,4-\offset X-offset -1.5 _\crescmarkup~

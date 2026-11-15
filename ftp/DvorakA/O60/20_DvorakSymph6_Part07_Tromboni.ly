@@ -55,7 +55,7 @@
 %				\formatTrombonoIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(posauneI) \tempiPartMvtI
+%				\keepWithTag #'(trombonoI) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtI
@@ -79,7 +79,7 @@
 %				\formatTrombonoIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(posauneI) \tempiPartMvtIV
+%				\keepWithTag #'(trombonoI) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIMvtIV
@@ -103,7 +103,7 @@
 %				\formatTrombonoIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(posauneII) \tempiPartMvtI
+%				\keepWithTag #'(trombonoII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtI
@@ -127,7 +127,7 @@
 %				\formatTrombonoIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(posauneII) \tempiPartMvtIV
+%				\keepWithTag #'(trombonoII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIMvtIV
@@ -151,7 +151,7 @@
 %				\formatTrombonoIIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(posauneIII) \tempiPartMvtI
+%				\keepWithTag #'(trombonoIII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtI
@@ -175,7 +175,7 @@
 %				\formatTrombonoIIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(posauneIII) \tempiPartMvtIV
+%				\keepWithTag #'(trombonoIII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombonoIIIMvtIV

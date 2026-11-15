@@ -51,7 +51,7 @@
 %				\formatTimpaniMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(pauken) \tempiPartMvtI
+%				\keepWithTag #'(timpani) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtI
@@ -75,7 +75,7 @@
 %				\formatTimpaniMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(pauken) \tempiPartMvtII
+%				\keepWithTag #'(timpani) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtII
@@ -99,7 +99,7 @@
 %				\formatTimpaniMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(pauken) \tempiPartMvtIII
+%				\keepWithTag #'(timpani) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIII
@@ -123,7 +123,7 @@
 %				\formatTimpaniMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(pauken) \tempiPartMvtIV
+%				\keepWithTag #'(timpani) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTimpaniMvtIV

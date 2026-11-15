@@ -57,10 +57,10 @@ musicFlautoIMvtI = \relative c'' {
 		e fis2
 		g2 gis4~
 % Bars 46 to 50
-		gis \hairpinEO #'(0 . 2) a2->~\<
+		gis a2->~\<
 		a2.~
 		a \mark \default
-		\dynEO #'(0 . 2) d,4-\tweak X-offset #-1 _\ffgrandiosoD r a-.
+		d,4\ff r a-.
 		d2-^ r4
 % Bars 51 to 55
 		r r a-.
@@ -71,7 +71,7 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 56 to 60
 		a2(\fz g8 fis)
 		e2(\fz g4)
-		g2( fis8 e)
+		g2(\fz fis8 e)
 		d2.
 		g4-^ fis8( e d4)
 % Bars 61 to 65
@@ -165,8 +165,8 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 156 to 160
 	
-		r4 r c8([\f a)
-		b-. c-.] b2
+		r4 r c8(\f a)
+		b-. c-. b2
 		d8[(_\crescmarkup b) cis!-. d-.] e( cis)
 		d-.[ e-.] eis( fis eis e)
 % Bars 161 to 165
@@ -211,7 +211,7 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 191 to 195
 		}
 		{
-			b8(_\ppsempremoltotranquillo d fis2)~
+			b8(\pp d fis2)~
 			fis2.~
 			fis~
 			fis
@@ -370,7 +370,7 @@ musicFlautoIMvtI = \relative c'' {
 	g~
 	g2 g4-. \mark \default
 	fis-. r r
-	r r a,,(--\pp
+	r r a,,(\pp
 % Bars 331 to 335
 	d2) r4
 	r r a(
@@ -434,7 +434,7 @@ musicFlautoIMvtI = \relative c'' {
 	a4 r8 f-. bes-. c-.
 	d4 r8 f,-. bes-. d-.
 % Bars 386 to 390
-	c4\p r8 c-. d-. e-.
+	c4 r8 c-. d-. e-.
 	f4 r8 a,-. d-. f-.
 	e4 r r
 	R2.*5
@@ -470,7 +470,7 @@ musicFlautoIMvtI = \relative c'' {
 	r4 r e,\pp \mark \default
 	R2.
 % Bars 416 to 420
-	f4(\p\<^\solo a d)
+	f4(\p\< a d)
 	c2.~\!
 	c\>
 	bes\p~

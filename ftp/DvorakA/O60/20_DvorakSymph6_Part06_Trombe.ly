@@ -55,7 +55,7 @@
 %				\formatTrombeIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteI) \tempiPartMvtI
+%				\keepWithTag #'(trombeI) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtI
@@ -79,7 +79,7 @@
 %				\formatTrombeIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteI) \tempiPartMvtII
+%				\keepWithTag #'(trombeI) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtII
@@ -103,7 +103,7 @@
 %				\formatTrombeIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteI) \tempiPartMvtIII
+%				\keepWithTag #'(trombeI) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIII
@@ -127,7 +127,7 @@
 %				\formatTrombeIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteI) \tempiPartMvtIV
+%				\keepWithTag #'(trombeI) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIMvtIV
@@ -151,7 +151,7 @@
 %				\formatTrombeIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteII) \tempiPartMvtI
+%				\keepWithTag #'(trombeII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtI
@@ -175,7 +175,7 @@
 %				\formatTrombeIIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteII) \tempiPartMvtII
+%				\keepWithTag #'(trombeII) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtII
@@ -199,7 +199,7 @@
 %				\formatTrombeIIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteII) \tempiPartMvtIII
+%				\keepWithTag #'(trombeII) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIII
@@ -223,7 +223,7 @@
 %				\formatTrombeIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(trompeteII) \tempiPartMvtIV
+%				\keepWithTag #'(trombeII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceTrombeIIMvtIV

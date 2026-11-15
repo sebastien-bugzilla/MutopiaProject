@@ -199,19 +199,19 @@ musicFagottoIIMvtIII = \relative c, {
 	d
 	d \attaccatrio \stopMeasureCount \bar ".|:-||" \key d \major \break
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrLength #25 \mmrnDown R2.*6
+		\time 3/4 \trioPart R2.*6
 	
 % Bars 156 to 160
 	
 	
 	
 	
-		\mmrLength #9 \mmrnDown R2.*4
+		R2.*4
 % Bars 161 to 165
 	
 	
 	
-		\mmrLength #10 \mmrnDown R2.*6
+		R2.*6
 	
 % Bars 166 to 170
 	

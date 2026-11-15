@@ -51,7 +51,7 @@
 %				\formatViolaMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(bratsche) \tempiPartMvtI
+%				\keepWithTag #'(viola) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtI
@@ -75,7 +75,7 @@
 %				\formatViolaMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(bratsche) \tempiPartMvtII
+%				\keepWithTag #'(viola) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtII
@@ -99,7 +99,7 @@
 %				\formatViolaMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(bratsche) \tempiPartMvtIII
+%				\keepWithTag #'(viola) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIII
@@ -123,7 +123,7 @@
 %				\formatViolaMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(bratsche) \tempiPartMvtIV
+%				\keepWithTag #'(viola) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolaMvtIV

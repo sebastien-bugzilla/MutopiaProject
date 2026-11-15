@@ -10,7 +10,7 @@ musicFlautoIIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		\mmrLength #22 \mmrnDown R2.*4
+		\mmrnDown R2.*4
 	
 	
 	

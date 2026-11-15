@@ -46,7 +46,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 36 to 40
 	a-^~
 	a2. a4-. \mark \default
-	fis(_\ffgrandioso e d a)
+	fis(\ff e d a)
 	d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
@@ -298,9 +298,9 @@ musicFlautoIMvtIV = \relative c''' {
 	\voiceOne r2 r4 \oneVoice r8 d-.\f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
-	a2-> bes4. d8-.\fz
+	a2-> bes4. d8-.
 	a8-. g-. f-. d-. f2->
-	g-> a4. d8-.\fz
+	g-> a4. d8-.
 	b!-. a-. gis-. d-. gis2->
 % Bars 271 to 275
 	a2-> b4. r8
@@ -408,8 +408,8 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 366 to 370
 	a4--\p \tuplet 3/2 4 {a8( g fis)} g4-- \tuplet 3/2 4 {g8( fis e)}
 	d4-. a-. d2~
-	d4 a-. d2~
-	d8( a d cis d e fis g)
+	d4 a-. d2(~
+	d8 a d cis d e fis g)
 	a1~
 % Bars 371 to 375
 	a4 r r2

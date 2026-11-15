@@ -51,7 +51,7 @@
 %				\formatContrabassoMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(kontrabass) \tempiPartMvtI
+%				\keepWithTag #'(contrabasso) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtI
@@ -75,7 +75,7 @@
 %				\formatContrabassoMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(kontrabass) \tempiPartMvtII
+%				\keepWithTag #'(contrabasso) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtII
@@ -99,7 +99,7 @@
 %				\formatContrabassoMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(kontrabass) \tempiPartMvtIII
+%				\keepWithTag #'(contrabasso) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtIII
@@ -123,7 +123,7 @@
 %				\formatContrabassoMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(kontrabass) \tempiPartMvtIV
+%				\keepWithTag #'(contrabasso) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceContrabassoMvtIV

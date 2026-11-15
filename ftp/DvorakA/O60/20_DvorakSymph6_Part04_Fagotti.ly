@@ -55,7 +55,7 @@
 %				\formatFagottoIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottI) \tempiPartMvtI
+%				\keepWithTag #'(fagottoI) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtI
@@ -79,7 +79,7 @@
 %				\formatFagottoIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottI) \tempiPartMvtII
+%				\keepWithTag #'(fagottoI) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtII
@@ -103,7 +103,7 @@
 %				\formatFagottoIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottI) \tempiPartMvtIII
+%				\keepWithTag #'(fagottoI) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIII
@@ -127,7 +127,7 @@
 %				\formatFagottoIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottI) \tempiPartMvtIV
+%				\keepWithTag #'(fagottoI) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIMvtIV
@@ -151,7 +151,7 @@
 %				\formatFagottoIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottII) \tempiPartMvtI
+%				\keepWithTag #'(fagottoII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtI
@@ -175,7 +175,7 @@
 %				\formatFagottoIIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottII) \tempiPartMvtII
+%				\keepWithTag #'(fagottoII) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtII
@@ -199,7 +199,7 @@
 %				\formatFagottoIIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottII) \tempiPartMvtIII
+%				\keepWithTag #'(fagottoII) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIII
@@ -223,7 +223,7 @@
 %				\formatFagottoIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(fagottII) \tempiPartMvtIV
+%				\keepWithTag #'(fagottoII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceFagottoIIMvtIV

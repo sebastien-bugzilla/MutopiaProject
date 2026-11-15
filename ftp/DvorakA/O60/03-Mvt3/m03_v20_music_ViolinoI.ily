@@ -215,19 +215,19 @@ musicViolinoIMvtIII = \relative c''' {
 		q\arpeggio_\dimmarkup r r
 		q\arpeggio r r 
 		q\arpeggio\pp r r
-		\mmrLength #11 R2.*6
+		R2.*6
 	
 % Bars 166 to 170
 	
 	
 	
 	
-		\mmrLength #11 R2.*4
+		R2.*4
 % Bars 171 to 175
 	
 	
 	
-		\mmrLength #11 R2.*9
+		R2.*9
 	
 % Bars 176 to 180
 	
@@ -350,7 +350,7 @@ musicViolinoIMvtIII = \relative c''' {
 	d~ \stopMeasureCount
 % Bars 281 to 285
 	d4 r r
-	\mmrLength #14 \mmrnDown R2.*3
+	R2.*3
 	
 	
 	\acciaccatura a'8( a'2)\p d,4~_\crescmarkup

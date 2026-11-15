@@ -101,7 +101,7 @@ musicTrombonoIIMvtI = \relative c' {
 	
 	
 	
-		\mmrLength #16 R2.*20
+		R2.*20
 % Bars 121 to 125
 	
 % Bars 126 to 130

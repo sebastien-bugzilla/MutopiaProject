@@ -6,7 +6,7 @@
 %  work               : Symphony No. 6 in D Major Op.60 (B.112)
 %  Source             : Souborné vydání díla, series 3, volume 6 Prague: SNKLHU,
 %                       1957. Plate H 2111.
-%  Type of score      : Score for Klarinetten
+%  Type of score      : Score for clarinetton
 %  Typesetter         : Sébastien MANEN
 %  date of initiation : Wednesday 30th September 2026, 23:23:45
 %
@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-%\include "./00-Common/DvorakSymph6_Format_Part03_Klarinetten.ily"
+%\include "./00-Common/DvorakSymph6_Format_Part03_clarinetton.ily"
 \include "./01-Mvt1/m01_v05_music_ClarinettoI.ily"
 \include "./02-Mvt2/m02_v05_music_ClarinettoI.ily"
 \include "./03-Mvt3/m03_v05_music_ClarinettoI.ily"
@@ -39,14 +39,14 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for Klarinetten"
+				"Part for clarinetton"
 			}
 		}
 		subsubtitle = \markup { 
-			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — Klarinetten"
+			"Antonín Dvořák — Symphony No. 6 in D Major Op.60 (B.112) — clarinetton"
 		}
 		instrument = \markup {
-			"Klarinetten"
+			"clarinetton"
 		}
 	}
 	\score {
@@ -55,7 +55,7 @@
 %				\formatClarinettoIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteI) \tempiPartMvtI
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtI
@@ -79,7 +79,7 @@
 %				\formatClarinettoIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteI) \tempiPartMvtII
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtII
@@ -103,7 +103,7 @@
 %				\formatClarinettoIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteI) \tempiPartMvtIII
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIII
@@ -127,7 +127,7 @@
 %				\formatClarinettoIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteI) \tempiPartMvtIV
+%				\keepWithTag #'(clarinettoI) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIMvtIV
@@ -151,7 +151,7 @@
 %				\formatClarinettoIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteII) \tempiPartMvtI
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtI
@@ -175,7 +175,7 @@
 %				\formatClarinettoIIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteII) \tempiPartMvtII
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtII
@@ -199,7 +199,7 @@
 %				\formatClarinettoIIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteII) \tempiPartMvtIII
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIII
@@ -223,7 +223,7 @@
 %				\formatClarinettoIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(klarinetteII) \tempiPartMvtIV
+%				\keepWithTag #'(clarinettoII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceClarinettoIIMvtIV

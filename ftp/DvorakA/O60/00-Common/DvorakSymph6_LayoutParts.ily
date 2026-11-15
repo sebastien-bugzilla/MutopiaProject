@@ -67,11 +67,11 @@
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
 		\override RehearsalMark.extra-spacing-height = #'(-1 . +10)
 		\override RehearsalMark.outside-staff-priority = ##f
-%		\override BarNumber.font-size = #0.1
+		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 
-		\override BarNumber.break-visibility = ##(#f #t #t)
+%		\override BarNumber.break-visibility = ##(#f #t #t)
 	}
 }

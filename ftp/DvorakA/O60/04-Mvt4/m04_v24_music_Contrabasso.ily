@@ -91,7 +91,7 @@ musicContrabassoMvtIV = \relative c' {
 	e,8_\pdim d' cis b r2
 	R1*2
 	\markXoffset #-0.2 \mark \default
-	\mmrLength #26 R1*4
+	R1*4
 	
 % Bars 71 to 75
 	

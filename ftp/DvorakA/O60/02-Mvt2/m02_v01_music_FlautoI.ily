@@ -36,7 +36,7 @@ musicFlautoIMvtII = \relative c'' {
 	e(\p g c4~
 % Bars 26 to 30
 	c8 b a g)
-	g8(~ g32 a g f-.) f4\<(
+	g8(~ g32 a g) f-. f4\<(
 	e8)\! r r4
 	\mmrnDown R2*6
 % Bars 31 to 35
@@ -91,7 +91,7 @@ musicFlautoIMvtII = \relative c'' {
 	f4(\pp bes~
 % Bars 81 to 85
 	bes8 a g f)
-	f(~ f32 g f ees-.) ees4(
+	f(~ f32 g f) ees-. ees4(
 	d8) r r4
 	R2*2
 	

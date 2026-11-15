@@ -91,7 +91,7 @@ musicViolinoIMvtIV = \relative c''' {
 	e,8_\pdim d' cis b r2
 	e8(\pp d' cis b) r2
 	R1 \mark \default
-	\mmrLength #25 R1*4
+	R1*4
 	
 % Bars 71 to 75
 	

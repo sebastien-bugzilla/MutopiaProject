@@ -215,7 +215,7 @@ musicFagottoIMvtIII = \relative c {
 		\mmrPos #-4 R
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
-		\mmrLength #11 R2.*6
+		R2.*6
 	
 % Bars 166 to 170
 	

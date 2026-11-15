@@ -63,7 +63,7 @@
 %				\formatCornoIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornI) \tempiPartMvtI
+%				\keepWithTag #'(cornoI) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtI
@@ -87,7 +87,7 @@
 %				\formatCornoIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornI) \tempiPartMvtII
+%				\keepWithTag #'(cornoI) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtII
@@ -111,7 +111,7 @@
 %				\formatCornoIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornI) \tempiPartMvtIII
+%				\keepWithTag #'(cornoI) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtIII
@@ -135,7 +135,7 @@
 %				\formatCornoIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornI) \tempiPartMvtIV
+%				\keepWithTag #'(cornoI) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIMvtIV
@@ -159,7 +159,7 @@
 %				\formatCornoIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornII) \tempiPartMvtI
+%				\keepWithTag #'(cornoII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtI
@@ -183,7 +183,7 @@
 %				\formatCornoIIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornII) \tempiPartMvtII
+%				\keepWithTag #'(cornoII) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtII
@@ -207,7 +207,7 @@
 %				\formatCornoIIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornII) \tempiPartMvtIII
+%				\keepWithTag #'(cornoII) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtIII
@@ -231,7 +231,7 @@
 %				\formatCornoIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornII) \tempiPartMvtIV
+%				\keepWithTag #'(cornoII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIMvtIV
@@ -255,7 +255,7 @@
 %				\formatCornoIIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIII) \tempiPartMvtI
+%				\keepWithTag #'(cornoIII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtI
@@ -279,7 +279,7 @@
 %				\formatCornoIIIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIII) \tempiPartMvtII
+%				\keepWithTag #'(cornoIII) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtII
@@ -303,7 +303,7 @@
 %				\formatCornoIIIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIII) \tempiPartMvtIII
+%				\keepWithTag #'(cornoIII) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtIII
@@ -327,7 +327,7 @@
 %				\formatCornoIIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIII) \tempiPartMvtIV
+%				\keepWithTag #'(cornoIII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIIIMvtIV
@@ -351,7 +351,7 @@
 %				\formatCornoIVMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIV) \tempiPartMvtI
+%				\keepWithTag #'(cornoIV) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtI
@@ -375,7 +375,7 @@
 %				\formatCornoIVMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIV) \tempiPartMvtII
+%				\keepWithTag #'(cornoIV) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtII
@@ -399,7 +399,7 @@
 %				\formatCornoIVMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIV) \tempiPartMvtIII
+%				\keepWithTag #'(cornoIV) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtIII
@@ -423,7 +423,7 @@
 %				\formatCornoIVMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(hornIV) \tempiPartMvtIV
+%				\keepWithTag #'(cornoIV) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceCornoIVMvtIV

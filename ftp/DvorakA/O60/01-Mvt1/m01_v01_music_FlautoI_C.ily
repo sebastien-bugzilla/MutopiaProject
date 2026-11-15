@@ -351,7 +351,7 @@ musicFlautoIMvtI = \relative c'' {
 	g~
 	g2 g4-. \markXoffset #-0.2 \mark \default
 	fis-. r r
-	r r \partCombineApart a,,^(--
+	r r \partCombineApart a,,^(
 % Bars 331 to 335
 	d2) \partCombineAutomatic r4
 	r r \partCombineApart a(

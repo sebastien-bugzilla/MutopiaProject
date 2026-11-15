@@ -7,19 +7,19 @@
 cueVoiceFlautoIMvtI = \relative c {
 	s2.*20
 	% bars 21 - 23
-	\voiceOne r4^\markup {Fl.II} d''(\p\> cis
+	r4^\markup {Fl.II} d''(\p\> cis
 	b cis b\!
-	ais8)\pp r r4 r \oneVoice
+	ais8)\pp r r4 r
 	s2.*3
 	% bar 27
 	<>^\markup {Ob,Fg}
 	s2.*47
 	% bars 74 - 78
-	\voiceOne dis4->^\markup {Vl.I.} r d(\p\<
+	dis4->^\markup {Vl.I.} r d(\p\<
 	dis2\! a4
 	gis2)\> e'4(\<
 	eis2\> b4\!
-	\once \voiceTwo ais) \oneVoice s s
+	\once \voiceTwo ais) s s
 	s2.*22
 	% bars 101 - 103
 	d'2\fz^\markup {Vl.I.} cis8( b)
@@ -58,7 +58,7 @@ cueVoiceFlautoIMvtI = \relative c {
 	}
 	s2.*23
 	% bar 284
-	<b, dis>4->\f^\markup {Ob.} <cis e>-> <dis fis>->
+	<b, dis>4->\f^\markup {Ob.} <cis e>-> <dis! fis>->
 	s2.*25
 	% bars 310 - 313
 	r4^\markup {archi} f,-.-\ffrinforz g-.
@@ -126,8 +126,8 @@ cueVoiceFlautoIMvtII = \relative c {
 	}
 	s2*16
 	% bars 73 - 79
-	<< { \InCueContext \clef alto
-		f4(^\markup {Vla} d8 g)
+	<< {
+		\InCueContext \clef alto f4(^\markup {Vla} d8 g)
 		ees c32( d c) bes-. a8( d)
 	} \\ {
 		\InCueContext d4(-\pespress bes8 d)
@@ -173,7 +173,7 @@ cueVoiceFlautoIMvtII = \relative c {
 	fis4 b)
 	s2*3
 	% bar 124
-	<>^\markup {Ob.}
+	<>^\markup {Ob.}-\pocoapococresc
 	s2*3
 	% bars 127 - 128
 	a8\repeatTie fis-. d-. a'~
@@ -311,7 +311,7 @@ cueVoiceFlautoIMvtIV = \relative c {
 	s1*9
 	% bars 67 - 68
 	e8(\pp^\markup {Vl.} d' cis b) e,,( d' cis b)
-	e,,( d' cis b a g fis' e)
+	e,,(^\markup {Vla} d' cis b a gis fis' e)
 	s1*8
 	% bars 77 - 80
 	<< { 

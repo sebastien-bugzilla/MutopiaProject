@@ -51,7 +51,7 @@
 %				\formatViolinoIIMvtI
 %			}
 %			\new Voice {
-%				\keepWithTag #'(violinII) \tempiPartMvtI
+%				\keepWithTag #'(violinoII) \tempiPartMvtI
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtI
@@ -75,7 +75,7 @@
 %				\formatViolinoIIMvtII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(violinII) \tempiPartMvtII
+%				\keepWithTag #'(violinoII) \tempiPartMvtII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtII
@@ -99,7 +99,7 @@
 %				\formatViolinoIIMvtIII
 %			}
 %			\new Voice {
-%				\keepWithTag #'(violinII) \tempiPartMvtIII
+%				\keepWithTag #'(violinoII) \tempiPartMvtIII
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtIII
@@ -123,7 +123,7 @@
 %				\formatViolinoIIMvtIV
 %			}
 %			\new Voice {
-%				\keepWithTag #'(violinII) \tempiPartMvtIV
+%				\keepWithTag #'(violinoII) \tempiPartMvtIV
 %			}
 			\new Voice {
 				\InCueContext \cueVoiceViolinoIIMvtIV

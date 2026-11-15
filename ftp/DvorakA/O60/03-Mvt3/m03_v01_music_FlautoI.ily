@@ -131,7 +131,7 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		cis(_\ffgrandioso d) cis(
+		cis(\ff d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
@@ -166,7 +166,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\repeat volta 2 {
-		\time 3/4 \trioPart \ni \mmrPos #-4 R2. \no
+		\time 3/4 \key d \major \trioPart \ni \mmrPos #-4 R2. \no
 		R2.
 % Bars 156 to 160
 		\ni \mmrPos #-4 R \no
@@ -454,7 +454,7 @@ musicFlautoIMvtIII = \relative c''' {
 	c( des) c(
 % Bars 411 to 415
 	des) c( cis)
-	cis(_\ffgrandioso d) cis(
+	cis(\ff d) cis(
 	d) cis( d)
 	e-. d8( cis d4)
 	e-. d8( cis d4)

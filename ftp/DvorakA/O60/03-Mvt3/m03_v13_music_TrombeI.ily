@@ -153,7 +153,7 @@ musicTrombeIMvtIII = \relative c'' {
 	c
 	c \attaccatrio \bar ".|:-||" \key c \major \break
 	\repeat volta 2 {
-		\time 3/4 \trioPart \mmrLength #24 \mmrnDown R2.*6
+		\time 3/4 \trioPart R2.*6
 	
 % Bars 156 to 160
 	
