@@ -429,7 +429,7 @@ musicFlautoIIMvtI = \relative c' {
 	r4 d,4.\f\< d'8\!
 	d2(-> cis!4
 % Bars 401 to 405
-	d4) r r
+	d4)-. r r
 	R2.*3
 	
 	

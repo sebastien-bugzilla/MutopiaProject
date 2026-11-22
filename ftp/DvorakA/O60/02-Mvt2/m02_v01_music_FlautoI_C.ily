@@ -29,10 +29,10 @@ musicFlautoIMvtII = \relative c'' {
 	R2
 	d4(\p b!8\< f')\!
 	d(\> b!\! g f)
-	\shape #'((0 . -1.5)(0 . 1)(0 . 0.3)(0 . -1)) Slur e(\p g c4~
+	\partCombineApart \stemDown \shape #'((0 . -1.5)(0 . 1)(0 . 0.3)(0 . -1)) Slur \omitBeam e( g c4~
 % Bars 26 to 30
-	c8 b a g)
-	\partCombineApart g8(~ g32 a g) f-. f4\<(
+	\omitBeam c8 b a g)
+	\stemUp  g8(~ g32 a g) f-. f4\<(
 	e8)\! \partCombineAutomatic r r4
 	R2*6
 % Bars 31 to 35

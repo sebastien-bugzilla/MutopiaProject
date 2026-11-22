@@ -178,14 +178,14 @@ trio = {
 trioPart = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
 	\sectionLabel \markup {
-		\fontsize #-1 \bold "Trio."
+		\fontsize #-1 \bold "Trio"
 	}
 }
 
 scherzo = {
 	\once \override Score.SectionLabel.break-align-symbols = #'(time-signature)
 	\sectionLabel \markup {
-		\fontsize #+1 "SCHERZO"
+		\fontsize #+1 "SCHERZO (FURIANT)"
 	}
 }
 
@@ -204,6 +204,8 @@ finale = {
 	}
 }
 
+mutainflpiccolo = \markup {\italic "muta in Fl. piccolo"}
+flpiccolomutainflgrande = \markup {\italic "Fl. piccolo muta in Fl. grande"}
 %--------------------
 % functions
 %--------------------
@@ -596,4 +598,14 @@ changeGrandStaffName = #(define-music-function
 unsetGrandStaffName = \set GrandStaff.shortInstrumentName = ""
 
 preferDottedRight = \once \override Staff.NoteCollision.prefer-dotted-right = ##f
+
+noteHeadEsw = #(define-music-function
+	(spacing)
+	(pair?)
+	#{
+		\override NoteHead.extra-spacing-width = #spacing
+	#}
+)
+
+revertNoteHeadEsw = \revert NoteHead.extra-spacing-width
 

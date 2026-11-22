@@ -10,7 +10,7 @@ musicFlautoIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\mmrLength #22 R2.*4
 	
 	
 	
@@ -90,7 +90,7 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 81 to 85
 		\mmrPos #6 R
 		\mmrPos #6 R
-		\mmrPos #6 R \no
+		\mmrPos #-4 R \no
 		R2.*12
 % Bars 86 to 90
 	
@@ -146,7 +146,7 @@ musicFlautoIMvtIII = \relative c''' {
 		
 		
 		
-		\ni \mmrPos #6 R2.
+		\ni \mmrPos #-7 R2.
 		\mmrPos #-4 R
 % Bars 146 to 150
 	}
@@ -158,22 +158,22 @@ musicFlautoIMvtIII = \relative c''' {
 			R2.
 		}
 	}
-	R2.*6 \attaccatrio
+	R2.*6
 	
 	
 % Bars 151 to 155
 	
 	
-	
+	\break
 	\repeat volta 2 {
-		\time 3/4 \key d \major \trioPart \ni \mmrPos #-4 R2. \no
+		\time 3/4 \key d \major \trioPart \ni \mmrPos #-6 R2. \no
 		R2.
 % Bars 156 to 160
-		\ni \mmrPos #-4 R \no
+		\ni \mmrPos #-6 R2. \no
 		e,4(\p fis8 dis e4)
 		R2.*2
 	
-		R2.*4
+		\mmrLength #12 R2.*4
 % Bars 161 to 165
 	
 	
@@ -185,7 +185,7 @@ musicFlautoIMvtIII = \relative c''' {
 		fis4(\p\< g8 eis fis4)\!
 		R2.*2
 	
-		R2.*4
+		\mmrLength #18 R2.*4
 % Bars 171 to 175
 	
 	
@@ -244,7 +244,7 @@ musicFlautoIMvtIII = \relative c''' {
 % Bars 216 to 220
 	b4 a g
 	fis g e)
-	d(_\dimmarkup e fis
+	\markEO #'(0 . 0.5) d(_\dimmarkup e fis
 	g fis e)
 	d( e fis
 % Bars 221 to 225
@@ -291,7 +291,7 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 256 to 260
 	
-	\shape #'((0 . -1.5)(0 . 0)(0 . 0)(0 . -1.5)) Slur a'4(\p d, fis
+	\shape #'((0 . -1.5)(0 . 0.5)(0 . 0.5)(0 . -1.5)) Slur a'4(\p d, fis
 	a\< d fis~
 	fis e d~
 	d cis b)\!
@@ -348,10 +348,10 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	
-	\ni \mmrPos #-6 R2.
+	\ni \mmrPos #7 R2.
 % Bars 306 to 310
 	\mmrPos #4 R
-	\mmrPos #-4 R \no \section
+	\mmrPos #4 R \no \section
 	R2.*12
 	
 	
@@ -408,9 +408,9 @@ musicFlautoIMvtIII = \relative c''' {
 	
 	
 	\ni \mmrPos #-4 R2.
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 % Bars 366 to 370
-	\mmrPos #-4 R
+	\mmrPos #-6.5 R
 	\mmrPos #-4 R \no
 	R2.*12
 % Bars 371 to 375
@@ -468,8 +468,8 @@ musicFlautoIMvtIII = \relative c''' {
 	
 % Bars 426 to 430
 	\ni \mmrPos #-4 R2.
-	\mmrPos #-4 R
 	\mmrPos #-6 R
+	\mmrPos #-7 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 % Bars 431 to 435

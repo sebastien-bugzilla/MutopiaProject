@@ -30,14 +30,14 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 16 to 20
 	
 % Bars 21 to 25
-		\ni \mmrPos #-4 R2.
-		\mmrPos #-4 R
+		\ni \mmrPos #-6 R2.
+		\mmrPos #-6 R
 		\mmrPos #-4 R \no
-		R2.*10
+		\mmrLength #13 R2.*3
 	
 	
 % Bars 26 to 30
-	
+		R2.*7
 % Bars 31 to 35
 	
 	
@@ -53,21 +53,21 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 41 to 45
 		g,-. e'-.\fz g,-.
 		e'-.\fz g,-. e'-.\fz
-		\dynEO #'(0 . 1) e2\ff e4~
+		e2\ff e4~
 		e fis2
 		g2 gis4~
 % Bars 46 to 50
-		gis a2->~\<
+		gis \hairpinShorten #'(0 . 1.5) a2->~\<
 		a2.~
-		a \mark \default
-		d,4\ff r a-.
+		<< a {s4 s s8 s\!}>>  \mark \default
+		\tempoEO #'(-0.8 . -1.5) \noteHeadEsw #'(-0.7 . 0) \dynEO #'(0 . 2) d,4\ff \revertNoteHeadEsw r a-.
 		d2-^ r4
 % Bars 51 to 55
 		r r a-.
 		d-. d-. r
 		r r a
 		d4. d8 d4\<
-		d( e fis)
+		d( e fis)\!
 % Bars 56 to 60
 		a2(\fz g8 fis)
 		e2(\fz g4)
@@ -211,7 +211,7 @@ musicFlautoIMvtI = \relative c'' {
 % Bars 191 to 195
 		}
 		{
-			b8(\pp d fis2)~
+			\tempoXoffset #1.5 b8(\pp d fis2)~
 			fis2.~
 			fis~
 			fis
@@ -288,10 +288,10 @@ musicFlautoIMvtI = \relative c'' {
 	
 % Bars 256 to 260
 	
-	\ni \mmrPos #4 R2.
-	\mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #4 R \no
+	\ni \mmrPos #6 R2.
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 % Bars 261 to 265
 	d'4--\p r8 b-. c-. d-.
 	b4-- r8 g-. a-. b-.
@@ -342,20 +342,20 @@ musicFlautoIMvtI = \relative c'' {
 	a~
 % Bars 301 to 305
 	a
-	\dynEO #'(0 . 2) aes~\fz
+	aes~\fz
 	aes~
 	aes
-	\dynEO #'(0 . 2) aes\fz~
+	aes\fz~
 % Bars 306 to 310
 	aes4 r r
 	R2.*3
 	
 	
-	\ni \mmrPos #4 R2.
+	\ni \mmrPos #6 R2.
 % Bars 311 to 315
-	\mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #4 R \no
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #7 R \no
 	R2.*7
 % Bars 316 to 320
 	
@@ -452,7 +452,7 @@ musicFlautoIMvtI = \relative c'' {
 	r4 \hairpinShorten #'(0 . -2) d4.(\f\< d'8)\!
 	d2.~->
 % Bars 401 to 405
-	d4 r r
+	d4-. r r
 	R2.*3
 	
 	
@@ -608,13 +608,13 @@ musicFlautoIMvtI = \relative c'' {
 	fis2( e8 d)\!
 	d2\p r4
 % Bars 541 to 545
-	R2.*10
+	R2.*5
 	
 	
 	
 	
 % Bars 546 to 550
-	
+	\tempoXoffset #-2 R2.*5
 % Bars 551 to 555
 	\ni \mmrPos #-4 R2. \no
 	r4 cis4(\pp d8 e

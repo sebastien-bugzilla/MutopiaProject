@@ -105,9 +105,9 @@ musicPiccoloMvtIII = \relative c''' {
 		\piccolo e,,4(\brack\p\< b') e(
 % Bars 161 to 165
 		b' e)\! b~
-		b\> b8( a g a
+		b\> b8( a g a\!
 		b2.)\pp
-		R2.*3
+		\tempoXoffset #-2 R2.*3
 	
 % Bars 166 to 170
 	
@@ -119,7 +119,7 @@ musicPiccoloMvtIII = \relative c''' {
 		a') d(\! a)
 		fis-. \hairpinShorten #'(1.5 . 0) a8(\> g fis g\!
 		a2.)\pp
-		R2.*7
+		\tempoXoffset #-1.5 R2.*7
 	
 % Bars 176 to 180
 	
@@ -128,9 +128,9 @@ musicPiccoloMvtIII = \relative c''' {
 		d,2.\f\>~
 		d~
 		d~
-		d2\! r4 
+		d2\! r4
 % Bars 186 to 190
-		R2.*12
+		R2.*12-\offset X-offset #7 _\flpiccolomutainflgrande
 	
 	
 	

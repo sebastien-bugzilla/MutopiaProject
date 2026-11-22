@@ -10,7 +10,7 @@ musicFlautoIIMvtIV = \relative c'' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*7
+	\mmrLength #17 R1*7
 % Bars 6 to 10
 	
 	
@@ -20,7 +20,7 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 11 to 15
 	e,4.( e8 e4 d)
 	cis4( a2.)
-	e'4. e8 e2~
+	\tempoXoffset #8 e'4. e8 e2~
 	e4 r r2
 	R1*10
 % Bars 16 to 20
@@ -34,11 +34,11 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 26 to 30
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
+	\mmrPos #-6 R
 % Bars 31 to 35
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
 	g1~->\ff\<
@@ -46,8 +46,8 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 36 to 40
 	cis1-^~
 	cis2. cis4-. \mark \default
-	d(_\ffgrandioso e d a)
-	d4. d8 d4-.( e-.)
+	d(\ff e d a)
+	\tempo "grandioso" d4. d8 d4-.( e-.)
 	fis4. fis8 fis4-.( e-.)
 % Bars 41 to 45
 	d4. d8 d4-.( e-.)
@@ -81,12 +81,12 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	
 	\mark \default
-	R1*7
+	\mmrLength #15 R1*7
 % Bars 71 to 75
 	
 % Bars 76 to 80
-	\ni \mmrPos #-4 R1
-	\mmrPos #-6 R
+	\ni \mmrPos #6 R1
+	\mmrPos #-7 \tweak extra-offset #'(0.5 . 0) R
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
@@ -177,7 +177,7 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 161 to 165
 	R1*5
 % Bars 166 to 170
-	\ni \mmrPos #6 R1 \no
+	\ni \mmrPos #-8 R1 \no
 	a4\fz \tuplet 3/2 4 {a8( g fis!)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
@@ -229,7 +229,7 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 211 to 215
 	
 	
-	\ni \mmrPos #6 R1
+	\ni \mmrPos #7 \tweak extra-offset #'(0.5 . 0) R1
 	\mmrPos #4 R
 	\mmrPos #4 R \no \mark \default
 % Bars 216 to 220
@@ -272,7 +272,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	r2 r4^\solo a(\p
+	r2 r4 a(\p
 	fis! e d a)
 % Bars 251 to 255
 	d4.( d8 d4 e)
@@ -287,9 +287,9 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	\ni \mmrPos #-4 R1
 % Bars 261 to 265
+	\mmrPos #-6 R
 	\mmrPos #-4 R
-	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\mmrPos #-7 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no
 % Bars 266 to 270
@@ -318,12 +318,12 @@ musicFlautoIIMvtIV = \relative c'' {
 	f-. e-. f-. e-.
 % Bars 286 to 290
 	c(\< cis! d dis)\!
-	e4 r a\ff r8 e-.
-	cis-. b-. a-. e-. a4 r8 e'
-	cis b a e a4 r8 a'
-	f e d a d4 r8 a'
+	e4 r \dynEO #'(0 . 2) a\ff r8 e-.
+	cis-. b-. a-. e-. a4 r8 e'-.
+	cis-. b-. a-. e-. a4 r8 a'-.
+	f-. e-. d-. a-. d4 r8 a'-.
 % Bars 291 to 295
-	f e d a d4 r8 a'
+	f-. e-. d-. a-. d4 r8 a'-.
 	f4-. e-. d-. r8 a'
 	f4-. e-. d-. r8 a'\ff
 	f2-> e->
@@ -342,17 +342,22 @@ musicFlautoIIMvtIV = \relative c'' {
 	e~
 % Bars 306 to 310
 	e4\p r r2
-	R1*18
+	R1*5
+	
+	
+	
 % Bars 311 to 315
 	
+	R1*2
 	
-	
-	
+	R1*4
 	
 % Bars 316 to 320
 	
 	
+	\mmrLength #13 R1*2
 	
+	R1*5
 % Bars 321 to 325
 	
 	
@@ -367,12 +372,14 @@ musicFlautoIIMvtIV = \relative c'' {
 	d'4. d8 d2~
 % Bars 331 to 335
 	d4 r r2
-	R1*5
+	R1
+	R
+	\mmrLength #15 R1*3
 	
 % Bars 336 to 340
 	
-	\ni \mmrPos #6 R1
-	\mmrPos #-6 R
+	\ni \mmrPos #-7 R1
+	\mmrPos #-7 R
 	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 % Bars 341 to 345
@@ -414,11 +421,11 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 371 to 375
 	
 	
-	\ni \mmrPos #-4 R1
+	\ni \mmrPos #-6 R1
 	\mmrPos #-4 R
-	\mmrPos #-4 R
+	\mmrPos #-7 R
 % Bars 376 to 380
-	\mmrPos #-4 R
+	\mmrPos #-6 R
 	\mmrPos #-4 R \no
 	cis4->\p \tuplet 3/2 4 {cis8( b a-.)} a4 \tuplet 3/2 4 {a8( e cis-.)}
 	cis4 r r2
@@ -464,7 +471,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 % Bars 416 to 420
 	
-	\ni \mmrPos #6 R1 \no
+	\ni \mmrPos #-6 R1 \no
 	r2 c(~\f
 	c1~
 	c2 b)
@@ -489,7 +496,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	
 	
-	\mark \default \section
+	\markXoffset #-0.2 \mark \default \section
 	R1*18
 % Bars 441 to 445
 	
@@ -501,7 +508,7 @@ musicFlautoIIMvtIV = \relative c'' {
 	
 	
 	\ni \mmrPos #-6 R1
-	\mmrPos #-6 R \no
+	\mmrPos #-7 R \no
 	R1*3
 % Bars 461 to 465
 	
@@ -518,7 +525,7 @@ musicFlautoIIMvtIV = \relative c'' {
 % Bars 471 to 475
 	cis-. r r cis-.
 	d8( e d cis d e d cis)
-	d( e d cis d e d e) \mark #11
+	d( e d cis d e d e) \markXoffset #-0.2 \mark #11
 	ais,2.\ff b4(
 	ais) b( ais) r
 % Bars 476 to 480
@@ -580,14 +587,14 @@ musicFlautoIIMvtIV = \relative c'' {
 	a r a2~\brack\ff
 % Bars 526 to 530
 	a4 a-. a-. a-.
-	\startMeasureCount a-. a-. a-. a-.
+	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 	a-. a-. a-. a-.
 % Bars 531 to 535
-	a-. a-. a-. a-. \stopMeasureCount
+	a-. a-. a-. a-.
 	a-. a-. a-. r
-	R1*10
+	R1*10^\pesante
 % Bars 536 to 540
 	
 % Bars 541 to 545

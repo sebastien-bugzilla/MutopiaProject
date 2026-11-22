@@ -19,16 +19,16 @@ musicFlautoIIMvtII = \relative c''' {
 	
 	
 	r4 r8 \dynEO #'(0 . 1) g\mf
-	f4 \dynEO #'(0 . 2) bes\fz(~
+	f4-\crescmarkup \dynEO #'(0 . 2) bes\fz(~
 	bes4 a
 % Bars 21 to 25
 	aes4.)\pp r8
 	R2
 	b4(\p g8\< d')\!
 	b(\> g\! e d)
-	c(\p e! e4~
+	c\p e!~ e4~
 % Bars 26 to 30
-	e8 g f e)
+	e8 g f e
 	\shape #'((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur e8( c~ c16 b d b)
 	c8 r r4
 	R2*6

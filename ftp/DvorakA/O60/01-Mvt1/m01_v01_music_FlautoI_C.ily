@@ -433,7 +433,7 @@ musicFlautoIMvtI = \relative c'' {
 	r4 \partCombineApart d4.( d'8)\!
 	d2.~->
 % Bars 401 to 405
-	d4 \partCombineAutomatic r r
+	d4-. \partCombineAutomatic r r
 	R2.*3
 	
 	

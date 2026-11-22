@@ -107,7 +107,7 @@ tempiMvtIII = {
 		\concat {
 			"Presto "
 			\fontsize #-4 \general-align #Y #DOWN \note {2.} #0.75
-			" = 96 (Furiant)"
+			" = 96"
 		}
 	}
 	s2.*127
@@ -250,7 +250,7 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt1 : bar 23
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'( flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
@@ -262,15 +262,42 @@ tempiPartMvtI = {
 			}
 		}
 	}
+	\tag #'(flautoI) {
+		\tempo \markup {
+			\overlay {
+				\column { \lower #1.5 "Un poco più" "animato "}
+				\translate #'(14.5 . -1.5) {
+					\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+					"  = 144"
+				}
+			}
+		}
+	}
+%	\tag #'(flautoI) {
+%		\tempo \markup {
+%			\column {
+%				\line { \lower #2 "Un poco più" }
+%				\line {
+%					\concat {
+%						"animato " \fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+%						" = 144"
+%					}
+%				}
+%			}
+%		}
+%	}
 	s2.*26
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt1 : bar 49
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(  oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo "Tempo I. Grandioso"
+	}
+	\tag #'(flautoI flautoII) {
+		\tempo "Tempo I.  Grandioso"
 	}
 	s2.*11
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -302,6 +329,7 @@ tempiPartMvtI = {
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
+		\once \override Score.MetronomeMark.outside-staff-priority = #375
 		\tempo \markup {
 			\normal-weight \italic "sempre molto tranquillo"
 		}
@@ -376,12 +404,18 @@ tempiPartMvtI = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt1 : bar 546
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "poco sostenuto"
+		}
+	}
+	\tag #'(flautoI) {
+		\tempo \markup {
+			\normal-weight \italic 
+			\center-column { \lower #1 "poco" "sostenuto"}
 		}
 	}
 	s2.*11
@@ -415,7 +449,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 29
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(  oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
@@ -424,6 +458,17 @@ tempiPartMvtII = {
 				"Poco più animato "
 				\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
 				" = 56"
+			}
+		}
+	}
+	\tag #'(flautoI flautoII) {
+		\tempo \markup {
+			\overlay {
+				\column {\lower #1 "Poco più" "animato " }
+				\translate #'(10 . -2.5) { 
+					\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+					"  = 56"
+				}
 			}
 		}
 	}
@@ -441,7 +486,7 @@ tempiPartMvtII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt2 : bar 95
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(flautoI  oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
@@ -450,6 +495,17 @@ tempiPartMvtII = {
 				"Poco più animato "
 				\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
 				" = 56"
+			}
+		}
+	}
+	\tag #'( flautoII ) {
+		\tempo \markup {
+			\overlay {
+				\column { \lower #1.5 "Poco più" "animato" }
+				\translate #'(10.5 . -2) {
+					\fontsize #-4 \general-align #Y #DOWN { \note {4} #1 }
+					"  = 56"
+				}
 			}
 		}
 	}
@@ -509,8 +565,8 @@ tempiPartMvtIII = {
 		\tempo \markup {
 			\concat {
 				"Presto "
-				\fontsize #-4 \general-align #Y #DOWN \note {2.} #0.75
-				" = 96 (Furiant)"
+				\fontsize #-4 \general-align #Y #DOWN \note {2.} #1
+				" = 96"
 			}
 		}
 	}
@@ -537,7 +593,7 @@ tempiPartMvtIII = {
 		\tempo \markup {
 			\concat {
 				"Poco meno mosso "
-				\fontsize #-4 \general-align #Y #DOWN \note {2.} #0.75
+				\fontsize #-4 \general-align #Y #DOWN \note {2.} #1
 				" = 80"
 			}
 		}
@@ -546,12 +602,17 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt3 : bar 160
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'( flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "poco sostenuto"
+		}
+	}
+	\tag #'(flautoI ) {
+		\tempo \markup {
+			\normal-weight \italic \center-column { \lower #1.5 "poco" "sostenuto"}
 		}
 	}
 	s2.*4
@@ -570,12 +631,17 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt3 : bar 170
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'( flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "poco sostenuto"
+		}
+	}
+	\tag #'(flautoI ) {
+		\tempo \markup {
+			\normal-weight \italic \column {\lower #1.5 "poco" "sostenuto"}
 		}
 	}
 	s2.*4
@@ -628,12 +694,17 @@ tempiPartMvtIII = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt3 : bar 429
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(  oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "poco a poco accelerando"
+		}
+	}
+	\tag #'(flautoI flautoII) {
+		\tempo \markup {
+			\normal-weight \italic \column { \lower #1.5 "poco a poco" "accelerando"}
 		}
 	}
 	s2.*11
@@ -647,7 +718,7 @@ tempiPartMvtIV = {
 		\tempo \markup {
 			\concat {
 				"Allegro con spirito "
-				\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+				\fontsize #-4 \general-align #Y #DOWN \note {2} #1
 				" = 84"
 			}
 		}
@@ -657,7 +728,17 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt4 : bar 13.5 (rounded to 13)
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(flautoI ) {
+		\tempo \markup {
+			\normal-weight \italic "accelerando poco a poco"
+		}
+	}
+	\tag #'(flautoII ) {
+		\tempo \markup {
+			\normal-weight \italic \column {\lower #1.5 "accelerando" "poco a poco"}
+		}
+	}
+	\tag #'( oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
@@ -675,7 +756,7 @@ tempiPartMvtIV = {
 		contrabasso) {
 		\tempo \markup {
 			\concat {
-				\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+				\fontsize #-4 \general-align #Y #DOWN \note {2} #1
 				" = 100"
 			}
 		}
@@ -684,11 +765,14 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt4 : bar 38
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(flautoI  oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo "Tempo I. grandioso"
+	}
+	\tag #'( flautoII ) {
+		\tempo "Tempo I."
 	}
 	s1*15
 	%%%%%%%%%%%%%%%%%%%%%%
@@ -712,7 +796,7 @@ tempiPartMvtIV = {
 		contrabasso) {
 		\tempo \markup {
 			\concat {
-				\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+				\fontsize #-4 \general-align #Y #DOWN \note {2} #1
 				" = 100"
 			}
 		}
@@ -755,15 +839,26 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt4 : bar 318
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(  oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo \markup {
 			\concat {
 				\normal-weight \italic "tranquillo "
-				\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+				\fontsize #-4 \general-align #Y #DOWN \note {2} #1
 				\normal-weight \italic " = 84"
+			}
+		}
+	}
+	\tag #'(flautoI flautoII) {
+		\tempo \markup {
+			\center-column {
+				\lower #1.5 \line { \normal-weight \italic "tranquillo" }
+				\line {
+					\concat { \fontsize #-4 \general-align #Y #DOWN \note {2} #1
+					\normal-weight \italic " = 84" }
+				}
 			}
 		}
 	}
@@ -771,12 +866,19 @@ tempiPartMvtIV = {
 	%%%%%%%%%%%%%%%%%%%%%%
 	% Mvt4 : bar 334
 	%%%%%%%%%%%%%%%%%%%%%%
-	\tag #'(flautoI flautoII oboeI oboeII clarinettoI clarinettoII fagottoI 
+	\tag #'(  oboeI oboeII clarinettoI clarinettoII fagottoI 
 		fagottoII cornoI cornoII cornoIII cornoIV trombeI trombeII trombonoI 
 		trombonoII trombonoIII tuba timpani violinoI violinoII viola violoncello
 		contrabasso) {
 		\tempo \markup {
 			\normal-weight \italic "accelerando poco a poco"
+		}
+	}
+	\tag #'(flautoI flautoII ) {
+		\tempo \markup {
+			\normal-weight \italic \column {
+				\lower #1.5 "accelerando" "poco a poco"
+			}
 		}
 	}
 	s1*10
@@ -789,7 +891,7 @@ tempiPartMvtIV = {
 		contrabasso) {
 		\tempo \markup {
 			\concat {
-				\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+				\fontsize #-4 \general-align #Y #DOWN \note {2} #1
 				" = 100"
 			}
 		}
@@ -805,7 +907,7 @@ tempiPartMvtIV = {
 		\tempo \markup {
 			\concat {
 				"Presto "
-				\fontsize #-4 \general-align #Y #DOWN \note {2} #0.75
+				\fontsize #-4 \general-align #Y #DOWN \note {2} #1
 				" = 132"
 			}
 		}

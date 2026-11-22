@@ -10,7 +10,7 @@ musicFlautoIIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		\mmrnDown R2.*4
+		\mmrLength #22 R2.*4
 	
 	
 	
@@ -70,8 +70,8 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 56 to 60
 		R2.*2
 		
-		\ni \mmrPos #4 R2.
-		\mmrPos #4 R \no
+		\ni \mmrPos #-4 R2.
+		\mmrPos #-4 R \no
 		d,8(\p\< e f! g a bes
 % Bars 61 to 65
 		b4)\! cis\f-. d-.
@@ -88,11 +88,11 @@ musicFlautoIIMvtIII = \relative c''' {
 		
 		
 		
-		\ni \mmrPos #-4 R2.
+		\ni \mmrPos #-6 R2.
 % Bars 81 to 85
-		\mmrPos #4 R
-		\mmrPos #6 R
-		\mmrPos #6 R \no
+		\mmrPos #-7 R
+		\mmrPos #-6 R
+		\mmrPos #-6 \tweak extra-offset #'(0.5 . 0) R \no
 		R2.*12
 % Bars 86 to 90
 	
@@ -115,30 +115,30 @@ musicFlautoIIMvtIII = \relative c''' {
 % Bars 111 to 115
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
-		r4 c!2\brack\mf\<
-		\startMeasureCount des4-.\f\< c-. c-. 
+		r4 \hairpinShorten #'(-0.5 . -0.5) c!2-\offset X-offset -1 \brack\mf\<
+		des4-.\f\< c-. c-. 
 		des-. c-. c-. 
 % Bars 116 to 120
 		des-. c-. c-. 
-		des-. c-. c-.\! \stopMeasureCount
-		\startMeasureCount cis!-. cis_\semprecresc cis
+		des-. c-. c-.\!
+		cis!-. cis_\semprecresc cis
 		cis-. cis-. cis-. 
 		cis-. cis-. cis-. 
 % Bars 121 to 125
 		cis-. cis-. cis-. 
-		cis-. cis-. cis-. \stopMeasureCount
+		cis-. cis-. cis-.
 		c!-. c-. c-. 
 		c(\ff des) c(
 		des) c( des)
 % Bars 126 to 130
 		c( des) c(
 		des) c( cis)
-		cis(_\ffgrandioso d) cis(
+		cis(\ff d) cis(
 		d) cis( d)
 		e-. d8( cis d4)
 % Bars 131 to 135
 		e-. d8( cis d4)
-		R2.*12
+		\mmrLength #15 R2.*12_\mutainflpiccolo
 	
 	
 	
@@ -160,7 +160,7 @@ musicFlautoIIMvtIII = \relative c''' {
 			R2.
 		}
 	}
-	R2.*6 \attaccatrio
+	R2.*6
 	
 	
 % Bars 151 to 155
@@ -251,7 +251,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	\mmrPos #-6 R
 	\mmrPos #-6 R
 	\mmrPos #-6 R \no \section \key d \minor \break
-	\flote cis4(\f-> d8) r cis4(->
+	cis4(\f-> d8) r cis4(->
 	d8) r cis4(-> d8) r
 % Bars 291 to 295
 	e4-.\f d8( cis d4)
@@ -270,7 +270,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-	\ni \mmrPos #6 R2.
+	\ni \mmrPos #7 R2.
 % Bars 306 to 310
 	\mmrPos #6 R
 	\mmrPos #6 R \section
@@ -313,7 +313,7 @@ musicFlautoIIMvtIII = \relative c''' {
 	d,8(\p\< e f! g a bes
 	b4\!) cis-.\f d-.
 % Bars 346 to 350
-	c!2->\ff bes4->~
+	c!2->\ff bes!4->~
 	bes a2->
 	R2.*16
 	
@@ -326,11 +326,11 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-	\ni \mmrPos #-4 R2.
-	\mmrPos #6 R
+	\ni \mmrPos #-6 R2.
+	\mmrPos #-7 R
 % Bars 366 to 370
-	\mmrPos #6 R
-	\mmrPos #6 R \no
+	\mmrPos #-6 R
+	\mmrPos #-6 \tweak extra-offset #'(0.5 . 0) R \no
 	R2.*12
 % Bars 371 to 375
 	
@@ -355,25 +355,25 @@ musicFlautoIIMvtIII = \relative c''' {
 	\mmrPos #-4 R
 % Bars 396 to 400
 	\mmrPos #-4 R \no 
-	r4 c!2\brack\mf\<
-	\startMeasureCount des4-.\f\< c-. c-. 
+	r4 \hairpinShorten #'(-0.5 . -0.5)  c!2-\offset X-offset -1 \brack\mf\<
+	des4-.\f\< c-. c-. 
 	des-. c-. c-.
 	des-. c-. c-.
 % Bars 401 to 405
-	des-. c-. c-.\! \stopMeasureCount
-	\startMeasureCount cis-. cis-._\semprecresc cis-.
+	des-. c-. c-.\! 
+	cis-. cis-._\semprecresc cis-.
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
 	cis-. cis-. cis-. 
 % Bars 406 to 410
-	cis-. cis-. cis-. \stopMeasureCount
+	cis-. cis-. cis-.
 	c!-. c-. c-.
 	c(\ff des) c(
 	des) c( des)
 	c( des) c(
 % Bars 411 to 415
 	des) c( cis)
-	cis(_\ffgrandioso d) cis(
+	cis(\ff d) cis(
 	d) cis( d)
 	e-. d8( cis d4)
 	e-. d8( cis d4)
@@ -389,12 +389,12 @@ musicFlautoIIMvtIII = \relative c''' {
 	
 	
 	
-	\ni \mmrPos #-6 R2.
-	\mmrPos #-6 R
+	\ni \mmrPos #-7 R2.
+	\mmrPos #-7 R
 % Bars 431 to 435
-	\mmrPos #-6 R
-	\mmrPos #-6 R
-	\mmrPos #-6 R \no
+	\mmrPos #-7 R
+	\mmrPos #-7 R
+	\mmrPos #-7 R \no
 	a'4-.\ff a,(-> b8 cis)
 	d4-. f-. d-.
 % Bars 436 to 440

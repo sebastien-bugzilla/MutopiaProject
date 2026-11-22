@@ -10,7 +10,7 @@ musicFlautoIMvtIV = \relative c''' {
 %	\transposition a
 	\partial 4 r4
 % Bars 1 to 5
-	R1*7
+	\mmrLength #15 R1*7
 % Bars 6 to 10
 	
 	
@@ -20,7 +20,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 11 to 15
 	cis4.( cis8 cis4 b)
 	a4.( a8 a4 b)
-	cis4.( cis8 cis4 b)
+	\tempoXoffset #8 cis4.( cis8 cis4 b)
 	a1~
 	a4 r r2
 % Bars 16 to 20
@@ -79,16 +79,16 @@ musicFlautoIMvtIV = \relative c''' {
 	
 % Bars 66 to 70
 	
-	\ni \mmrPos #4 R1
+	\ni \mmrPos #-8 R1
 	\mmrPos #4 R \no \mark \default
 	R1*8
 % Bars 71 to 75
 	
 % Bars 76 to 80
 	
-	\ni \mmrPos #-6 R1
-	\mmrPos #4 R
-	\mmrPos #-4 R
+	\ni \mmrPos #-8 R1
+	\mmrPos #-6.5 R
+	\mmrPos #-6 R
 	\mmrPos #-6 R \no
 % Bars 81 to 85
 	d4\fp \tuplet 3/2 4 {d8( cis b)-.} b4-> \tuplet 3/2 4 {b8( a gis-.)}
@@ -100,8 +100,8 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	
 	
-	\ni \mmrPos #-4 R1
-	\mmrPos #4 R \no
+	\ni \mmrPos #-6 \tweak extra-offset #'(-0.5 . 0) R1
+	\mmrPos #-6 R \no
 % Bars 91 to 95
 	a2->\ff a->
 	a2.-> b8( cis)
@@ -132,7 +132,7 @@ musicFlautoIMvtIV = \relative c''' {
 	\ni \mmrPos #-4 R1
 	\mmrPos #-4 R
 	\mmrPos #-4 R
-	\mmrPos #6 R \no
+	\mmrPos #-6 R \no
 % Bars 121 to 125
 	r2 e'2\ff~
 	e4 d8( e d4 cis)
@@ -173,11 +173,11 @@ musicFlautoIMvtIV = \relative c''' {
 	
 	
 	\ni \mmrPos #-4 R1
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 % Bars 161 to 165
 	R1*5
 % Bars 166 to 170
-	\ni \mmrPos #6 R1 \no
+	\ni \mmrPos #-7.5 R1 \no
 	a,4\fz \tuplet 3/2 4 {a8( g fis!)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
 	a4\fz \tuplet 3/2 4 {a8( g fis)} r2
@@ -207,7 +207,7 @@ musicFlautoIMvtIV = \relative c''' {
 	g~
 	g \mark \default
 % Bars 191 to 195
-	fis4(\p\< a\! bes\> g)\!
+	\hairpinShorten #'(0 . -1) fis4(\p\< a\! bes\> g)\!
 	fis1(
 	g
 	a2 d
@@ -246,7 +246,7 @@ musicFlautoIMvtIV = \relative c''' {
 	f4-> d-> f-> r
 	r2 r4 r8. bes16
 	bes4-> g-> bes-> r
-	c-.\f g-. c2->
+	\dynEO #'(0 . 1) c-.\f g-. c2->
 	r2 r4 r8. bes16
 % Bars 226 to 230
 	bes4-. f-. bes2->
@@ -295,7 +295,7 @@ musicFlautoIMvtIV = \relative c''' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no 
-	\voiceOne r2 r4 \oneVoice r8 d-.\f
+	\voiceOne r2 \oneVoice r4 r8 d-.\f
 % Bars 266 to 270
 	bes-. a-. g-. d-. g2->
 	a2-> bes4. d8-.
@@ -356,7 +356,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 316 to 320
 	e a, b fis
 	g e a) r
-	R1*5
+	\tempoXoffset #-2 \mmrnDown R1*5
 % Bars 321 to 325
 	
 	
@@ -372,9 +372,12 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 331 to 335
 	g1~
 	g4 r r2
-	R1*8
+	R1
+	\mmrLength #20 R1*3
+	
 % Bars 336 to 340
 	
+	R1*4
 % Bars 341 to 345
 	cis1\fp
 	d\fp
@@ -403,8 +406,8 @@ musicFlautoIMvtIV = \relative c''' {
 	R1*3
 	
 	
-	\ni \mmrPos #-6 R1
-	\mmrPos #6 R \no \mark \default
+	\ni \mmrPos #-7 R1
+	\mmrPos #7 R \no \mark \default
 % Bars 366 to 370
 	a4--\p \tuplet 3/2 4 {a8( g fis)} g4-- \tuplet 3/2 4 {g8( fis e)}
 	d4-. a-. d2~
@@ -435,7 +438,7 @@ musicFlautoIMvtIV = \relative c''' {
 % Bars 391 to 395
 	g2.-> a8( b)
 	a4\fz r b\fz g-.
-	fis\fz d-. a'\fz a,-.
+	fis\fz d-. \dynEO #'(0 . 1) a'\fz a,-.
 	e'->\p \tuplet 3/2 4 {e8( d cis)-.} cis4 \tuplet 3/2 4 {cis8( b a-.)}
 	a4 r r2
 % Bars 396 to 400

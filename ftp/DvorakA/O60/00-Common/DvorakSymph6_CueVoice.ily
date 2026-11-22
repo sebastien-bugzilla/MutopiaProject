@@ -16,7 +16,7 @@ cueVoiceFlautoIMvtI = \relative c {
 	s2.*47
 	% bars 74 - 78
 	dis4->^\markup {Vl.I.} r d(\p\<
-	dis2\! a4
+	\after 4 \! dis2 a4
 	gis2)\> e'4(\<
 	eis2\> b4\!
 	\once \voiceTwo ais) s s
@@ -27,7 +27,7 @@ cueVoiceFlautoIMvtI = \relative c {
 	ais8-\fdim^\markup {Vl.II.} fis16( gis fis8) cis-. cis-. b-.
 	s2.*4
 	% bar 108
-	fis'8\pp^\markup {Vl.I.} fis16( gis) ais8-. ais16( b) cis8-. cis16( d)
+	fis'8\pp-\offset X-offset 1 ^\markup {Vl.I.} fis16( gis) ais8-. ais16( b) cis8-. cis16( d)
 	s2.*27
 	% bars 136 - 137
 	aes8-.\pp\<^\markup {Vl.I.} ces-. ees4-. f8-. g-.
@@ -109,10 +109,10 @@ cueVoiceFlautoIMvtII = \relative c {
 	}
 	s2*13
 	% bar 29
-	<>^\markup {Ob.}
+	<>-\offset X-offset -4 ^\markup {Ob.}
 	s2*3
 	% bar 32
-	<>^\markup {archi \italic pesante}
+	<>^\markup {\column { \lower #1.5 "archi" \italic "pesante"}}
 	s2*15
 	% bar 47
 	<>^\markup {Ob.Cl.}
@@ -120,8 +120,8 @@ cueVoiceFlautoIMvtII = \relative c {
 	% bars 55 - 56
 	\transpose c bes, {
 		\relative c'' {
-			r8^\markup {Cor.3} e(\pp c f~
-			f)\noBeam a,(\p^\markup {Cl.} gis c)
+			r8^\markup {Cor.III.} e(\pp c f~
+			f)\noBeam a,(-\offset X-offset -0.5 \p^\markup {Cl.} gis c)
 		}
 	}
 	s2*16
@@ -133,7 +133,7 @@ cueVoiceFlautoIMvtII = \relative c {
 		\InCueContext d4(-\pespress bes8 d)
 		c8 a16.\< g32\! g8(\> fis)\!
 	}>>
-	\clef treble r16^\markup {Vl.I.} d''(\pp g\prall fis g a bes c)
+	\clef treble r16-\offset X-offset -1 ^\markup {Vl.I.} d''(\pp g\prall fis g a bes c)
 	d( g d c bes\< a\! g\> bes\!)
 	bes4( f~
 	f8) f16\((\< g) g( a) a( c)\)\!
@@ -200,7 +200,7 @@ cueVoiceFlautoIMvtIII = \relative c {
 	d r r
 	s2.*12
 	% bars 36 - 39
-	a''2(^\markup {Vl.I.} d4~
+	a''2(-\offset X-offset -3 ^\markup {Vl.I.} d4~
 	d cis d)
 	e2( a,4~
 	a2.)
@@ -227,18 +227,18 @@ cueVoiceFlautoIMvtIII = \relative c {
 	d-. r r
 	s2.*7
 	% bars 154 - 156
-	d4(\fp^\markup {Ob.} e8 cis d4)
+	d4(\fp-\offset X-offset 0.5 ^\markup {Ob.} e8 cis d4)
 	s2.
 	d4(\p e8 cis d4)
 	s2.*3
 	% bar 160
-	<>^\markup {Fl.picc.}
+	<>-\offset X-offset -3 ^\markup {Fl.picc.}
 	s2.*4
 	% bar 164
-	<>^\markup {Ob.}
+	<>-\offset X-offset -1.5 ^\markup {Ob.}
 	s2.*6
 	% bar 170
-	<>^\markup {Fl.picc.}
+	<>-\offset X-offset -3 ^\markup {Fl.picc.}
 	s2.*81
 	% bar 251
 	<>^\markup {Vcl.,Cb.}
@@ -370,7 +370,7 @@ cueVoiceFlautoIMvtIV = \relative c {
 			d-. r r d-.
 			d-. r r g,-.
 			g-. r r e'-.
-			\voiceTwo e-. r r \oneVoice s
+			\voiceTwo e-. r \oneVoice s2
 		}
 	}
 	s1*46
@@ -440,14 +440,14 @@ cueVoiceFlautoIIMvtI = \relative c {
 	fis g fis)
 	s2.*6
 	% bars 27 - 28
-	r4^\markup {Ob.} f(\f e
+	r4-\offset X-offset -1.5 ^\markup {Ob.} f(\f e
 	d cis b)
 	s2.*4
 	% bar 33
-	f'8-.^\markup {Ob.,Cl.} g-. aes-. aes-. g-. f-.
+	f'8-.-\offset X-offset -0.5 ^\markup {\column {\lower #1.5 "Ob." "Cl."}} g-. aes-. aes-. g-. f-.
 	s2.*41
 	% bars 75 - 78
-	\voiceOne dis2(^\markup {Vl.I.} a4
+	dis2(^\markup {Vl.I.} a4
 	gis2) e'4(
 	eis2 b4
 	\once \voiceTwo ais) \oneVoice s s 
@@ -463,7 +463,7 @@ cueVoiceFlautoIIMvtI = \relative c {
 	a)
 	s2.*8
 	% bars 120 - 123
-	b2(\p^\markup {Ob.} ais4)
+	b2(\p-\offset X-offset -2.5 ^\markup {Ob.} ais4)
 	fis8( dis) e-. fis-. cis4
 	b8( dis fis4 e
 	dis2 cis4)
@@ -509,7 +509,7 @@ cueVoiceFlautoIIMvtI = \relative c {
 	}
 	s2.*23
 	% bar 284
-	<b dis>4->\f^\markup {Ob.} <cis e>-> <dis fis>->
+	<b dis>4->-\offset X-offset -1.5 \f^\markup {Ob.} <cis e>-> <dis! fis>->
 	s2.*25
 	% bars 310 - 313
 	r4^\markup {archi} f,-.-> g-.->
@@ -542,13 +542,13 @@ cueVoiceFlautoIIMvtI = \relative c {
 	b4(\<^\markup {Ob.} c d
 	ees f fis\!
 	g\> gis a)\!
-	d2(\p^\markup {Fl.I.} cis4)
+	d2(\p-\offset X-offset -3.2 ^\markup {Fl.I.} cis4)
 	a8( fis) g-. a-. e4
 	d8( fis a4) g--
 	fis2( e4)
 	s2.*12
 	% bars 443 - 444
-	b8-.\p^\markup {Vl.I.} d!-. fis4 gis8-. ais-.
+	b8-.\p^\markup {Vl.I.} d!-. fis4-. gis8-. ais-.
 	b-. cis-. d4-> d8-.\! dis-.
 	s2.*17
 	% bars 462 - 463
@@ -566,7 +566,7 @@ cueVoiceFlautoIIMvtI = \relative c {
 	s2.*35
 	% bar 551 - 553
 	r4^\markup {Ob.} cis'( d8 e
-	fis4)^\markup {Fl.I.} cis'( d8 e
+	fis4) cis'(^\markup {Fl.I.} d8 e
 	fis2.)\laissezVibrer
 }
 cueVoiceFlautoIIMvtII = \relative c {
@@ -580,10 +580,10 @@ cueVoiceFlautoIIMvtII = \relative c {
 	% bars 15 - 17
 	r8^\markup {Vl.I.} bes'8(\p\< c cis)\f
 	d4( f~
-	f8) ees16(-\dimmarkup d \acciaccatura f8 ees8. d16)
+	f8) ees16(-\dimmarkup d \acciaccatura { \stemOffset #-2 f8 } ees8. d16)
 	s2*11
 	% bar 29
-	<>^\markup {Ob.}
+	<>-\offset X-offset -3 ^\markup {Ob.}
 	s2*3
 	% bar 32
 	<>^\markup {archi}
@@ -594,20 +594,20 @@ cueVoiceFlautoIIMvtII = \relative c {
 			a'''8(^\markup {Cl.I.} e4) c8(~
 			c a\>~ a16 b c d)
 			e8\noBeam e!(\pp^\markup {Cor.III.} c f~
-			f)\noBeam a,(\p^\markup {Cl.I.} gis c)
+			f)\noBeam a,(-\offset X-offset -0.5 \p^\markup {Cl.I.} gis c)
 		}
 	}
 	r8^\markup {Fl.I.} d'(\p\< bes! e\!~
 	e4)\fz r
 	s2*21
 	% bars 80 - 83
-	f4(\pp^\markup {Fl.I.} bes~
+	\shape #'((0 . -1)(0 . 0.3)(0 . 0.3)(0 . -1)) Slur f4(\pp^\markup {Fl.I.} bes~
 	bes8 a g f)
 	f(~ f32 g f) ees-. ees4(
 	d8) r r4
 	s2*11
 	% bar 95
-	<>^\markup {Ob.}
+	<>-\offset X-offset -2.5 ^\markup {Ob.}
 	s2*6
 	% bars 101 - 103
 	\transpose c f {
@@ -623,7 +623,7 @@ cueVoiceFlautoIIMvtII = \relative c {
 	s2*4
 	% bars 119 - 120
 	<< { 
-		\InCueContext a'2->(^\markup {Ob.}
+		\InCueContext a'2->(-\offset X-offset -3 ^\markup {Ob.}
 		fis4 b)
 	} \\ {
 		\InCueContext dis,2~
@@ -631,7 +631,7 @@ cueVoiceFlautoIIMvtII = \relative c {
 	}>>
 	s2*6
 	% bars 127 - 128
-	a'8\repeatTie fis-. d-. a'~
+	a'8\repeatTie^\markup {Ob.} fis-. d-. a'~
 	a fis-. d-. a'\laissezVibrer
 	s2*6
 	% bar 135
@@ -650,10 +650,10 @@ cueVoiceFlautoIIMvtII = \relative c {
 	<>^\markup {Fl.I.}
 	s2*9
 	% bar 169
-	<>^\markup {Fl.I.}
+	<>-\offset X-offset -0.5 ^\markup {Fl.I.}
 	s2*5
 	% bar 174
-	r8^\markup {Ob.} <bes, d>8(\p <c ees> <cis e>)
+	r8^\markup {Ob.} <bes, d>8(-\offset X-offset -0.5 \p <c ees> <cis e>)
 	s2*18
 	% bars 193 - 198
 	\transpose c f {
@@ -673,7 +673,7 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	% bars 22 - 27
 	d''4-.^\markup {Ob.} d,8( cis d4)
 	d r r
-	\ottava #1 c''2(-\pdolce^\markup {Vl.I.II.} f4~
+	\ottava #1 c''2(-\pdolce-\offset X-offset 0.5 ^\markup {Vl.I.II.} f4~
 	f e f)
 	g2( c,4~
 	c2.) \ottava #0
@@ -798,7 +798,7 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	<bes, g'>4-.\p^\markup {Ob.} <d f>-. <c ees>-.
 	<bes d>-. <a c>-. <g bes>-.
 	<< {
-		\InCueContext f'-> f, a
+		\InCueContext f'-> f,-. a-.
 		c bes8( a bes4)
 	} \\ {
 		\InCueContext f2 f4~
@@ -812,12 +812,12 @@ cueVoiceFlautoIIMvtIII = \relative c {
 	ges-. f8( e f4)
 	s2.*10
 	% bars 394 - 396
-	r4 a8(\mf gis a4)
+	r4 a8(\mf^\markup {Fl.I.} gis a4)
 	r b8( ais b4)
 	r cis8( bis cis4)
 	s2.*32
 	% bars 429 - 433
-	<f,, d'>4-.^\markup {Ob.} <a f'>-. <f d'>-.
+	<f,, d'>4-.-\offset X-offset -2 ^\markup {Ob.} <a f'>-. <f d'>-.
 	<f d'>-. <a f'>-. <f d'>-.
 	<< {\InCueContext a4-. g'->( f8 e)} \\ {\InCueContext a,4 a2}>>
 	<a d>4-. <a f'>-. <a d>-.
@@ -830,7 +830,7 @@ cueVoiceFlautoIIMvtIV = \relative c {
 	cis b a) s \oneVoice
 	s1*15
 	% bars 25 - 33
-	a8-.\ff^\markup {Ob.} g-. fis-. g-. a-. f-. d-. a'-.
+	a8-.\ff-\offset X-offset -3 ^\markup {Ob.} g-. fis-. g-. a-. f-. d-. a'-.
 	g-. f-. e-. f-. g-. e-. cis-. g'-.
 	fis!-. e-. d-. e-. f-. d-. b-. f'-.
 	e4 c8-. d-. ees2->(
@@ -843,11 +843,11 @@ cueVoiceFlautoIIMvtIV = \relative c {
 	% bars 54 - 57
 	<dis fis>4\f^\markup {Ob.} r r2
 	<fis a>4 r r2
-	<a cis>4 r <gis b> <fis a>
+	<a cis>4 r <gis b>-. <fis a>-.
 	<e gis> r r2
 	s1*11
 	% bar 69
-	<>^\markup {legni}
+	<>-\offset X-offset -0.5 ^\markup {legni}
 	s1*7
 	% bars 76 - 80
 	r4^\markup {Ob.} e,8(\p\< fis gis a b cis)\!
@@ -857,18 +857,18 @@ cueVoiceFlautoIIMvtIV = \relative c {
 		cis4-. g!-. cis2->
 		d8( cis b cis d e fis e)
 	} \\ {
-		\InCueContext <d fis>4\fp \tuplet 3/2 4 {<d fis>8( <cis e> <b d>)} b2
+		\InCueContext \oneVoice <d fis>4\fp \tuplet 3/2 4 {<d fis>8( <cis e> <b d>)} \voiceTwo b2
 		b4 s s2
 		s1
 		s
 	}>>
 	s1*8
 	% bars 89 - 90
-	\ottava #1 \acciaccatura {a'8} a'4^\markup {Vl.} \tuplet 3/2 4 {a8( g) fis-. e( d) cis-. cis( b) a-. \ottava #0
+	\ottava #1 \acciaccatura {\stemOffset #-2 a'8} a'4^\markup {Vl.} \tuplet 3/2 4 {a8( g) fis-. e( d) cis-. cis( b) a-. \ottava #0
 	g( fis) e-. e( d) cis-. cis( b) a-. g( fis) e-.}
 	s1*14
 	% bar 105
-	<>^\markup {Vl.}
+	<>-\offset X-offset -1 ^\markup {Vl.}
 	s1*12
 	% bars 117 - 120
 	r2^\markup {Vl.} e'2\fz~
@@ -877,7 +877,7 @@ cueVoiceFlautoIIMvtIV = \relative c {
 	cis4-. cis-. b2->\!
 	s1*38
 	% bars 159 - 160
-	r4^\markup {Ob.} d(\p <f a> <e g>8 <d f!>)
+	r4-\offset X-offset -1 ^\markup {Ob.} d(\p <f a> <e g>8 <d f!>)
 	<d f>4\(( <c e>8 <b d>) <b d>4( <a c!>8 <g b>)\)
 	s1*5
 	% bar 166
@@ -888,7 +888,7 @@ cueVoiceFlautoIIMvtIV = \relative c {
 	}
 	s1*24
 	% bars 191 - 195
-	fis'4(\p\<^\markup {Fl.I.} a\! bes\> g)\!
+	\hairpinShorten #'(-0.5 . -0.5) fis'4(\p\<^\markup {Fl.I.} a\! bes-\tweak extra-offset #'(0 . -0.3) \> g)\!
 	fis1(
 	g
 	a2 d
@@ -904,7 +904,7 @@ cueVoiceFlautoIIMvtIV = \relative c {
 	r4 b-. r e-.
 	s1*6
 	% bars 213 - 216
-	b,4->^\markup {Ob.} \tuplet 3/2 4 {b8( a g)} a4-> \tuplet 3/2 4 {a8( g fis)}
+	b,4\f->^\markup {Ob.} \tuplet 3/2 4 {b8( a g)} a4-> \tuplet 3/2 4 {a8( g fis)}
 	e4-. b-. e2->
 	fis4-. b,-. fis'2->
 	\voiceTwo g4 r \oneVoice s2

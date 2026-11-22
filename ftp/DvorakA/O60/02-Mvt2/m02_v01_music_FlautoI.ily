@@ -12,7 +12,7 @@ musicFlautoIMvtII = \relative c'' {
 	\ni \mmrPos #-8 R2 \no
 	r8 bes(\p a d~
 	d4.\< e8\!
-	f2\fp\>~
+	\hairpinShorten #'(-0.5 . -0.5) f2\fp\>~
 	f8)\pp r r4
 % Bars 6 to 10
 	R2*6
@@ -38,13 +38,13 @@ musicFlautoIMvtII = \relative c'' {
 	c8 b a g)
 	g8(~ g32 a g) f-. f4\<(
 	e8)\! r r4
-	\mmrnDown R2*6
+	\mmrnDown \mmrLength #18 \tempoXoffset #-1 R2*3
 % Bars 31 to 35
 	
-	
+	\mmrLength #10 \mmrnDown R2*3
 	
 	\section \mark \default
-	r4 fis--\pp
+	\tempoXoffset #1.5 r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis-- fis--
@@ -81,14 +81,14 @@ musicFlautoIMvtII = \relative c'' {
 	
 	\mark \default
 	\ni \mmrPos #-8 R2
-	\mmrPos #-8 R
+	\mmrPos #-9 R
 	\mmrPos #-4 R
 % Bars 76 to 80
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	f4(\pp bes~
+	\shape #'((0 . -1)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur f4(\pp bes~
 % Bars 81 to 85
 	bes8 a g f)
 	f(~ f32 g f) ees-. ees4(
@@ -99,7 +99,7 @@ musicFlautoIMvtII = \relative c'' {
 	r8 g16(\p\< a) a( bes) bes( c)\!
 	d4\f f\fz~
 	f8\> ees16( d f ees\! d c) \mark \default
-	bes4.\pp r8
+	\dynEO #'(0 . 1) bes4.\pp r8
 	R2*5
 % Bars 91 to 95
 	
@@ -114,7 +114,7 @@ musicFlautoIMvtII = \relative c'' {
 % Bars 101 to 105
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	f'4.\ff( ges8~
 	ges f4.~
 % Bars 106 to 110
@@ -161,7 +161,7 @@ musicFlautoIMvtII = \relative c'' {
 	R2
 	bes4(\pp g8\< c)
 	bes( g d e)\!
-	\hairpinShorten #'(-1 . 0) f2~-\offset X-offset -1 \mf\<
+	\hairpinShorten #'(-0.5 . 0) f2~-\offset X-offset -1 \mf\<
 	f8\> f(-- g-- a--)\!
 % Bars 146 to 150
 	bes4\p(~ bes16_\dimmarkup c g a
@@ -184,7 +184,7 @@ musicFlautoIMvtII = \relative c'' {
 	c8 c( f16 c a f)\!
 	r4 bes\pp~
 	bes8 bes( ees16 bes g ees)
-	r4 a\trill(~
+	r4 \shape #'(((0 . 0)(0 . 0.5)(0 . 0.5)(0 . 0)) ()) Slur a\trill(~
 	a16 bes32 a g16 a c a g f
 % Bars 166 to 170
 	d ees a->_\dimmarkup f ees c b c

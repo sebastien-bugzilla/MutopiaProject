@@ -22,7 +22,9 @@
 		\override TrillSpanner.to-barline = ##f
 		\override TrillSpanner.bound-details.right.attach-dir = 1
 		\override TrillSpanner.bound-details.right.end-on-accidental = ##f
-%		\override MultiMeasureRest.space-increment = #0
+		\override Arpeggio.padding = #0.25
+		\override MultiMeasureRest.space-increment = #0
+%		\override Beam.damping = #3
 		
 		
 %		\override NoteHead.transparent = ##t
@@ -50,10 +52,8 @@
 		\Staff
 %		\RemoveAllEmptyStaves
 		\consists #Measure_counter_engraver
-		\override Staff.MultiMeasureRest.space-increment = 1.5
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override TupletBracket.staff-padding = ##f
-		\override MultiMeasureRest.space-increment = 0
 		\override StaffEllipsis.break-visibility = ##(#f #f #f)
 		\override AccidentalCautionary.avoid-slur = #'ignore
 		\override Accidental.avoid-slur = #'ignore
@@ -65,10 +65,11 @@
 %		scriptDefinitions = #my-script-alist
 		\override RehearsalMark.font-size = #4
 		\override RehearsalMark.extra-spacing-width = #'(-0.1 . 0.1)
-		\override RehearsalMark.extra-spacing-height = #'(-1 . +10)
+		\override RehearsalMark.extra-spacing-height = #'(-1 . 10)
 		\override RehearsalMark.outside-staff-priority = ##f
 		\override BarNumber.font-size = #0.1
 		\override MeasureCounter.outside-staff-priority = #390
+		
 %		\override MetronomeMark.transparent = ##t
 %		\override RehearsalMark.transparent = ##t
 

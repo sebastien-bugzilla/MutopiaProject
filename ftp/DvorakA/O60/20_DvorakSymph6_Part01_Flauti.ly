@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-%\include "./00-Common/DvorakSymph6_Format_Part01_Flauti.ily"
+\include "./00-Common/DvorakSymph6_Format_Part01_Flauti.ily"
 \include "./01-Mvt1/m01_v01_music_FlautoI.ily"
 \include "./02-Mvt2/m02_v01_music_FlautoI.ily"
 \include "./03-Mvt3/m03_v01_music_FlautoI.ily"
@@ -52,9 +52,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtI
-%			}
+			\new Voice {
+				\formatFlautoIMvtI
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtI
 			}
@@ -76,9 +76,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtII
-%			}
+			\new Voice {
+				\formatFlautoIMvtII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtII
 			}
@@ -92,7 +92,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1 \bold 2.
 			}
 		}
 		\layout {
@@ -100,9 +100,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtIII
-%			}
+			\new Voice {
+				\formatFlautoIMvtIII
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIII
 			}
@@ -116,7 +116,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold { 3. Scherzo. (Furiant.) }
+				\vspace #4 \bold { 3. Scherzo. (Furiant) }
 			}
 		}
 		\layout {
@@ -124,9 +124,9 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatFlautoIMvtIV
-%			}
+			\new Voice {
+				\formatFlautoIMvtIV
+			}
 			\new Voice {
 				\keepWithTag #'(flautoI) \tempiPartMvtIV
 			}
@@ -138,7 +138,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold { 4. Finale. }
 			}
@@ -146,103 +146,111 @@
 		\layout {
 		}
 	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtI
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtI
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtI
-%			}
-%			\new Voice {
-%				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##t
-%			piece = \markup {
-%				\bold 1.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtII
-%			}
-%			\new Voice {
-%				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold 2.
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtIII
-%%			}
-%			\new Voice {
-%				\keepWithTag #'(flautoII) \tempiPartMvtIII
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
-%			}
-%			\new Voice {
-%				\timeMvtIII \nameFlautoIIMvtIII \musicPiccoloMvtIII
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold { 3. Scherzo. (Furiant.) }
-%			}
-%		}
-%		\layout {
-%		}
-%	}
-%	\score {
-%		\new Staff <<
-%%			\new Voice {
-%%				\formatFlautoIIMvtIV
-%%			}
-%			\new Voice {
-%				\keepWithTag #'flautoII \tempiPartMvtIV
-%			}
-%			\new Voice {
-%				\InCueContext \cueVoiceFlautoIIMvtIV
-%			}
-%			\new Voice {
-%				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV
-%			}
-%		>>
-%		\header {
-%			breakbefore = ##f
-%			piece = \markup {
-%				\bold {4. Finale.}
-%			}
-%		}
-%		\layout {
-%		}
-%	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"This page left blank to facilitate page turns."
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtI
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtI
+			}
+			\new Voice {
+				\timeMvtI \nameFlautoIIMvtI \musicFlautoIIMvtI
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold 1.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtII
+			}
+			\new Voice {
+				\timeMvtII \nameFlautoIIMvtII \musicFlautoIIMvtII
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold 2.
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(flautoII) \tempiPartMvtIII
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFlautoIIMvtIII \musicFlautoIIMvtIII
+			}
+			\new Voice {
+				\timeMvtIII \nameFlautoIIMvtIII \musicPiccoloMvtIII
+			}
+		>>
+		\header {
+			breakbefore = ##f
+			piece = \markup {
+				\bold { 3. Scherzo. (Furiant) }
+			}
+		}
+		\layout {
+		}
+	}
+	\score {
+		\new Staff <<
+			\new Voice {
+				\formatFlautoIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'flautoII \tempiPartMvtIV
+			}
+			\new Voice {
+				\InCueContext \cueVoiceFlautoIIMvtIV
+			}
+			\new Voice {
+				\timeMvtIV \nameFlautoIIMvtIV \musicFlautoIIMvtIV
+			}
+		>>
+		\header {
+			breakbefore = ##t
+			piece = \markup {
+				\bold {4. Finale.}
+			}
+		}
+		\layout {
+		}
+	}
 }
