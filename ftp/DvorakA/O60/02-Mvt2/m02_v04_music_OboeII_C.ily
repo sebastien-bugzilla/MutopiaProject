@@ -26,7 +26,7 @@ musicOboeIIMvtII = \relative c' {
 % Bars 16 to 20
 	
 	
-	r8 fis(-\offset X-offset -1.5 \p g e)
+	r8 fis(-\offset X-offset -1.5 \p g e)-\offset X-offset 1 -\crescmarkup
 	f!8 r r4
 	R2*2
 % Bars 21 to 25

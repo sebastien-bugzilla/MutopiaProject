@@ -53,6 +53,12 @@ mfcrescD = \tweak DynamicText.self-alignment-X #-0.84 #(make-dynamic-script (mar
 brackmf = \markup {
 	\hspace #-0.8 \concat {\bracket \with-true-dimensions \dynamic m \dynamic f}
 }
+brackmfcresc = \markup {
+	\hspace #-0.8 \concat {
+		\bracket \with-true-dimensions \dynamic mf \italic " cresc."
+	}
+}
+
 %--------------------
 % dynamics mfp
 %--------------------

@@ -3,7 +3,7 @@
     145     389    4930 10_DvorakSymph6_Conductor_mvt3.ly
     154     409    5224 10_DvorakSymph6_Conductor_mvt4.ly
     256     611    5584 20_DvorakSymph6_Part01_Flauti.ly
-    244     628    5267 20_DvorakSymph6_Part02_Oboi.ly
+    260     624    5519 20_DvorakSymph6_Part02_Oboi.ly
     244     625    5577 20_DvorakSymph6_Part03_Clarinetti.ly
     244     625    5436 20_DvorakSymph6_Part04_Fagotti.ly
     444    1077    8799 20_DvorakSymph6_Part05_Corni.ly
@@ -16,13 +16,13 @@
     157     418    4007 20_DvorakSymph6_Part12_Violoncello.ly
     144     394    3726 20_DvorakSymph6_Part13_Contrabasso.ly
      63     221    1409 test.ly
-  11536   39292  213773 00-Common/DvorakSymph6_CueVoice.ily
+  11536   39389  214429 00-Common/DvorakSymph6_CueVoice.ily
     322    1717   14292 00-Common/DvorakSymph6_Format_Cond_Mvt01.ily
     134     686    5958 00-Common/DvorakSymph6_Format_Cond_Mvt02.ily
     210    1050    9195 00-Common/DvorakSymph6_Format_Cond_Mvt03.ily
     358    1976   16094 00-Common/DvorakSymph6_Format_Cond_Mvt04.ily
    1034    2376   30446 00-Common/DvorakSymph6_Format_Part01_Flauti.ily
-   1046    2403   30773 00-Common/DvorakSymph6_Format_Part02_Oboi.ily
+   1218    2790   35761 00-Common/DvorakSymph6_Format_Part02_Oboi.ily
    1010    2322   29792 00-Common/DvorakSymph6_Format_Part03_Clarinetti.ily
    1166    2673   34230 00-Common/DvorakSymph6_Format_Part04_Fagotti.ily
    1578    3620   46551 00-Common/DvorakSymph6_Format_Part05_Corni.ily
@@ -35,26 +35,26 @@
     714    1646   21021 00-Common/DvorakSymph6_Format_Part12_Violoncello.ily
     634    1466   18717 00-Common/DvorakSymph6_Format_Part13_Contrabasso.ily
     742    1709   21808 00-Common/DvorakSymph6_Format_Part14_Bassi.ily
-    339     980   15807 00-Common/DvorakSymph6_Format_temp.ily
+    339    1057   16979 00-Common/DvorakSymph6_Format_temp.ily
      35     292    2024 00-Common/DvorakSymph6_Header.ily
      70     269    2498 00-Common/DvorakSymph6_LayoutConductors.ily
-     78     288    2846 00-Common/DvorakSymph6_LayoutParts.ily
+     79     293    2885 00-Common/DvorakSymph6_LayoutParts.ily
      65     280    2523 00-Common/DvorakSymph6_NameGrandStaff.ily
     510    1579   11890 00-Common/DvorakSymph6_NameStaff.ily
     667    2308   19034 00-Common/DvorakSymph6_NameVoice.ily
      70     192    1680 00-Common/DvorakSymph6_PaperConductors.ily
      60     163    1442 00-Common/DvorakSymph6_PaperParts.ily
-    611    1756   15422 00-Common/DvorakSymph6_Shortcuts.ily
-    940    3198   24947 00-Common/DvorakSymph6_Tempi.ily
+    617    1773   15541 00-Common/DvorakSymph6_Shortcuts.ily
+    975    3313   25666 00-Common/DvorakSymph6_Tempi.ily
      33     164    1133 00-Common/DvorakSymph6_timeMvt.ily
     615    1867   10061 01-Mvt1/m01_v01_music_FlautoI_C.ily
     630    1769    8590 01-Mvt1/m01_v01_music_FlautoI.ily
     603    1531    7618 01-Mvt1/m01_v02_music_FlautoII_C.ily
     616    1680    8225 01-Mvt1/m01_v02_music_FlautoII.ily
     655    2159   11714 01-Mvt1/m01_v03_music_OboeI_C.ily
-    682    2030    9898 01-Mvt1/m01_v03_music_OboeI.ily
+    682    2089   10263 01-Mvt1/m01_v03_music_OboeI.ily
     647    1766    8447 01-Mvt1/m01_v04_music_OboeII_C.ily
-    658    1817    8983 01-Mvt1/m01_v04_music_OboeII.ily
+    666    1842    9086 01-Mvt1/m01_v04_music_OboeII.ily
     643    2112   11359 01-Mvt1/m01_v05_music_ClarinettoI_C.ily
     663    1891    9122 01-Mvt1/m01_v05_music_ClarinettoI.ily
     643    1757    8416 01-Mvt1/m01_v06_music_ClarinettoII_C.ily
@@ -101,9 +101,9 @@
     218     589    2928 02-Mvt2/m02_v02_music_FlautoII_C.ily
     220     611    3138 02-Mvt2/m02_v02_music_FlautoII.ily
     244     872    5181 02-Mvt2/m02_v03_music_OboeI_C.ily
-    253     796    4135 02-Mvt2/m02_v03_music_OboeI.ily
-    244     756    4023 02-Mvt2/m02_v04_music_OboeII_C.ily
-    252     728    3801 02-Mvt2/m02_v04_music_OboeII.ily
+    253     833    4343 02-Mvt2/m02_v03_music_OboeI.ily
+    244     759    4056 02-Mvt2/m02_v04_music_OboeII_C.ily
+    252     749    3948 02-Mvt2/m02_v04_music_OboeII.ily
     236     890    4950 02-Mvt2/m02_v05_music_ClarinettoI_C.ily
     254     835    4139 02-Mvt2/m02_v05_music_ClarinettoI.ily
     236     643    3303 02-Mvt2/m02_v06_music_ClarinettoII_C.ily
@@ -143,9 +143,9 @@
     260     583    2790 03-Mvt3/m03_v02_music_Piccolo_C.ily
     260     612    2974 03-Mvt3/m03_v02_music_Piccolo.ily
     486    1554    8416 03-Mvt3/m03_v03_music_OboeI_C.ily
-    504    1441    6882 03-Mvt3/m03_v03_music_OboeI.ily
-    494    1310    6272 03-Mvt3/m03_v04_music_OboeII_C.ily
-    505    1435    6966 03-Mvt3/m03_v04_music_OboeII.ily
+    504    1438    6807 03-Mvt3/m03_v03_music_OboeI.ily
+    494    1310    6275 03-Mvt3/m03_v04_music_OboeII_C.ily
+    505    1445    6983 03-Mvt3/m03_v04_music_OboeII.ily
     514    1534    8521 03-Mvt3/m03_v05_music_ClarinettoI_C.ily
     519    1458    7212 03-Mvt3/m03_v05_music_ClarinettoI.ily
     506    1405    6838 03-Mvt3/m03_v06_music_ClarinettoII_C.ily
@@ -183,9 +183,9 @@
     579    1912    8604 04-Mvt4/m04_v02_music_FlautoII_C.ily
     628    2115    9725 04-Mvt4/m04_v02_music_FlautoII.ily
     643    2401   11915 04-Mvt4/m04_v03_music_OboeI_C.ily
-    661    2282   10033 04-Mvt4/m04_v03_music_OboeI.ily
+    663    2299   10175 04-Mvt4/m04_v03_music_OboeI.ily
     654    2192    9993 04-Mvt4/m04_v04_music_OboeII_C.ily
-    652    2159    9739 04-Mvt4/m04_v04_music_OboeII.ily
+    652    2184    9883 04-Mvt4/m04_v04_music_OboeII.ily
     607    2230   10623 04-Mvt4/m04_v05_music_ClarinettoI_C.ily
     648    2233    9749 04-Mvt4/m04_v05_music_ClarinettoI.ily
     607    2046    8985 04-Mvt4/m04_v06_music_ClarinettoII_C.ily
@@ -226,4 +226,4 @@
     689    2910   12547 04-Mvt4/m04_v23_music_Violoncello.ily
     670    2417   10500 04-Mvt4/m04_v24_music_Contrabasso_C.ily
     674    2463   10750 04-Mvt4/m04_v24_music_Contrabasso.ily
- 118499  367380 2113963 total
+ 118739  368268 2122995 total

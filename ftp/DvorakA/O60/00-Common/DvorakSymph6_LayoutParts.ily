@@ -59,6 +59,7 @@
 		\override Accidental.avoid-slur = #'ignore
 		
 %		\override StaffSymbol.transparent = ##t
+%		\override BarLine.transparent = ##t
 	}
 	\context {
 		\Score

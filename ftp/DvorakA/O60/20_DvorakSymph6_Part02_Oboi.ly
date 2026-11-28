@@ -22,7 +22,7 @@
 \include "./00-Common/DvorakSymph6_NameVoice.ily"
 \include "./00-Common/DvorakSymph6_CueVoice.ily"
 \include "./00-Common/DvorakSymph6_Tempi.ily"
-%\include "./00-Common/DvorakSymph6_Format_Part02_Oboi.ily"
+\include "./00-Common/DvorakSymph6_Format_Part02_Oboi.ily"
 \include "./01-Mvt1/m01_v03_music_OboeI.ily"
 \include "./02-Mvt2/m02_v03_music_OboeI.ily"
 \include "./03-Mvt3/m03_v03_music_OboeI.ily"
@@ -39,7 +39,7 @@
 		subtitle = \markup { 
 			\abs-fontsize #12 \sans
 			\center-column {
-				"Part for Oboen"
+				"Part for Oboi"
 			}
 		}
 		subsubtitle = \markup { 
@@ -51,12 +51,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtI
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtI
-%			}
+			\new Voice {
+				\formatOboeIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtI
 			}
@@ -75,12 +75,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtII
-%			}
+			\new Voice {
+				\formatOboeIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtII
 			}
@@ -91,20 +91,28 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #3 \bold 2.
 			}
 		}
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"This page left blank to facilitate page turns."
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtIII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\formatOboeIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIII
 			}
@@ -113,9 +121,9 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
-				\vspace #1.6 \bold { 3. Scherzo. (Furiant.) }
+				\bold { 3. Scherzo. (Furiant.) }
 			}
 		}
 		\layout {
@@ -123,12 +131,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIMvtIV
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeI) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\formatOboeIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(oboeI) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIMvtIV
 			}
@@ -139,20 +147,28 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold { 4. Finale. }
+				\vspace #1.5 \bold { 4. Finale. }
 			}
 		}
 		\layout {
 		}
 	}
+	\pageBreak
+	\markup {
+		\vspace #25.35
+		\abs-fontsize #20
+		\fill-line {
+			"This page left blank to facilitate page turns."
+		}
+	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtI
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtI
-%			}
+			\new Voice {
+				\formatOboeIIMvtI
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtI
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtI
 			}
@@ -171,12 +187,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtII
-%			}
+			\new Voice {
+				\formatOboeIIMvtII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtII
 			}
@@ -187,7 +203,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold 2.
+				\vspace #1 \bold 2.
 			}
 		}
 		\layout {
@@ -195,12 +211,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtIII
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtIII
-%			}
+			\new Voice {
+				\formatOboeIIMvtIII
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIII
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIII
 			}
@@ -211,7 +227,7 @@
 		\header {
 			breakbefore = ##f
 			piece = \markup {
-				\bold {3. Scherzo. (Furiant.)}
+				\vspace #1.7 \bold {3. Scherzo. (Furiant)}
 			}
 		}
 		\layout {
@@ -219,12 +235,12 @@
 	}
 	\score {
 		\new Staff <<
-%			\new Voice {
-%				\formatOboeIIMvtIV
-%			}
-%			\new Voice {
-%				\keepWithTag #'(oboeII) \tempiPartMvtIV
-%			}
+			\new Voice {
+				\formatOboeIIMvtIV
+			}
+			\new Voice {
+				\keepWithTag #'(oboeII) \tempiPartMvtIV
+			}
 			\new Voice {
 				\InCueContext \cueVoiceOboeIIMvtIV
 			}
@@ -233,7 +249,7 @@
 			}
 		>>
 		\header {
-			breakbefore = ##f
+			breakbefore = ##t
 			piece = \markup {
 				\bold { 4. Finale.}
 			}

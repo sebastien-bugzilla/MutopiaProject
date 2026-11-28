@@ -403,7 +403,7 @@ musicOboeIIMvtIII = \relative c'' {
 	bes,4-.-\offset X-offset 0.5 \p d-. c-.
 	bes-. a-. g-.
 % Bars 366 to 370
-	f2 f4~
+	f2-> f4->~
 	f f2->
 	R2.*2
 	
@@ -463,8 +463,8 @@ musicOboeIIMvtIII = \relative c'' {
 	f f4~
 	f f2
 % Bars 416 to 420
-	a,2 a4~
-	a a2
+	c2 c4~
+	c c2
 	d4-. c-. c-.
 	d-. c-. c-.
 	a(\fz bes) a(\fz

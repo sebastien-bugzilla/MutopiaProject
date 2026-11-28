@@ -10,9 +10,9 @@ musicOboeIMvtII = \relative c'' {
 %	\transposition a
 % Bars 1 to 5
 	\ni \mmrPos #4 R2 \no 
-	\once \voiceOne r8 \stemUp bes(\p a4
-	bes2~\< \stemNeutral
-	bes8\fp d bes\> c
+	\once \voiceOne r8 bes(\p a4
+	<< \hairpinShorten #'(0 . -1.5) bes2~\< {s8 s s s\!}>>
+	bes8 d\> bes c
 	d)\pp r r4
 % Bars 6 to 10
 	R2
@@ -27,8 +27,8 @@ musicOboeIMvtII = \relative c'' {
 % Bars 16 to 20
 	
 	
-	\ni \mmrPos #4 R2 \no
-	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur f8(_\crescmarkup^\brack\mf bes d f~
+	\ni \mmrPos #6 R2 \no
+	\shape #'((0 . -2)(0 . 0.5)(0 . 0.5)(0 . 0)) Slur \beamOffset #'(0.5 . 0) f!8(_\brackmfcresc bes d f~
 	f_\dimmarkup ees d c
 % Bars 21 to 25
 	f4.)\pp r8
@@ -47,7 +47,7 @@ musicOboeIMvtII = \relative c'' {
 	d8 r r4
 	R2*2
 	\section \mark \default
-	r4 fis--\pp
+	\tempoXoffset #1 r4 fis--\pp
 % Bars 36 to 40
 	fis-- fis--
 	fis-- fis--
@@ -63,7 +63,7 @@ musicOboeIMvtII = \relative c'' {
 % Bars 46 to 50
 	
 	r4 bes,\pp\<(
-	aes2\>
+	<< aes2\> {s8 s s s\!}>>
 	bes8) bes--\pp bes-- bes--
 	aes2->(
 % Bars 51 to 55
@@ -91,8 +91,8 @@ musicOboeIMvtII = \relative c'' {
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R
 % Bars 71 to 75
-	\mmrPos #-4 R
-	\mmrPos #-4 R \mark \default
+	\mmrPos #-6 R
+	\mmrPos #-4 R \markWhiteout \mark \default
 	\mmrPos #-4 R \no
 	R2
 	bes4\p( g8 c
@@ -119,7 +119,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	\ni \mmrPos #-4 R2
 	\mmrPos #-4 R \no
-	d8->\mf bes-> g16( a) bes-. c-.
+	\beamOffset #'(0 . 0.5) d8->\mf bes-> g16( a) bes-. c-.
 % Bars 96 to 100
 	d8->_\crescmarkup bes-> g16( a) bes-. c-.
 	d8->\f bes->\< g16( a) bes-. c-.\!
@@ -176,9 +176,9 @@ musicOboeIMvtII = \relative c'' {
 	f4.( g8~
 % Bars 141 to 145
 	g4 fis)
-	g2\p~
-	g
-	bes\mf\<(
+	g2\p\<~
+	<< g {s8 s s s\!}>>
+	bes2\mf\<(
 	c)(\>
 % Bars 146 to 150
 	bes8)\p r r4
@@ -187,7 +187,7 @@ musicOboeIMvtII = \relative c'' {
 	
 	r8 bes4(_\pcresc a16 g
 % Bars 151 to 155
-	f2)~\mf\>
+	\hairpinShorten #'(-0.5 . -0.5) f2)~\mf\>
 	f8\p r r4
 	R2*3
 	
@@ -205,20 +205,20 @@ musicOboeIMvtII = \relative c'' {
 	bes( ees4\pp d16 c~
 	c8) r r4
 % Bars 166 to 170
-	R2*3
+	R2*2
 	
-	\mark \default
+	\tempoXoffset #-1 \mmrLength #10 R2 \mark \default
 	\ni \mmrPos #4 R2
-	\mmrPos #4 R
+	\mmrPos #6 R
 % Bars 171 to 175
-	\mmrPos #4 R
-	\mmrPos #4 R
-	\mmrPos #4 R \no
+	\mmrPos #6 R
+	\mmrPos #6 R
+	\mmrPos #6 R \no
 	\once \voiceOne r8 d(\p\< ees e\!
 	f)\noBeam d(\mf\< ees e\!
 % Bars 176 to 180
 	f)\noBeam d(\f\< ees e\!
-	f16) c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes!->-.\!
+	f16)\noBeam c->\f\<-. f->-. f->-. f->-. f->-. f->-. bes!->-.\!
 	a8->-.\ff r g4-^~
 	g8\> bes( a g~\!
 	g\p f4) r8
@@ -226,8 +226,8 @@ musicOboeIMvtII = \relative c'' {
 	R2*3
 	
 	
-	\ni \mmrPos #-4 R2
-	\mmrPos #-4 R
+	\ni \mmrPos #-6 R2
+	\mmrPos #-6 R
 % Bars 186 to 190
 	\mmrPos #-4 R \no
 	r8 f(\p g a)

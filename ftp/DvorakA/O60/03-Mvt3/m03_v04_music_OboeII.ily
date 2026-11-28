@@ -76,7 +76,7 @@ musicOboeIIMvtIII = \relative c'' {
 		a-. r a-.
 		r g-. r
 		g-. r g-.
-		f!8(\p\< g a bes c cis
+		f8(\p\< g a bes c cis
 % Bars 61 to 65
 		d4)\! e-.\f d-.
 		f2\ff-> f4->(
@@ -178,18 +178,18 @@ musicOboeIIMvtIII = \relative c'' {
 			f r r
 		}
 		{
-			d2.\f\>
+			<< d2.\f {s4 \hairpinShorten #'(1 . 0) s2\>}>>
 		}
 	}
-	\override Staff.MeasureCounter.count-from = #2 \startMeasureCount d
+	d2.
 	d
 	d\p
 % Bars 151 to 155
 	d_\dimmarkup
 	d
-	d \attaccatrio \stopMeasureCount \section \key d \major \break
+	d \section \key d \major \break
 	\repeat volta 2 {
-		\trioPart \time 3/4 R2.*6
+		\trioPart \tempoOSP #1500 \time 3/4 \mmrLength #23 R2.*6
 	
 % Bars 156 to 160
 	
@@ -201,19 +201,19 @@ musicOboeIIMvtIII = \relative c'' {
 		\mmrPos #-4 R
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
-		R2.*6
+		\mmrLength #11 \tempoXoffset #-1 R2.*6
 	
 % Bars 166 to 170
 	
 	
 	
 	
-		\ni \mmrPos #6 R2.
+		\ni \mmrPos #6.5 R2.
 % Bars 171 to 175
 		\mmrPos #-4 R
 		\mmrPos #-4 R
 		\mmrPos #-4 R \no
-		R2.*4
+		\tempoXoffset #-2 R2.*4
 	
 % Bars 176 to 180
 	
@@ -245,14 +245,14 @@ musicOboeIIMvtIII = \relative c'' {
 		\mmrPos #-4 R
 	}
 	\mmrPos #-4 R
-	\mmrPos #-4 R \no
+	\mmrPos #-6 R \no
 	R2.*4
 	
 % Bars 206 to 210
 	
 	
 	\ni \mmrPos #4 R2.
-	\mmrPos #-6 R
+	\mmrPos #-6.5 R
 	\mmrPos #-6 R
 % Bars 211 to 215
 	\mmrPos #-6 R \no
@@ -274,7 +274,7 @@ musicOboeIIMvtIII = \relative c'' {
 	\mmrPos #-4 R
 	\mmrPos #-4 R
 	\mmrPos #-4 R \no
-	r4^\solo b,(\p d
+	r4 b,(\p d
 % Bars 231 to 235
 	fis b d~
 	d2 cis4
@@ -396,8 +396,8 @@ musicOboeIIMvtIII = \relative c'' {
 	a-. r a-.
 	r g-. r
 	g-. r g-.
-	f!8( g a\< bes c cis
-	d4) e4-.\f d-.
+	f8( g a\< bes c cis
+	d4)\! e4-.\f d-.
 % Bars 346 to 350
 	f2->\ff f4->(
 	e) f2->
@@ -415,7 +415,7 @@ musicOboeIIMvtIII = \relative c'' {
 	bes,4-.\p d-. c-.
 	bes-. a-. g-.
 % Bars 366 to 370
-	f2 f4~
+	f2-> f4~->
 	f f2->
 	R2.*2
 	
@@ -469,13 +469,13 @@ musicOboeIIMvtIII = \relative c'' {
 	e!2-> e4->~
 % Bars 411 to 415
 	e e2->
-	f!2_\ffgrandioso f4~
+	f!2\ff f4~
 	f f2
 	f f4~
 	f f2
 % Bars 416 to 420
-	a,2 a4~
-	a a2
+	c2 c4~
+	c c2
 	d4-. c-. c-.
 	d-. c-. c-.
 	a(\fz \once \stemUp bes) a(\fz

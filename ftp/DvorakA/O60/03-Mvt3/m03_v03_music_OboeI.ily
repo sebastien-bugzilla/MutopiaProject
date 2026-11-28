@@ -10,7 +10,7 @@ musicOboeIMvtIII = \relative c''' {
 %	\transposition a
 % Bars 1 to 5
 	\repeat volta 2 {
-		R2.*4
+		\mmrLength #21 \mmrnDown R2.*4
 	
 	
 	
@@ -150,7 +150,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 126 to 130
 		g!2-> g4~->
 		g g2->
-		a!2_\ffgrandioso a4~
+		a!2\ff a4~
 		a a2
 		a2 a4~
 % Bars 131 to 135
@@ -168,7 +168,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 141 to 145
 		g) fis(\fz g)
 		a4-. e8( dis e4)
-		f-. d8( cis d4)
+		f-. d!8( cis d4)
 		a'-. a,(-> b8 cis)
 		d4-. f-. d-.
 % Bars 146 to 150
@@ -181,13 +181,13 @@ musicOboeIMvtIII = \relative c''' {
 			d2.\f\>
 		}
 	}
-	\override Staff.MeasureCounter.count-from = #2 \startMeasureCount d
+	d
 	d
 	d\p
 % Bars 151 to 155
 	d_\dimmarkup
 	d
-	d \stopMeasureCount \section \key d \major \break
+	d \section \key d \major \break
 	\repeat volta 2 {
 		\time 3/4 \trioPart d4(\fp e8 cis d4)
 		R2.
@@ -269,7 +269,7 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 221 to 225
 	cis)
 	d4\pp r r
-	fis( g8 e fis4)
+	fis(\pp g8 e fis4)
 	R2.*14
 	
 % Bars 226 to 230
@@ -279,9 +279,9 @@ musicOboeIMvtIII = \relative c''' {
 % Bars 236 to 240
 	
 	
-	\ni \mmrPos #4 R2.
-	\mmrPos #4 R
-	\mmrPos #4 R
+	\ni \mmrPos #7 R2.
+	\mmrPos #7 R
+	\mmrPos #6 R
 % Bars 241 to 245
 	\mmrPos #4 R
 	\mmrPos #4 R \no
@@ -291,7 +291,7 @@ musicOboeIMvtIII = \relative c''' {
 	
 	
 	
-	\ni \mmrPos #-4 R2. \no
+	\ni \mmrPos #-7 R2. \no
 % Bars 251 to 255
 	R2.*2
 	
@@ -353,7 +353,7 @@ musicOboeIMvtIII = \relative c''' {
 	fis4( g8) r fis4(
 	g8) r fis4( g8) r
 	a4-. e8( dis e4)
-	f-. d8( cis d4)
+	f-. d!8( cis d4)
 	a'-. a,8( gis a4)
 % Bars 306 to 310
 	d-. d,8( cis d4)
@@ -394,7 +394,7 @@ musicOboeIMvtIII = \relative c''' {
 	d-. r d-.
 	r a-. r
 	a-. r a-.
-	f!8( g a\< bes c cis
+	f8( g a\< bes c cis
 	d4)\! g4-.\f f-.
 % Bars 346 to 350
 	a2->\ff bes4->~
@@ -468,7 +468,7 @@ musicOboeIMvtIII = \relative c''' {
 	g!2-> g4->~
 % Bars 411 to 415
 	g g2->
-	a!2_\ffgrandioso a4~
+	a!2\ff a4~
 	a a2
 	a a4~
 	a a2

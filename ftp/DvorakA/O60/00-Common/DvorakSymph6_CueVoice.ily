@@ -1003,7 +1003,7 @@ cueVoiceOboeIMvtI = \relative c {
 	% bars 69 - 73
 	\transpose c a, {
 		\relative c' {
-			<bes d>4-.\f^\markup {Cl.} r q-.
+			<bes d>4-.\f^\markup {Cl.A} r q-.
 			r q-. r
 			q-. r q-.
 			r q-. r
@@ -1014,13 +1014,13 @@ cueVoiceOboeIMvtI = \relative c {
 	% bar 79 - 80
 	\transpose c a, {
 		\relative c'' {
-			<cis e>8-.\p^\markup {Cl.} <d f>-. <e g>-. r r4
+			<cis e>8-.\p^\markup {Cl.A} <d f>-. <e g>-. r r4
 			<d f>8-. <e g>-. <f a>-. r r4
 		}
 	}
 	s2.*139
 	% bars 220 - 224
-	r4^\markup {Fl.I.} f'''( e8 d)
+	r4-\offset X-offset -2 ^\markup {Fl.I.} f'''( e8 d)
 	s2.
 	r4 d( c8 b)
 	s2.
@@ -1033,7 +1033,7 @@ cueVoiceOboeIMvtI = \relative c {
 	aes-.-> aes-.-> bes-.->
 	s2.*40
 	% bar 354
-	<>^\markup {Fg.}
+	<>-\offset X-offset -1.5 ^\markup {Fg.}
 	s2.*158
 	% bars 512 - 515
 	r4^\markup {archi} b,-.->\ff cis-.->
@@ -1042,7 +1042,7 @@ cueVoiceOboeIMvtI = \relative c {
 	fis-.-> d-.-> e-.->
 	s2.*30
 	% bars 546 - 550
-	r4^\markup {Vl.I.} cis(\pp d8 e
+	r4^\markup {Vl.I.} cis(-\offset X-offset -2 \pp d8 e
 	fis2~ fis8) r
 	r4 cis(-\dimmarkup d8 e
 	fis2~ fis8) r
@@ -1074,7 +1074,7 @@ cueVoiceOboeIMvtII = \relative c {
 	<>^\markup {Fl.I.}
 	s2*4
 	% bars 84 - 86
-	\transpose c e {
+	\transpose c bes, {
 		\relative c'' {
 			e4\f^\markup {Cor.B} g->~
 			g8-\dimmarkup f16( e g8 f
@@ -1115,7 +1115,7 @@ cueVoiceOboeIMvtII = \relative c {
 cueVoiceOboeIMvtIII = \relative c {
 	s2.*23
 	% bars 24 - 27
-	\ottava #1 c'''2(-\pdolce^\markup {Vl.I.II.} f4~
+	\ottava #1 c'''2(-\pdolce-\offset X-offset 0.5 ^\markup {Vl.I.II.} f4~
 	f e f)
 	g2( c,4~
 	c2.) \ottava #0
@@ -1185,7 +1185,7 @@ cueVoiceOboeIMvtIII = \relative c {
 cueVoiceOboeIMvtIV = \relative c {
 	s4*1 s1*5
 	% bar 6 - 8
-	\clef bass r4^\markup {Fg.I.} cis'8(\p b e4 a,)
+	\clef bass r4-\offset X-offset -2 ^\markup {Fg.I.} cis'8(\p b e4 a,)
 	b( gis a b)
 	cis( d8 cis b4) \clef treble s
 	s1*10
@@ -1293,7 +1293,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	% bars 69 - 73
 	\transpose c a, {
 		\relative c' {
-			<bes d>4-.\f^\markup {Cl.} r q-.
+			<bes d>4-.\f^\markup {Cl.A} r q-.
 			r q-. r
 			q-. r q-.
 			r q-. r
@@ -1304,7 +1304,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	% bar 79 - 80
 	\transpose c a, {
 		\relative c'' {
-			<cis e>8-.\p^\markup {Cl.} <d f>-. <e g>-. r r4
+			<cis e>8-.\p^\markup {Cl.A} <d f>-. <e g>-. r r4
 			<d f>8-. <e g>-. <f a>-. r r4
 		}
 	}
@@ -1314,7 +1314,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	s2.*2
 	% bars 89 - 90
 	g'''8-.\< fis-. e-. d!-. cis-. fis-.\!
-	b,2.\f
+	b,2.-\offset X-offset -1 \f
 	s2.*18
 	% bar 109
 	<>^\markup {Ob.I.}
@@ -1329,7 +1329,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	dis2 cis4)
 	s2.*53
 	% bars 179 - 182
-	a'2.~^\markup {Ob.I.}
+	\dynEO #'(-0.5 . 0.5) a'2.\fp~-\offset X-offset -3.5 ^\markup {Ob.I.}
 	a^~
 	a^~
 	a4. fis8^(\pp g a)
@@ -1339,7 +1339,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	d4. d8 d4
 	s2.*11
 	% bars 220 - 224
-	r4^\markup {Fl.I.} f'( e8 d)
+	r4-\offset X-offset -2 ^\markup {Fl.I.} f'( e8 d)
 	s2.
 	r4 d( c8 b)
 	s2.
@@ -1349,7 +1349,7 @@ cueVoiceOboeIIMvtI = \relative c {
 	r4^\markup {Ob.I.} bes4( aes8 g)
 	s2.*9
 	% bar 261
-	<>^\markup {Fl.}
+	<>-\offset X-offset -1.5 ^\markup {Fl.}
 	s2.*49
 	% bar 310 - 313
 	r4^\markup {archi} f,-.->-\ffrinforz g-.->
@@ -1427,7 +1427,7 @@ cueVoiceOboeIIMvtII = \relative c {
 	% bars 15 - 18
 	r8^\markup {Vl.I.} bes'(\p\< c cis)\!
 	d4(\f f~
-	f8) ees16( d \acciaccatura f8 ees8. d16)
+	f8) ees16( d \acciaccatura {\stemOffset #-2 f8 } ees8. d16)
 	\once \stemDown d8 s s4
 	s2*5
 	% bars 24 - 27
@@ -1442,7 +1442,7 @@ cueVoiceOboeIIMvtII = \relative c {
 	\once \voiceTwo g8) r s4
 	s2*9
 	% bars 57 - 58
-	r8^\markup {Ob.I.} d'(\p bes e~
+	r8^\markup {Ob.I.} d'(-\offset X-offset -1 \p bes e~
 	e4) r
 	s2*16
 	% bars 75 - 83
@@ -1451,13 +1451,13 @@ cueVoiceOboeIIMvtII = \relative c {
 	<< f2~ {s8\> s s s\!}>>
 	f2~
 	f8 r r4
-	f'4(\pp^\markup {Fl.I.} bes~
+	\shape #'((0 . -0.8)(0 . 0.3)(0 . 0.3)(0 . -0.8)) Slur f'4(\pp^\markup {Fl.I.} bes~
 	bes8 a g f)
 	f(~ f32 g f e-.) e4( 
 	d8) r r4
 	s2*7
 	% bars 91 - 93
-	r8^\markup {Fl.II.} d'8(\p b f'~
+	r8-\offset X-offset -2 ^\markup {Fl.II.} d'8(\p b f'~
 	f16) e( d) c( b) a( g) f(
 	e8) r r4
 	s2*21
@@ -1480,7 +1480,7 @@ cueVoiceOboeIIMvtII = \relative c {
 	s2*6
 	% bars 138 - 140
 	d4^\markup {Fl.I.} f~\>
-	f8\! ees16( d f-\dimmarkup ees d c)
+	f8\! ees!16( d f-\dimmarkup ees d c)
 	d4 r
 	s2*46
 	% bar 187 - 190
@@ -1526,21 +1526,21 @@ cueVoiceOboeIIMvtIII = \relative c {
 	ges-. f8( e f4)
 	s2.*54
 	% bar 154
-	<>^\markup {Ob.I.}
+	<>-\tweak extra-offset #'(-0.2 . 6) _\markup {Ob.I.}
 	s2.*6
 	% bars 160 - 163
 	e,4(\p^\markup {Fl.picc} b')\< e(
 	b' e)\! b~
 	b\> b8( a g a\!
 	b2.)\pp
-	<>^\markup {Ob.I.}
+	<>-\offset X-offset -2 ^\markup {Ob.I.}
 	s2.*6
 	% bars 170 - 173
 	d,,4(\p\<^\markup {Fl.picc} a') d(\!
 	a') d( a)
 	fis a8(\> g fis g\!
 	a2.)\pp
-	<>^\markup {Ob.I.}
+	<>-\offset X-offset -2.5 ^\markup {Ob.I.}
 	s2.*4
 	% bars 178 - 181
 	g2.(\fz\> 
@@ -1556,13 +1556,13 @@ cueVoiceOboeIIMvtIII = \relative c {
 	a)~
 	a~
 	a
-	r4^\markup {Ob.I.} a(\p fis)
+	r4-\offset X-offset -1.5 ^\markup {Ob.I.} a(\p fis)
 	r d( a)
 	s2.*4
 	% bars 208 - 211
 	r4^\markup {Ob.I.} e(\p g)
 	r b( e)
-	f,(\p a d
+	fis,(\p a d
 	c2.) 
 	s2.*6
 	% bars 218 - 222
@@ -1583,7 +1583,7 @@ cueVoiceOboeIIMvtIII = \relative c {
 	b( cis8 ais b4)
 	b( cis8 ais b4)
 	b( cis8 ais b4)
-	a( d, fis
+	\shape #'((0 . -1.5)(0 . 0.5)(0 . 0.5)(0 . -1)) Slur a( d, fis
 	a d fis~
 	fis e d~
 	d cis b)
@@ -1603,7 +1603,7 @@ cueVoiceOboeIIMvtIII = \relative c {
 	a e g)
 	s2.*27
 	% bars 308 - 311
-	c'2(-\pdolce^\markup {Vl.I.} f4~
+	c'2(-\pdolce-\offset X-offset -3 ^\markup {Vl.I.} f4~
 	f e f)
 	g2( c,4~
 	c2.)
@@ -1678,16 +1678,16 @@ cueVoiceOboeIIMvtIV = \relative c {
 	% bars 251 - 252
 	\transpose c e {
 		\relative c'' {
-			\tuplet 6/4 1 {d4( f aes g f ees)}
+			\tuplet 3/2 2 {d4( f aes g f ees)}
 		}
 	}
-	\tuplet 6/4 1 {fis(^\markup {Fl.II.} a c e d c)}
+	\tuplet 3/2 2 {fis(^\markup {Fl.II.} a c e d c)}
 	s1*14
 	% bar 267
 	<>^\markup {Ob.I.}
 	s1*5
 	% bars 272 - 273
-	r2^\markup {Fg.,Vcl.,Cb.} r4 r8 d\f
+	r2^\markup {\override #'(baseline-skip . 1.5) \column { "Fg." "Vcl." "Cb."}} r4 r8 d\f^\markup {Vl.I.}
 	b a gis e s2
 	s1*40
 	% bars 314 - 317
@@ -1706,17 +1706,17 @@ cueVoiceOboeIIMvtIV = \relative c {
 	d4. d8 d2
 	s1*33
 	% bars 364 - 365
-	a'8(\pp^\markup {Vl.} g' fis e) a,,( g' fis e)
+	a'8(\pp-\offset X-offset -2.5 ^\markup {Vl.} g' fis e) a,,( g' fis e)
 	a,,(^\markup {Vla} g' fis e d cis b' a)
 	s1*12
 	% bar 378
-	<>^\markup {Fl.,Cl.,Fg.,Cor.}
+	<>-\offset X-offset -2 ^\markup {"Fl.,Cl.,Fg.,Cor."}
 	s1*56
 	% bar 434
 	<>^\markup {Vl.I.}
 	s1*6
 	% bar 440
-	<>^\markup {Vcl.}
+	<>-\offset X-offset -1 ^\markup {Vcl.}
 }
 %###############################################################################
 %#               C U E   V O I C E   F O R   C L A R I N E T T I               #
